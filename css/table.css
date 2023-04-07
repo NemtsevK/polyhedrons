@@ -1,22 +1,30 @@
-
-.table {
+.table  {
     margin: 0 auto;
     background: #f5ffff;
     border-collapse: collapse;
     text-align: left;
+    font-family: "Montserrat", "Arial", sans-serif;
   }
 
-  .table th {
-    border-top: 1px solid #777777;	
-    border-bottom: 1px solid #777777; 
+  .table thead th{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 2;
+}
+  
+  .table th  {
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
     box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
     background: linear-gradient(#9595b6, #5a567f);
     color: white;
     padding: 10px 15px;
     position: relative;
   }
-
-  .table th:after {
+  
+  .table th:after  {
     content: "";
     display: block;
     position: absolute;
@@ -24,28 +32,57 @@
     top: 25%;
     height: 25%;
     width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .08));
   }
-
-  .table tr:nth-child(odd) {
+  
+  .table tr:nth-child(odd)  {
     background: #ebf3f9;
   }
-
-  .table th:first-child {
-    border-left: 1px solid #777777;	
-    border-bottom:  1px solid #777777;
+  
+  .table th:first-child  {
+    border-left: 1px solid #777777;
+    border-bottom: 1px solid #777777;
     box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
   }
-
-  .table th:last-child {
+  
+  .table th:last-child  {
     border-right: 1px solid #777777;
-    border-bottom:  1px solid #777777;
+    border-bottom: 1px solid #777777;
     box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
   }
-
-  .table td {
+  
+  .table td  {
     border: 1px solid #e3eef7;
-    padding: 10px 15px;
+    
     position: relative;
     transition: all 0.5s ease;
+  }
+
+  .table__img-wrapper{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+  }
+
+  .table__img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .table__text{
+    padding: 10px 15px;
+    margin: 0;
+  }
+
+  .table__text:not(:first-child){
+    padding-top: 0;
+  }
+
+  .table__text_center{
+    text-align: center;
+  }
+
+  .table__text_italic{
+    font-style: italic;
   }

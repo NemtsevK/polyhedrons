@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Многогранники</title>
+    <title>Двойственные многогранники</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/table.css">
 </head>
@@ -24,7 +24,7 @@
             let html = "";
             try {
                 let response = await fetch(
-                `ajax/table.php?polyhedrons=${polyhedrons}`
+                `ajax/dual.php?polyhedrons=${polyhedrons}`
                 );
                 if (response.ok) {
                     let json = await response.json();

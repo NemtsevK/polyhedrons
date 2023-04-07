@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Многогранники</title>
+    <title>Семейства многогранников</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/table.css">
 </head>
@@ -19,12 +19,11 @@
             HeaderBlock();
             NavigationBlock();
             FooterBlock();
-            
-            const getTable = async (polyhedrons) => {
+            const getList = async (polyhedrons) => {
             let html = "";
             try {
                 let response = await fetch(
-                `ajax/table.php?polyhedrons=${polyhedrons}`
+                `ajax/types.php?polyhedrons=${polyhedrons}`
                 );
                 if (response.ok) {
                     let json = await response.json();
@@ -36,7 +35,8 @@
             }
             document.querySelector(".main").innerHTML = html;
             };
-            getTable(1);
+            getList(1);
+           
         })
     </script>
 </body>

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Многогранники</title>
     <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-block">
+    <header class="header"></header>
+    <nav class="navigation"></nav>
+    <main class="main"></main>
+    <footer class="footer"></footer>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/library.js"></script>
     <script src="js/pattern.js"></script>
@@ -11,15 +17,26 @@
         $(document).ready(function () {
             HeaderBlock();
             NavigationBlock();
-            PolyhedronBlock();
             FooterBlock();
-        });
+            
+            const getList = async (polyhedrons) => {
+            let html = "";
+            try {
+                let response = await fetch(
+                `ajax/list.php?polyhedrons=${polyhedrons}`
+                );
+                if (response.ok) {
+                    let json = await response.json();
+                    html += json.table;
+                }
+            } catch (error) {
+                console.log(error);
+                html = `<p>Ошибка</p>`;
+            }
+            document.querySelector(".main").innerHTML = html;
+            };
+            getList(1);
+        })
     </script>
-</head>
-<body class="page-block">
-    <header class="header"></header>
-    <nav class="navigation"></nav>
-    <main class="main"></main>
-    <footer class="footer"></footer>
 </body>
 </html>

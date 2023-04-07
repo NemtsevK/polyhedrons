@@ -8,6 +8,8 @@ function NavigationBlock() {
     OUTPUT += '<a class="menu__item" href="index.html">Главная</a>';
     OUTPUT += '<a class="menu__item" href="list.html">Список</a>';
     OUTPUT += '<a class="menu__item" href="table.html">Таблица</a>';
+    OUTPUT += '<a class="menu__item" href="types.html">Семейства</a>';
+    OUTPUT += '<a class="menu__item" href="dual.html">Двойственные</a>';
     OUTPUT += '<a class="menu__item" href="statistics.html">Статистика</a>';
     OUTPUT += '</div>';
     $('.navigation').html(OUTPUT);
@@ -71,6 +73,7 @@ function TableBlock() {
         OUTPUT += '<td class="table-body__cell">' + polyhedron_array[i]['vertices'] + '</td>';
         OUTPUT += '<td class="table-body__cell">' + sum + '</td>';
         OUTPUT += '</tr>';
+        
     }
 
     OUTPUT += '</tbody>';
@@ -78,4 +81,37 @@ function TableBlock() {
     OUTPUT += '</table>';
 
     $('.main').html(OUTPUT);
+}
+
+function PolyhedraOutput() {
+
+    let OUTPUT = 'INSERT INTO Polyhedrons_list (polyhedra_id, name_rus, name_eng, type_id, faces, edges, vertices, image) VALUES ';
+    
+
+    for(let i = 0; i< polyhedron_array.length; i++){
+        
+        let name_rus = GetValue(polyhedron_array[i],'name_rus'),
+        name_eng = GetValue(polyhedron_array[i],'name_eng'),
+        type_id = GetValue(polyhedron_array[i],'family_rus'),
+        faces = GetValue(polyhedron_array[i],'faces'),
+        edges = GetValue(polyhedron_array[i],'edges'),
+        vertices = GetValue(polyhedron_array[i],'vertices'),
+        image = GetValue(polyhedron_array[i],'image');
+
+        OUTPUT += "(" + i + ", " + name_rus + ", " + name_eng + ", " + type_id + ", " + faces + ", " + edges + ", " + vertices + ", " + image + "),\n";
+    }
+
+   
+
+    console.log(OUTPUT);
+}
+
+function GetValue(array,field){
+    let final;
+    if(array[field] == undefined){
+        final= "NULL";
+    } else {
+        final = "'" + array[field] + "'";
+    }
+    return final;
 }
