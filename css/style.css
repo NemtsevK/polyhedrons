@@ -23,7 +23,7 @@ html{
 .page-block::before{
   content: "";
    display: inline-block;
-     background-image: url("../img/background_1.jpg");
+     background-image: url("../img/background.jpg");
      background-repeat: repeat;
      /* background-size: 200px 200px; */
      position: absolute;
