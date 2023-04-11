@@ -7,21 +7,21 @@ class ExtTable
      * @param array $data - параметры
      * @return mixed
      */
-    function DBtoTable($data){
+    function DBtoTable($connect,$data){
         // $table - массив с данными столбцов таблицы
         // $name_id - идентификатор данных (по нему задаётся значение radio-кнопкам)
         // $access - доступ к столбцам админа
         // $table_id - идентификатор таблицы, для возможности экспорта в xls
         // $id_full -
         // $END - конец таблицы (например итог)
-        $title = GetValueArray($data,'title');
-        $query = GetValueArray($data,'query');
+        $title = GetValue($data,'title');
+        $query = GetValue($data,'query');
         $table = GetValue($data,'table',[]);
-        $name_id = GetValueArray($data,'name_id');
-        $access = GetValueArray($data,'access_number');
+        $name_id = GetValue($data,'name_id');
+        $access = GetValue($data,'access_number');
         $table_id = GetValue($data,'table_id','fix_table');
-        $id_full = GetValueArray($data,'id_full');
-        $END = GetValueArray($data,'end');
+        $id_full = GetValue($data,'id_full');
+        $END = GetValue($data,'end');
 
         //данные о значениях $table
         //align - выравнивание (left, center, right) - по умолчанию center
@@ -47,16 +47,19 @@ class ExtTable
         $count_rows='0';
         $answer=false;
         if(isset($query)){
-            $answer=mssql_query(OutUTF($query));
+            $answer=mysqli_query($connect,$query);
             if($answer){
-                $count_rows=mssql_num_rows($answer);
+                $count_rows=mysqli_num_rows($answer);
+                
             }
+            
         }
+
         if($answer){
-            $OUTPUT['table']= "<table class='output__table fix_table' id='$table_id'>\n";
-            $OUTPUT['table'].= "<thead class='table__table-head'>\n";
+            $OUTPUT['table']= "<table class='table' id='$table_id'>\n";
+            $OUTPUT['table'].= "<thead class='table-head'>\n";
             $OUTPUT['table'].= "<tr class='table-head__title'><td>$title</td></tr>";
-            $OUTPUT['table'].=$this->TableSearch($table,$access,$id_full);
+            //$OUTPUT['table'].=$this->TableSearch($table,$access,$id_full);
             $OUTPUT['table'].=$this->TableHead($table,$access,$id_full);
             $OUTPUT['table'].= "</thead>\n";
             //если нет данных
@@ -74,13 +77,13 @@ class ExtTable
                 $OUTPUT['table'].= "<tbody class='table__body'>\n";
                 $num_row = 0; //номер строки
                 //вывод данных в таблицу
-                while ($row = mssql_fetch_assoc($answer)) {
+                while ($row = mysqli_fetch_assoc($answer)) {
                     $num_row++;
-                    $OUTPUT['table'].= "<tr class='body__row'>\n";
+                    $OUTPUT['table'].= "<tr class='table-body__row'>\n";
                     foreach ($table as $key => $item) {
                         $col_access=GetValue($item,'access',1);//значение доступа к столбцу
                         if($col_access<=$access || !isset($access)){
-                            $i_cell = GetValueArray($row,$key);
+                            $i_cell = GetValue($row,$key);
                             //ячейка с radio кнопкой (для выбора строки)
                             if ($key=='radio_btn' && isset($name_id)) {
                                 $radio_value=$row[$name_id];
@@ -91,74 +94,42 @@ class ExtTable
                             else if($key=='count_row'){
                                 $OUTPUT['table'].= "<th class='table-body__num-row'>$num_row</th>\n";
                             } else {
-                                //если у столбца нет поля «дополнительный столбец» или есть это поле и оно активно в сессии
-                                if(!isset($item['additional']) || isset($id_full) && isset($_SESSION[$id_full]) && $_SESSION[$id_full]&& isset($item['additional']) && $item['additional']){
-                                    $text=$image=$title=null;
-                                    //----------------------------------------
-                                    $width="height='24px'";
+                                $text=$image=$title=null;
 
-                                    //аватар
-                                    if($key=='avatar' && isset($i_cell)){
-                                        $image="<img $width src='/img/avatar/small/$i_cell' alt='$i_cell'>";
-                                    }
-                                    //ячейка с картинкой (поиск индекса массива) массив не должен быть одномерным
-                                    else if(array_key_exists('array',$item) && MultiArray($item['array'])){
-                                        //получение ссылки на массив
-                                        $array=$item['array'];
-                                        if(isset($array[$i_cell]["image"]) && isset($array[$i_cell]["name"])){
-                                            $link=$array[$i_cell]["image"];
-                                            //если есть title, то он используется, иначе - name
-                                            $title=GetValue($array[$i_cell],'title',$array[$i_cell]['name']);
-                                            $image="<img $width src='$link' title='$title' alt='$title'>";
-                                        } else {
-                                            if(isset($array[$i_cell]['name'])){
-                                                if(isset($array[$i_cell]['title'])){
-                                                    $title=" title='{$array[$i_cell]['title']}'";
-                                                }
-                                                $text=$array[$i_cell]['name'];
-                                            }
-                                        }
-                                    }
-                                                                                                          
-                                    //Остальные
-                                    else{
-                                        $ext_users = new ExtUsers();
-                                        $conv_cell=InUTF($i_cell);
-                                        //максимум кол-во символов (остальное обрезается)
-                                        $limit_length = GetValue($item,'limit_length',50);
-                                        if(iconv_strlen($conv_cell, "UTF-8")>=$limit_length && !isset($item['pre'])){
-                                            $title=" title='$conv_cell'";
-                                        }
-                                        if(isset($item['pre']) || isset($item['no_limit_length'])){
-                                            if(isset($item['title'])){
-                                                $title=" title='".InUTF($row[$item['title']])."'";
-                                            }
-                                            $text=$conv_cell;
-                                        } else {
-                                            //укоротить фио, а в заголовок полное фио
-                                            if(isset($item['FIO_short']) && $item['FIO_short']){
-                                                $text = $ext_users -> FioShort($conv_cell);
-                                                $title=" title='$conv_cell'";
-                                            } else {
-                                                $text=CutString($conv_cell,$limit_length);
-                                            }
-                                        }
-                                    }
-                                    $align = GetValue($item,'align','center'); // выравнивание текста
-                                    $OUTPUT['table'].= "<td class='table-body__cell' style='text-align:$align'>";
-                                    if(isset($image)){$OUTPUT['table'].= $image;}
-                                    if(isset($text)) {
-                                        if(isset($item['title'])){
-                                            $title=" title='".InUTF($row[$item['title']])."'";
-                                        }
-                                        if(isset($item['pre'])){
-                                            $OUTPUT['table'].= "<pre$title>$text</pre>";
-                                        } else{
-                                            $OUTPUT['table'].= "<p$title>$text</p>";
-                                        }
-                                    }
-                                    $OUTPUT['table'].= "</td>\n";
+                                $align_class = $this -> AlignText($item);
+                                $OUTPUT['table'].= "<td class='table-body__cell $align_class'>";
+                                //----------------------------------------
+                                //картинка
+                                if(isset($item['image']) && isset($item['link_directory'])){
+                                    $image = $item['image'];
+                                    $link_directory = $item['link_directory'];
+                                    $cell_block = "<div class='table-body__img-wrapper'>";
+                                    $cell_block .= "<img class='table-body__img' src='{$link_directory}{$i_cell}' alt=''>";
+                                    $cell_block .= "</div>";
                                 }
+                                //Остальные
+                                else{
+                                    //максимум кол-во символов (остальное обрезается)
+                                    $limit_length = GetValue($item,'limit_length',50);
+                                    if(iconv_strlen($i_cell, "UTF-8")>=$limit_length && !isset($item['pre'])){
+                                        $title=" title='$i_cell'";
+                                    }
+                                    if(isset($item['pre']) || isset($item['no_limit_length'])){
+                                        if(isset($item['title'])){
+                                            $title=" title='".$row[$item['title']]."'";
+                                        }
+                                        $text=$i_cell;
+                                    } else {
+                                        $text=CutString($i_cell,$limit_length);
+                                    }
+                                    if(isset($item['title'])){
+                                        $title=" title='".$row[$item['title']]."'";
+                                    }
+                                    $cell_block = "<p class='table-body__text' $title>$text</p>";
+
+                                }
+                                $OUTPUT['table'].= $cell_block;
+                                $OUTPUT['table'].= "</td>\n";
                             }
                         }//if
                     }//for
@@ -172,7 +143,7 @@ class ExtTable
             }//if
             $OUTPUT['count']=$count_rows;
         } else {
-            $OUTPUT['table']='Ошибка';
+            $OUTPUT['table'].='Ошибка';
             $OUTPUT['count']='Ошибка';
         }
         return $OUTPUT;
@@ -185,7 +156,8 @@ class ExtTable
      * @param string $id_full
      * @return null|string
      */
-    function TableSearch($table,$access,$id_full){
+    /*
+     function TableSearch($table,$access,$id_full){
         $OUTPUT=null;
         $search=false;
         //проверка, есть ли хотя бы у одного столбца поиск
@@ -222,13 +194,13 @@ class ExtTable
                                 $answer=mssql_query(OutUTF($item['query']));
                                 $select_array=[];
                                 while($row=mssql_fetch_assoc($answer)){
-                                    $id=InUTF($row['id']);
+                                    $id=$row['id'];
                                     if(isset($row['name'])){
-                                        $name=InUTF($row['name']);
+                                        $name=$row['name'];
                                     } else {
                                         $name=$id;
                                     }
-                                    $title = GetValueArray($row,'title',true);
+                                    $title = GetValue($row,'title');
                                     $select_array[$id]=['name'=>$name,'title'=>$title];
                                 }
                             }
@@ -242,7 +214,7 @@ class ExtTable
 
                                 $select_col_name=null;
                                 if(isset($_POST['search_select'])){
-                                    $select_col_name=GetValueArray($_POST['search_select'],$col_name);
+                                    $select_col_name=GetValue($_POST['search_select'],$col_name);
                                 }
 
                                 //если был поиск
@@ -267,7 +239,7 @@ class ExtTable
                                     if(MultiArray($select_array)){
                                         $text=$item_select['name'];
                                         $value = $key_select;
-                                        $title = GetValueArray($item_select,'title');
+                                        $title = GetValue($item_select,'title');
                                     } else {
                                         $text = $item_select;
                                         $value = $item_select;
@@ -282,13 +254,13 @@ class ExtTable
                             }else if(preg_match('/date/ui',$key)){
                                 $value_date=null;
                                 if(isset($_POST['search_date'])){
-                                    $value_date=GetValueArray($_POST['search_date'],$col_name);
+                                    $value_date=GetValue($_POST['search_date'],$col_name);
                                 }
                                 $OUTPUT.= "<input class='cell__search-date' type='date' name='search_date[$col_name]' placeholder='поиск' value='$value_date' id='$col_name'>";
                             }else {//для поиска используется input
                                 $value_input=null;
                                 if(isset($_POST['search_input'])){
-                                    $value_input=GetValueArray($_POST['search_input'],$col_name);
+                                    $value_input=GetValue($_POST['search_input'],$col_name);
                                 }
                                 $OUTPUT.= "<input class='cell__search-input' name='search_input[$col_name]' placeholder='поиск' value='$value_input' id='$col_name' autocomplete='off' size='5'>";
                             }
@@ -302,7 +274,80 @@ class ExtTable
         return $OUTPUT;
     }
 
-    
+    */
+
+    /**--------------------------------------------------
+     * вывод заголовка таблицы
+     * @param array $table - массив с данными о таблице
+     * @param int $access - доступ к столбцам админа
+     * @param string $id_full
+     * @return null|string
+     */
+    function TableHead($table,$access,$id_full){
+        $OUTPUT=null;
+        $OUTPUT.= "<tr>\n";
+        //Вывод имён заголовков
+
+        foreach ($table as $key => $item) {
+            $col_name=null;
+            $col_access=GetValue($item,'access',1);//значение доступа к столбцу
+            if($col_access<=$access || !isset($access)){
+                //если у столбца нет поля «дополнительный столбец» или есть это поле и оно активно в сессии
+                if(!isset($item['additional']) || isset($id_full) && isset($_SESSION[$id_full]) && $_SESSION[$id_full]&& isset($item['additional']) && $item['additional']){
+                    $sorting=$hidden=null;
+                    if(isset($item['name'])){
+                        if($item['name']===true){
+                            $col_name = $key;
+                        } else {
+                            $name=$item['name'];
+                            $title = GetValue($item,'name_full',$name);
+                            $col_name = "<div title='$title'>$name</div>";
+                        }
+                    }
+                    if(isset($_POST['sorting'])){
+                        $sorting=GetValueArray($_POST['sorting'],$key);
+                    }
+
+                    if(isset($item['sorting'])){
+                        if(!isset($sorting)){
+                            $sorting='default';
+                        }
+
+                        $hidden="<input type='hidden' name='sorting[$key]' value='$sorting'>";
+
+                    } else {
+
+                        $sorting='disabled';
+                    }
+                    if($key == 'radio_btn'){
+                        $class="table-head__radio-block";
+                    } else {
+                        $class="table-head__cell cell_sorting";
+                    }
+
+
+                    $OUTPUT.= "<th class='$class $sorting'>";
+                    $OUTPUT.=$hidden;
+                    $OUTPUT.=$col_name;
+                    $OUTPUT.="</th>";
+                }
+            }
+        }
+        $OUTPUT.= "</tr>\n";
+        return $OUTPUT;
+    }
+
+    // выравнивание текста
+    function AlignText($item){
+        $align = GetValue($item,'align','center'); 
+
+        if($align == 'left'){
+            $align_class = "table-body__cell_left";  
+        } else {
+            $align_class = null;
+        }
+        return $align_class;
+    }
 
 
 }

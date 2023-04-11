@@ -1,9 +1,5 @@
 CREATE DATABASE Geometry DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci
 
--- TRUNCATE TABLE ADS	
-
--- --------------------------------------------------------
-
 /*-------------------------------------*/
 CREATE TABLE `polyhedrons_list` (
   `polyhedra_id` int(11) NOT NULL,
@@ -18,12 +14,9 @@ CREATE TABLE `polyhedrons_list` (
   `image` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `symmetry_id` int(11) DEFAULT NULL,
   `wenninger_number` int(11) DEFAULT NULL,
-  `dual_id` int(11) DEFAULT NULL
+  `dual_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`polyhedra_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-
-ALTER TABLE `polyhedrons_list`
-  ADD PRIMARY KEY (`polyhedra_id`);
 
 /*-------------------------------------*/
 CREATE TABLE `polyhedrons_type` (
@@ -31,37 +24,32 @@ CREATE TABLE `polyhedrons_type` (
   `name_rus` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `name_eng` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`type_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-ALTER TABLE `polyhedrons_type`
-  ADD PRIMARY KEY (`type_id`);
 
 /*-------------------------------------*/
 CREATE TABLE `symmetry` (
   `symmetry_id` int(11) NOT NULL,
   `name_rus` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_eng` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `name_eng` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`symmetry_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-ALTER TABLE `symmetry`
-  ADD PRIMARY KEY (`symmetry_id`);
-COMMIT;
-
 /*-------------------------------------*/
-INSERT INTO `polyhedrons_type` (`type_id`, `name_rus`, `name_eng`) VALUES
-(0, 'Неизвестно', 'Unknown'),
-(1, 'Платоновы тела', 'Platonic solids'),
-(2, 'Архимедовы тела', 'Archimedean Solids'),
-(3, 'Каталановы тела', 'Catalan Solids'),
-(4, 'Тела Кеплера – Пуансо', 'Kepler-Poinsot Solids'),
-(5, 'Звёздчатые многогранники', 'Star Polyhedrons'),
-(6, 'Многогранники Джонсона', 'Johnson Solids'),
-(7, 'Однородные невыпуклые тела', 'Uniform nonconvex solids'),
-(8, 'Двойственные однородные невыпуклые тела', 'Dual uniform nonconvex solids'),
-(9, 'Призматоиды', 'Prismatoids'),
-(10, 'Пирамиды', 'Pyramids'),
-(11, 'Бипирамиды', 'Dipyramids'),
-(12, 'Трапецоэдры', 'Trapezohedrons');
+INSERT INTO `polyhedrons_type` (`type_id`, `name_rus`, `name_eng`, `image`) VALUES
+(0, 'Неизвестно', 'Unknown', ''),
+(1, 'Платоновы тела', 'Platonic solids', 'dodecahedron.svg'),
+(2, 'Архимедовы тела', 'Archimedean Solids', 'truncated_icosahedron.svg'),
+(3, 'Каталановы тела', 'Catalan Solids', 'rhombic_triacontahedron.svg'),
+(4, 'Тела Кеплера – Пуансо', 'Kepler-Poinsot Solids', 'small_stellated_dodecahedron.svg'),
+(5, 'Звёздчатые многогранники', 'Star Polyhedrons', 'sixth_stellation_of_icosidodecahedron.png'),
+(6, 'Многогранники Джонсона', 'Johnson Solids', 'gyroelongated_square_dipyramid.svg'),
+(7, 'Однородные невыпуклые тела', 'Uniform nonconvex solids', 'great_cubicuboctahedron.svg'),
+(8, 'Двойственные однородные невыпуклые тела', 'Dual uniform nonconvex solids', 'small_hexacronic_icositetrahedron.svg'),
+(9, 'Призматоиды', 'Prismatoids', 'pentagonal_prism.svg'),
+(10, 'Пирамиды', 'Pyramids', 'hexagonal_pyramid.png'),
+(11, 'Бипирамиды', 'Dipyramids', 'hexagonal_dipyramid.svg'),
+(12, 'Трапецоэдры', 'Trapezohedrons', 'tetragonal_trapezohedron.png');
 
 /*-------------------------------------*/
 INSERT INTO `symmetry` (`symmetry_id`, `name_rus`, `name_eng`) VALUES
@@ -69,7 +57,6 @@ INSERT INTO `symmetry` (`symmetry_id`, `name_rus`, `name_eng`) VALUES
 (1, 'Тетраэдральная симметрия', 'Tetrahedral symmetry'),
 (2, 'Октаэдральная симметрия', 'Octahedral symmetry'),
 (3, 'Икосаэдральная симметрия', 'Icosahedral symmetry');
-
 
 /*-------------------------------------*/
 TRUNCATE TABLE `polyhedrons_list`	
@@ -256,8 +243,8 @@ INSERT INTO `polyhedrons_list` (`polyhedra_id`, `name_rus`, `name_eng`, `descrip
 (178, 'Большой шестиугольный гексаконтаэдр', 'Great hexagonal hexecontahedron', NULL, NULL, 8, 60, 180, 104, 'great_hexagonal_hexecontahedron.png', 3, NULL, 125),
 (179, 'Большой пятиугольный гексаконтаэдр', 'Great pentagonal hexecontahedron', NULL, NULL, 8, 60, 150, 92, 'great_pentagonal_hexecontahedron.svg', 3, NULL, 126),
 (180, 'Большой пентаграммный гексаконтаэдр', 'Great pentagrammic hexecontahedron', NULL, NULL, 8, 60, 150, 92, 'great_pentagrammic_hexecontahedron.png', 3, NULL, 127),
-(181, 'Малый гексаграммныйгексаконтаэдр', 'Small hexagrammic hexecontahedron', NULL, NULL, 8, 60, 180, 112, 'small_hexagrammic_hexecontahedron.png', 3, NULL, 128),
-(182, 'Большой биромбоикосододекрон', 'Great dirhombicosidodecacron', NULL, NULL, 8, 60, 240, 124, 'great_dirhombicosidodecacron.svg', 3, NULL, 129),
+(181, 'Малый гексаграммный гексаконтаэдр', 'Small hexagrammic hexecontahedron', NULL, NULL, 8, 60, 180, 112, 'small_hexagrammic_hexecontahedron.png', 3, NULL, 128),
+(182, 'Большой биромбоикосододекрон', 'Great dirhombicosidodecacron', NULL, NULL, 8, 60, 240, 124, 'great_dirhombicosidodecacron.png', 3, NULL, 129),
 (183, 'Квадратная пирамида', 'Square Pyramid', NULL, NULL, 6, 5, 8, 5, 'square_pyramid.svg', NULL, NULL, 183),
 (184, 'Пятиугольная пирамида', 'Pentagonal Pyramid', NULL, NULL, 6, 6, 10, 6, 'pentagonal_pyramid.svg', NULL, NULL, 184),
 (185, 'Трёхскатный купол', 'Triangular Cupola', NULL, NULL, 6, 8, 15, 9, 'triangular_cupola.svg', NULL, NULL, NULL),
@@ -292,7 +279,7 @@ INSERT INTO `polyhedrons_list` (`polyhedra_id`, `name_rus`, `name_eng`, `descrip
 (214, 'Пятискатная прямая куполоротонда', 'Pentagonal Gyrocupolarotunda', NULL, NULL, 6, 32, 60, 30, 'pentagonal_gyrocupolarotunda.svg', NULL, NULL, NULL),
 (215, 'Пятискатная повёрнутая куполоротонда', 'Pentagonal Orthocupolarotunda', NULL, NULL, 6, 27, 50, 25, 'pentagonal_orthocupolarotunda.svg', NULL, NULL, NULL),
 (216, 'Пятискатная прямая биротонда', 'Pentagonal Orthobirotunda', NULL, NULL, 6, 27, 50, 25, 'pentagonal_orthobirotunda.svg', NULL, NULL, NULL),
-(217, 'Удлинённый трёхскатный прямой бикупол', NULL, NULL, NULL, 5, 20, 36, 18, 'elongated_triangular_orthobicupola.svg', NULL, NULL, NULL),
+(217, 'Удлинённый трёхскатный прямой бикупол', 'Elongated Triangular Orthobicupola', NULL, NULL, 6, 20, 36, 18, 'elongated_triangular_orthobicupola.svg', NULL, NULL, NULL),
 (218, 'Удлинённый пятискатный прямой бикупол', 'Elongated Pentagonal Orthobicupola', NULL, NULL, 6, 32, 60, 30, 'elongated_pentagonal_orthobicupola.svg', NULL, NULL, NULL),
 (219, 'Удлинённый трёхскатный повёрнутый бикупол', 'Elongated Triangular Gyrobicupola', NULL, NULL, 6, 20, 36, 18, 'elongated_triangular_gyrobicupola.svg', NULL, NULL, NULL),
 (220, 'Удлинённый четырёхскатный повёрнутый бикупол', 'Elongated Square Gyrobicupola', NULL, NULL, 6, 26, 48, 24, 'elongated_square_gyrobicupola.svg', NULL, NULL, NULL),
@@ -364,26 +351,26 @@ INSERT INTO `polyhedrons_list` (`polyhedra_id`, `name_rus`, `name_eng`, `descrip
 (286, 'Восьмиугольная антипризма', 'Octagonal Antiprism', NULL, NULL, 9, 18, 32, 16, 'octagonal_antiprism.svg', NULL, NULL, 309),
 (287, 'Девятиугольная антипризма', 'Enneagonal Antiprism', NULL, NULL, 9, 20, 36, 18, 'enneagonal_antiprism.svg', NULL, NULL, 310),
 (288, 'Десятиугольная антипризма', 'Decagonal Antiprism', NULL, NULL, 9, 22, 40, 20, 'decagonal_antiprism.svg', NULL, NULL, 311),
-(289, 'Пентаграммная призма', 'Pentagrammic Prism', NULL, NULL, 9, 7, 15, 10, NULL, NULL, NULL, NULL),
-(290, 'Гептаграммная призма', 'Heptagrammic Prism', NULL, NULL, 9, 9, 21, 14, NULL, NULL, NULL, NULL),
-(291, 'Октаграммная призма', 'Octagrammic Prism', NULL, NULL, 9, 10, 24, 16, NULL, NULL, NULL, NULL),
-(292, 'Пентаграммная антипризма', 'Pentagrammic Antiprism', NULL, NULL, 9, 7, 15, 10, NULL, NULL, NULL, NULL),
-(293, 'Гептаграммная антипризма', 'Heptagrammic Antiprism', NULL, NULL, 9, 9, 21, 14, NULL, NULL, NULL, NULL),
-(294, 'Октаграммная антипризма', 'Octagrammic Antiprism', NULL, NULL, 9, 10, 24, 16, NULL, NULL, NULL, NULL),
-(295, 'Шестиугольная пирамида', 'Hexagonal Pyramid', NULL, NULL, 10, 7, 12, 7, NULL, NULL, NULL, 295),
-(296, 'Семиугольная пирамида', 'Heptagonal Pyramid', NULL, NULL, 10, 8, 14, 8, NULL, NULL, NULL, 296),
-(297, 'Восьмиугольная пирамида', 'Octagonal Pyramid', NULL, NULL, 10, 9, 16, 9, NULL, NULL, NULL, 297),
-(298, 'Девятиугольная пирамида', 'Enneagonal Pyramid', NULL, NULL, 10, 10, 18, 10, NULL, NULL, NULL, 298),
-(299, 'Десятиугольная пирамида', 'Decagonal Pyramid', NULL, NULL, 10, 11, 20, 11, NULL, NULL, NULL, 299),
+(289, 'Пентаграммная призма', 'Pentagrammic Prism', NULL, NULL, 9, 7, 15, 10, 'pentagrammic_prism.png', NULL, NULL, NULL),
+(290, 'Гептаграммная призма', 'Heptagrammic Prism', NULL, NULL, 9, 9, 21, 14, 'heptagrammic_prism.png', NULL, NULL, NULL),
+(291, 'Октаграммная призма', 'Octagrammic Prism', NULL, NULL, 9, 10, 24, 16, 'octagrammic_prism.png', NULL, NULL, NULL),
+(292, 'Пентаграммная антипризма', 'Pentagrammic Antiprism', NULL, NULL, 9, 7, 15, 10, 'pentagrammic_antiprism.png', NULL, NULL, NULL),
+(293, 'Гептаграммная антипризма', 'Heptagrammic Antiprism', NULL, NULL, 9, 9, 21, 14, 'heptagrammic_antiprism.png', NULL, NULL, NULL),
+(294, 'Октаграммная антипризма', 'Octagrammic Antiprism', NULL, NULL, 9, 10, 24, 16, 'octagrammic_antiprism.png', NULL, NULL, NULL),
+(295, 'Шестиугольная пирамида', 'Hexagonal Pyramid', NULL, NULL, 10, 7, 12, 7, 'hexagonal_pyramid.png', NULL, NULL, 295),
+(296, 'Семиугольная пирамида', 'Heptagonal Pyramid', NULL, NULL, 10, 8, 14, 8, 'heptagonal_pyramid.png', NULL, NULL, 296),
+(297, 'Восьмиугольная пирамида', 'Octagonal Pyramid', NULL, NULL, 10, 9, 16, 9, 'octagonal_pyramid.png', NULL, NULL, 297),
+(298, 'Девятиугольная пирамида', 'Enneagonal Pyramid', NULL, NULL, 10, 10, 18, 10, 'enneagonal_pyramid.png', NULL, NULL, 298),
+(299, 'Десятиугольная пирамида', 'Decagonal Pyramid', NULL, NULL, 10, 11, 20, 11, 'decagonal_pyramid.png', NULL, NULL, 299),
 (300, 'Шестиугольная бипирамида', 'Hexagonal Dipyramid', NULL, NULL, 11, 12, 18, 8, 'hexagonal_dipyramid.svg', NULL, NULL, 277),
 (301, 'Семиугольная бипирамида', 'Heptagonal Dipyramid', NULL, NULL, 11, 14, 21, 9, 'heptagonal_dipyramid.svg', NULL, NULL, 278),
 (302, 'Восьмиугольная бипирамида', 'Octagonal Dipyramid', NULL, NULL, 11, 16, 24, 10, 'octagonal_dipyramid.svg', NULL, NULL, 279),
 (303, 'Девятиугольная бипирамида', 'Enneagonal Dipyramid', NULL, NULL, 11, 18, 27, 11, 'enneagonal_dipyramid.svg', NULL, NULL, 280),
 (304, 'Десятиугольная бипирамида', 'Decagonal Dipyramid', NULL, NULL, 11, 20, 30, 12, 'decagonal_dipyramid.svg', NULL, NULL, 281),
-(305, 'Четырёхугольный трапецоэдр', 'Tetragonal Trapezohedron', NULL, NULL, 12, 8, 16, 10, NULL, NULL, NULL, 282),
-(306, 'Пятиугольный трапецоэдр', 'Pentagonal Trapezohedron', NULL, NULL, 12, 10, 24, 12, NULL, NULL, NULL, 283),
-(307, 'Шестиугольный трапецоэдр', 'Hexagonal Trapezohedron', NULL, NULL, 12, 12, 24, 14, NULL, NULL, NULL, 284),
-(308, 'Семиугольный трапецоэдр', 'Heptagonal Trapezohedron', NULL, NULL, 12, 14, 28, 16, NULL, NULL, NULL, 285),
-(309, 'Восьмиугольный трапецоэдр', 'Octagonal Trapezohedron', NULL, NULL, 12, 16, 32, 18, NULL, NULL, NULL, 286),
-(310, 'Девятиугольный трапецоэдр', 'Enneagonal Trapezohedron', NULL, NULL, 12, 18, 36, 20, NULL, NULL, NULL, 287),
-(311, 'Десятиугольный трапецоэдр', 'Decagonal Trapezohedron', NULL, NULL, 12, 20, 40, 22, NULL, NULL, NULL, 288);
+(305, 'Четырёхугольный трапецоэдр', 'Tetragonal Trapezohedron', NULL, NULL, 12, 8, 16, 10, 'tetragonal_trapezohedron.png', NULL, NULL, 282),
+(306, 'Пятиугольный трапецоэдр', 'Pentagonal Trapezohedron', NULL, NULL, 12, 10, 24, 12, 'pentagonal_trapezohedron.png', NULL, NULL, 283),
+(307, 'Шестиугольный трапецоэдр', 'Hexagonal Trapezohedron', NULL, NULL, 12, 12, 24, 14, 'hexagonal_trapezohedron.png', NULL, NULL, 284),
+(308, 'Семиугольный трапецоэдр', 'Heptagonal Trapezohedron', NULL, NULL, 12, 14, 28, 16, 'heptagonal_trapezohedron.png', NULL, NULL, 285),
+(309, 'Восьмиугольный трапецоэдр', 'Octagonal Trapezohedron', NULL, NULL, 12, 16, 32, 18, 'octagonal_trapezohedron.png', NULL, NULL, 286),
+(310, 'Девятиугольный трапецоэдр', 'Enneagonal Trapezohedron', NULL, NULL, 12, 18, 36, 20, 'enneagonal_trapezohedron.png', NULL, NULL, 287),
+(311, 'Десятиугольный трапецоэдр', 'Decagonal Trapezohedron', NULL, NULL, 12, 20, 40, 22, 'decagonal_trapezohedron.png', NULL, NULL, 288);
