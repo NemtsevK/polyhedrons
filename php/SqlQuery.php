@@ -1,22 +1,31 @@
 <?php
 
-Class SqlQuery{
+class SqlQuery
+{
 
     /**-------------------------------------------------------
      * параметры для запроса заявок
      * @param $value
      * @return mixed
      */
-    function QueryOption($value){
-        if(!isset($value['top'])){$value['top']=null;}
-        if(!isset($value['where'])){$value['where']=null;}
-        if(!isset($value['order'])){$value['order']=null;}
+    function QueryOption($value)
+    {
+        if (!isset($value['top'])) {
+            $value['top'] = null;
+        }
+        if (!isset($value['where'])) {
+            $value['where'] = null;
+        }
+        if (!isset($value['order'])) {
+            $value['order'] = null;
+        }
         return $value;
     }
 
 
-    function PolyhedronsList($value=[]){
-        $value=$this->QueryOption($value);
+    function PolyhedronsList($value = [])
+    {
+        $value = $this->QueryOption($value);
         return "SELECT {$value['top']} polyhedra_id
             ,a.name_rus AS name_rus
             ,a.name_eng AS name_eng
@@ -40,8 +49,9 @@ Class SqlQuery{
             {$value['order']}";
     }
 
-    function DualPolyhedronsList($value=[]){
-        $value=$this->QueryOption($value);
+    function DualPolyhedronsList($value = [])
+    {
+        $value = $this->QueryOption($value);
         return "SELECT {$value['top']} a.polyhedra_id AS polyhedra_id
             ,a.name_rus AS name_rus
             ,a.name_eng AS name_eng
@@ -69,6 +79,4 @@ Class SqlQuery{
             {$value['where']}
             {$value['order']}";
     }
-
-
 }

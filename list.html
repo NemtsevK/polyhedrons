@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0" name="viewport" />
     <title>Многогранники</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="page-block">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-block">
     <header class="header"></header>
     <nav class="navigation"></nav>
     <main class="main"></main>
@@ -14,29 +15,27 @@
     <script src="js/library.js"></script>
     <script src="js/pattern.js"></script>
     <script>
-        $(document).ready(function () {
-            HeaderBlock();
-            NavigationBlock();
-            FooterBlock();
-            
-            const getList = async (polyhedrons) => {
-            let html = "";
-            try {
-                let response = await fetch(
-                `ajax/list.php?polyhedrons=${polyhedrons}`
-                );
-                if (response.ok) {
-                    let json = await response.json();
-                    html += json.table;
-                }
-            } catch (error) {
-                console.log(error);
-                html = `<p>Ошибка</p>`;
+      $(document).ready(function () {
+        HeaderBlock();
+        NavigationBlock();
+        FooterBlock();
+
+        const getList = async (polyhedrons) => {
+          let html = "";
+          try {
+            let response = await fetch(`ajax/list.php?polyhedrons=${polyhedrons}`);
+            if (response.ok) {
+              let json = await response.json();
+              html += json.table;
             }
-            document.querySelector(".main").innerHTML = html;
-            };
-            getList(1);
-        })
+          } catch (error) {
+            console.log(error);
+            html = `<p>Ошибка</p>`;
+          }
+          document.querySelector(".main").innerHTML = html;
+        };
+        getList(1);
+      });
     </script>
-</body>
+  </body>
 </html>

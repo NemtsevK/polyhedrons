@@ -1,8 +1,9 @@
 <?php
-function ConnectToServer(){
+function ConnectToServer()
+{
     $connect = mysqli_connect("localhost", "root", "", "Geometry");
 
-    if (!$connect){
+    if (!$connect) {
         echo "Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error();
         exit;
     }
