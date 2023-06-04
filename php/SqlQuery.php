@@ -40,10 +40,10 @@ class SqlQuery
             ,a.image AS image
             ,c.symmetry_id AS symmetry_id
             ,c.name_rus AS symmetry_name_rus
-            FROM Polyhedrons_list a
-            LEFT JOIN Polyhedrons_type b
+            FROM polyhedrons_list a
+            LEFT JOIN polyhedrons_type b
             ON a.type_id = b.type_id
-            LEFT JOIN Symmetry c
+            LEFT JOIN symmetry c
             ON a.symmetry_id = c.symmetry_id
             {$value['where']}
             {$value['order']}";
@@ -69,12 +69,12 @@ class SqlQuery
             ,d.name_rus AS dual_name_rus
             ,d.name_eng AS dual_name_eng
             ,d.image AS dual_image
-            FROM Polyhedrons_list a
-            LEFT JOIN Polyhedrons_type b
+            FROM polyhedrons_list a
+            LEFT JOIN polyhedrons_type b
             ON a.type_id = b.type_id
-            LEFT JOIN Symmetry c
+            LEFT JOIN symmetry c
             ON a.symmetry_id = c.symmetry_id
-            LEFT JOIN Polyhedrons_list d
+            LEFT JOIN polyhedrons_list d
             ON a.dual_id = d.polyhedra_id
             {$value['where']}
             {$value['order']}";

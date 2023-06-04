@@ -1,34 +1,34 @@
 function HeaderBlock() {
-    var OUTPUT = '<h1 class="header__title">Многогранники</h1>';
+    let OUTPUT = '<h1 class="header__title">Многогранники</h1>';
     $('.header').html(OUTPUT);
 }
 
 function NavigationBlock() {
-    var OUTPUT = '<div class="navigation__menu">';
-    OUTPUT += '<a class="menu__item" href="index.html">Главная</a>';
-    OUTPUT += '<a class="menu__item" href="list.html">Список</a>';
-    OUTPUT += '<a class="menu__item" href="table.html">Таблица</a>';
-    OUTPUT += '<a class="menu__item" href="types.html">Семейства</a>';
-    OUTPUT += '<a class="menu__item" href="dual.html">Двойственные</a>';
-    OUTPUT += '<a class="menu__item" href="statistics.html">Статистика</a>';
-    OUTPUT += '</div>';
+    let OUTPUT = '<ul class="navigation__menu menu">';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="index.html">Главная</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="list.html">Список</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="table.html">Таблица</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="types.html">Семейства</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="dual.html">Двойственные</a></li>';
+    // OUTPUT += '<a class="menu__item" href="statistics.html">Статистика</a>';
+    OUTPUT += '</ul>';
     $('.navigation').html(OUTPUT);
 }
 
 function FooterBlock() {
-    var OUTPUT = '<h3 class="footer__text">Блок</h3>';
+    let OUTPUT = '<h3 class="footer__text">Блок</h3>';
     $('.footer').html(OUTPUT);
 }
 
 function PolyhedronBlock() {
 
-    var OUTPUT = '<div class="polyhedron-block">';
-    for(var i = 0; i< polyhedron_array.length; i++){
+    let OUTPUT = '<div class="polyhedron-block">';
+    for(let i = 0; i< polyhedron_array.length; i++){
         if(polyhedron_array[i]['image'] != ''){
-            var image = polyhedron_array[i]['image'];
-            var text = polyhedron_array[i]['name_rus'];
+            let image = polyhedron_array[i]['image'];
+            let text = polyhedron_array[i]['name_rus'];
             OUTPUT += '<div class="polyhedron-block__item">';
-            OUTPUT += '<img class="polyhedron-block__image" src="img/polyhedrons/' + polyhedron_array[i]['image'] + '">'
+            OUTPUT += '<img class="polyhedron-block__image" src="img/polyhedrons/' + polyhedron_array[i]['image'] + '" alt="">'
             OUTPUT += '<p class="polyhedron-block__title">'+ text + '</p>';
             OUTPUT += '</div>';
         }
@@ -40,7 +40,7 @@ function PolyhedronBlock() {
 
 
 function TableBlock() {
-    var OUTPUT = '<table class="main__table">';
+    let OUTPUT = '<table class="main__table">';
 
     OUTPUT += '<thead>';
     OUTPUT += '<tr>';
@@ -59,8 +59,8 @@ function TableBlock() {
 
     OUTPUT += '<tbody>';
 
-    for(var i = 0; i< polyhedron_array.length; i++){
-        var sum = polyhedron_array[i]['vertices']- polyhedron_array[i]['edges'] + polyhedron_array[i]['faces'];
+    for(let i = 0; i< polyhedron_array.length; i++){
+        let sum = polyhedron_array[i]['vertices']- polyhedron_array[i]['edges'] + polyhedron_array[i]['faces'];
         OUTPUT += '<tr>';
 		OUTPUT += '<td class="table-body__cell cell--center">' + i + '</td>';
         OUTPUT += '<td class="table-body__cell cell--center"><img class="table-body__image" src="img/polyhedrons/' + polyhedron_array[i]['image'] + '"></td>';

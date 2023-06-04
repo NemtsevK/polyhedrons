@@ -16,11 +16,12 @@ if(isset($_GET['polyhedrons'])){
         ,a.image AS image
         ,c.symmetry_id AS symmetry_id
         ,c.name_rus AS symmetry_name_rus
-        FROM Polyhedrons_list a
-        LEFT JOIN Polyhedrons_type b
+        FROM polyhedrons_list a
+        LEFT JOIN polyhedrons_type b
         ON a.type_id = b.type_id
-        LEFT JOIN Symmetry c
-        ON a.symmetry_id = c.symmetry_id";
+        LEFT JOIN symmetry c
+        ON a.symmetry_id = c.symmetry_id
+        ORDER BY polyhedra_id";
 
     $answer = mysqli_query($connect,$query_list);
     $num_rows = mysqli_num_rows($answer);

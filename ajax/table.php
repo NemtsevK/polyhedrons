@@ -6,7 +6,8 @@ $ext_table = new ExtTable();
 if(isset($_GET['polyhedrons'])){
     $connect = ConnectToServer();
     $TABLE = null;
-    $query_table = $sql_query -> PolyhedronsList();
+    $value['order'] = "ORDER BY polyhedra_id";
+    $query_table = $sql_query -> PolyhedronsList($value);
 
     $header_table = [
         'count_row'=>true,

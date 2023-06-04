@@ -1,9 +1,10 @@
-html {
+.page {
   width: 100%;
   height: 100%;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
-.page-block {
+.page__block {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -19,19 +20,25 @@ html {
   color: black;
 }
 
-.page-block::before {
+.page__block::before {
   content: "";
   display: inline-block;
   background-image: url("../img/background.jpg");
   background-repeat: repeat;
   /* background-size: 200px 200px; */
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   opacity: 0.5;
   z-index: -1;
+}
+
+.header {
+  /*background: rgba(45, 45, 68, 0.5);*/
+  color: #000000;
+  border-bottom: 1px solid #2d2d44;
 }
 
 .header__title {
@@ -40,29 +47,49 @@ html {
 }
 
 .navigation {
-  border: 1px solid #000000;
+  border-bottom: 1px solid #2d2d44;
 }
 
 .navigation__menu {
   text-align: center;
-  border: 1px solid #000000;
 }
 
 .menu__item {
-  border: 1px solid #000000;
   padding: 2px 5px;
   text-decoration: none;
   color: #000000;
 }
 
+.menu{
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
 .menu__item:hover {
   background: #ffca00;
+
+
+}
+
+.menu__text{
+  text-decoration: none;
+  color: #000000;
 }
 
 .main {
   flex: 1 0 auto;
-  border: 1px solid #000000;
+  /*border: 1px solid #000000;*/
   background: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%);
+}
+
+.main__article {
+  border: 1px solid #2d2d44;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 5px;
 }
 
 .main__table {
@@ -90,6 +117,7 @@ html {
   height: 24px;
   margin: 0 auto;
 }
+
 .polyhedron-block {
   display: flex;
   flex-flow: row wrap;
@@ -121,13 +149,11 @@ html {
   font-size: 16px;
 }
 
-.footer__text {
-  text-align: center;
+.footer {
+  background: #2d2d44;
+  color: #ffffff;
 }
 
-.main__article {
-  border: 1px solid #000000;
-  border-radius: 10px;
-  margin: 20px;
-  padding: 5px;
+.footer__text {
+  text-align: center;
 }

@@ -5,12 +5,12 @@ if(isset($_GET['polyhedrons'])){
     $connect = ConnectToServer();
     $OUTPUT = null;
     $query_list = "SELECT type_id
-    ,name_rus
-    ,name_eng
-    ,image
-    ,(SELECT COUNT(*) FROM Polyhedrons_list b WHERE a.type_id = b.type_id) AS count_polyhedron
-    FROM Polyhedrons_type a
-    WHERE type_id > 0";
+        ,name_rus
+        ,name_eng
+        ,image
+        ,(SELECT COUNT(*) FROM polyhedrons_list b WHERE a.type_id = b.type_id) AS count_polyhedron
+        FROM polyhedrons_type a
+        WHERE type_id > 0";
 
     $answer = mysqli_query($connect,$query_list);
     $num_rows = mysqli_num_rows($answer);

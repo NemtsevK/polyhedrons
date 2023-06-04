@@ -5,6 +5,7 @@ $ext_table = new ExtTable();
 if(isset($_GET['polyhedrons'])){
     $connect = ConnectToServer();
     $value['where'] = "WHERE a.dual_id IS NOT NULL AND a.type_id IN (1,2,4,6,7,9,10)";
+    $value['order'] = "ORDER BY polyhedra_id";
     $query_table = $sql_query -> DualPolyhedronsList($value);
 
     $header_table = [
@@ -38,21 +39,16 @@ if(isset($_GET['polyhedrons'])){
             'name' => 'В.',
             'name_full' => 'Вершины'
         ],
-        
         'dual_image'=>[
             'name' => '',
             'image' => true,
             'link_directory' => 'img/polyhedrons/'
         ],
-
         'dual_name_rus'=>[
             'name' => 'Двойственный',
             'name_full' => 'Название двойственного',
             'align' => 'left'
         ],
-
-
-
     ];
 
     $output=$ext_table->DBtoTable($connect,[

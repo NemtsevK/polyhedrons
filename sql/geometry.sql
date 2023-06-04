@@ -1,4 +1,4 @@
-CREATE DATABASE Geometry DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci
+/*CREATE DATABASE Geometry DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci*/
 
 /*-------------------------------------*/
 CREATE TABLE `polyhedrons_list` (
@@ -59,7 +59,7 @@ INSERT INTO `symmetry` (`symmetry_id`, `name_rus`, `name_eng`) VALUES
 (3, 'Икосаэдральная симметрия', 'Icosahedral symmetry');
 
 /*-------------------------------------*/
-TRUNCATE TABLE `polyhedrons_list`	
+/*TRUNCATE TABLE `polyhedrons_list`	*/
 
 INSERT INTO `polyhedrons_list` (`polyhedra_id`, `name_rus`, `name_eng`, `description_rus`, `description_eng`, `type_id`, `faces`, `edges`, `vertices`, `image`, `symmetry_id`, `wenninger_number`, `dual_id`) VALUES
 (0, 'Тетраэдр', 'Tetrahedron', 'Треугольная пирамида', 'Triangular Pyramid', 1, 4, 6, 4, 'tetrahedron.svg', 1, 1, 0),
