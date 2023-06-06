@@ -5,11 +5,11 @@ function HeaderBlock() {
 
 function NavigationBlock() {
     let OUTPUT = '<ul class="navigation__menu menu">';
-    OUTPUT += '<li class="menu__item"><a class="menu__text" href="index.html">Главная</a></li>';
-    OUTPUT += '<li class="menu__item"><a class="menu__text" href="list.html">Список</a></li>';
-    OUTPUT += '<li class="menu__item"><a class="menu__text" href="table.html">Таблица</a></li>';
-    OUTPUT += '<li class="menu__item"><a class="menu__text" href="types.html">Семейства</a></li>';
-    OUTPUT += '<li class="menu__item"><a class="menu__text" href="dual.html">Двойственные</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="index.php">Главная</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="list.php">Список</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="table.php">Таблица</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="types.php">Семейства</a></li>';
+    OUTPUT += '<li class="menu__item"><a class="menu__text" href="dual.php">Двойственные</a></li>';
     // OUTPUT += '<a class="menu__item" href="statistics.html">Статистика</a>';
     OUTPUT += '</ul>';
     $('.navigation').html(OUTPUT);

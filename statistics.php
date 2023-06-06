@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0" name="viewport" />
+    <title>Статистика</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-block">
+    <header class="header"></header>
+    <nav class="navigation"></nav>
+    <main class="main"></main>
+    <footer class="footer"></footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/library.js"></script>
+    <script src="js/pattern.js"></script>
+    <script>
+      $(document).ready(function () {
+        HeaderBlock();
+        NavigationBlock();
+        FooterBlock();
+      });
+    </script>
+  </body>
+</html>

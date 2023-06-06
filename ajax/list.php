@@ -42,7 +42,7 @@ if(isset($_GET['polyhedrons'])){
 
             $OUTPUT .= "<div class='polyhedron-block__item'>";
             $OUTPUT .= $image;
-            $OUTPUT .= "<p class='polyhedron-block__title'>$name_rus</p>";
+            $OUTPUT .= "<p class='polyhedron-block__title hyp'>$name_rus</p>";
             $OUTPUT .= "</div>";
 
         }

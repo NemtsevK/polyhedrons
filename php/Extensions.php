@@ -5,6 +5,8 @@ require_once('ExtTable.php');
 require_once('SqlQuery.php');
 
 
+
+
 /**------------------------------------------------------
  * отрезать длинную строку
  * @param $string
