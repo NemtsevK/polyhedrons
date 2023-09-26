@@ -1,0 +1,11 @@
+.main {
+  flex: 1 0 auto;
+  background: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%);
+}
+
+.main__article {
+  border: 1px solid #2d2d44;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 5px;
+}
