@@ -39,7 +39,7 @@ const scripts = () => {
 
 // HTML
 const html = () => {
-  return gulp.src('source/*.html')
+  return gulp.src('source/**/*.html')
     .pipe(replace('.css', '.min.css'))
     .pipe(replace('.js', '.min.js'))
     .pipe(htmlmin({collapseWhitespace: true}))
