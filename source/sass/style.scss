@@ -1,8 +1,13 @@
+@use "global/variables" as *;
 @use "global/normalize";
+@use "global/visually-hidden";
 @use "blocks/page";
+@use "blocks/container";
 @use "blocks/header";
 @use "blocks/main";
-@use "blocks/polyhedron-block";
+@use "blocks/types-solids";
+@use "blocks/solids";
+@use "blocks/solid";
 @use "blocks/footer";
 
 

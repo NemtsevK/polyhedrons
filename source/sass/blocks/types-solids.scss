@@ -1,0 +1,11 @@
+
+
+.types-solids__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px 60px;
+  padding: 0;
+  list-style: none;
+}
