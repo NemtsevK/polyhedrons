@@ -1,3 +1,5 @@
+@use "../global/variables" as *;
+
 .solids {
   display: flex;
   justify-content: center;
@@ -12,4 +14,19 @@
   gap: 20px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.solids__item {
+  padding: 20px;
+  text-align: center;
+  background: #eeeeee;
 }

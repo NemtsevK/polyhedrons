@@ -1,99 +1,742 @@
-"use strict";var _b,_c,_m;function _n(){var r,n,e,t,a,l,f,o=[131072,512,2,131584,131330,514,131328,65794,513,66048,256,1,257,258,65536,65537,65538,65792,131329,66049,66050,131073,131074,131585];if(null==_b){for(_c=Array(32),a=_b=Array(32),n=32;0<=--n;)_c[n]=Array(192),a[n]=Array(192);for(r=192;0<=--r;){for(t=r+64,n=24;0<=--n;)e=o[n],a[n][r]="rgb("+((e=e*(t>>1)+(e>>1&65793)*(1&t))>>16)+","+(e>>8&255)+","+(255&e)+")";for(n=9;0<--n;)a[n+23][r]="rgb("+(e=t*n>>3)+","+e+","+e+")";for(n=32;0<=--n;
-)_c[n][r]="rgba"+a[n][r].slice(3,-1)+",.125)"}}for(l=document.getElementsByTagName("div"),_m=[],r=-1;++r<l.length;)"miniViewer"==l[r].getAttribute("name")&&(f=l[r].getElementsByTagName("canvas")).length&&_o(l[r],f[0])}function _o(jt,zt){function Ht(r,n,e,t,a,l,f,o,h,g,i){for(var y,A,u,w,s,I=r.length;0<=--I;)(y=n[(s=r[I])>>7])[384+(s&=127)]=l*(A=y[s]-e)+f*(u=y[128+s]-t)+o*(w=y[256+s]-a),y[512+s]=h*A+g*u+i*w}function f(r,n,e){r-ml<n[e]&&(n[e]=r-ml),r+ml>n[++e]&&(n[e]=r+ml)}function Jt(r,n,e){var t
-    ,a,l=r.length;for(e[1]=e[3]=e[5]=-(e[0]=e[2]=e[4]=Number.MAX_VALUE);0<=--l;)f((t=n[(a=r[l])>>7])[a&=127],e,0),f(t[128+a],e,2),f(t[256+a],e,4)}function a(r,n,e){for(var t,a=r[n];(t=2*n+1)<e&&(t<e-1&&r[t]<r[t+1]&&t++,!(a>=r[t]));r[n]=r[t],n=t);r[n]=a}function y(r,n){for(var e,t=(n>>1)-1;0<=t;t--)a(r,t,n);for(t=n-1;0<t;t--)e=r[t],r[t]=r[0],r[0]=e,a(r,0,t)}function Kt(r,n,e,t){var a,l,f,o,h,g,i;for(y(r,e),y(n,t),a=l=f=o=h=0;;)if((g=r[f])<(i=n[o])){if(2==(h^=1)&&(l+=g-a),a=g,++f>=e)return l}else if(
-    1==(h^=2)&&(l+=i-a),a=i,++o>=t)return l}function Zt(r,n,e,t,a,l,f,o,h,g,i,y){for(var A,u,w,s,I,c,b,v,M,m,F,k,p,d,E,N,T,C,L,B,S,U,X,V,P,_,q,x,R,Y,D,G,W,O,Q,j,z=3019169939857233e154,H=g.length;0<=--H;)g[H]=0;for(R=Array(H=r),d=l[0],E=l[1],N=l[2];0<=--H;)for(R[H]=D=new Int32Array(L=(Y=e[H>>9][511&H]).length),s=(T=t[(q=Y[0])>>7])[B=127&q],I=T[B+128],c=T[B+256];0<=--L;q=_,s=b,I=v,c=M){0==(p=Ia(A=s-(b=(T=t[(_=Y[L])>>7])[B=127&_]),u=I-(v=T[B+128]),w=c-(M=T[B+256])))&&0==(p=Ia(A*=z,u*=z,w*=z))||(
-    A/=p=w<0?-p:p,u/=p,w/=p),(D[L]=P=ua(A,u,w,b,v,M,a,l,f,o,n))==n&&n++,k=N[P];r:for(C=_,U=q,G=h[P],p=0==(W=(m=Math.abs(d[P]))>(F=Math.abs(E[P]))?k<m?0:256:k<F?128:256)?b:128==W?v:M,O=0==W?s:128==W?I:c;0<=C;C=U,U=-1,p=O){for(Q=0,S=B=g[P];(V=Q+S>>1)<S;){if((X=G[V])==C)continue r;p<t[X>>7][(127&X)+W]?S=V:Q=V+1}g[P]++==(j=G).length&&la(G,0,h[P]=G=new Int32Array(G.length+4),0,V),la(j,V,G,V+1,B-V),G[V]=C}}for(H=r,x=new Int32Array(11);0<=--H;){for(L=S=0,Y=e[H>>9][511&H],D=R[H];L<Y.length;){for(B=g[P=D[L]]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ,G=h[P],_=Y[L],q=Y[++L%Y.length],C=-1;(P=G[--B])!=_;)P==q&&(C=1);for(;(_=G[B])!=q;B+=C)x=oa(x,S++,_,8),null!=y&&y[_]++}if(null!=(Y=null==i?S==Y.length?null:e[H>>9][511&H]=new Int32Array(S):i[H]=new Int32Array(3*S))&&la(x,0,Y,0,S),null!=i)for(L=S<<1;--L>=S;)Y[L]=-1}return n}function $t(r,n,e,t,a,l,f,o,h){var g,i,y,A,u,w,s,I,c=5820766091346741e-26;return Math.hypot(r-e,n-t)<=ml?Math.abs((u=(g=h[(s=o[(l+2)%o.length])>>7])[384+(s&=127)]-(y=(i=h[(I=f[(a+f.length-1)%f.length])>>7])[384+(I&=127)]))*((
-    A=i[512+I])-.5*(n+t))-(w=g[512+s]-A)*(y-.5*(r+e)))<(u*u+w*w)*c?2:1:0}function ra(r,n,e,t,a,l){var f,o,h,g,i,y,A,u=5820766091346741e-26;return(A=Math.hypot(f=r-e,o=n-t))<=ml?0:Math.hypot(h=a-r,g=l-n)<=ml?1:Math.abs(f*(y=l-t)-o*(i=a-e))<(f*i+o*y)*u&&Math.abs(h*y-g*i)<(h*i+g*y)*u?A/Math.hypot(i,y):-1}function na(r,n,e,t,a){var l,f;return(r[t]-(l=r[e]))*(n[a]-(f=n[e]))-(r[a]-l)*(n[t]-f)}function ea(r,n,e,t,a,l){for(var f,o,h=0,g=r[e],i=n[e];--t>=e;)f=r[t],o=n[t],i<=l?l<o&&(a-g)*(o-i)<(f-g)*(l-i
-)&&h++:o<=l&&(f-g)*(l-i)<(a-g)*(o-i)&&h--,g=f,i=o;return h}function ta(r,n,e,t,a,l,f){var o,h,g;if(l!=t&&l!=a){for(o=h=r[t]-1;0<=o&&e[o]>f;o--);if((o<0||n[o]!=l)&&(o==h||n[o+1]!=l)){for(o++,g=r[t]++;(h=g)>o;)n[h]=n[g=h-1],e[h]=e[g];n[o]=l,e[o]=f}}}function aa(r,n,e,t,a){var l,f=t+a;if((l=n-t)<0)for(;--f>=t;)e[f]=r[f+l];else for(;t<f;t++)e[t]=r[t+l]}function la(r,n,e,t,a){var l,f=t+a;if((l=n-t)<0)for(;--f>=t;)e[f]=r[f+l];else for(;t<f;t++)e[t]=r[t+l]}function fa(r,n,e,t,a){var l,f=t+a;if((l=n-t
-)<0)for(;--f>=t;)e[f]=r[f+l];else for(;t<f;t++)e[t]=r[t+l]}function oa(r,n,e,t){var a;return n>=r.length&&(la(r,0,a=new Int32Array(r.length+t),0,r.length),r=a),r[n]=e,r}function ha(r,n){return r[r.length]=n,r}function ga(r,n,e){for(var t,a,l,f,o=r.length,h=n[0],g=n[1],i=n[2],y=n[3],A=0;0<=--o;)if((l=Math.abs(a=(t=e[(f=r[o])>>7])[f&=127]*h+t[f+128]*g+t[f+256]*i+y))>ml){if(A==(f=3+l/a>>1))return 3;A=3-f}return A}function Q(r,n,e){for(var t,a=t=r.length-1;0<=a&&r[a]!=n;a--);return 0<=a&&(r[(a+1
-)%r.length]==e||r[(a+t)%r.length]==e)?-1:-2}function ia(r,n,e,t,a,l,f){for(var o,h,g,i,y,A,u,w,s,I,c,b,v,M,m,F,k,p,d,E,N,T,C,L,B,S,U,X,V,P,_=0,q=a[0],x=a[1],R=a[2],Y=l[0],D=l[1],G=l[2],W=l[3],O=-1;++O<e.length;)if(Math.abs(k=(y=(o=f[(S=e[O])>>7])[V=127&S])*Y+(A=o[V+128])*D+(u=o[V+256])*G+W)>ml){_=k/Math.abs(k);break}if(0==_)return 0;for(P=O+++e.length,d=C=L=X=0;;O++){if(p=(w=(o=f[(U=e[O%e.length])>>7])[V=127&U])*Y+(s=o[V+128])*D+(I=o[V+256])*G+W,N=Math.abs(p)>ml?p/Math.abs(p):0,0==d
-)0==N?d=1:N!=_&&(k/=k-p,r[C++]=n<0?y+k*(w-y):0==n?A+k*(s-A):u+k*(I-u),L=2147483648);else if(1==d)0==N?((X=Q(t,S,U))==(2==(d=((b=A-g)*(F=I-u)-(m=s-A)*(v=u-i))*q+(v*(M=w-y)-F*(c=y-h))*x+(c*m-M*b)*R<0?3:2)?-2:-1)&&(r[C++]=n<0?y:0==n?A:u),T=E):(N!=E&&(r[C++]=n<0?y:0==n?A:u,L=2147483648),d=0);else{if(0==N){X=S,S=U,y=w,A=s,u=I;continue}0<=X&&(X=Q(t,X,S)),L|=(B=N==T?0:1)<<31,0==(X+d+B&1)&&(r[C++]=n<0?y:0==n?A:u),d=0}if(P<=O)return L|C;h=y,g=A,i=u,E=_,S=U,y=w,A=s,u=I,k=p,_=N}}function ya(r,n,e,t,a,l,f,o
-    ,h,g,i,y,A){for(var u,w,s,I,c,b,v,M,m,F,k,p,d,E,N,T,C,L,B,S,U,X,V,P,_,q,x,R,Y,D,G,W,O,Q,j,z,H,J,K,Z,$,rr,nr,er,tr,ar,lr,fr,or,hr,gr,ir,yr,Ar,ur,wr,sr,Ir,cr=e[or=r>>9][hr=511&r],br=(sr=dl[rf[Ir=(Ar=a[0])[or][hr]]])[0]*(Tr=t[or][hr]),vr=sr[1]*Tr,Mr=sr[2]*Tr,mr=n[0],Fr=n[1],kr=n[2],pr=n[3],dr=f[0],Er=f[1],Nr=f[2],Tr=0;;Tr++)if(Math.abs(W=(c=(u=A[(rr=cr[Tr])>>7])[lr=127&rr])*mr+(b=u[lr+128])*Fr+(v=u[lr+256])*kr+pr)>ml){J=W/Math.abs(W);break}for(gr=Tr+++cr.length,Q=!1,ir=yr=l[$=z=ar=0];;Tr++){if(O=(
-    M=(u=A[(nr=cr[Tr%cr.length])>>7])[lr=127&nr])*mr+(m=u[lr+128])*Fr+(F=u[lr+256])*kr+pr,0==(K=Math.abs(O)>ml?O/Math.abs(O):0)&&(tr=nr),0==z)0==K||K==J?(ir[ar++]=nr,z=1-K*K):(ir[ar++]=tr=er=Aa(A,k=E=c+(W/=W-O)*(V=M-c),p=N=b+W*(P=m-b),d=T=v+W*(_=F-v),o,h,g,i,y),Z=J,Q=!0);else if(1==z)0!=K&&K!=H?(er=rr,k=E=c,p=N=b,d=T=v,Z=H,Q=!0,z=0):(j=((P=b-s)*(R=F-v)-(x=m-b)*(_=v-I))*br+(_*(q=M-c)-R*(V=c-w))*vr+(V*x-q*P)*Mr<0,0==K?(z=j?3:2,Z=H):(j?(er=rr,k=E=c,p=N=b,d=T=v,Z=H,Q=!0):ir[ar++]=nr,z=0));else{if(0==K){
-    rr=nr,c=M,b=m,v=F;continue}3==z||K!=Z?(er=rr,k=w,p=s,d=I,E=c,N=b,T=v,Q=!0):(ir[ar++]=rr,ir[ar++]=nr),z=0}if(Q&&(0==$?(S=k,U=p,X=d):(q=k-C,x=p-L,R=d-B,Nr[$]=0<(D*R-x*G)*br+(G*q-R*Y)*vr+(Y*x-q*D)*Mr?1:0,Er[$]=Z),dr[$]=ar,(ir=l[++$])[0]=er,ir[1]=nr,Y=M-(C=E),D=m-(L=N),G=F-(B=T),Q=!(ar=2)),gr<=Tr)break;w=c,s=b,I=v,H=J,rr=nr,c=M,b=m,v=F,W=O,J=K}if(q=S-C,x=U-L,R=X-B,Nr[$]=0<(D*R-x*G)*br+(G*q-R*Y)*vr+(Y*x-q*D)*Mr?1:0,Er[$]=K,dr[$]=ar+(lr=dr[0]),la(yr,0,ir,ar,lr),4<=$)for(Tr=0;++Tr<=$;)if(1==Nr[Tr])for(
-    w=(u=A[(er=(ir=l[Tr])[0])>>7])[er&=127],s=u[er+128],I=u[er+256],c=(u=A[(er=ir[(fr=dr[Tr])-1])>>7])[er&=127],b=u[er+128],v=u[er+256];;){for(ar=0,V=c-w,P=b-s,_=v-I,W=-Number.MAX_VALUE,lr=-1;++ar<=$;)ar!=Tr&&0==Nr[ar]&&Er[ar]==Er[Tr]&&(O=V*(q=(u=A[(er=(yr=l[ar])[0])>>7])[er&=127]-c)+P*(x=u[er+128]-b)+_*(R=u[er+256]-v))<=0&&W<=O&&(W=O,0<=V*(Y=(k=(u=A[(er=yr[dr[ar]-1])>>7])[er&=127])-w)+P*(D=(p=u[er+128])-s)+_*(G=(d=u[er+256])-I)&&(lr=ar,S=k,U=p,X=d));if(lr<0)break;la(l[lr],0,ir,fr,ar=dr[lr]),
-    Nr[lr]=2,dr[Tr]=fr+=ar,c=S,b=U,v=X}for(ur=a[1],wr=a[2],Tr=fr=0;++Tr<=$;)1==Nr[Tr]&&(ar=dr[Tr],null==e[er=(lr=0==fr++?r:Va++)>>9]&&(wr[er]=new Int16Array((ur[er]=new Int16Array((Ar[er]=new Int16Array((t[er]=new Int8Array((e[er]=Array(512)).length)).length)).length)).length)),rr=511&lr,lr==r&&ar==cr.length||(e[er][rr]=cr=new Int32Array(ar)),la(l[Tr],0,cr,0,ar),t[er][rr]=t[or][hr],Ar[er][rr]=Ir,ur[er][rr]=ur[or][hr],wr[er][rr]=wr[or][hr]);return tr}function Aa(r,n,e,t,a,l,f,o,h){for(var g,i,y,A,u,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             w=4095&~~(((i=n-l)-ml)*f),s=4095&~~((i+ml)*f);;w=w+1&4095){for(y=o[w];0<=y;y=h[u][A])if(sa((g=r[u=y>>7])[A=127&y]-n,g[128+A]-e,g[256+A]-t)<a)return y;if(w==s)break}return null==(g=r[w=(y=Sa++)>>7])&&(g=r[w]=new Float64Array(640),h[w]=new Int32Array(128)),g[s=127&y]=n,g[s+128]=e,g[s+256]=t,h[w][s]=o[w=4095&~~(i*f)],o[w]=y}function ua(r,n,e,t,a,l,f,o,h,g,i){for(var y,A,u,w,s,I,c=4095.99,b=5.960464477539063e-8,v=.2857142857142857,M=5.421010862427522e-20,m=(4095&~~(((w=Math.abs(3*(e-.5*n)-r)*v)-b)*c
-))-1,F=4095&~~((w+b)*c),k=o[0],p=o[1],d=o[2],E=o[3],N=o[4];++m<=F;)for(I=h[m];0<=I;I=g[I])if(sa((A=p[I])*e-(u=d[I])*n,u*r-(y=k[I])*e,y*n-A*r)<=M&&Math.hypot(E[I]-(t-(s=l+(t*y+a*A)/(u+1))*y),N[I]-(a-s*A))<=f)return I;return k[i]=r,p[i]=n,d[i]=e,E[i]=t-(s=l+(t*r+a*n)/(e+1))*r,N[i]=a-s*n,g[i]=h[m=4095&~~(w*c)],h[m]=i}function wa(r,n,e){var t;return Vl[t=Ua++]=r,Pl[t]=n,ql[t]=e,t}function sa(r,n,e){return n*=n,(r*=r)<(e*=e)&&n<e?r+n+e:r<n?r+e+n:n+e+r}function Ia(r,n,e){return Math.sqrt(sa(r,n,e))}
-    function ca(r,n){var e;return r=r.substring(1-(e="-"==r.charAt(0)?-1:1)>>1),e*("C"==r.charAt(0)?n[parseInt(r.substring(1),10)]:parseFloat(r))}function ba(r){r.preventDefault()}function e(r,n,e){var t,a,l,f;r?Al=!0:yl=!0,a=~~(n-(t=zt.getBoundingClientRect()).left+.5),l=~~(e-t.top+.5),g=0,Ga<a&&a<=Wa&&Oa<l&&l<=Qa?0<=(g=0<(h=a-(f=Ja))&&h<=$a&&Ka<l&&l<=Za?-1:1)&&(a<=f?el<f&&Ja--:f+$a<a&&f<tl&&Ja++):ll<a&&a<=fl&&ol<l&&l<=hl?(g=1,ul^=!0):(xa=a,Ra=o=l),0<g&&(Ya=xa,Da=Ra,Ea(),Na())}function va(r){
-        r.button&&2!=r.button||e(r.button,r.clientX,r.clientY)}function Ma(r){var n;r.preventDefault(),e(0,(n=r.targetTouches[0]).clientX,n.clientY)}function ma(r){r.button&&2!=r.button||(r.button?Al=!1:yl=!1)}function Fa(r){r.preventDefault(),yl=!1}function t(r,n){var e,t,a,l,f;yl|Al&&g<=0&&(t=~~(r-(e=zt.getBoundingClientRect()).left+.5),Ya=xa,Da=Ra,g<0?Ja=(t-=h)<el?el:tl<t?tl:t:(a=~~(n-e.top+.5),yl&&(xa=t,Ra=a),Al&&.5<=(f=(l=bl*Math.exp((a-o)*pl))*cl)&&(bl=l,vl=.75/(Fl<f?.5*(f+Fl):f)),o=a),Ea(),Na())}
-    function ka(r){t(r.clientX,r.clientY)}function pa(r){var n;r.preventDefault(),t((n=r.targetTouches[0]).clientX,n.clientY)}function da(){yl=Al=!1}function Ea(){var r,n,e,t,a,l,f,o,h,g,i,y,A,u,w,s,I,c,b,v,M,m,F,k,p,d,E,N,T,C,L,B,S,U,X,V,P,_,q,x,R,Y,D,G,W,O,Q,j,z,H,J,K,Z,$,rr,nr,er,tr,ar,lr,fr,or,hr,gr,ir,yr,Ar,ur,wr,sr,Ir,cr,br,vr,Mr,mr,Fr,kr=1.5707963267948966,pr=(Ya-La)*(V=vl),dr=(Ba-Da)*V,Er=(xa-La)*V,Nr=(Ba-Ra)*V;for(1<=(_=Math.hypot(pr,dr))?(0!=(V=Math.hypot(Er,Nr))&&(Er*=V=1-(_-1)/V,Nr*=V),
-        n=0):(_=Ia(pr,dr,n=Math.cos(_*kr)),n/=_),pr/=_,dr/=_,1<(_=Math.hypot(Er,Nr))&&(Er*=V=(P=_%4)/_,Nr*=V,1<P&&(Er*=V=(P<=3?2-P:P-4)/P,Nr*=V)),t=n*(Er/=_=Ia(Er,Nr,r=Math.cos(_*kr)))-(r/=_)*pr,a=pr*(Nr/=_)-Er*dr,f=(e=dr*r-Nr*n)*(_=.5/(l=Math.sqrt(.5*(1+pr*Er+dr*Nr+n*r)))),o=t*_,h=a*_,($=El)[0]=g=l*(u=$[0])-f*(w=$[1])-o*(s=$[2])-h*(I=$[3]),$[1]=i=l*w+f*u+o*I-h*s,$[2]=y=l*s-f*I+o*u+h*w,$[3]=A=l*I+f*s-o*w+h*u,c=g*(V=2*i),M=V*i,m=V*y,F=V*A,b=g*(V=2*y),k=V*y,p=V*A,v=g*(V=2*A),E=1-(k+(d=V*A)),N=m-v,T=F+b,
-                                                                                                                                                                                                                                                                                                                                                                                                                                               C=m+v,L=1-(M+d),B=p-c,S=F-b,U=p+c,X=1-(M+k),z=(Ja-al)*Ml,rr=Sl,nr=Ul,er=Xl,tr=bl,Z=Ua,Lr=ar=0;0<=--Z;)Tr(Z,E*(e=Vl[Z])+N*(t=Pl[Z])+T*(a=ql[Z]),C*e+L*t+B*a,z*(er[Z]=(S*e+U*t+X*a)*tr),tr,rr,nr);if(0==++il)for(Z=Sa;0<=--Z;)$l[Z]=0;for(fr=++il,or=ef,hr=Hl,gr=Jl,Z=qa;0<=--Z;)if(K=1+(J=1+(H=3*Z)),j=(Y=rr[J]-(q=rr[H]))*(O=nr[K]-(x=nr[H]))-(W=rr[K]-q)*(D=nr[J]-x),ul){for(Ar=0<j?or:tf,ur=0<j?ar:Lr,ir=(yr=Ql[Z]).length,lr=~~(191.99*Math.abs(j)/Ia(D*(Q=er[K]-(R=er[H]))-O*(G=er[J]-R),G*W-Q*Y,j));0<=--ir;
-    )Zl[Ar[ur++]=yr[ir]]=lr;0<j?ar=ur:Lr=ur}else{for(ir=(yr=Ol[Z]).length,lr=-1;0<=--ir;)if(!(hr[wr=yr[ir]]=(V=j*Kl[wr])<=0))for(lr<0&&(lr=~~(191.99*V/Ia(D*(Q=er[K]-(R=er[H]))-O*(G=er[J]-R),G*W-Q*Y,j))),Zl[wr]=lr,sr=(Ar=Gl[wr]).length;0<=--sr;)$l[Ar[sr]]=fr;gr[Z]=j<=0?2:1}for(Ir=Nl,cr=Tl,Z=ul?Xa:Sa,P=z*tr;0<=--Z;)!ul&&$l[Z]!=fr||(Tr(Z,E*(e=Cl[Z])+N*(t=Ll[Z])+T*(a=Bl[Z]),C*e+L*t+B*a,P*(S*e+U*t+X*a),tr,Ir,cr),zl[0][Z]=~~(Fl+Ir[Z]),zl[1][Z]=~~(kl-cr[Z]));if(ul)Cr=ar;else for(br=Wl,vr=af,Z=lr=mr=0;;)if(
-        Mr=br[Z],0==lr&&0<=Mr[lr=gr[nf[Fr=Mr[0]]]])vr[mr++]=lr<<24|Z,Z=Mr[lr],lr=0;else{for(ir=2;++ir<Mr.length;)hr[Fr=Mr[ir]]||(or[ar++]=Fr);if(0<=Mr[3-lr])Z=Mr[3-lr],lr=0;else{if(0==mr)return void(Cr=ar);lr=(Z=vr[--mr])>>24,Z&=16777215}}}function Tr(r,n,e,t,a,l,f){var o=42535295865117303e21,h=-42535295865117303e21;t=t<1?a/(1-t):Number.POSITIVE_INFINITY,f[r]=0!=e?e*t:0,isFinite(l[r]=0!=n?n*t:0)&&isFinite(f[r])||(Math.abs(n)>=Math.abs(e)?f[r]=(l[r]=0<n?o:h)*(e/n):l[r]=(f[r]=0<e?o:h)*(n/e))}function w(r,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          n,e,t,a){for(var l=r.length;0<=--l;)n[l]=t[r[l]],e[l]=a[r[l]]}function s(r,n,e){var t;for(Af.beginPath(),Af.moveTo(r[0],n[0]),t=0;++t<e;)Af.lineTo(r[t],n[t]);Af.closePath(),Af.stroke()}function I(r,n,e){var t;for(Af.beginPath(),Af.moveTo(r[0],n[0]),t=0;++t<e;)Af.lineTo(r[t],n[t]);Af.fill()}function c(r,n,e,t,a){var l,f,o,h,g,i;Af.beginPath(),Af.moveTo(l=r+a,n),Af.quadraticCurveTo(r,n,r,h=n+a),Af.lineTo(r,i=(g=n+t)-a),Af.quadraticCurveTo(r,g,l,g),Af.lineTo(o=(f=r+e)-a,g),Af.quadraticCurveTo(f,g,f
-        ,i),Af.lineTo(f,h),Af.quadraticCurveTo(f,n,o,n),Af.lineTo(l,n),Af.fill()}function Na(){var r,n,e,t,a,l,f,o,h,g,i,y,A,u;if(Af.fillStyle=of,Af.fillRect(0,0,Ta,Ca),t=jl[0],a=jl[1],l=zl[0],f=zl[1],ul)for(o=Lr,h=tf,g=yf;;){for(n=0;n<o;n++)w(e=Yl[r=h[n]],t,a,l,f),Af.fillStyle=ff[r][255&Zl[r]],I(t,a,e.length),Af.strokeStyle=g,s(t,a,e.length);if(h==ef)break;o=Cr,h=ef,g=gf}else for(n=0;n<Cr;n++)for(w(e=Dl[r=ef[n]],t,a,l,f),Af.fillStyle=Af.strokeStyle=lf[r][255&Zl[r]],I(t,a,e.length),i=Rl;;){if(null==i[r]
-    )s(t,a,e.length);else for(A=(y=i[r]).length;0<=--A;)w(u=y[A],t,a,l,f),function(r,n,e){var t;for(Af.beginPath(),Af.moveTo(r[0],n[0]),t=0;++t<e;)Af.lineTo(r[t],n[t]);Af.stroke()}(t,a,u.length);if(i==xl)break;Af.strokeStyle=hf,i=xl}Af.fillStyle="lightGray",c(Ga,r=Oa,ja,za,n=nl),Af.strokeStyle=of,Af.beginPath(),Af.moveTo(Ha,r),Af.lineTo(Ha,Qa),Af.closePath(),Af.stroke(),Af.fillStyle="#505050",c(Ja,Ka,$a,rl,n),ul||(Af.fillStyle=_b[4][64],Af.fillRect(ll,ol,gl,gl)),Af.strokeStyle=Af.fillStyle="black",
-        Af.strokeRect(ll,ol,gl,gl),0<(r=Pa)&&(Af.font=~~(Ta/20)+"px Courier New",Af.fillText("WARNING: "+r+(1==r?" face is non-planar":" faces are non-planar"),0,63*Ca>>6)),Ja==el&&(Af.font="10px Courier New",Af.fillText("v3.0",Ta>>6,63*Ca>>6))}var Ta,Ca,La,Ba,Sa,Ua,Xa,Va,Pa,qa,o,xa,Ra,Ya,Da,Ga,Wa,Oa,Qa,ja,za,Ha,Ja,Ka,Za,$a,rl,nl,el,tl,al,h,ll,fl,ol,hl,gl,Cr,Lr,il,g,yl,Al,ul,wl,sl,Il,cl,bl,vl,Ml,ml,Fl,kl,pl,dl,El,Nl,Tl,Cl,Ll,Bl,Sl,Ul,Xl,Vl,Pl,ql,xl,Rl,Yl,Dl,Gl,Wl,Ol,Ql,jl,zl,Hl,Jl,Kl,Zl,$l,rf,nf,ef,tf,
-        af,lf,ff,of,hf,gf,yf,Af;_m[_m.length]=(Af=zt.getContext("2d"),void function(){var r,n,e,t,a,l,f,o,h,g,i,y,A,u,w,s,I,c,b,v,M,m,F,k,p,d,E,N,T,C,L,B,S,U,X,V,P,_,q,x,R,Y,D,G,W,O,Q,j,z,H,J,K,Z,$,rr,nr,er,tr,ar,lr,fr,or,hr,gr,ir,yr,Ar,ur,wr,sr,Ir,cr,br,vr,Mr,mr,Fr,kr,pr,dr,Er,Nr,Tr,Cr,Lr,Br,Sr,Ur,Xr,Vr,Pr,qr,xr,Rr,Yr,Dr,Gr,Wr,Or,Qr,jr,zr,Hr,Jr,Kr,Zr,$r,rn,nn,en,tn,an,ln,fn,on,hn,gn,yn,An,un,wn,sn,In,cn,bn,vn,Mn,mn,Fn,kn,pn,dn,En,Nn,Tn,Cn,Ln,Bn,Sn,Un,Xn,Vn,Pn,qn,xn,Rn,Yn,Dn,Gn,Wn,On,Qn,jn,zn,Hn,Jn,Kn,
-        Zn,$n,re,ne,ee,te,ae,le,fe,oe,he,ge,ie,ye,Ae,ue,we,se,Ie,ce,be,ve,Me,me,Fe,ke,pe,de,Ee,Ne,Te,Ce,Le,Be,Se,Ue,Xe,Ve,Pe,qe,xe,Re,Ye,De,Ge,We,Oe,Qe,je,ze,He,Je,Ke,Ze,$e,rt,nt,et,tt,at,lt,ft,ot,ht,gt,it,yt,At,ut,wt,st,It,ct,bt,vt,Mt,mt,Ft,kt,pt,dt,Et,Nt,Tt,Ct,Lt,Bt,St,Ut,Xt,Vt,Pt,_t,qt,xt=5820766091346741e-26,Rt=33881317890172014e-37,Yt=2.3283064365386963e-10,Dt=1.4629180792671596e-9,Gt=6.283185307179586,Wt=-3.141592653589793,Ot=5.960464477539063e-8,Qt=3019169939857233e154;if(xa=Ya=La=(Br=Ta=zt.width
-    )>>1,Ra=Da=Ba=(Sr=Ca=zt.height)>>1,of=(Ur=jt.getElementsByClassName("Background")).length?Ur[0].value:"#606060",hf=(Ur=jt.getElementsByClassName("EdgeColor")).length?Ur[0].value:"black",gf=(Ur=jt.getElementsByClassName("WireColor")).length?Ur[0].value:"black",Af.fillStyle=of,Af.fillRect(0,0,Br,Sr),Za=(Qa=(Oa=er=Sr>>6)+(za=tr=Sr<256?8:Sr>>5))-1,Ka=er+1,nl=tr>>1,Ja=(al=ar=(3*(Y=(tl=(Wa=(Ga=Br>>2)+(ja=Br>>1))-($a=rl=tr-2)-1)-(el=Ga+1))>>2)+el)+(Y>>4),Ha=ar+($a>>1),Ml=(pl=.5/(Fl=Br>>1))/(P=3*(tl-ar
-    )>>3),(Ur=jt.getElementsByClassName("Perspective")).length&&((Ja=ar+~~(parseFloat(Ur[0].value)*P))>tl&&(Ja=tl),Ja<el&&(Ja=el)),fl=(ll=Br>>6)+(gl=hr=tr<<1),hl=(ol=er)+hr,(Xr=El=new Float64Array(4))[0]=1,(Ur=jt.getElementsByClassName("Quaternion")).length){for(n=Ur[0].value.match(/[^ \t\n\r\f,;]+/g),er=-1,P=0;++er<4;)P+=(Xr[er]=parseFloat(n[er]))*Xr[er];for(0==P&&(Xr[0]=P=1,Xr[1]=Xr[2]=Xr[3]=0),er=4,P=Math.sqrt(P);0<=--er;)Xr[er]/=P}if(n=jt.getElementsByClassName("Counts")[0].value.match(
-        /[^ \t\n\r\f,;]+/g),_=parseInt(n[0],10),Vr=q=parseInt(n[1],10),qr=Pr=qa=parseInt(n[2],10),Rr=Ol=Array((xr=new Int32Array(qr)).length),Gr=ql=new Float64Array((Dr=Pl=new Float64Array((Yr=Vl=new Float64Array((Xl=new Float64Array((Ul=new Float64Array((Sl=new Float64Array(3*Pr)).length)).length)).length)).length)).length),Jl=new Int8Array((Ql=Array(Pr)).length),Wr=new Float64Array(_),0<_)for(n=jt.getElementsByClassName("Constants")[0].value.match(/[^ \t\n\r\f,;]+/g),er=-1;++er<_;)Wr[er]=parseFloat(
-        n[er]);for(jr=Bl=new Float64Array((Qr=Ll=new Float64Array((Or=Cl=new Float64Array((Tl=new Float64Array((Nl=new Float64Array(Vr)).length)).length)).length)).length),zr=new Float64Array(q),n=jt.getElementsByClassName("Vertices")[0].value.match(/[^ \t\n\r\f,;]+/g),Hr=0,yr=er=-1,Kr=-(Jr=Number.MAX_VALUE);++yr<Vr;)(zr[yr]=P=Ia(Zr=Or[yr]=ca(n[++er],Wr),Qr[yr]=ca(n[++er],Wr),jr[yr]=ca(n[++er],Wr)))>Hr&&(Hr=P),Zr<Jr&&(Jr=Zr),Kr<Zr&&(Kr=Zr);for(1==($r=new Int32Array(isFinite(Zr=4095.99/(Kr-Jr))?4096:1)
-    ).length&&(Zr=0),er=$r.length;0<=--er;)$r[er]=-1;for(Wr=null,rn=Array(Pr),nn=Array(q),en=new Int32Array((pr=new Int32Array(Vr)).length),hn=Array((tn=Array(512)).length),an=Array(er=3);0<=--er;)an[er]=Array(hn.length);for(er=qr+511>>9,ln=an[0],fn=an[1],on=an[2];0<=--er;)on[er]=new Int16Array((fn[er]=new Int16Array((ln[er]=new Int16Array((hn[er]=new Int8Array((tn[er]=Array(512)).length)).length)).length)).length);for(gn=Array((Tr=new Int32Array(qr)).length),er=qr;0<=--er;)gn[er]=new Float64Array(4
-    );for(n=jt.getElementsByClassName("Faces")[0].value.match(/[^ \t\n\r\f,;]+/g),Nr=new Int32Array(W=0),er=yr=-1,R=x=0;++er<Pr;){for(ar=0;"#"!=(r=n[++yr]).charAt(0);)en[pr[ar++]=parseInt(r,10)]++;if(x+=ar,rn[er]=new Int32Array(ar),Tr[er]=-ar,la(pr,0,tn[lr=er>>9][gr=511&er]=new Int32Array(ar),0,ar),R<ar&&(R=ar),1<r.length){for(tr=16777215&parseInt(r.substring(1),16),or=W;0<=--or&&Nr[or]!=tr;);or<0&&(Nr=oa(Nr,or=W++,tr,32)),Tr[er]=or}ln[lr][gr]=er}for(yn=Array(er=4);0<=--er;)yn[er]=new Int32Array(x)
-    ;for(An=Array(er=q);0<=--er;)for(An[er]=new Int32Array(tr=en[er]),nn[er]=pr=new Int32Array(tr<<=1);0<=--tr;)pr[tr]=-1;for(er=Pr;0<=--er;)for(tr=(pr=tn[er>>9][511&er]).length;0<=--tr;)An[ar=pr[tr]][--en[ar]]=tr<<18|er;for(er=q,wl=Il=!1;0<=--er;)if(0<(pr=An[er]).length)for(wn=(un=tn[(262143&(ar=pr[gr=0]))>>9][511&ar]).length-1,ar>>>=18;gr<pr.length-1;){for(ir=un[(ar+wn)%un.length],tr=++gr;tr<pr.length;tr++)if(or=(un=tn[(262143&(ar=pr[tr]))>>9][511&ar]).length-1,(sn=un[((ar>>>=18)+1)%un.length]==ir
-    )||un[(ar+or)%un.length]==ir){(sn?1==wn:1<wn)&&(wl=!0),wn=sn?or:1;break}tr>=pr.length?(Il=!0,wn=(un=tn[(262143&(ar=pr[gr]))>>9][511&ar]).length-1,ar>>>=18):tr!=gr&&(hr=pr[gr],pr[gr]=pr[tr],pr[tr]=hr)}for(er=Pr,In=yn[x=0],cn=yn[1],bn=yn[2],vn=yn[3];0<=--er;)for(tr=(pr=tn[er>>9][511&er]).length,mn=pr[0],Mn=rn[er];0<=--tr;){for(or=mn+(Fn=pr[tr])-(lr=mn<Fn?mn:Fn),ar=0,un=nn[mn];0<=(gr=un[ar])&&(In[gr]!=lr||cn[gr]!=or);ar++);gr<0?(In[un[en[mn]++]=nn[Fn][en[Fn]++]=gr=x++]=lr,cn[gr]=or,bn[gr]=vn[gr]=er
-    ):(vn[gr]!=bn[gr]&&(Il=!0),bn[gr]+=er-(vn[gr]=er<(ar=bn[gr])?ar:er)),Mn[tr]=gr,mn=Fn}for(er=q;0<=--er;)if(0<(pr=An[er]).length)if(1==pr.length)Il=!0;else for(fr=0,tr=1,un=nn[er],yr=en[er],kn=262143&pr[0];;){for(or=kn+(pn=262143&pr[tr])-(lr=kn<pn?kn:pn),ar=fr;ar<yr&&(bn[gr=un[ar]]!=lr||vn[gr]!=or);ar++);if(ar<yr?(un[ar]=un[fr],un[fr++]=gr):Il=!0,yr<=fr||1==(tr=(tr+1)%pr.length))break;kn=pn}if(!(sl=Il)&&wl)r:for(Nn=new Uint8Array((En=new Uint8Array((dn=new Int32Array(er=Pr)).length)).length),
-                                                                                                                                                                                                                                                                                                                                                                                                                                      nr=0;0<=--er;)if(!En[er])for(En[dn[ar=0]=er]=!0,tr=1;ar<tr;ar++)for(lr=(un=rn[fr=dn[ar]]).length,pr=tn[fr>>9][511&fr],Tn=Nn[fr];0<=--lr;){for(hr=(Cn=rn[or=bn[gr=un[lr]]+vn[gr]-fr]).length,Mn=tn[or>>9][511&or];0<=--hr&&Cn[hr]!=gr;);if(Ln=Tn!=(pr[lr]==Mn[hr]),En[or]){if(Nn[or]!=Ln){sl=!0;break r}}else En[dn[tr++]=or]=!0,(Nn[or]=Ln)&&nr++}if(An=nn=rn=null,yf=sl?gf:"#888888",bl=Fl*((Ur=jt.getElementsByClassName("Scale")).length?.75*parseFloat(Ur[0].value):.75)/Hr,vl=1/Fl,Fl+=.5,kl=.5+(Sr>>1),Bn=(
-        ml=(cl=Hr)*xt)*ml,Cr=Lr=null,0!=W)for(Lr=Array((Cr=Array(er=W)).length);0<=--er;)for(Lr[er]=Array(192),Cr[er]=Array(192),tr=192,un=Cr[er],Mn=Lr[er],Un=(Sn=Nr[er])>>8&255,Xn=255&Sn,Sn>>=16;0<=--tr;)un[tr]="rgb("+~~((Sn*(ar=tr+64)+127)/255)+","+~~((Un*ar+127)/255)+","+~~((Xn*ar+127)/255)+")",Mn[tr]="rgba"+un[tr].slice(3,-1)+",.125)";for(yr=-1,Sa=ar=0,Vn=Array((Pn=Array(1024)).length);++yr<Vr;)(en[yr]=Aa(Vn,e=Or[yr],t=Qr[yr],a=jr[yr],Bn,Jr,Zr,$r,Pn))!=yr&&(Sa++,ar=1,(
-        sr=Vn[er=yr>>7]=null==Vn[er]?new Float64Array(640):Vn[er])[tr=127&yr]=e,sr[tr+128]=t,sr[tr+256]=a);if(0!=ar)for(er=qr;0<=--er;)for(tr=(pr=tn[er>>9][511&er]).length;0<=--tr;)for(;(pr[tr]=en[fr=pr[tr]])!=fr;);for(wr=new Float64Array((ur=new Float64Array((br=new Int32Array(O=R)).length)).length),er=Ua=Pa=rr=j=z=J=K=0,Nr=null,Sa=Vr;er<Pr;er++){for(tr=(pr=tn[gr=er>>9][fr=511&er]).length,w=s=I=0,l=(sr=Vn[(yr=pr[1])>>7])[yr&=127],f=sr[yr+128],o=sr[yr+256],h=(sr=Vn[(yr=pr[0])>>7])[yr&=127],g=sr[yr+128],
-                                                                                                                                                                                                                                                                                                                                                                      i=sr[yr+256];w+=(ar=(e=(f-g)*((u=(sr=Vn[(yr=pr[--tr])>>7])[256+(yr&=127)])-i)-(o-i)*((A=sr[yr+128])-g))*w+(t=(o-i)*((y=sr[yr])-h)-(l-h)*(u-i))*s+(a=(l-h)*(A-g)-(f-g)*(y-h))*I<0?-1:1)*e,s+=ar*t,I+=ar*a,!(tr<=0);)l=h,f=g,o=i,h=y,g=A,i=u;for(0==(P=Ia(w,s,I))&&0==(P=Ia(w*=Qt,s*=Qt,I*=Qt))&&(P=I=1),w/=P,s/=P,I/=P,ar=-1,on[gr][fr]=er;++ar<er&&sa(s*(a=(Mn=gn[xr[ar]])[2])-(t=Mn[1])*I,I*(e=Mn[0])-a*w,w*t-e*s)>Rt;);for(qn=0,on[gr][fr]=on[ar>>9][511&ar];;){for(h=(1-(i=-w)*i/(P=1+I*(xn=I<0?-1:1)))*xn,A=1-(
-        u=-s*xn)*u/P,y=(g=w*u/P)*xn,tr=pr.length,l=(sr=Vn[(yr=pr[0])>>7])[yr&=127],f=sr[yr+128],o=sr[yr+256];0<=--tr;)ur[tr]=(sr=Vn[(yr=pr[tr])>>7])[384+(yr&=127)]=h*(e=sr[yr]-l)+g*(t=sr[yr+128]-f)+i*(a=sr[yr+256]-o),wr[tr]=sr[yr+512]=y*e+A*t+u*a;if(0!=qn)break;for(tr=pr.length,qn=0,F=ur[1]-(e=ur[0]),k=wr[1]-(t=wr[0]);0<=--tr;)qn+=Math.atan2((M=e-(e=ur[tr]))*k-(m=t-(t=wr[tr]))*F,M*F+m*k),F=M,k=m;if(0<=qn)break;w=-w,s=-s,I=-I}for(P=-(l*w+f*s+o*I);ar<er&&(Math.abs(P-(Mn=gn[xr[ar]])[3])>ml||sa(w-Mn[0],
-        s-Mn[1],I-Mn[2])>Rt);ar++);if((Mn=gn[xr[er]=ar==er?rr++:xr[ar]])[0]=w,Mn[1]=s,Mn[2]=I,Mn[3]=P,wa(e=l+h*(p=function(r,n,e,t,a,l){var f,o,h,g,i,y,A,u,w,s,I,c,b,v;r:for(f=e;;)for(b=.5*((o=r[t])+r[a]),v=.5*((h=n[t])+n[a]),i=l,g=(o-=b)*o+(h-=v)*h;;){for(;i<e;i++)if((o=r[i]-b)*o+(h=n[i]-v)*h>g){if(0!=l){a=t,e=t=i,l--;continue r}b=(b=r[t])+(I=((A=n[i]-(v=n[t]))*(u=(o=r[a]-b)*o+(h=n[a]-v)*h)-h*(w=(y=r[i]-b)*y+A*A))*(s=.5/(o*A-h*y))),v+=c=(o*w-y*u)*s,g=I*I+c*c}if(2==l)return n[0]=v,b;i=e+1,e=0==l?a:f,t=a
-        ,a=l++}}(ur,wr,pr.length,0,1,2))+y*(d=wr[0]),t=f+g*p+A*d,a=o+i*p+u*d),wa(e+(P=Hr*Ot)*h,t+P*g,a+P*i),wa(e+P*y,t+P*A,a+P*u),$=0,2<(tr=pr.length-1)){r:for(;0<=(ar=tr--);)for(l=(sr=Vn[(yr=pr[ar])>>7])[yr&=127],f=sr[yr+128],o=sr[yr+256];0<=--ar;)if(Math.abs((w*((sr=Vn[(yr=pr[ar])>>7])[ir=127&yr]-l)+s*(sr[ir+128]-f)+I*(sr[ir+256]-o))/zr[yr])>Yt){Pa++;break r}for(tr=pr.length,M=(sr=Vn[(yr=pr[nr=0])>>7])[384+(yr&=127)],m=sr[yr+512],lr=1;1<--tr;nr=tr,lr=0){for(X=(F=(sr=Vn[(yr=pr[tr])>>7])[384+(yr&=127)]
-    )-M,V=(k=sr[yr+512])-m,p=(sr=Vn[(yr=pr[ar=tr-1])>>7])[384+(yr&=127)],d=sr[yr+512];lr<ar;ar--){if(L=(E=(sr=Vn[(yr=pr[ar-1])>>7])[384+(yr&=127)])-p,B=(N=sr[yr+512])-d,Math.abs(P=B*X-L*V)>ml&&0<=(Rn=(L*(U=m-d)-B*(S=M-p))/P)&&Rn<=1&&0<=(Yn=(X*U-V*S)/P)&&Yn<=1){if(0==$){if(0==j&&(mr=new Int32Array(j=R<<1)),O<(fr=pr.length<<2)&&(wr=new Float64Array((ur=new Float64Array((br=new Int32Array(O=fr)).length)).length)),z<pr.length)for(Ar=Array((Ir=Array((vr=new Int32Array(fr=z=pr.length)).length)).length
-    );0<=--fr;)Ar[fr]=new Float64Array((Ir[fr]=new Int32Array(z-3)).length);for(fr=Q=pr.length;0<=--fr;)ur[fr]=(sr=Vn[(yr=br[fr]=pr[fr])>>7])[384+(yr&=127)],wr[fr]=sr[yr+512],vr[fr]=0}for(fr=Q,T=M+Rn*X,C=m+Rn*V;0<=--fr&&Math.hypot(ur[fr]-T,wr[fr]-C)>ml;);$+=4,0<=fr&&fr<pr.length&&($-=1+((T=ur[fr])==M&&(C=wr[fr])==m||T==F&&C==k?1:0)+(T==p&&C==d||T==E&&C==N?1:0)),fr<0&&(O<=Q&&(Dn=O,fa(ur,0,ur=new Float64Array(O+=pr.length),0,Dn),fa(wr,0,wr=new Float64Array(O),0,Dn),la(br,0,br=new Int32Array(O),0,Dn)),
-        ur[fr=Q++]=T,wr[fr]=C,br[fr]=Aa(Vn,l+h*T+y*C,f+g*T+A*C,o+i*T+u*C,Bn,Jr,Zr,$r,Pn),Vr=Sa),ta(vr,Ir[nr],Ar[nr],nr,tr,fr,Rn),ta(vr,Ir[ar],Ar[ar],ar,ar-1,fr,Yn)}p=E,d=N}M=F,m=k}}if(4<=$){if(J<Q)cr=Array((Mr=new Int32Array(J=Q)).length),K=0;else for(tr=Q;0<=--tr;)Mr[tr]=0;if(K<(fr=4294967294&pr.length))for(tr=Q,K=fr;0<=--tr;)cr[tr]=new Int32Array(fr);for(tr=pr.length,ar=hr=0;0<=--tr;ar=tr){for(fr=vr[ar],un=Ir[ar],or=tr;0<=--fr;)cr[cr[or][Mr[or]++]=lr=un[fr]][Mr[lr]++]=or,or=lr
-    ;cr[cr[or][Mr[or]++]=ar][Mr[ar]++]=or}for(tr=Q;0<=--tr;)for(;0<Mr[tr];){for(qn=Gn=0,X=(M=ur[ar=ir=cr[or=tr][Mr[or]-1]])-ur[or],V=(m=wr[ar])-wr[or];;){for(lr=wn=--Mr[ar],un=cr[ar],Wn=-Number.MAX_VALUE;0<=lr;lr--)(fr=un[lr])!=or&&(L=ur[fr]-M,B=wr[fr]-m,(On=Math.atan2(X*B-V*L,X*L+V*B))>Wn&&(Wn=On,nr=lr,gr=fr));if(un[nr]=un[wn],qn+=Wn,mr[Gn++]=br[or=ar],ar==tr&&gr==ir)break;X=-M+(M=ur[ar=gr]),V=-m+(m=wr[ar])}0<qn&&(null==tn[lr=(ar=0==hr?er:qr++)>>9]&&(on[lr]=new Int16Array((fn[lr]=new Int16Array((
-        ln[lr]=new Int16Array((hn[lr]=new Int8Array((tn[lr]=Array(512)).length)).length)).length)).length)),la(mr,0,tn[lr][fr=511&ar]=0==hr&&Gn==pr.length?tn[lr][fr]:new Int32Array(Gn),0,Gn),hr=1,on[lr][fr]=on[(gr=ln[lr][fr]=er)>>9][511&gr])}}}for(zr=null,jn=0,Qn=new Int32Array(er=rr),pr=new Int32Array(rr),zn=x;0<=--er;){for(w=(Mn=gn[er])[tr=ar=0],s=Mn[1],I=Mn[2],P=Mn[3];ar<jn;ar++)if(sa(w-(Mn=gn[Qn[ar]])[0],s-Mn[1],I-Mn[2])<=Rt){if(Math.abs(P-Mn[3])<=ml)break}else if(sa(w+Mn[0],s+Mn[1],I+Mn[2])<=Rt){
-        if(Math.abs(P+Mn[3])<=ml)break}else tr++;(pr[er]=ar)==jn&&(Qn[jn++]=er,zn+=tr)}for(Hn=new Int32Array(er=Pr),nf=new Int32Array(jn);0<=--er;)Qn[Hn[er]=tr=pr[ar=xr[er]]]==ar&&(nf[tr]=er);for(er=qr,Jn=Array((pr=new Int32Array(jn)).length);0<=--er;)pr[Hn[ln[er>>9][511&er]]]++;for(er=jn;0<=--er;)Jn[er]=new Int32Array(pr[er]);for(er=qr,Kn=Array(512);0<=--er;)Jn[tr=Hn[ln[ar=er>>9][gr=511&er]]][--pr[tr]]=er,Jt(tn[ar][gr],Vn,(Kn[ar]=null==Kn[ar]?Array(512):Kn[ar])[gr]=new Float64Array(6));for(er=jn,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    H=z-3;0<=--er;){for(Zn=$n=0,pr=Jn[er];Zn<pr.length;Zn++)for(ne=pr.length,te=!0,ee=ln[(re=pr[Zn])>>9][511&re];--ne>Zn;)if(te&&(te=!1,e=(Mn=Kn[re>>9][511&re])[0],c=Mn[1],t=Mn[2],b=Mn[3],a=Mn[4],v=Mn[5]),(oe=ln[fe=(ae=pr[ne])>>9][le=511&ae])!=ee&&c>(Mn=Kn[fe][le])[0]&&e<Mn[1]&&b>Mn[2]&&t<Mn[3]&&v>Mn[4]&&a<Mn[5]){for(0==$n++&&(P=1+(I=(Mn=gn[Qn[er]])[2])*(xn=I<0?-1:1),h=(1-(i=-Mn[0])*i/P)*xn,A=1-(u=-Mn[1]*xn)*u/P,y=(g=-i*u/P)*xn),Ht(un=tn[re>>9][511&re],Vn,l=Yr[yr=3*ee],f=Dr[yr],o=Gr[yr],h,g,i,y,A,u)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,Ht(Cn=tn[fe][le],Vn,l,f,o,h,g,i,y,A,u),tr=un.length,M=(sr=Vn[(yr=un[$=0])>>7])[384+(yr&=127)],m=sr[yr+512];;){for(ar=Cn.length,X=(F=(sr=Vn[(yr=un[--tr])>>7])[384+(yr&=127)])-M,V=(k=sr[yr+512])-m,p=(sr=Vn[(yr=Cn[0])>>7])[384+(yr&=127)],d=sr[yr+512];;){for(ge=he=0,L=(E=(sr=Vn[(yr=Cn[--ar])>>7])[384+(yr&=127)])-p,B=(N=sr[yr+512])-d;ge<4;he++){if(0==he){if((Yn=ra(M,m,p,d,E,N))<0)continue;ge++,Rn=0}else if(1==he){if((Yn=ra(F,k,p,d,E,N))<0)continue;ge++,Rn=1}else if(2==he){if((Rn=ra(p,d,M,m,F,k))<0
-    )continue;ge++,Yn=0}else if(3==he){if((Rn=ra(E,N,M,m,F,k))<0)continue;ge++,Yn=1}else{if(0!=ge||Math.abs(P=B*X-L*V)<=ml||(Rn=(L*(U=m-d)-B*(S=M-p))/P)<0||1<Rn||(Yn=(X*U-V*S)/P)<0||1<Yn)break;ge=4}if(0==$){if(O<(fr=(hr=un.length+Cn.length)<<1)&&(wr=new Float64Array((ur=new Float64Array((br=new Int32Array(O=fr)).length)).length)),j<(fr=un.length+Cn.length<<1)&&(mr=new Int32Array(j=fr)),z<hr&&(Ar=Array((Ir=Array((vr=new Int32Array(z=hr)).length)).length),H=0),H<(
-        hr=un.length>Cn.length?un.length:Cn.length))for(fr=z;0<=--fr;)Ar[fr]=new Float64Array((Ir[fr]=new Int32Array(H=hr)).length);for(ie=un,Q=0;;){for(fr=-1;++fr<ie.length;)ur[Q]=(sr=Vn[(yr=br[Q]=ie[fr])>>7])[384+(yr&=127)],wr[Q]=sr[yr+512],vr[Q++]=0;if(ie==Cn)break;ie=Cn}}for(fr=Q,T=M+Rn*X,C=m+Rn*V,ir=yr=0;0<=--fr&&Math.hypot(ur[fr]-T,wr[fr]-C)>ml;);$+=8,0<=fr&&fr<un.length+Cn.length&&(C=wr[fr],$-=1+(ir=(T=ur[fr])==M&&C==m||T==F&&C==k?3:0)+(yr=T==p&&C==d||T==E&&C==N?3:0)),fr<0&&(O<=Q&&(Dn=O,fa(ur,0,
-        ur=new Float64Array(O+=un.length+Cn.length),0,Dn),fa(wr,0,wr=new Float64Array(O),0,Dn),la(br,0,br=new Int32Array(O),0,Dn)),ur[fr=Q++]=T,wr[fr]=C,br[fr]=Aa(Vn,l+h*T+y*C,f+g*T+A*C,o+i*T+u*C,Bn,Jr,Zr,$r,Pn),Vr=Sa),0==ir&&ta(vr,Ir[hr=(tr+1)%un.length],Ar[hr],hr,tr,fr,Rn),0==yr&&ta(vr,Ir[hr=un.length+(ar+1)%Cn.length],Ar[hr],hr,un.length+ar,fr,Yn)}if(ar<=0)break;p=E,d=N}if(tr<=0)break;M=F,m=k}if(16<=$){if(J<Q)cr=Array((Mr=new Int32Array(J=Q)).length),K=0;else for(tr=Q;0<=--tr;)Mr[tr]=0;if(0==K)for(
-        fr=Q,K=4;0<=--fr;)cr[fr]=new Int32Array(4);for(tr=(ar=un.length)+Cn.length;0<=--tr;ar=tr==un.length?0:tr){for(fr=vr[ar],ie=Ir[ar],or=tr;0<=--fr;)cr[cr[or][Mr[or]++]=lr=ie[fr]][Mr[lr]++]=or,or=lr;cr[cr[or][Mr[or]++]=ar][Mr[ar]++]=or}for(tr=Q;0<=--tr;)for(M=(sr=Vn[(ir=br[ar=tr])>>7])[yr=127&ir],m=sr[yr+128],F=sr[yr+256];0<=--ar;)(yr=br[ar])!=ir&&(sr=Vn[yr>>7])[yr&=127]==M&&sr[yr+128]==m&&sr[yr+256]==F&&(br[ar]=ir);for(tr=-1;++tr<Q;)for(yr=br[ar=tr];++ar<Q;)if(br[ar]==yr)for(aa(cr[ar],0,cr[tr],
-        Mr[tr],Mr[ar]),fr=Q,Mr[tr]+=Mr[ar],Mr[ar]=0;0<=--fr;)for(or=Mr[fr],ie=cr[fr];0<=--or;)ie[or]==ar&&(ie[or]=tr);for(tr=Q;0<=--tr;){for(ar=-1,gr=Mr[tr],ie=cr[tr];++ar<gr;)for(or=ie[fr=ar];++fr<gr;)ie[fr]==or&&(ie[fr]=ie[--gr]);Mr[tr]=gr}for(tr=Q,hr=0;0<=--tr;)for(;0<Mr[tr];){for(qn=Gn=0,X=(M=ur[ar=ir=cr[or=tr][Mr[or]-1]])-ur[or],V=(m=wr[ar])-wr[or];;){for(wn=(lr=Mr[ar]--)-1,ie=cr[ar],Wn=-Number.MAX_VALUE;0<=--lr;)(fr=ie[lr])!=or&&(P=Math.atan2(X*(B=wr[fr]-m)-V*(L=ur[fr]-M),X*L+V*B))>Wn&&(Wn=P,nr=lr
-        ,gr=fr);if(ie[nr]=ie[wn],qn+=Wn,(mr[Gn++]=or=ar)==tr&&gr==ir)break;X=-M+(M=ur[ar=gr]),V=-m+(m=wr[ar])}if(0<qn){r:for(fr=0,gr=mr[Gn-2],ir=mr[Gn-1];fr<Gn;gr=ir,ir=yr,fr++)if(na(ur,wr,gr,ir,yr=mr[fr])>ml){for(or=fr+Gn-2;--or>fr;)if(na(ur,wr,gr,ir,lr=mr[or%Gn])>ml&&na(ur,wr,ir,yr,lr)>ml&&na(ur,wr,yr,gr,lr)>ml)continue r;M=(ur[gr]+ur[ir]+ur[yr])/3,m=(wr[gr]+wr[ir]+wr[yr])/3;break}if(0!=(lr=(0==ea(ur,wr,0,un.length,M,m)?0:1)+(0==ea(ur,wr,un.length,un.length+Cn.length,M,m)?0:2))){if(3==lr&&(
-        lr=un.length>Cn.length||un.length==Cn.length&&(xr[ee]==Qn[er]||xr[oe]!=Qn[er])?1:2),fr=ln[(or=re+(lr-1)*(ae-re))>>9][511&or],null==tn[nr=(ar=0==(hr&lr)?or:qr++)>>9]&&(on[nr]=new Int16Array((fn[nr]=new Int16Array((ln[nr]=new Int16Array((hn[nr]=new Int8Array((tn[nr]=Array(512)).length)).length)).length)).length)),wn=511&ar,ar!=or&&(on[nr][wn]=on[(gr=ln[nr][wn]=fr)>>9][511&gr],(Kn[nr]=null==Kn[nr]?Array(512):Kn[nr])[wn]=new Float64Array(6),pr=oa(pr,pr.length,ar,1)),ar==re&&(te=!0),xr[fr]!=Qn[er]
-    )for(ir=1+(yr=Gn-1)>>1;0<=--ir;)gr=mr[ir],mr[ir]=mr[yr-ir],mr[yr-ir]=gr;for(gr=Gn,tn[nr][wn]=ye=ar==or&&Gn==tn[nr][wn].length?tn[nr][wn]:new Int32Array(Gn);0<=--gr;)ye[gr]=br[mr[gr]];Jt(ye,Vn,Kn[nr][wn]),hr|=lr}}}if(3!=hr){for(Jt(tn[lr=(or=1==hr?ae:re)>>9][fr=511&or]=tn[tr=--qr>>9][ar=511&qr],Vn,Kn[lr][fr]),pr[1==hr?ne:Zn]=pr[yr=pr.length-1],la(pr,0,pr=new Int32Array(yr),0,yr);0<yr--;)if(pr[yr]==qr){pr[yr]=or;break}re==qr&&(re=or),2==hr&&(ne=--Zn),ln[lr][fr]=ln[tr][ar],on[lr][fr]=on[tr][ar]}}}
-        Jn[er]=pr}for(Ir=cr=Jn=br=vr=Mr=mr=ur=wr=null,er=qr,pr=new Int32Array(qa);0<=--er;)pr[ln[er>>9][511&er]]++;for(er=Pr;0<=--er;)Ql[er]=new Int32Array(pr[er]);for(ff=Array(er=qr);0<=--er;)ff[Ql[tr=ln[er>>9][511&er]][--pr[tr]]=er]=(ar=Tr[tr])<0?_c[31&-ar]:Lr[ar];for(gn.length=rr,dl=gn,rf=xr,Xa=Vr,Ae=Yl=Array((tf=new Int32Array(er=Z=Va=qr)).length),G=0;0<=--er;)(ar=(pr=tn[(tr=fn[gr=er>>9][lr=511&er]=er)>>9][511&tr]).length)>G&&(G=ar),la(pr,0,Ae[er]=new Int32Array(ar),0,ar),hn[gr][lr]=1;for(we=Array(3
-    ),er=3,tr=(ue=Array(G+1)).length;0<=--er;)we[er]=new Int32Array(tr);for(er=G+1,tr=jn-2+(3*G>>1);0<=--er;)ue[er]=new Int32Array(tr);for(Ie=Array((se=new Int32Array(er=qr)).length);0<=--er;)Ie[er]=new Int32Array(0);for(er=0,be=new Float64Array((ce=new Float64Array(4294967294&G)).length);er<qr;er++)for(l=(Mn=Kn[lr=(tr=er)>>9][yr=511&er])[0],h=Mn[1],f=Mn[2],g=Mn[3],o=Mn[4],i=Mn[5],w=(Me=gn[xr[ln[lr][yr]]])[0],s=Me[1],I=Me[2],ve=on[lr][yr],pr=tn[lr][yr];++tr<qr;)on[hr=tr>>9][gr=511&tr]!=ve&&h>(
-        Mn=Kn[hr][gr])[0]&&l<Mn[1]&&g>Mn[2]&&f<Mn[3]&&i>Mn[4]&&o<Mn[5]&&(a=Math.abs(w*(A=(me=gn[xr[ln[hr][gr]]])[1])-(y=me[0])*s),0!=(fr=ia(ce,ar=(e=Math.abs(s*(u=me[2])-A*I))>(t=Math.abs(I*y-u*w))?a<e?-1:1:a<t?0:1,pr,tn[hr][gr],Me,me,Vn))&&0!=(or=ia(be,ar,tn[hr][gr],pr,me,Me,Vn))&&(or<0||fr<0)&&Kt(ce,be,2147483647&fr,2147483647&or)*Ia(e,t,a)>Yt*(ar<0?e:0==ar?t:a)&&(or<0&&(Ie[tr]=oa(Ie[tr],se[tr]++,er,16)),fr<0&&(Ie[er]=oa(Ie[er],se[er]++,tr,16))));for(Kn=null,Fe=Array(Z<<1),ke=new Int32Array(er=4096
-    );0<=--er;)ke[er]=-1;for(de=Array(er=5),tr=(pe=new Int32Array(zn)).length;0<=--er;)de[er]=new Float64Array(tr);for(er=x,Ee=0;0<=--er;)0==(P=Ia(e=(sr=Vn[(ir=In[er])>>7])[ir&=127]-(h=(Ne=Vn[(yr=cn[er])>>7])[yr&=127]),t=sr[ir+128]-(g=Ne[yr+128]),a=sr[ir+256]-(i=Ne[yr+256])))&&0==(P=Ia(e*=Qt,t*=Qt,a*=Qt))||(e/=P=a<0?-P:P,t/=P,a/=P),ua(e,t,a,h,g,i,ml,de,ke,pe,Ee)==Ee&&Ee++;for(yn=null,er=qr,Le=!1,Ce=new Int32Array((Te=new Int32Array(512)).length<<1);0<=--er;){for(w=(Me=gn[xr[ln[er>>9][511&er]]])[0],
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       s=Me[1],I=Me[2],tr=se[Ce[Te[0]=0]=er],yr=1,pr=Ie[er],gr=(ar=qr)-1;0<=--tr;)for(me=gn[xr[ln[(ne=pr[tr])>>9][511&ne]]],i=Math.abs(a=w*(A=me[1])-(y=me[0])*s),Be=(wn=(h=Math.abs(e=s*(u=me[2])-A*I))>(g=Math.abs(t=I*y-u*w))?i<h?-1:1:i<g?0:1)<0?h:0==wn?g:i,e/=P=(a<0?-1:1)*(On=Ia(e,t,a)),t/=P,a/=P,On=Yt*Be/On,fr=ar-(hr=er),nr=qr,Cn=Ae[ne];hr<nr;hr+=fr,fr=1)if((lr=ia(ce,wn,ie=tn[hr>>9][511&hr],Cn,Me,me,Vn))<0&&0!=(ir=ia(be,wn,Cn,ie,me,Me,Vn))&&Kt(ce,be,2147483647&lr,2147483647&ir)>On)for(Le=!0,ua(e,t,a,(
-        sr=Vn[(ir=ya(hr,me,tn,hn,an,ue,we,Bn,Jr,Zr,$r,Pn,Vn))>>7])[ir&=127],sr[ir+128],sr[ir+256],ml,de,ke,pe,Ee)==Ee&&Ee++,yr+(lr=(ir=Va)-qr+1)>Ce.length&&la(Ce,0,Ce=new Int32Array(Ce.length+4096),0,yr),Ce[Te[or=hr==er?0:hr-gr]]=lr<<20|yr,Ce[Te[or]=yr++]=hr,ir-gr>Te.length&&la(Te,0,Te=new Int32Array(Te.length+2048),0,qr-gr);qr<ir;Ce[Te[qr-gr]=yr++]=qr++);Fe[er]=un=new Int32Array(yr);r:for(tr=ar=0,nr=1048575,lr=1;;)if(1048575<(gr=Ce[tr])&&(Ce[tr]=lr<<20|nr,nr=tr,tr=1048575&gr,gr=-(lr=gr>>>20)),0<=(
-        un[ar++]=gr)){for(;0==--lr;){if(1048575==nr)break r;nr=1048575&(lr=Ce[tr=nr]),lr>>>=20}tr++}}for(Te=Ce=null,Ue=Array((Se=new Int32Array(er=zn)).length);0<=--er;)Ue[er]=new Int32Array(5);for(Ar=ce=be=Ie=se=null,An=Array((en=new Int32Array(Vr=Sa)).length),Ee=Zt(qr,Ee,tn,Vn,ml,de,ke,pe,Ue,Se,Xe=Array(qr),en),er=Vr;0<=--er;)An[er]=new Int32Array(en[er]);for(er=qr;0<=--er;)for(tr=~~((pr=Xe[er]).length/3);0<=--tr;)An[ar=pr[tr]][--en[ar]]=tr<<18|er;for(er=qr,Ve=new Float64Array((Pe=new Int32Array(4)
-    ).length);0<=--er;)for(tr=ar=~~((pr=Xe[er]).length/3),yr=pr[0],ye=null;0<=--tr;yr=pr[tr])if(pr[ar+tr]<0){for(null==ye&&(w=(ye=gn[xr[ln[er>>9][511&er]]])[0],s=ye[1],I=ye[2]),gr=(un=An[ir=pr[tr]]).length,ge=1,Pe[0]=tr<<18|er;0<=--gr;)if((nr=262143&(or=un[gr]))!=er&&((Cn=Xe[nr])[((hr=(or>>>=18)+(lr=~~(Cn.length/3)))-(fr=-1))%lr]==yr||Cn[or=(hr-(fr=1))%lr]==yr)){for(P=Math.atan2(Ia(l=s*(a=(ye=gn[xr[ln[nr>>9][511&nr]]])[2]*fr)-I*(t=ye[1]*fr),f=I*(e=ye[0]*fr)-w*a,o=w*t-s*e),w*e+s*t+I*a),(P*=0<=l*((
-        Ne=Vn[yr>>7])[hr=127&yr]-(sr=Vn[ir>>7])[lr=127&ir])+f*(Ne[hr+128]-sr[lr+128])+o*(Ne[hr+256]-sr[lr+256])?-1:1)<=Wt&&(P+=Gt),hr=0;++hr<ge&&((On=Ve[hr])-P>=Dt||P-On<Dt&&(Xe[262143&(lr=Pe[hr])][lr>>>18]==yr?fr<0&&P<=On:fr<0||P<=On)););Mn=Ve,(lr=ge++)==(ie=Pe).length&&(la(Pe,0,Pe=new Int32Array(Pe.length+2),0,hr),fa(Ve,0,Ve=new Float64Array(Ve.length+2),0,hr)),la(ie,hr,Pe,hr+1,lr-hr),fa(Mn,hr,Ve,hr+1,lr-hr),Pe[hr]=or<<18|nr,Ve[hr]=P}for(fr=er,or=1,lr=tr,gr=ar,Cn=pr;0<=--ge;or=1-wn,lr=hr,gr=ne,Cn=ie
-    )wn=(ie=Xe[nr=262143&(hr=Pe[ge])])[hr>>>=18]==yr?1:0,ie[((ne=~~(ie.length/3))<<wn)+hr]=or*qr+fr,Cn[(gr<<or)+lr]=wn*qr+(fr=nr)}for(xe=new Int32Array((Re=new Int32Array((Ye=new Int32Array((qe=new Float64Array(qr)).length)).length)).length),er=qr;0<=--er;)xe[er]=-1;for(De=new Int32Array((En=new Uint8Array((dn=new Int32Array(er=qr<<1)).length)).length),Ge=We=0;0<=--er;)if(!En[er]){for(En[dn[ar=0]=er]=!0,tr=1;ar<tr;ar++)for(De[We+ar]=or=dn[ar],(xe[fr=or%qr]<0?xe:Re)[fr]=Ge,gr=(lr=~~((pr=Xe[fr]
-    ).length/3))<<~~(or/qr);0<=--lr;)En[nr=pr[gr+lr]]||(En[dn[tr++]=nr]=!0);for(nr=(Ye[Ge]=We)+tr,P=0;We<nr;We++)for(tr=1,gr=~~((pr=Xe[(ar=De[We])%qr]).length/3),ir=1-(~~(ar/qr)<<1),h=(sr=Vn[(yr=pr[0])>>7])[yr&=127],g=sr[yr+128],i=sr[yr+256],y=(sr=Vn[(yr=pr[1])>>7])[yr&=127],A=sr[yr+128],u=sr[yr+256];++tr<gr;)P+=((A-g)*((o=(sr=Vn[(yr=pr[tr])>>7])[256+(yr&=127)])-i)-(u-i)*((A=sr[yr+128])-g))*(h+y+(y=sr[yr]))*ir,u=o;qe[Ge++]=P/6}for(En=An=Xe=null,je=new Int32Array((Qe=new Int32Array((
-        Oe=new Int32Array(er=Ge)).length)).length);0<=--er;)Oe[Qe[er]=je[er]=er]=-1;for(er=qr;0<=--er;){if((tr=je[xe[er]])!=(ar=je[Re[er]]))for(or=tr+ar-(lr=tr<ar?tr:ar),Qe[lr]=Qe[Oe[Qe[lr]]=or],Qe[or]=-1;-1!=or;or=Oe[or])je[or]=lr;hn[er>>9][511&er]=0}for(er=Ge;0<=--er;)if(-1!=(gr=Qe[er])){for(tr=er,P=-Number.MAX_VALUE;qe[tr]>P&&(P=qe[tr],ar=tr),tr!=gr;tr=Oe[tr]);for(tr=Ye[ar++]-1,gr=ar==Ge?qr<<1:Ye[ar];++tr<gr;)hn[(lr=(ar=De[tr])%qr)>>9][511&lr]|=1+~~(ar/qr)}Ve=qe=null,He=new Int32Array((
-        ze=new Int32Array(qr)).length),Pe=Re=xe=Ye=dn=De=Oe=Qe=je=null;r:for(er=-1,nr=qr;++er<nr;)if(0==hn[tr=(He[er]=er)>>9][gr=511&er]){for(He[er]=-1;;He[nr]=-1){if(--nr<=er)break r;if(0!=(ar=hn[fr=nr>>9][or=511&nr]))break}tn[(He[nr]=er)>>9][gr]=tn[fr][or],ln[tr][gr]=ln[fr][or],fn[tr][gr]=fn[fr][or],on[tr][gr]=on[fr][or],hn[tr][gr]=ar}for(tr=Z;0<=--tr;){for(lr=gr=(pr=Fe[tr]).length,ar=0;0<=--lr;)0<=(er=pr[lr])&&0<=(pr[lr]=ir=He[er])&&(ar|=hn[ir>>9][511&ir]);3==ar&&la(pr,0,Fe[tr+Z]=new Int32Array(gr),0
-        ,gr)}for(tr=Z,qr=nr;0<=--tr;)for(lr=(Je=Fe[tr]).length,Ke=Fe[tr+Z];0<=--lr;)if(0<=(er=Je[lr]))if(1==(ar=hn[gr=er>>9][nr=511&er]))null!=Ke&&(Ke[lr]=-1);else if(yr=(ir=(pr=tn[gr][nr]).length)-1,3==ar){for(null==tn[fr=qr>>9]&&(on[fr]=new Int16Array((fn[fr]=new Int16Array((ln[fr]=new Int16Array((hn[fr]=new Int8Array((tn[fr]=Array(512)).length)).length)).length)).length)),tn[fr][or=511&qr]=un=new Int32Array(pr.length);0<=--ir;)un[yr-ir]=pr[ir];ln[fr][or]=ln[gr][nr],fn[fr][or]=fn[gr][nr],
-        on[fr][or]=on[gr][nr],hn[fr][or]=-(hn[gr][nr]=1),Ke[lr]=qr++}else{for(ir>>=1,hn[gr][nr]=-1;0<=--ir;)hr=pr[ir],pr[ir]=pr[yr-ir],pr[yr-ir]=hr;null!=Ke&&(Je[lr]=-1)}for(tr=Fe.length;0<=--tr;)if(null!=(pr=Fe[tr])){if((ir=pr[fr=0])<-1)r:for(er=0,gr=-1;;)if((pr[fr]=ir=pr[er++])<-1)0<=gr&&(pr[He[gr]]=yr,ze[gr]=hr),He[++gr]=fr++,yr=hr=ir;else for(ir<0?yr++:fr++;0==++hr;){if(0==yr?fr--:-1==(pr[ar=He[gr]]=yr)&&la(pr,ar+1,pr,ar,--fr-ar),0==gr)break r;ar=He[--gr],0==yr&&++pr[ar],yr=pr[ar],hr=ze[gr]}fr<2&&(
-        Fe[tr]=null)}for(tr=Fe.length,$e=qr,Ze=new Uint8Array(120);0<=--tr;)if(null!=(pr=Fe[tr])){for(er=0;(ir=pr[er++])<0;);w=(ye=gn[xr[ar=ln[ir>>9][511&ir]]])[0],s=ye[1],h=(1-(i=-w)*i/(P=1+(I=ye[2])*(xn=I<0?-1:1)))*xn,A=1-(u=-s*xn)*u/P,y=(g=w*u/P)*xn;r:for(or=1,l=Yr[ar*=3],f=Dr[ar],o=Gr[ar];;or=2)n:for(er=fr=lr=rt=0,gr=-1;;)if((pr[fr++]=ir=pr[er++])<0)0<=gr&&(ze[gr]=hr),He[++gr]=fr-1,hr=ir,lr=or;else for(1==or&&Ht(tn[ir>>9][511&ir],Vn,l,f,o,h,g,i,y,A,u);0==++hr;){if(0==--lr){for(Zn=ar=wn=He[gr]-(yr=-1
-    ),$n=ne=0,rt=1;ar<fr;$n++)for((ir=pr[ar++])<0?(nr=$n,yr=ir,ir=pr[ar++]):0==++yr&&(nr=2147483647),pr[Zn++]=ir,(re=ne+$n)>(Dn=Ze.length)&&function(r,n,e,t,a){var l,f;if(l=t+a,(f=n-t)<0)for(;--l>=t;)e[l]=r[l+f];else for(;t<l;t++)e[t]=r[t+f]}(Ze,0,Ze=new Uint8Array(re),0,Dn),re=-1;++re<$n;)Ze[ne++]=nr<=re;for(yr=wn,nr=0,re=Zn;++yr<Zn;)e:for(ir=wn-1;++ir<yr;nr++)if(!Ze[nr]&&0<=(kn=pr[ir])){for(ar=(un=tn[kn>>9][511&kn]).length,Mn=tn[(pn=pr[yr])>>9][511&pn],M=(sr=Vn[(mn=un[0])>>7])[384+(mn&=127)],
-                                                                                                                                                                                                                                                                                                                                                                                                                m=sr[mn+512],et=(sr=Vn[(mn=Mn[0])>>7])[384+(mn&=127)],tt=sr[mn+512],nt=0;0<=--ar;M=F,m=k)for(hr=Mn.length,X=(F=(sr=Vn[(mn=un[ar])>>7])[384+(mn&=127)])-M,V=(k=sr[mn+512])-m,p=et,d=tt;0<=--hr;p=E,d=N)if(Math.hypot(S=F-(E=(sr=Vn[(mn=Mn[hr])>>7])[384+(mn&=127)]),U=k-(N=sr[mn+512]))>ml&&Math.hypot(L=p-M,B=d-m)>ml&&Math.abs(L*V-B*X)<(L*X+B*V)*xt&&Math.abs(S*V-U*X)<(S*X+U*V)*xt){if(0<nt++)continue e;e=M,t=m,w=F,s=k,T=p,C=d,c=E,b=N,$n=ar,ne=hr}if(0<nt){for(ar=un.length;0<=--ar;)for(hr=Mn.length,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   mn=un[ar];0<=--hr;)if(Mn[hr]==mn){if(Math.hypot((M=(sr=Vn[mn>>7])[384+(mn&=127)])-e,(m=sr[mn+512])-t)<=ml?Math.hypot(M-c,m-b)>ml:Math.hypot(M-w,m-s)>ml||Math.hypot(M-T,m-C)>ml)continue e;break}for((ae=un.length+Mn.length-(at=$t(e,t,c,b,ne,$n,Mn,un,Vn))-(lt=$t(w,s,T,C,$n,ne,un,Mn,Vn)))==un.length||ae==Mn.length?(ot=$n+ne-(ft=ae==un.length?$n:ne)+2,3==(ie=(Cn=ae==un.length?un:Mn)==un?Mn:un).length?Cn[(ft+((ae==un.length?at:lt)>>1))%Cn.length]=ie[ot%3]:(Cn[ft]=ie[3&ot],Cn[(ft+1
-    )%Cn.length]=ie[ot+1&3])):(la(un,ft=($n+(at+3>>1))%un.length,Cn=new Int32Array(ae),0,ht=((ot=$n+(3-lt>>1))>ft?ot:un.length)-ft),(gt=ot-ft)<=0&&(gt+=un.length,la(un,0,Cn,ht,ot)),la(Mn,ft=(ne+(lt+3>>1))%Mn.length,Cn,gt,ht=((ot=ne+(3-at>>1))>ft?ot:Mn.length)-ft),ot<=ft&&la(Mn,0,Cn,gt+ht,ot)),tn[(pr[yr]=ae=kn+pn-(ot=pn<kn?kn:pn))>>9][511&ae]=Cn,ft=yr-wn-1,tn[ot>>9][511&ot]=null,ot=Zn-wn+(pr[ir]=-1),ht=nr+(gt=yr-ir),re--,$e--;++ft<ot;)Ze[ht+=ft]&=Ze[ht-gt]}}if(1==wn)break r;if(pr[wn-1]=wn-re,(fr=re
-    )<Zn)e:for(;wn<Zn;wn++)if(pr[wn]<0){do{if(--Zn<=wn)break e}while(pr[Zn]<0);pr[wn]=pr[Zn]}}if(0==gr){if(0!=rt)break n;break r}hr=ze[--gr],lr=or-1}}if(Ze=ze=He=null,$e<qr){r:for(er=-1,D=0;++er<$e;){if(null==(pr=tn[ar=er>>9][gr=511&er])){do{if(--qr<=er)break r}while(null==tn[fr=qr>>9][or=511&qr]);tn[ar][gr]=pr=tn[fr][or],ln[ar][gr]=ln[fr][or],fn[ar][gr]=fn[fr][or],on[ar][gr]=on[fr][or],hn[ar][gr]=hn[fr][or]}(tr=pr.length)>D&&(D=tr)}if(qr=$e,G<D){for(ue=Array(D+1),er=D+1,tr=jn-2+(3*D>>1);0<=--er;
-    )ue[er]=new Int32Array(tr);for(we=Array(er=3);0<=--er;)we[er]=new Int32Array(ue.length)}}for(er=Va=qr,ar=-1,it=Array(512);0<=--er;it[tr][511&er]=ar,ar=er)null==it[tr=er>>9]&&(it[tr]=new Int32Array(512));r:for(yr=At=0,ut=lr=-1,yt=2,wt=null,pr=new Int32Array(jn),It=new Int32Array(jn),st=Array(256);;ut--){for(tr=yr,er=-1;0<=tr;tr=it[ne][wn])It[ar=Hn[ln[ne=tr>>9][wn=511&tr]]]!=ut&&(It[ar]=ut,er<0?er=ar:pr[gr]=ar,gr=ar);for(ar=0,pr[gr]=-1,gr=2147483647;0<=er;er=pr[er]){for(tr=yr,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 nr=hr=ir=0;0<=tr;tr=it[ne][wn])Hn[bt=ln[ne=tr>>9][wn=511&tr]]==er?nr++:(3==(or=ga(un=tn[ne][wn],ct=gn[Qn[er]],Vn))&&(hr+=function(r,n,e,t,a){var l,f,o,h,g,i,y,A,u,w,s,I,c,b,v,M,m,F,k,p,d,E,N,T,C,L,B,S,U,X,V,P,_,q;for(f=(q=dl[rf[t]])[0]*r,o=q[1]*r,h=q[2]*r,g=e[0],i=e[1],y=e[2],A=e[3],P=0;;P++)if(Math.abs(T=(I=(l=a[(V=n[P])>>7])[V&=127])*g+(c=l[V+128])*i+(b=l[V+256])*y+A)>ml){B=T/Math.abs(T);break}for(_=P+++n.length,C=X=0;;P++){if(S=Math.abs(T=(v=(l=a[(V=n[P%n.length])>>7])[V&=127])*g+(M=l[V+128]
-    )*i+(m=l[V+256])*y+A)>ml?T/Math.abs(T):0,0==C)0==S?C=1:S!=B&&X++;else if(1==C)0!=S&&S!=L?(X++,C=0):(C=((k=c-w)*(N=m-b)-(E=M-c)*(p=b-s))*f+(p*(d=v-I)-N*(F=I-u))*o+(F*E-d*k)*h<0?8:2,0==S?U=L:(X+=C>>2,C=0));else{if(0==S){I=v,c=M,b=m;continue}X+=S!=U?1:C>>2,C=0}if(_<=P)return X>>1;u=I,w=c,s=b,L=B,I=v,c=M,b=m,B=S}}(hn[ne][wn],un,ct,bt,Vn)),ir|=or);(0!=nr||3==ir)&&hr<=gr&&(hr<gr||ar<nr)&&(fr=er,gr=hr,ar=nr)}for(null!=wt&&(wt[yt]=At),ct=gn[Qn[((st[ne=At>>8]=null==st[ne]?Array(256):st[ne]
-    )[255&At++]=wt=new Int32Array(ar+3))[0]=fr]],ar=yr,ir=yr=-1,nr=3;0<=(tr=ar);)if(ar=it[ne=tr>>9][wn=511&tr],Hn[ln[ne][wn]]==fr)wt[nr++]=tr;else{if(3==(or=ga(un=tn[ne][wn],ct,Vn))){for(Le=!0,ya(tr,ct,tn,hn,an,ue,we,Bn,Jr,Zr,$r,Pn,Vn),or=ga(tn[ne][wn],ct,Vn),hr=qr,qr=Va;hr<qr;it[re][511&hr]=ar,ar=hr++)null==it[re=hr>>9]&&(it[re]=new Int32Array(512));it[ne][wn]=ar}1==or?(ir<0?ir=tr:it[gr>>9][511&gr]=tr,gr=tr):(yr<0?yr=tr:it[er>>9][511&er]=tr,er=tr)}for(0<=yr&&(it[er>>9][511&er]=-1),0<=ir&&(
-        it[gr>>9][511&gr]=-1),wt[1]=yr,wt[2]=ir;;){if(1==(yt=3-yt)&&++lr>=At)break r;if(0<=(yr=(wt=st[lr>>8][255&lr])[yt]))break}}for(tr=At+256-((er=At+255>>8)<<8),Wl=Array(At);0<=--er;tr=256)aa(st[er],0,Wl,er<<8,tr);if(Zt(Va=qr,Ee,tn,Vn,ml,de,ke,pe,Ue,Se,null,null),Ue=ue=we=Fe=Pn=it=Se=pe=ke=de=null,(Vr=Sa)>q){for(en=new Int32Array(er=Vr);--er>=Xa;)en[er]=-1;for(er=Xa;0<=--er;)en[er]=er;for(er=qr;0<=--er;)for(tr=(pr=tn[er>>9][511&er]).length;0<=--tr;)en[ar=pr[tr]]=ar;r:for(er=Xa-1,yr=Vr;++er<yr;)if(
-        en[er]<0){do{if(--yr<=er)break r}while(en[yr]<0);en[yr]=er}for(jr=Bl=new Float64Array((Qr=Ll=new Float64Array((Or=Cl=new Float64Array((Tl=new Float64Array((Nl=new Float64Array(yr)).length)).length)).length)).length),er=Vr;0<=--er;)0<=(ar=en[er])&&(Or[ar]=(sr=Vn[er>>7])[fr=127&er],Qr[ar]=sr[fr+128],jr[ar]=sr[fr+256]);for(Vr=Sa=yr,er=qr;0<=--er;)for(tr=(pr=tn[er>>9][511&er]).length;0<=--tr;)pr[tr]=en[pr[tr]]}for(en=$r=Qn=Hn=It=Vn=null,er=qr,pr=new Int32Array(Pr),vt=Array((Er=new Int32Array(Z)
-    ).length);0<=--er;)pr[ln[tr=er>>9][ar=511&er]]++,Er[fn[tr][ar]]++;for(er=Pr;0<=--er;)Rr[er]=new Int32Array(pr[er]),pr[er]=0;for(er=Z;0<=--er;)vt[er]=new Int32Array(Er[er]),Er[er]=0;for(lf=Array(er=qr),D=0;0<=--er;)Rr[tr=ln[gr=er>>9][lr=511&er]][pr[tr]++]=er,vt[ar=fn[gr][lr]][Er[ar]++]=er,lf[er]=(ar=Tr[tr])<0?_b[31&-ar]:Cr[ar],(ar=tn[gr][lr].length)>D&&(D=ar);for(tr=qr+512-((er=qr+511>>9)<<9),Kl=new Int8Array((Dl=Array(qr)).length);0<=--er;tr=512)aa(tn[er],0,Dl,ar=er<<9,tr),function(r,n,e,t,a){
-        var l,f;if(l=t+a,(f=n-t)<0)for(;--l>=t;)e[l]=r[l+f];else for(;t<l;t++)e[t]=r[t+f]}(hn[er],0,Kl,ar,tr);for(hn=tn=st=null,xl=Array((Rl=Array(qr)).length),kr=new Int32Array((Fr=new Int32Array((dr=new Int32Array(D)).length+1)).length),Le&&(Er=new Int32Array(D)),Mt=Gl=Array(qr),mt=Nl,Ft=Tl,kt=new Int32Array(0),pt=new Int32Array(0),hr=Z;0<=--hr;)if(0!=(dt=vt[hr]).length){for(P=1+(I=(Mn=gn[xr[bt=ln[(er=dt[0])>>9][511&er]]])[2])*(xn=I<0?-1:1),h=(1-(i=-Mn[0])*i/P)*xn,A=1-(u=-Mn[1]*xn)*u/P,y=(g=-i*u/P)*xn
-                                                                                                                                                                                                                                                                                                                                                                                                ,l=Yr[ar=3*bt],f=Dr[ar],o=Gr[ar],tr=(Cn=Ae[hr]).length;0<=--tr;)mt[yr=Cn[tr]]=h*(e=Or[yr]-l)+g*(t=Qr[yr]-f)+i*(a=jr[yr]-o),Ft[yr]=y*e+A*t+u*a;for(er=dt.length;0<=--er;){for(tr=(ye=Dl[nr=dt[er]]).length;0<=--tr;)mt[yr=ye[tr]]=h*(e=Or[yr]-l)+g*(t=Qr[yr]-f)+i*(a=jr[yr]-o),Ft[yr]=y*e+A*t+u*a;for(pr=Fr,We=Cn.length-1,ie=Array(0),M=mt[yr=ye[Ct=or=(1-(ir=Kl[nr])>>1)*((fr=ye.length)-1)]],m=Ft[yr],Nt=Tt=-1,Et=tr=ar=lr=0;0<=--fr;){for(P=Math.hypot(X=(F=mt[mn=ye[Lt=or+ir*fr]])-M,V=(k=Ft[mn])-m),gr=We,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 p=mt[Fn=Cn[0]],d=Ft[Fn];E=mt[Vt=Cn[gr]],N=Ft[Vt],Rn=Yn=Number.MAX_VALUE,(Vt==mn&&Fn==yr||(Rn=Math.hypot(L=E-M,B=N-m))>ml&&(Yn=Math.hypot(S=F-p,U=k-d))>ml&&Math.abs(L*V-B*X)<(L*X+B*V)*xt&&Math.abs(S*V-U*X)<(S*X+U*V)*xt)&&((Pt=Yn<P?Fn:yr)!=yr||0!=lr&&dr[lr-1]==Ct||(dr[lr++]=Ct),(_t=Rn<P?Vt:mn)!=mn||0!=lr&&dr[0]==Lt||(dr[lr++]=Lt),0!=tr&&Pt==Tt||(0==tr?(Nt=Pt,Ut=Ct):(pr==Fr?(ar=tr,pr=kr,Xt=St):(kt=oa(kt,ie.length,Bt,1),pt=oa(pt,ie.length,St,1),ie=ha(ie,un=new Int32Array(tr)),la(pr,0,un,0,tr),Et+=tr
-    ),Bt=Ct),pr[0]=Pt,tr=1),pr[tr++]=Tt=_t,St=Ct),0!=gr;gr--)Fn=Vt,p=E,d=N;yr=mn,Ct=Lt,M=F,m=k}if(0<=Nt)if(Nt!=Tt?(pr==Fr?(ar=tr,Xt=St):(kt=oa(kt,ie.length,Bt,1),pt=oa(pt,ie.length,St,1),ie=ha(ie,un=new Int32Array(tr)),la(kr,0,un,0,tr),Et+=tr),kt=oa(kt,ie.length,Ut,1),pt=oa(pt,ie.length,Xt,1),xl[nr]=ie=ha(ie,un=new Int32Array(ar)),la(Fr,0,un,0,ar),Et+=ar):0==ar?Et=ye.length:(kt=oa(kt,ie.length,Bt,1),pt=oa(pt,ie.length,Xt,1),xl[nr]=ie=ha(ie,un=new Int32Array(fr=--tr+ar)),la(kr,0,un,0,tr),la(Fr,0,un,
-        tr,ar),Et+=fr),0==ie.length)Rl[nr]=Array(0);else for(Rl[nr]=qt=Array(ie.length),ar=-1,gr=ie.length-1,ir=ye.length-ir;++ar<ie.length;gr=ar){if(Ct=pt[gr],Fr[0]=mn=(un=ie[gr])[un.length-(tr=1)],Lt=kt[ar],Fn=ie[ar][0],Ct==Lt&&Math.hypot((M=mt[Nt=ye[Ct]])-mt[mn],(m=Ft[Nt])-Ft[mn])<Math.hypot(M-mt[Fn],m-Ft[Fn])&&(Fr[tr++]=Fn),1==tr){for(mn!=(yr=ye[Bt=(Ct+ir)%ye.length])&&Math.hypot(mt[yr]-mt[mn],Ft[yr]-Ft[mn])>ml&&(Fr[tr++]=yr);Bt!=Lt;)Fr[tr++]=yr=ye[Bt=(Bt+ir)%ye.length];yr!=Fn&&Math.hypot(
-        mt[Fn]-mt[yr],Ft[Fn]-Ft[yr])>ml&&(Fr[tr++]=Fn)}la(Fr,0,qt[ar]=new Int32Array(tr),0,tr)}else xl[nr]=ie=Array(0);if(lr==ye.length&&Et==ye.length)Mt[nr]=ye;else{if(la(ye,0,Er,0,tr=ye.length),0<lr){for(;0<lr;)Er[dr[--lr]]=-1;for(fr=tr=0;fr<ye.length;)0<=(Er[tr]=Er[fr++])&&tr++}for(la(Er,0,Mt[nr]=Je=new Int32Array(Et+tr),0,tr),fr=0;fr<ie.length;tr+=un.length)la(un=ie[fr++],0,Je,tr,un.length)}}}for(vt=an=Cr=Lr=rf=Fr=kr=dr=Er=kt=pt=Tr=dl=null,jl=Array(er=2),tr=(ar=R<D?D:R)>G?ar:G;0<=--er;
-    )jl[er]=new Int32Array(tr);for(zl=Array(er=2),tr=($l=new Int32Array(Vr)).length;0<=--er;)zl[er]=new Int32Array(tr);ef=new Int32Array((Zl=new Int8Array(Z<qr?qr:Z)).length),Hl=new Uint8Array(qr),af=new Int32Array(At),yl=Al=ul=!1,zt.addEventListener("contextmenu",ba,!1),zt.addEventListener("mousedown",va,!1),zt.addEventListener("touchstart",Ma,!1),document.addEventListener("mouseup",ma,!1),document.addEventListener("touchend",Fa,!1),document.addEventListener("mousemove",ka,!1),
-        document.addEventListener("touchmove",pa,!1),document.addEventListener("mouseleave",da,!1),il=0,Ea(),Na()}())}window.addEventListener("load",_n,!1);
+"use strict";
+var _b, _c, _m;
+
+function _n() {
+  var r, n, e, t, a, l, f, o = [131072, 512, 2, 131584, 131330, 514, 131328, 65794, 513, 66048, 256, 1, 257, 258, 65536, 65537, 65538, 65792, 131329, 66049, 66050, 131073, 131074, 131585];
+  if (null == _b) {
+    for (_c = Array(32), a = _b = Array(32), n = 32; 0 <= --n;) _c[n] = Array(192), a[n] = Array(192);
+    for (r = 192; 0 <= --r;) {
+      for (t = r + 64, n = 24; 0 <= --n;) e = o[n], a[n][r] = "rgb(" + ((e = e * (t >> 1) + (e >> 1 & 65793) * (1 & t)) >> 16) + "," + (e >> 8 & 255) + "," + (255 & e) + ")";
+      for (n = 9; 0 < --n;) a[n + 23][r] = "rgb(" + (e = t * n >> 3) + "," + e + "," + e + ")";
+      for (n = 32; 0 <= --n;) _c[n][r] = "rgba" + a[n][r].slice(3, -1) + ",.125)"
+    }
+  }
+  for (l = document.getElementsByTagName("div"), _m = [], r = -1; ++r < l.length;) "miniViewer" == l[r].getAttribute("name") && (f = l[r].getElementsByTagName("canvas")).length && _o(l[r], f[0])
+}
+
+function _o(r, n) {
+  function e(r, n, e, t, a, l, f, o, h, g, i) {
+    for (var y, A, u, w, s, I = r.length; 0 <= --I;) (y = n[(s = r[I]) >> 7])[384 + (s &= 127)] = l * (A = y[s] - e) + f * (u = y[128 + s] - t) + o * (w = y[256 + s] - a), y[512 + s] = h * A + g * u + i * w
+  }
+
+  function t(r, n, e) {
+    r - Gr < n[e] && (n[e] = r - Gr), r + Gr > n[++e] && (n[e] = r + Gr)
+  }
+
+  function a(r, n, e) {
+    var a, l, f = r.length;
+    for (e[1] = e[3] = e[5] = -(e[0] = e[2] = e[4] = Number.MAX_VALUE); 0 <= --f;) t((a = n[(l = r[f]) >> 7])[l &= 127], e, 0), t(a[128 + l], e, 2), t(a[256 + l], e, 4)
+  }
+
+  function l(r, n, e) {
+    for (var t, a = r[n]; (t = 2 * n + 1) < e && (t < e - 1 && r[t] < r[t + 1] && t++, !(a >= r[t])); r[n] = r[t], n = t) ;
+    r[n] = a
+  }
+
+  function f(r, n) {
+    for (var e, t = (n >> 1) - 1; 0 <= t; t--) l(r, t, n);
+    for (t = n - 1; 0 < t; t--) e = r[t], r[t] = r[0], r[0] = e, l(r, 0, t)
+  }
+
+  function o(r, n, e, t) {
+    var a, l, o, h, g, i, y;
+    for (f(r, e), f(n, t), a = l = o = h = g = 0; ;) if ((i = r[o]) < (y = n[h])) {
+      if (2 == (g ^= 1) && (l += i - a), a = i, ++o >= e) return l
+    } else if (1 == (g ^= 2) && (l += y - a), a = y, ++h >= t) return l
+  }
+
+  function h(r, n, e, t, a, l, f, o, h, g, i, y) {
+    for (var A, u, w, I, b, v, M, m, F, k, d, E, _, T, C, L, B, S, U, X, V, P, q, x, R, Y, D, G, W, O, Q, j, z, H, J, K, Z = 3019169939857233e154, $ = g.length; 0 <= --$;) g[$] = 0;
+    for (W = Array($ = r), T = l[0], C = l[1], L = l[2]; 0 <= --$;) for (W[$] = Q = new Int32Array(U = (O = e[$ >> 9][511 & $]).length), I = (B = t[(D = O[0]) >> 7])[X = 127 & D], b = B[X + 128], v = B[X + 256]; 0 <= --U; D = Y, I = M, b = m, v = F) {
+      0 == (_ = N(A = I - (M = (B = t[(Y = O[U]) >> 7])[X = 127 & Y]), u = b - (m = B[X + 128]), w = v - (F = B[X + 256]))) && 0 == (_ = N(A *= Z, u *= Z, w *= Z)) || (A /= _ = w < 0 ? -_ : _, u /= _, w /= _), (Q[U] = R = p(A, u, w, M, m, F, a, l, f, o, n)) == n && n++, E = L[R];
+      r:for (S = Y, P = D, j = h[R], _ = 0 == (z = (k = Math.abs(T[R])) > (d = Math.abs(C[R])) ? E < k ? 0 : 256 : E < d ? 128 : 256) ? M : 128 == z ? m : F, H = 0 == z ? I : 128 == z ? b : v; 0 <= S; S = P, P = -1, _ = H) {
+        for (J = 0, V = X = g[R]; (x = J + V >> 1) < V;) {
+          if ((q = j[x]) == S) continue r;
+          _ < t[q >> 7][(127 & q) + z] ? V = x : J = x + 1
+        }
+        g[R]++ == (K = j).length && s(j, 0, h[R] = j = new Int32Array(j.length + 4), 0, x), s(K, x, j, x + 1, X - x), j[x] = S
+      }
+    }
+    for ($ = r, G = new Int32Array(11); 0 <= --$;) {
+      for (U = V = 0, O = e[$ >> 9][511 & $], Q = W[$]; U < O.length;) {
+        for (X = g[R = Q[U]], j = h[R], Y = O[U], D = O[++U % O.length], S = -1; (R = j[--X]) != Y;) R == D && (S = 1);
+        for (; (Y = j[X]) != D; X += S) G = c(G, V++, Y, 8), null != y && y[Y]++
+      }
+      if (null != (O = null == i ? V == O.length ? null : e[$ >> 9][511 & $] = new Int32Array(V) : i[$] = new Int32Array(3 * V)) && s(G, 0, O, 0, V), null != i) for (U = V << 1; --U >= V;) O[U] = -1
+    }
+    return n
+  }
+
+  function g(r, n, e, t, a, l, f, o, h) {
+    var g, i, y, A, u, w, s, I;
+    return Math.hypot(r - e, n - t) <= Gr ? Math.abs((u = (g = h[(s = o[(l + 2) % o.length]) >> 7])[384 + (s &= 127)] - (y = (i = h[(I = f[(a + f.length - 1) % f.length]) >> 7])[384 + (I &= 127)])) * ((A = i[512 + I]) - .5 * (n + t)) - (w = g[512 + s] - A) * (y - .5 * (r + e))) < 5820766091346741e-26 * (u * u + w * w) ? 2 : 1 : 0
+  }
+
+  function i(r, n, e, t, a, l) {
+    var f, o, h, g, i, y, A, u = 5820766091346741e-26;
+    return (A = Math.hypot(f = r - e, o = n - t)) <= Gr ? 0 : Math.hypot(h = a - r, g = l - n) <= Gr ? 1 : Math.abs(f * (y = l - t) - o * (i = a - e)) < (f * i + o * y) * u && Math.abs(h * y - g * i) < (h * i + g * y) * u ? A / Math.hypot(i, y) : -1
+  }
+
+  function y(r, n, e, t, a) {
+    var l, f;
+    return (r[t] - (l = r[e])) * (n[a] - (f = n[e])) - (r[a] - l) * (n[t] - f)
+  }
+
+  function A(r, n, e, t, a, l) {
+    for (var f, o, h = 0, g = r[e], i = n[e]; --t >= e;) f = r[t], o = n[t], i <= l ? l < o && (a - g) * (o - i) < (f - g) * (l - i) && h++ : o <= l && (f - g) * (l - i) < (a - g) * (o - i) && h--, g = f, i = o;
+    return h
+  }
+
+  function u(r, n, e, t, a, l, f) {
+    var o, h, g;
+    if (l != t && l != a) {
+      for (o = h = r[t] - 1; 0 <= o && e[o] > f; o--) ;
+      if ((o < 0 || n[o] != l) && (o == h || n[o + 1] != l)) {
+        for (o++, g = r[t]++; (h = g) > o;) n[h] = n[g = h - 1], e[h] = e[g];
+        n[o] = l, e[o] = f
+      }
+    }
+  }
+
+  function w(r, n, e, t, a) {
+    var l, f = t + a;
+    if ((l = n - t) < 0) for (; --f >= t;) e[f] = r[f + l]; else for (; t < f; t++) e[t] = r[t + l]
+  }
+
+  function s(r, n, e, t, a) {
+    var l, f = t + a;
+    if ((l = n - t) < 0) for (; --f >= t;) e[f] = r[f + l]; else for (; t < f; t++) e[t] = r[t + l]
+  }
+
+  function I(r, n, e, t, a) {
+    var l, f = t + a;
+    if ((l = n - t) < 0) for (; --f >= t;) e[f] = r[f + l]; else for (; t < f; t++) e[t] = r[t + l]
+  }
+
+  function c(r, n, e, t) {
+    var a;
+    return n >= r.length && (s(r, 0, a = new Int32Array(r.length + t), 0, r.length), r = a), r[n] = e, r
+  }
+
+  function b(r, n) {
+    return r[r.length] = n, r
+  }
+
+  function v(r, n, e) {
+    for (var t, a, l, f, o = r.length, h = n[0], g = n[1], i = n[2], y = n[3], A = 0; 0 <= --o;) if ((l = Math.abs(a = (t = e[(f = r[o]) >> 7])[f &= 127] * h + t[f + 128] * g + t[f + 256] * i + y)) > Gr) {
+      if (A == (f = 3 + l / a >> 1)) return 3;
+      A = 3 - f
+    }
+    return A
+  }
+
+  function M(r, n, e) {
+    for (var t, a = t = r.length - 1; 0 <= a && r[a] != n; a--) ;
+    return 0 <= a && (r[(a + 1) % r.length] == e || r[(a + t) % r.length] == e) ? -1 : -2
+  }
+
+  function m(r, n, e, t, a, l, f) {
+    for (var o, h, g, i, y, A, u, w, s, I, c, b, v, m, F, k, p, d, E, N, _, T, C, L, B, S, U, X, V, P, q = 0, x = a[0], R = a[1], Y = a[2], D = l[0], G = l[1], W = l[2], O = l[3], Q = -1; ++Q < e.length;) if (Math.abs(p = (y = (o = f[(S = e[Q]) >> 7])[V = 127 & S]) * D + (A = o[V + 128]) * G + (u = o[V + 256]) * W + O) > Gr) {
+      q = p / Math.abs(p);
+      break
+    }
+    if (0 == q) return 0;
+    for (P = Q++ + e.length, E = C = L = X = 0; ; Q++) {
+      if (d = (w = (o = f[(U = e[Q % e.length]) >> 7])[V = 127 & U]) * D + (s = o[V + 128]) * G + (I = o[V + 256]) * W + O, _ = Math.abs(d) > Gr ? d / Math.abs(d) : 0, 0 == E) 0 == _ ? E = 1 : _ != q && (p /= p - d, r[C++] = n < 0 ? y + p * (w - y) : 0 == n ? A + p * (s - A) : u + p * (I - u), L = 2147483648); else if (1 == E) 0 == _ ? ((X = M(t, S, U)) == (2 == (E = ((b = A - g) * (k = I - u) - (F = s - A) * (v = u - i)) * x + (v * (m = w - y) - k * (c = y - h)) * R + (c * F - m * b) * Y < 0 ? 3 : 2) ? -2 : -1) && (r[C++] = n < 0 ? y : 0 == n ? A : u), T = N) : (_ != N && (r[C++] = n < 0 ? y : 0 == n ? A : u, L = 2147483648), E = 0); else {
+        if (0 == _) {
+          X = S, S = U, y = w, A = s, u = I;
+          continue
+        }
+        0 <= X && (X = M(t, X, S)), L |= (B = _ == T ? 0 : 1) << 31, 0 == (X + E + B & 1) && (r[C++] = n < 0 ? y : 0 == n ? A : u), E = 0
+      }
+      if (P <= Q) return L | C;
+      h = y, g = A, i = u, N = q, S = U, y = w, A = s, u = I, p = d, q = _
+    }
+  }
+
+  function F(r, n, e, t, a, l, f, o, h, g, i, y, A) {
+    for (var u, w, I, c, b, v, M, m, F, p, d, E, N, _, T, C, L, B, S, U, X, V, P, q, x, R, Y, D, G, W, O, Q, j, z, H, J, K, Z, rr, nr, er, tr, ar, lr, fr, or, hr, gr, ir, yr, Ar, ur, wr, sr, Ir, cr, br, vr, Mr = e[ir = r >> 9][yr = 511 & r], mr = (br = jr[Fn[vr = (sr = a[0])[ir][yr]]])[0] * (Lr = t[ir][yr]), Fr = br[1] * Lr, kr = br[2] * Lr, pr = n[0], dr = n[1], Er = n[2], Nr = n[3], _r = f[0], Tr = f[1], Cr = f[2], Lr = 0; ; Lr++) if (Math.abs(Q = (b = (u = A[(tr = Mr[Lr]) >> 7])[hr = 127 & tr]) * pr + (v = u[hr + 128]) * dr + (M = u[hr + 256]) * Er + Nr) > Gr) {
+      Z = Q / Math.abs(Q);
+      break
+    }
+    for (Ar = Lr++ + Mr.length, z = !1, ur = wr = l[er = J = or = 0]; ; Lr++) {
+      if (j = (m = (u = A[(ar = Mr[Lr % Mr.length]) >> 7])[hr = 127 & ar]) * pr + (F = u[hr + 128]) * dr + (p = u[hr + 256]) * Er + Nr, 0 == (rr = Math.abs(j) > Gr ? j / Math.abs(j) : 0) && (fr = ar), 0 == J) 0 == rr || rr == Z ? (ur[or++] = ar, J = 1 - rr * rr) : (ur[or++] = fr = lr = k(A, d = _ = b + (Q /= Q - j) * (P = m - b), E = T = v + Q * (q = F - v), N = C = M + Q * (x = p - M), o, h, g, i, y), nr = Z, z = !0); else if (1 == J) 0 != rr && rr != K ? (lr = tr, d = _ = b, E = T = v, N = C = M, nr = K, z = !0, J = 0) : (H = ((q = v - I) * (D = p - M) - (Y = F - v) * (x = M - c)) * mr + (x * (R = m - b) - D * (P = b - w)) * Fr + (P * Y - R * q) * kr < 0, 0 == rr ? (J = H ? 3 : 2, nr = K) : (H ? (lr = tr, d = _ = b, E = T = v, N = C = M, nr = K, z = !0) : ur[or++] = ar, J = 0)); else {
+        if (0 == rr) {
+          tr = ar, b = m, v = F, M = p;
+          continue
+        }
+        3 == J || rr != nr ? (lr = tr, d = w, E = I, N = c, _ = b, T = v, C = M, z = !0) : (ur[or++] = tr, ur[or++] = ar), J = 0
+      }
+      if (z && (0 == er ? (U = d, X = E, V = N) : (R = d - L, Y = E - B, D = N - S, Cr[er] = 0 < (W * D - Y * O) * mr + (O * R - D * G) * Fr + (G * Y - R * W) * kr ? 1 : 0, Tr[er] = nr), _r[er] = or, (ur = l[++er])[0] = lr, ur[1] = ar, G = m - (L = _), W = F - (B = T), O = p - (S = C), z = !(or = 2)), Ar <= Lr) break;
+      w = b, I = v, c = M, K = Z, tr = ar, b = m, v = F, M = p, Q = j, Z = rr
+    }
+    if (R = U - L, Y = X - B, D = V - S, Cr[er] = 0 < (W * D - Y * O) * mr + (O * R - D * G) * Fr + (G * Y - R * W) * kr ? 1 : 0, Tr[er] = rr, _r[er] = or + (hr = _r[0]), s(wr, 0, ur, or, hr), 4 <= er) for (Lr = 0; ++Lr <= er;) if (1 == Cr[Lr]) for (w = (u = A[(lr = (ur = l[Lr])[0]) >> 7])[lr &= 127], I = u[lr + 128], c = u[lr + 256], b = (u = A[(lr = ur[(gr = _r[Lr]) - 1]) >> 7])[lr &= 127], v = u[lr + 128], M = u[lr + 256]; ;) {
+      for (or = 0, P = b - w, q = v - I, x = M - c, Q = -Number.MAX_VALUE, hr = -1; ++or <= er;) or != Lr && 0 == Cr[or] && Tr[or] == Tr[Lr] && (j = P * (R = (u = A[(lr = (wr = l[or])[0]) >> 7])[lr &= 127] - b) + q * (Y = u[lr + 128] - v) + x * (D = u[lr + 256] - M)) <= 0 && Q <= j && (Q = j, 0 <= P * (G = (d = (u = A[(lr = wr[_r[or] - 1]) >> 7])[lr &= 127]) - w) + q * (W = (E = u[lr + 128]) - I) + x * (O = (N = u[lr + 256]) - c) && (hr = or, U = d, X = E, V = N));
+      if (hr < 0) break;
+      s(l[hr], 0, ur, gr, or = _r[hr]), Cr[hr] = 2, _r[Lr] = gr += or, b = U, v = X, M = V
+    }
+    for (Ir = a[1], cr = a[2], Lr = gr = 0; ++Lr <= er;) 1 == Cr[Lr] && (or = _r[Lr], null == e[lr = (hr = 0 == gr++ ? r : $++) >> 9] && (cr[lr] = new Int16Array((Ir[lr] = new Int16Array((sr[lr] = new Int16Array((t[lr] = new Int8Array((e[lr] = Array(512)).length)).length)).length)).length)), tr = 511 & hr, hr == r && or == Mr.length || (e[lr][tr] = Mr = new Int32Array(or)), s(l[Lr], 0, Mr, 0, or), t[lr][tr] = t[ir][yr], sr[lr][tr] = vr, Ir[lr][tr] = Ir[ir][yr], cr[lr][tr] = cr[ir][yr]);
+    return fr
+  }
+
+  function k(r, n, e, t, a, l, f, o, h) {
+    for (var g, i, y, A, u, w = 4095 & ~~(((i = n - l) - Gr) * f), s = 4095 & ~~((i + Gr) * f); ; w = w + 1 & 4095) {
+      for (y = o[w]; 0 <= y; y = h[u][A]) if (E((g = r[u = y >> 7])[A = 127 & y] - n, g[128 + A] - e, g[256 + A] - t) < a) return y;
+      if (w == s) break
+    }
+    return null == (g = r[w = (y = J++) >> 7]) && (g = r[w] = new Float64Array(640), h[w] = new Int32Array(128)), g[s = 127 & y] = n, g[s + 128] = e, g[s + 256] = t, h[w][s] = o[w = 4095 & ~~(i * f)], o[w] = y
+  }
+
+  function p(r, n, e, t, a, l, f, o, h, g, i) {
+    for (var y, A, u, w, s, I, c = 4095.99, b = 5.960464477539063e-8, v = (4095 & ~~(((w = .2857142857142857 * Math.abs(3 * (e - .5 * n) - r)) - b) * c)) - 1, M = 4095 & ~~((w + b) * c), m = o[0], F = o[1], k = o[2], p = o[3], d = o[4]; ++v <= M;) for (I = h[v]; 0 <= I; I = g[I]) if (E((A = F[I]) * e - (u = k[I]) * n, u * r - (y = m[I]) * e, y * n - A * r) <= 5.421010862427522e-20 && Math.hypot(p[I] - (t - (s = l + (t * y + a * A) / (u + 1)) * y), d[I] - (a - s * A)) <= f) return I;
+    return m[i] = r, F[i] = n, k[i] = e, p[i] = t - (s = l + (t * r + a * n) / (e + 1)) * r, d[i] = a - s * n, g[i] = h[v = 4095 & ~~(w * c)], h[v] = i
+  }
+
+  function d(r, n, e) {
+    var t;
+    return tn[t = K++] = r, an[t] = n, ln[t] = e, t
+  }
+
+  function E(r, n, e) {
+    return n *= n, (r *= r) < (e *= e) && n < e ? r + n + e : r < n ? r + e + n : n + e + r
+  }
+
+  function N(r, n, e) {
+    return Math.sqrt(E(r, n, e))
+  }
+
+  function _(r, n) {
+    var e;
+    return r = r.substring(1 - (e = "-" == r.charAt(0) ? -1 : 1) >> 1), e * ("C" == r.charAt(0) ? n[parseInt(r.substring(1), 10)] : parseFloat(r))
+  }
+
+  function T(r) {
+    r.preventDefault()
+  }
+
+  function C(r, e, t) {
+    var a, l, f, o;
+    r ? Ur = !0 : Sr = !0, l = ~~(e - (a = n.getBoundingClientRect()).left + .5), f = ~~(t - a.top + .5), Br = 0, or < l && l <= hr && gr < f && f <= ir ? 0 <= (Br = 0 < (kr = l - (o = wr)) && kr <= cr && sr < f && f <= Ir ? -1 : 1) && (l <= o ? Mr < o && wr-- : o + cr < l && o < mr && wr++) : pr < l && l <= dr && Er < f && f <= Nr ? (Br = 1, Xr ^= !0) : (tr = l, ar = er = f), 0 < Br && (lr = tr, fr = ar, x(), O())
+  }
+
+  function L(r) {
+    r.button && 2 != r.button || C(r.button, r.clientX, r.clientY)
+  }
+
+  function B(r) {
+    var n;
+    r.preventDefault(), C(0, (n = r.targetTouches[0]).clientX, n.clientY)
+  }
+
+  function S(r) {
+    r.button && 2 != r.button || (r.button ? Ur = !1 : Sr = !1)
+  }
+
+  function U(r) {
+    r.preventDefault(), Sr = !1
+  }
+
+  function X(r, e) {
+    var t, a, l, f, o;
+    Sr | Ur && Br <= 0 && (a = ~~(r - (t = n.getBoundingClientRect()).left + .5), lr = tr, fr = ar, Br < 0 ? wr = (a -= kr) < Mr ? Mr : mr < a ? mr : a : (l = ~~(e - t.top + .5), Sr && (tr = a, ar = l), Ur && .5 <= (o = (f = Rr * Math.exp((l - er) * Qr)) * xr) && (Rr = f, Yr = .75 / (Wr < o ? .5 * (o + Wr) : o)), er = l), x(), O())
+  }
+
+  function V(r) {
+    X(r.clientX, r.clientY)
+  }
+
+  function P(r) {
+    var n;
+    r.preventDefault(), X((n = r.targetTouches[0]).clientX, n.clientY)
+  }
+
+  function q() {
+    Sr = Ur = !1
+  }
+
+  function x() {
+    var r, n, e, t, a, l, f, o, h, g, i, y, A, u, w, s, I, c, b, v, M, m, F, k, p, d, E, _, T, C, L, B, S, U, X, V, P, q, x, Y, D, G, W, O, Q, j, $, rr, er, or, hr, gr, ir, yr, Ar, ur, sr, Ir, cr, br, vr, Mr, mr, kr, pr, dr, Er, Nr, _r, Br, Sr, Ur, Vr, Pr, qr, xr, Gr, Qr = 1.5707963267948966, jr = (lr - z) * (V = Yr), fn = (H - fr) * V, on = (tr - z) * V, hn = (H - ar) * V;
+    for (1 <= (q = Math.hypot(jr, fn)) ? (0 != (V = Math.hypot(on, hn)) && (on *= V = 1 - (q - 1) / V, hn *= V), n = 0) : (q = N(jr, fn, n = Math.cos(q * Qr)), n /= q), jr /= q, fn /= q, 1 < (q = Math.hypot(on, hn)) && (on *= V = (P = q % 4) / q, hn *= V, 1 < P && (on *= V = (P <= 3 ? 2 - P : P - 4) / P, hn *= V)), t = n * (on /= q = N(on, hn, r = Math.cos(q * Qr))) - (r /= q) * jr, a = jr * (hn /= q) - on * fn, f = (e = fn * r - hn * n) * (q = .5 / (l = Math.sqrt(.5 * (1 + jr * on + fn * hn + n * r)))), o = t * q, h = a * q, (yr = zr)[0] = g = l * (u = yr[0]) - f * (w = yr[1]) - o * (s = yr[2]) - h * (I = yr[3]), yr[1] = i = l * w + f * u + o * I - h * s, yr[2] = y = l * s - f * I + o * u + h * w, yr[3] = A = l * I + f * s - o * w + h * u, c = g * (V = 2 * i), M = V * i, m = V * y, F = V * A, b = g * (V = 2 * y), k = V * y, p = V * A, v = g * (V = 2 * A), E = 1 - (k + (d = V * A)), _ = m - v, T = F + b, C = m + v, L = 1 - (M + d), B = p - c, S = F - b, U = p + c, X = 1 - (M + k), er = (wr - Fr) * Dr, Ar = rn, ur = nn, sr = en, Ir = Rr, ir = K, Cr = cr = 0; 0 <= --ir;) R(ir, E * (e = tn[ir]) + _ * (t = an[ir]) + T * (a = ln[ir]), C * e + L * t + B * a, er * (sr[ir] = (S * e + U * t + X * a) * Ir), Ir, Ar, ur);
+    if (0 == ++Lr) for (ir = J; 0 <= --ir;) mn[ir] = 0;
+    for (vr = ++Lr, Mr = pn, mr = cn, kr = bn, ir = nr; 0 <= --ir;) if (gr = 1 + (hr = 1 + (or = 3 * ir)), rr = (G = Ar[hr] - (x = Ar[or])) * (j = ur[gr] - (Y = ur[or])) - (Q = Ar[gr] - x) * (W = ur[hr] - Y), Xr) {
+      for (Er = 0 < rr ? Mr : dn, Nr = 0 < rr ? cr : Cr, pr = (dr = wn[ir]).length, br = ~~(191.99 * Math.abs(rr) / N(W * ($ = sr[gr] - (D = sr[or])) - j * (O = sr[hr] - D), O * Q - $ * G, rr)); 0 <= --pr;) Mn[Er[Nr++] = dr[pr]] = br;
+      0 < rr ? cr = Nr : Cr = Nr
+    } else {
+      for (pr = (dr = un[ir]).length, br = -1; 0 <= --pr;) if (!(mr[_r = dr[pr]] = (V = rr * vn[_r]) <= 0)) for (br < 0 && (br = ~~(191.99 * V / N(W * ($ = sr[gr] - (D = sr[or])) - j * (O = sr[hr] - D), O * Q - $ * G, rr))), Mn[_r] = br, Br = (Er = yn[_r]).length; 0 <= --Br;) mn[Er[Br]] = vr;
+      kr[ir] = rr <= 0 ? 2 : 1
+    }
+    for (Sr = Hr, Ur = Jr, ir = Xr ? Z : J, P = er * Ir; 0 <= --ir;) !Xr && mn[ir] != vr || (R(ir, E * (e = Kr[ir]) + _ * (t = Zr[ir]) + T * (a = $r[ir]), C * e + L * t + B * a, P * (S * e + U * t + X * a), Ir, Sr, Ur), In[0][ir] = ~~(Wr + Sr[ir]), In[1][ir] = ~~(Or - Ur[ir]));
+    if (Xr) Tr = cr; else for (Vr = An, Pr = En, ir = br = xr = 0; ;) if (qr = Vr[ir], 0 == br && 0 <= qr[br = kr[kn[Gr = qr[0]]]]) Pr[xr++] = br << 24 | ir, ir = qr[br], br = 0; else {
+      for (pr = 2; ++pr < qr.length;) mr[Gr = qr[pr]] || (Mr[cr++] = Gr);
+      if (0 <= qr[3 - br]) ir = qr[3 - br], br = 0; else {
+        if (0 == xr) return void (Tr = cr);
+        br = (ir = Pr[--xr]) >> 24, ir &= 16777215
+      }
+    }
+  }
+
+  function R(r, n, e, t, a, l, f) {
+    var o = 42535295865117303e21, h = -42535295865117303e21;
+    t = t < 1 ? a / (1 - t) : Number.POSITIVE_INFINITY, f[r] = 0 != e ? e * t : 0, isFinite(l[r] = 0 != n ? n * t : 0) && isFinite(f[r]) || (Math.abs(n) >= Math.abs(e) ? f[r] = (l[r] = 0 < n ? o : h) * (e / n) : l[r] = (f[r] = 0 < e ? o : h) * (n / e))
+  }
+
+  function Y(r, n, e, t, a) {
+    for (var l = r.length; 0 <= --l;) n[l] = t[r[l]], e[l] = a[r[l]]
+  }
+
+  function D(r, n, e) {
+    var t;
+    for (Sn.beginPath(), Sn.moveTo(r[0], n[0]), t = 0; ++t < e;) Sn.lineTo(r[t], n[t]);
+    Sn.closePath(), Sn.stroke()
+  }
+
+  function G(r, n, e) {
+    var t;
+    for (Sn.beginPath(), Sn.moveTo(r[0], n[0]), t = 0; ++t < e;) Sn.lineTo(r[t], n[t]);
+    Sn.fill()
+  }
+
+  function W(r, n, e, t, a) {
+    var l, f, o, h, g, i;
+    Sn.beginPath(), Sn.moveTo(l = r + a, n), Sn.quadraticCurveTo(r, n, r, h = n + a), Sn.lineTo(r, i = (g = n + t) - a), Sn.quadraticCurveTo(r, g, l, g), Sn.lineTo(o = (f = r + e) - a, g), Sn.quadraticCurveTo(f, g, f, i), Sn.lineTo(f, h), Sn.quadraticCurveTo(f, n, o, n), Sn.lineTo(l, n), Sn.fill()
+  }
+
+  function O() {
+    var r, n, e, t, a, l, f, o, h, g, i, y, A, u;
+    if (Sn.fillStyle = Tn, Sn.fillRect(0, 0, Q, j), t = sn[0], a = sn[1], l = In[0], f = In[1], Xr) for (o = Cr, h = dn, g = Bn; ;) {
+      for (n = 0; n < o; n++) Y(e = hn[r = h[n]], t, a, l, f), Sn.fillStyle = _n[r][255 & Mn[r]], G(t, a, e.length), Sn.strokeStyle = g, D(t, a, e.length);
+      if (h == pn) break;
+      o = Tr, h = pn, g = Ln
+    } else for (n = 0; n < Tr; n++) for (Y(e = gn[r = pn[n]], t, a, l, f), Sn.fillStyle = Sn.strokeStyle = Nn[r][255 & Mn[r]], G(t, a, e.length), i = on; ;) {
+      if (null == i[r]) D(t, a, e.length); else for (A = (y = i[r]).length; 0 <= --A;) Y(u = y[A], t, a, l, f), function (r, n, e) {
+        var t;
+        for (Sn.beginPath(), Sn.moveTo(r[0], n[0]), t = 0; ++t < e;) Sn.lineTo(r[t], n[t]);
+        Sn.stroke()
+      }(t, a, u.length);
+      if (i == fn) break;
+      Sn.strokeStyle = Cn, i = fn
+    }
+    Sn.fillStyle = "lightGray", W(or, r = gr, yr, Ar, n = vr), Sn.strokeStyle = Tn, Sn.beginPath(), Sn.moveTo(ur, r), Sn.lineTo(ur, ir), Sn.closePath(), Sn.stroke(), Sn.fillStyle = "#505050", W(wr, sr, cr, br, n), Xr || (Sn.fillStyle = _b[4][64], Sn.fillRect(pr, Er, _r, _r)), Sn.strokeStyle = Sn.fillStyle = "black", Sn.strokeRect(pr, Er, _r, _r), 0 < (r = rr) && (Sn.font = ~~(Q / 20) + "px Courier New", Sn.fillText("WARNING: " + r + (1 == r ? " face is non-planar" : " faces are non-planar"), 0, 63 * j >> 6)), wr == Mr && (Sn.font = "10px Courier New", Sn.fillText("v3.0", Q >> 6, 63 * j >> 6))
+  }
+
+  var Q, j, z, H, J, K, Z, $, rr, nr, er, tr, ar, lr, fr, or, hr, gr, ir, yr, Ar, ur, wr, sr, Ir, cr, br, vr, Mr, mr, Fr, kr, pr, dr, Er, Nr, _r, Tr, Cr, Lr, Br, Sr, Ur, Xr, Vr, Pr, qr, xr, Rr, Yr, Dr, Gr, Wr, Or, Qr, jr, zr, Hr, Jr, Kr, Zr, $r, rn, nn, en, tn, an, ln, fn, on, hn, gn, yn, An, un, wn, sn, In, cn, bn, vn, Mn, mn, Fn, kn, pn, dn, En, Nn, _n, Tn, Cn, Ln, Bn, Sn;
+  _m[_m.length] = (Sn = n.getContext("2d"), void function () {
+    var t, l, f, M, C, X, R, Y, D, G, W, er, kr, Tr, Cr, Br, Un, Xn, Vn, Pn, qn, xn, Rn, Yn, Dn, Gn, Wn, On, Qn, jn, zn, Hn, Jn, Kn, Zn, $n, re, ne, ee, te, ae, le, fe, oe, he, ge, ie, ye, Ae, ue, we, se, Ie, ce, be, ve, Me, me, Fe, ke, pe, de, Ee, Ne, _e, Te, Ce, Le, Be, Se, Ue, Xe, Ve, Pe, qe, xe, Re, Ye, De, Ge, We, Oe, Qe, je, ze, He, Je, Ke, Ze, $e, rt, nt, et, tt, at, lt, ft, ot, ht, gt, it, yt, At, ut, wt, st, It, ct, bt, vt, Mt, mt, Ft, kt, pt, dt, Et, Nt, _t, Tt, Ct, Lt, Bt, St, Ut, Xt, Vt, Pt, qt, xt, Rt, Yt, Dt, Gt, Wt, Ot, Qt, jt, zt, Ht, Jt, Kt, Zt, $t, ra, na, ea, ta, aa, la, fa, oa, ha, ga, ia, ya, Aa, ua, wa, sa, Ia, ca, ba, va, Ma, ma, Fa, ka, pa, da, Ea, Na, _a, Ta, Ca, La, Ba, Sa, Ua, Xa, Va, Pa, qa, xa, Ra, Ya, Da, Ga, Wa, Oa, Qa, ja, za, Ha, Ja, Ka, Za, $a, rl, nl, el, tl, al, ll, fl, ol, hl, gl, il, yl, Al, ul, wl, sl, Il, cl, bl, vl, Ml, ml, Fl, kl, pl, dl, El, Nl, _l, Tl, Cl, Ll, Bl, Sl, Ul, Xl, Vl, Pl, ql, xl, Rl, Yl, Dl, Gl, Wl, Ol, Ql, jl, zl, Hl, Jl, Kl,
+      Zl, $l = 5820766091346741e-26, rf = 33881317890172014e-37, nf = 2.3283064365386963e-10, ef = 1.4629180792671596e-9, tf = 3019169939857233e154;
+    if (tr = lr = z = (He = Q = n.width) >> 1, ar = fr = H = (Je = j = n.height) >> 1, Tn = (Ke = r.getElementsByClassName("Background")).length ? Ke[0].value : "#606060", Cn = (Ke = r.getElementsByClassName("EdgeColor")).length ? Ke[0].value : "black", Ln = (Ke = r.getElementsByClassName("WireColor")).length ? Ke[0].value : "black", Sn.fillStyle = Tn, Sn.fillRect(0, 0, He, Je), Ir = (ir = (gr = Me = Je >> 6) + (Ar = me = Je < 256 ? 8 : Je >> 5)) - 1, sr = Me + 1, vr = me >> 1, wr = (Fr = Fe = (3 * (le = (mr = (hr = (or = He >> 2) + (yr = He >> 1)) - (cr = br = me - 2) - 1) - (Mr = or + 1)) >> 2) + Mr) + (le >> 4), ur = Fe + (cr >> 1), Dr = (Qr = .5 / (Wr = He >> 1)) / (re = 3 * (mr - Fe) >> 3), (Ke = r.getElementsByClassName("Perspective")).length && ((wr = Fe + ~~(parseFloat(Ke[0].value) * re)) > mr && (wr = mr), wr < Mr && (wr = Mr)), dr = (pr = He >> 6) + (_r = Ee = me << 1), Nr = (Er = Me) + Ee, (Ze = zr = new Float64Array(4))[0] = 1, (Ke = r.getElementsByClassName("Quaternion")).length) {
+      for (l = Ke[0].value.match(/[^ \t\n\r\f,;]+/g), Me = -1, re = 0; ++Me < 4;) re += (Ze[Me] = parseFloat(l[Me])) * Ze[Me];
+      for (0 == re && (Ze[0] = re = 1, Ze[1] = Ze[2] = Ze[3] = 0), Me = 4, re = Math.sqrt(re); 0 <= --Me;) Ze[Me] /= re
+    }
+    if (l = r.getElementsByClassName("Counts")[0].value.match(/[^ \t\n\r\f,;]+/g), ne = parseInt(l[0], 10), $e = ee = parseInt(l[1], 10), nt = rt = nr = parseInt(l[2], 10), tt = un = Array((et = new Int32Array(nt)).length), ft = ln = new Float64Array((lt = an = new Float64Array((at = tn = new Float64Array((en = new Float64Array((nn = new Float64Array((rn = new Float64Array(3 * rt)).length)).length)).length)).length)).length), bn = new Int8Array((wn = Array(rt)).length), ot = new Float64Array(ne), 0 < ne) for (l = r.getElementsByClassName("Constants")[0].value.match(/[^ \t\n\r\f,;]+/g), Me = -1; ++Me < ne;) ot[Me] = parseFloat(l[Me]);
+    for (it = $r = new Float64Array((gt = Zr = new Float64Array((ht = Kr = new Float64Array((Jr = new Float64Array((Hr = new Float64Array($e)).length)).length)).length)).length), yt = new Float64Array(ee), l = r.getElementsByClassName("Vertices")[0].value.match(/[^ \t\n\r\f,;]+/g), At = 0, Te = Me = -1, wt = -(ut = Number.MAX_VALUE); ++Te < $e;) (yt[Te] = re = N(st = ht[Te] = _(l[++Me], ot), gt[Te] = _(l[++Me], ot), it[Te] = _(l[++Me], ot))) > At && (At = re), st < ut && (ut = st), wt < st && (wt = st);
+    for (1 == (It = new Int32Array(isFinite(st = 4095.99 / (wt - ut)) ? 4096 : 1)).length && (st = 0), Me = It.length; 0 <= --Me;) It[Me] = -1;
+    for (ot = null, ct = Array(rt), bt = Array(ee), vt = new Int32Array((De = new Int32Array($e)).length), dt = Array((Mt = Array(512)).length), mt = Array(Me = 3); 0 <= --Me;) mt[Me] = Array(dt.length);
+    for (Me = nt + 511 >> 9, Ft = mt[0], kt = mt[1], pt = mt[2]; 0 <= --Me;) pt[Me] = new Int16Array((kt[Me] = new Int16Array((Ft[Me] = new Int16Array((dt[Me] = new Int8Array((Mt[Me] = Array(512)).length)).length)).length)).length);
+    for (Et = Array((Qe = new Int32Array(nt)).length), Me = nt; 0 <= --Me;) Et[Me] = new Float64Array(4);
+    for (l = r.getElementsByClassName("Faces")[0].value.match(/[^ \t\n\r\f,;]+/g), Oe = new Int32Array(he = 0), Me = Te = -1, ae = te = 0; ++Me < rt;) {
+      for (Fe = 0; "#" != (t = l[++Te]).charAt(0);) vt[De[Fe++] = parseInt(t, 10)]++;
+      if (te += Fe, ct[Me] = new Int32Array(Fe), Qe[Me] = -Fe, s(De, 0, Mt[ke = Me >> 9][Ne = 511 & Me] = new Int32Array(Fe), 0, Fe), ae < Fe && (ae = Fe), 1 < t.length) {
+        for (me = 16777215 & parseInt(t.substring(1), 16), de = he; 0 <= --de && Oe[de] != me;) ;
+        de < 0 && (Oe = c(Oe, de = he++, me, 32)), Qe[Me] = de
+      }
+      Ft[ke][Ne] = Me
+    }
+    for (Nt = Array(Me = 4); 0 <= --Me;) Nt[Me] = new Int32Array(te);
+    for (_t = Array(Me = ee); 0 <= --Me;) for (_t[Me] = new Int32Array(me = vt[Me]), bt[Me] = De = new Int32Array(me <<= 1); 0 <= --me;) De[me] = -1;
+    for (Me = rt; 0 <= --Me;) for (me = (De = Mt[Me >> 9][511 & Me]).length; 0 <= --me;) _t[Fe = De[me]][--vt[Fe]] = me << 18 | Me;
+    for (Me = ee, Vr = qr = !1; 0 <= --Me;) if (0 < (De = _t[Me]).length) for (Ct = (Tt = Mt[(262143 & (Fe = De[Ne = 0])) >> 9][511 & Fe]).length - 1, Fe >>>= 18; Ne < De.length - 1;) {
+      for (_e = Tt[(Fe + Ct) % Tt.length], me = ++Ne; me < De.length; me++) if (de = (Tt = Mt[(262143 & (Fe = De[me])) >> 9][511 & Fe]).length - 1, (Lt = Tt[(1 + (Fe >>>= 18)) % Tt.length] == _e) || Tt[(Fe + de) % Tt.length] == _e) {
+        (Lt ? 1 == Ct : 1 < Ct) && (Vr = !0), Ct = Lt ? de : 1;
+        break
+      }
+      me >= De.length ? (qr = !0, Ct = (Tt = Mt[(262143 & (Fe = De[Ne])) >> 9][511 & Fe]).length - 1, Fe >>>= 18) : me != Ne && (Ee = De[Ne], De[Ne] = De[me], De[me] = Ee)
+    }
+    for (Me = rt, Bt = Nt[te = 0], St = Nt[1], Ut = Nt[2], Xt = Nt[3]; 0 <= --Me;) for (me = (De = Mt[Me >> 9][511 & Me]).length, Pt = De[0], Vt = ct[Me]; 0 <= --me;) {
+      for (de = Pt + (qt = De[me]) - (ke = Pt < qt ? Pt : qt), Fe = 0, Tt = bt[Pt]; 0 <= (Ne = Tt[Fe]) && (Bt[Ne] != ke || St[Ne] != de); Fe++) ;
+      Ne < 0 ? (Bt[Tt[vt[Pt]++] = bt[qt][vt[qt]++] = Ne = te++] = ke, St[Ne] = de, Ut[Ne] = Xt[Ne] = Me) : (Xt[Ne] != Ut[Ne] && (qr = !0), Ut[Ne] += Me - (Xt[Ne] = Me < (Fe = Ut[Ne]) ? Fe : Me)), Vt[me] = Ne, Pt = qt
+    }
+    for (Me = ee; 0 <= --Me;) if (0 < (De = _t[Me]).length) if (1 == De.length) qr = !0; else for (pe = 0, me = 1, Tt = bt[Me], Te = vt[Me], xt = 262143 & De[0]; ;) {
+      for (de = xt + (Rt = 262143 & De[me]) - (ke = xt < Rt ? xt : Rt), Fe = pe; Fe < Te && (Ut[Ne = Tt[Fe]] != ke || Xt[Ne] != de); Fe++) ;
+      if (Fe < Te ? (Tt[Fe] = Tt[pe], Tt[pe++] = Ne) : qr = !0, Te <= pe || 1 == (me = (me + 1) % De.length)) break;
+      xt = Rt
+    }
+    if (!(Pr = qr) && Vr) r:for (Gt = new Uint8Array((Dt = new Uint8Array((Yt = new Int32Array(Me = rt)).length)).length), ve = 0; 0 <= --Me;) if (!Dt[Me]) for (Dt[Yt[Fe = 0] = Me] = !0, me = 1; Fe < me; Fe++) for (ke = (Tt = ct[pe = Yt[Fe]]).length, De = Mt[pe >> 9][511 & pe], Wt = Gt[pe]; 0 <= --ke;) {
+      for (Ee = (Ot = ct[de = Ut[Ne = Tt[ke]] + Xt[Ne] - pe]).length, Vt = Mt[de >> 9][511 & de]; 0 <= --Ee && Ot[Ee] != Ne;) ;
+      if (Qt = Wt != (De[ke] == Vt[Ee]), Dt[de]) {
+        if (Gt[de] != Qt) {
+          Pr = !0;
+          break r
+        }
+      } else Dt[Yt[me++] = de] = !0, (Gt[de] = Qt) && ve++
+    }
+    if (_t = bt = ct = null, Bn = Pr ? Ln : "#888888", Rr = Wr * ((Ke = r.getElementsByClassName("Scale")).length ? .75 * parseFloat(Ke[0].value) : .75) / At, Yr = 1 / Wr, Wr += .5, Or = .5 + (Je >> 1), jt = (Gr = (xr = At) * $l) * Gr, je = ze = null, 0 != he) for (ze = Array((je = Array(Me = he)).length); 0 <= --Me;) for (ze[Me] = Array(192), je[Me] = Array(192), me = 192, Tt = je[Me], Vt = ze[Me], Ht = (zt = Oe[Me]) >> 8 & 255, Jt = 255 & zt, zt >>= 16; 0 <= --me;) Tt[me] = "rgb(" + ~~((zt * (Fe = me + 64) + 127) / 255) + "," + ~~((Ht * Fe + 127) / 255) + "," + ~~((Jt * Fe + 127) / 255) + ")", Vt[me] = "rgba" + Tt[me].slice(3, -1) + ",.125)";
+    for (Te = -1, J = Fe = 0, Kt = Array((Zt = Array(1024)).length); ++Te < $e;) (vt[Te] = k(Kt, f = ht[Te], M = gt[Te], C = it[Te], jt, ut, st, It, Zt)) != Te && (J++, Fe = 1, (Se = Kt[Me = Te >> 7] = null == Kt[Me] ? new Float64Array(640) : Kt[Me])[me = 127 & Te] = f, Se[me + 128] = M, Se[me + 256] = C);
+    if (0 != Fe) for (Me = nt; 0 <= --Me;) for (me = (De = Mt[Me >> 9][511 & Me]).length; 0 <= --me;) for (; (De[me] = vt[pe = De[me]]) != pe;) ;
+    for (Be = new Float64Array((Le = new Float64Array((Ve = new Int32Array(ge = ae)).length)).length), Me = K = rr = be = ye = Ae = we = se = 0, Oe = null, J = $e; Me < rt; Me++) {
+      for (me = (De = Mt[Ne = Me >> 9][pe = 511 & Me]).length, Cr = Br = Un = 0, X = (Se = Kt[(Te = De[1]) >> 7])[Te &= 127], R = Se[Te + 128], Y = Se[Te + 256], D = (Se = Kt[(Te = De[0]) >> 7])[Te &= 127], G = Se[Te + 128], W = Se[Te + 256]; Cr += (Fe = (f = (R - G) * ((Tr = (Se = Kt[(Te = De[--me]) >> 7])[256 + (Te &= 127)]) - W) - (Y - W) * ((kr = Se[Te + 128]) - G)) * Cr + (M = (Y - W) * ((er = Se[Te]) - D) - (X - D) * (Tr - W)) * Br + (C = (X - D) * (kr - G) - (R - G) * (er - D)) * Un < 0 ? -1 : 1) * f, Br += Fe * M, Un += Fe * C, !(me <= 0);) X = D, R = G, Y = W, D = er, G = kr, W = Tr;
+      for (0 == (re = N(Cr, Br, Un)) && 0 == (re = N(Cr *= tf, Br *= tf, Un *= tf)) && (re = Un = 1), Cr /= re, Br /= re, Un /= re, Fe = -1, pt[Ne][pe] = Me; ++Fe < Me && E(Br * (C = (Vt = Et[et[Fe]])[2]) - (M = Vt[1]) * Un, Un * (f = Vt[0]) - C * Cr, Cr * M - f * Br) > rf;) ;
+      for ($t = 0, pt[Ne][pe] = pt[Fe >> 9][511 & Fe]; ;) {
+        for (D = (1 - (W = -Cr) * W / (re = 1 + Un * (ra = Un < 0 ? -1 : 1))) * ra, kr = 1 - (Tr = -Br * ra) * Tr / re, er = (G = Cr * Tr / re) * ra, me = De.length, X = (Se = Kt[(Te = De[0]) >> 7])[Te &= 127], R = Se[Te + 128], Y = Se[Te + 256]; 0 <= --me;) Le[me] = (Se = Kt[(Te = De[me]) >> 7])[384 + (Te &= 127)] = D * (f = Se[Te] - X) + G * (M = Se[Te + 128] - R) + W * (C = Se[Te + 256] - Y), Be[me] = Se[Te + 512] = er * f + kr * M + Tr * C;
+        if (0 != $t) break;
+        for (me = De.length, $t = 0, Rn = Le[1] - (f = Le[0]), Yn = Be[1] - (M = Be[0]); 0 <= --me;) $t += Math.atan2((qn = f - (f = Le[me])) * Yn - (xn = M - (M = Be[me])) * Rn, qn * Rn + xn * Yn), Rn = qn, Yn = xn;
+        if (0 <= $t) break;
+        Cr = -Cr, Br = -Br, Un = -Un
+      }
+      for (re = -(X * Cr + R * Br + Y * Un); Fe < Me && (Math.abs(re - (Vt = Et[et[Fe]])[3]) > Gr || E(Cr - Vt[0], Br - Vt[1], Un - Vt[2]) > rf); Fe++) ;
+      if ((Vt = Et[et[Me] = Fe == Me ? be++ : et[Fe]])[0] = Cr, Vt[1] = Br, Vt[2] = Un, Vt[3] = re, d(f = X + D * (Dn = function (r, n, e, t, a, l) {
+        var f, o, h, g, i, y, A, u, w, s, I, c, b, v;
+        r:for (f = e; ;) for (b = .5 * ((o = r[t]) + r[a]), v = .5 * ((h = n[t]) + n[a]), i = l, g = (o -= b) * o + (h -= v) * h; ;) {
+          for (; i < e; i++) if ((o = r[i] - b) * o + (h = n[i] - v) * h > g) {
+            if (0 != l) {
+              a = t, e = t = i, l--;
+              continue r
+            }
+            b = (b = r[t]) + (I = ((A = n[i] - (v = n[t])) * (u = (o = r[a] - b) * o + (h = n[a] - v) * h) - h * (w = (y = r[i] - b) * y + A * A)) * (s = .5 / (o * A - h * y))), v += c = (o * w - y * u) * s, g = I * I + c * c
+          }
+          if (2 == l) return n[0] = v, b;
+          i = e + 1, e = 0 == l ? a : f, t = a, a = l++
+        }
+      }(Le, Be, De.length, 0, 1, 2)) + er * (Gn = Be[0]), M = R + G * Dn + kr * Gn, C = Y + W * Dn + Tr * Gn), d(f + (re = 5.960464477539063e-8 * At) * D, M + re * G, C + re * W), d(f + re * er, M + re * kr, C + re * Tr), ce = 0, 2 < (me = De.length - 1)) {
+        r:for (; 0 <= (Fe = me--);) for (X = (Se = Kt[(Te = De[Fe]) >> 7])[Te &= 127], R = Se[Te + 128], Y = Se[Te + 256]; 0 <= --Fe;) if (Math.abs((Cr * ((Se = Kt[(Te = De[Fe]) >> 7])[_e = 127 & Te] - X) + Br * (Se[_e + 128] - R) + Un * (Se[_e + 256] - Y)) / yt[Te]) > nf) {
+          rr++;
+          break r
+        }
+        for (me = De.length, qn = (Se = Kt[(Te = De[ve = 0]) >> 7])[384 + (Te &= 127)], xn = Se[Te + 512], ke = 1; 1 < --me; ve = me, ke = 0) {
+          for (Zn = (Rn = (Se = Kt[(Te = De[me]) >> 7])[384 + (Te &= 127)]) - qn, $n = (Yn = Se[Te + 512]) - xn, Dn = (Se = Kt[(Te = De[Fe = me - 1]) >> 7])[384 + (Te &= 127)], Gn = Se[Te + 512]; ke < Fe; Fe--) {
+            if (zn = (Wn = (Se = Kt[(Te = De[Fe - 1]) >> 7])[384 + (Te &= 127)]) - Dn, Hn = (On = Se[Te + 512]) - Gn, Math.abs(re = Hn * Zn - zn * $n) > Gr && 0 <= (na = (zn * (Kn = xn - Gn) - Hn * (Jn = qn - Dn)) / re) && na <= 1 && 0 <= (ea = (Zn * Kn - $n * Jn) / re) && ea <= 1) {
+              if (0 == ce) {
+                if (0 == ye && (xe = new Int32Array(ye = ae << 1)), ge < (pe = De.length << 2) && (Be = new Float64Array((Le = new Float64Array((Ve = new Int32Array(ge = pe)).length)).length)), Ae < De.length) for (Ce = Array((Ue = Array((Pe = new Int32Array(pe = Ae = De.length)).length)).length); 0 <= --pe;) Ce[pe] = new Float64Array((Ue[pe] = new Int32Array(Ae - 3)).length);
+                for (pe = ie = De.length; 0 <= --pe;) Le[pe] = (Se = Kt[(Te = Ve[pe] = De[pe]) >> 7])[384 + (Te &= 127)], Be[pe] = Se[Te + 512], Pe[pe] = 0
+              }
+              for (pe = ie, Qn = qn + na * Zn, jn = xn + na * $n; 0 <= --pe && Math.hypot(Le[pe] - Qn, Be[pe] - jn) > Gr;) ;
+              ce += 4, 0 <= pe && pe < De.length && (ce -= 1 + ((Qn = Le[pe]) == qn && (jn = Be[pe]) == xn || Qn == Rn && jn == Yn ? 1 : 0) + (Qn == Dn && jn == Gn || Qn == Wn && jn == On ? 1 : 0)), pe < 0 && (ge <= ie && (ta = ge, I(Le, 0, Le = new Float64Array(ge += De.length), 0, ta), I(Be, 0, Be = new Float64Array(ge), 0, ta), s(Ve, 0, Ve = new Int32Array(ge), 0, ta)), Le[pe = ie++] = Qn, Be[pe] = jn, Ve[pe] = k(Kt, X + D * Qn + er * jn, R + G * Qn + kr * jn, Y + W * Qn + Tr * jn, jt, ut, st, It, Zt), $e = J), u(Pe, Ue[ve], Ce[ve], ve, me, pe, na), u(Pe, Ue[Fe], Ce[Fe], Fe, Fe - 1, pe, ea)
+            }
+            Dn = Wn, Gn = On
+          }
+          qn = Rn, xn = Yn
+        }
+      }
+      if (4 <= ce) {
+        if (we < ie) Xe = Array((qe = new Int32Array(we = ie)).length), se = 0; else for (me = ie; 0 <= --me;) qe[me] = 0;
+        if (se < (pe = 4294967294 & De.length)) for (me = ie, se = pe; 0 <= --me;) Xe[me] = new Int32Array(pe);
+        for (me = De.length, Fe = Ee = 0; 0 <= --me; Fe = me) {
+          for (pe = Pe[Fe], Tt = Ue[Fe], de = me; 0 <= --pe;) Xe[Xe[de][qe[de]++] = ke = Tt[pe]][qe[ke]++] = de, de = ke;
+          Xe[Xe[de][qe[de]++] = Fe][qe[Fe]++] = de
+        }
+        for (me = ie; 0 <= --me;) for (; 0 < qe[me];) {
+          for ($t = aa = 0, Zn = (qn = Le[Fe = _e = Xe[de = me][qe[de] - 1]]) - Le[de], $n = (xn = Be[Fe]) - Be[de]; ;) {
+            for (ke = Ct = --qe[Fe], Tt = Xe[Fe], la = -Number.MAX_VALUE; 0 <= ke; ke--) (pe = Tt[ke]) != de && (zn = Le[pe] - qn, Hn = Be[pe] - xn, (fa = Math.atan2(Zn * Hn - $n * zn, Zn * zn + $n * Hn)) > la && (la = fa, ve = ke, Ne = pe));
+            if (Tt[ve] = Tt[Ct], $t += la, xe[aa++] = Ve[de = Fe], Fe == me && Ne == _e) break;
+            Zn = -qn + (qn = Le[Fe = Ne]), $n = -xn + (xn = Be[Fe])
+          }
+          0 < $t && (null == Mt[ke = (Fe = 0 == Ee ? Me : nt++) >> 9] && (pt[ke] = new Int16Array((kt[ke] = new Int16Array((Ft[ke] = new Int16Array((dt[ke] = new Int8Array((Mt[ke] = Array(512)).length)).length)).length)).length)), s(xe, 0, Mt[ke][pe = 511 & Fe] = 0 == Ee && aa == De.length ? Mt[ke][pe] : new Int32Array(aa), 0, aa), Ee = 1, pt[ke][pe] = pt[(Ne = Ft[ke][pe] = Me) >> 9][511 & Ne])
+        }
+      }
+    }
+    for (yt = null, ha = 0, oa = new Int32Array(Me = be), De = new Int32Array(be), ga = te; 0 <= --Me;) {
+      for (Cr = (Vt = Et[Me])[me = Fe = 0], Br = Vt[1], Un = Vt[2], re = Vt[3]; Fe < ha; Fe++) if (E(Cr - (Vt = Et[oa[Fe]])[0], Br - Vt[1], Un - Vt[2]) <= rf) {
+        if (Math.abs(re - Vt[3]) <= Gr) break
+      } else if (E(Cr + Vt[0], Br + Vt[1], Un + Vt[2]) <= rf) {
+        if (Math.abs(re + Vt[3]) <= Gr) break
+      } else me++;
+      (De[Me] = Fe) == ha && (oa[ha++] = Me, ga += me)
+    }
+    for (ia = new Int32Array(Me = rt), kn = new Int32Array(ha); 0 <= --Me;) oa[ia[Me] = me = De[Fe = et[Me]]] == Fe && (kn[me] = Me);
+    for (Me = nt, ya = Array((De = new Int32Array(ha)).length); 0 <= --Me;) De[ia[Ft[Me >> 9][511 & Me]]]++;
+    for (Me = ha; 0 <= --Me;) ya[Me] = new Int32Array(De[Me]);
+    for (Me = nt, Aa = Array(512); 0 <= --Me;) ya[me = ia[Ft[Fe = Me >> 9][Ne = 511 & Me]]][--De[me]] = Me, a(Mt[Fe][Ne], Kt, (Aa[Fe] = null == Aa[Fe] ? Array(512) : Aa[Fe])[Ne] = new Float64Array(6));
+    for (Me = ha, ue = Ae - 3; 0 <= --Me;) {
+      for (ua = wa = 0, De = ya[Me]; ua < De.length; ua++) for (Ia = De.length, ba = !0, ca = Ft[(sa = De[ua]) >> 9][511 & sa]; --Ia > ua;) if (ba && (ba = !1, f = (Vt = Aa[sa >> 9][511 & sa])[0], Xn = Vt[1], M = Vt[2], Vn = Vt[3], C = Vt[4], Pn = Vt[5]), (Fa = Ft[ma = (va = De[Ia]) >> 9][Ma = 511 & va]) != ca && Xn > (Vt = Aa[ma][Ma])[0] && f < Vt[1] && Vn > Vt[2] && M < Vt[3] && Pn > Vt[4] && C < Vt[5]) {
+        for (0 == wa++ && (re = 1 + (Un = (Vt = Et[oa[Me]])[2]) * (ra = Un < 0 ? -1 : 1), D = (1 - (W = -Vt[0]) * W / re) * ra, kr = 1 - (Tr = -Vt[1] * ra) * Tr / re, er = (G = -W * Tr / re) * ra), e(Tt = Mt[sa >> 9][511 & sa], Kt, X = at[Te = 3 * ca], R = lt[Te], Y = ft[Te], D, G, W, er, kr, Tr), e(Ot = Mt[ma][Ma], Kt, X, R, Y, D, G, W, er, kr, Tr), me = Tt.length, qn = (Se = Kt[(Te = Tt[ce = 0]) >> 7])[384 + (Te &= 127)], xn = Se[Te + 512]; ;) {
+          for (Fe = Ot.length, Zn = (Rn = (Se = Kt[(Te = Tt[--me]) >> 7])[384 + (Te &= 127)]) - qn, $n = (Yn = Se[Te + 512]) - xn, Dn = (Se = Kt[(Te = Ot[0]) >> 7])[384 + (Te &= 127)], Gn = Se[Te + 512]; ;) {
+            for (pa = ka = 0, zn = (Wn = (Se = Kt[(Te = Ot[--Fe]) >> 7])[384 + (Te &= 127)]) - Dn, Hn = (On = Se[Te + 512]) - Gn; pa < 4; ka++) {
+              if (0 == ka) {
+                if ((ea = i(qn, xn, Dn, Gn, Wn, On)) < 0) continue;
+                pa++, na = 0
+              } else if (1 == ka) {
+                if ((ea = i(Rn, Yn, Dn, Gn, Wn, On)) < 0) continue;
+                pa++, na = 1
+              } else if (2 == ka) {
+                if ((na = i(Dn, Gn, qn, xn, Rn, Yn)) < 0) continue;
+                pa++, ea = 0
+              } else if (3 == ka) {
+                if ((na = i(Wn, On, qn, xn, Rn, Yn)) < 0) continue;
+                pa++, ea = 1
+              } else {
+                if (0 != pa || Math.abs(re = Hn * Zn - zn * $n) <= Gr || (na = (zn * (Kn = xn - Gn) - Hn * (Jn = qn - Dn)) / re) < 0 || 1 < na || (ea = (Zn * Kn - $n * Jn) / re) < 0 || 1 < ea) break;
+                pa = 4
+              }
+              if (0 == ce) {
+                if (ge < (pe = (Ee = Tt.length + Ot.length) << 1) && (Be = new Float64Array((Le = new Float64Array((Ve = new Int32Array(ge = pe)).length)).length)), ye < (pe = Tt.length + Ot.length << 1) && (xe = new Int32Array(ye = pe)), Ae < Ee && (Ce = Array((Ue = Array((Pe = new Int32Array(Ae = Ee)).length)).length), ue = 0), ue < (Ee = Tt.length > Ot.length ? Tt.length : Ot.length)) for (pe = Ae; 0 <= --pe;) Ce[pe] = new Float64Array((Ue[pe] = new Int32Array(ue = Ee)).length);
+                for (da = Tt, ie = 0; ;) {
+                  for (pe = -1; ++pe < da.length;) Le[ie] = (Se = Kt[(Te = Ve[ie] = da[pe]) >> 7])[384 + (Te &= 127)], Be[ie] = Se[Te + 512], Pe[ie++] = 0;
+                  if (da == Ot) break;
+                  da = Ot
+                }
+              }
+              for (pe = ie, Qn = qn + na * Zn, jn = xn + na * $n, _e = Te = 0; 0 <= --pe && Math.hypot(Le[pe] - Qn, Be[pe] - jn) > Gr;) ;
+              ce += 8, 0 <= pe && pe < Tt.length + Ot.length && (jn = Be[pe], ce -= 1 + (_e = (Qn = Le[pe]) == qn && jn == xn || Qn == Rn && jn == Yn ? 3 : 0) + (Te = Qn == Dn && jn == Gn || Qn == Wn && jn == On ? 3 : 0)), pe < 0 && (ge <= ie && (ta = ge, I(Le, 0, Le = new Float64Array(ge += Tt.length + Ot.length), 0, ta), I(Be, 0, Be = new Float64Array(ge), 0, ta), s(Ve, 0, Ve = new Int32Array(ge), 0, ta)), Le[pe = ie++] = Qn, Be[pe] = jn, Ve[pe] = k(Kt, X + D * Qn + er * jn, R + G * Qn + kr * jn, Y + W * Qn + Tr * jn, jt, ut, st, It, Zt), $e = J), 0 == _e && u(Pe, Ue[Ee = (me + 1) % Tt.length], Ce[Ee], Ee, me, pe, na), 0 == Te && u(Pe, Ue[Ee = Tt.length + (Fe + 1) % Ot.length], Ce[Ee], Ee, Tt.length + Fe, pe, ea)
+            }
+            if (Fe <= 0) break;
+            Dn = Wn, Gn = On
+          }
+          if (me <= 0) break;
+          qn = Rn, xn = Yn
+        }
+        if (16 <= ce) {
+          if (we < ie) Xe = Array((qe = new Int32Array(we = ie)).length), se = 0; else for (me = ie; 0 <= --me;) qe[me] = 0;
+          if (0 == se) for (pe = ie, se = 4; 0 <= --pe;) Xe[pe] = new Int32Array(4);
+          for (me = (Fe = Tt.length) + Ot.length; 0 <= --me; Fe = me == Tt.length ? 0 : me) {
+            for (pe = Pe[Fe], da = Ue[Fe], de = me; 0 <= --pe;) Xe[Xe[de][qe[de]++] = ke = da[pe]][qe[ke]++] = de, de = ke;
+            Xe[Xe[de][qe[de]++] = Fe][qe[Fe]++] = de
+          }
+          for (me = ie; 0 <= --me;) for (qn = (Se = Kt[(_e = Ve[Fe = me]) >> 7])[Te = 127 & _e], xn = Se[Te + 128], Rn = Se[Te + 256]; 0 <= --Fe;) (Te = Ve[Fe]) != _e && (Se = Kt[Te >> 7])[Te &= 127] == qn && Se[Te + 128] == xn && Se[Te + 256] == Rn && (Ve[Fe] = _e);
+          for (me = -1; ++me < ie;) for (Te = Ve[Fe = me]; ++Fe < ie;) if (Ve[Fe] == Te) for (w(Xe[Fe], 0, Xe[me], qe[me], qe[Fe]), pe = ie, qe[me] += qe[Fe], qe[Fe] = 0; 0 <= --pe;) for (de = qe[pe], da = Xe[pe]; 0 <= --de;) da[de] == Fe && (da[de] = me);
+          for (me = ie; 0 <= --me;) {
+            for (Fe = -1, Ne = qe[me], da = Xe[me]; ++Fe < Ne;) for (de = da[pe = Fe]; ++pe < Ne;) da[pe] == de && (da[pe] = da[--Ne]);
+            qe[me] = Ne
+          }
+          for (me = ie, Ee = 0; 0 <= --me;) for (; 0 < qe[me];) {
+            for ($t = aa = 0, Zn = (qn = Le[Fe = _e = Xe[de = me][qe[de] - 1]]) - Le[de], $n = (xn = Be[Fe]) - Be[de]; ;) {
+              for (Ct = (ke = qe[Fe]--) - 1, da = Xe[Fe], la = -Number.MAX_VALUE; 0 <= --ke;) (pe = da[ke]) != de && (re = Math.atan2(Zn * (Hn = Be[pe] - xn) - $n * (zn = Le[pe] - qn), Zn * zn + $n * Hn)) > la && (la = re, ve = ke, Ne = pe);
+              if (da[ve] = da[Ct], $t += la, (xe[aa++] = de = Fe) == me && Ne == _e) break;
+              Zn = -qn + (qn = Le[Fe = Ne]), $n = -xn + (xn = Be[Fe])
+            }
+            if (0 < $t) {
+              r:for (pe = 0, Ne = xe[aa - 2], _e = xe[aa - 1]; pe < aa; Ne = _e, _e = Te, pe++) if (y(Le, Be, Ne, _e, Te = xe[pe]) > Gr) {
+                for (de = pe + aa - 2; --de > pe;) if (y(Le, Be, Ne, _e, ke = xe[de % aa]) > Gr && y(Le, Be, _e, Te, ke) > Gr && y(Le, Be, Te, Ne, ke) > Gr) continue r;
+                qn = (Le[Ne] + Le[_e] + Le[Te]) / 3, xn = (Be[Ne] + Be[_e] + Be[Te]) / 3;
+                break
+              }
+              if (0 != (ke = (0 == A(Le, Be, 0, Tt.length, qn, xn) ? 0 : 1) + (0 == A(Le, Be, Tt.length, Tt.length + Ot.length, qn, xn) ? 0 : 2))) {
+                if (3 == ke && (ke = Tt.length > Ot.length || Tt.length == Ot.length && (et[ca] == oa[Me] || et[Fa] != oa[Me]) ? 1 : 2), pe = Ft[(de = sa + (ke - 1) * (va - sa)) >> 9][511 & de], null == Mt[ve = (Fe = 0 == (Ee & ke) ? de : nt++) >> 9] && (pt[ve] = new Int16Array((kt[ve] = new Int16Array((Ft[ve] = new Int16Array((dt[ve] = new Int8Array((Mt[ve] = Array(512)).length)).length)).length)).length)), Ct = 511 & Fe, Fe != de && (pt[ve][Ct] = pt[(Ne = Ft[ve][Ct] = pe) >> 9][511 & Ne], (Aa[ve] = null == Aa[ve] ? Array(512) : Aa[ve])[Ct] = new Float64Array(6), De = c(De, De.length, Fe, 1)), Fe == sa && (ba = !0), et[pe] != oa[Me]) for (_e = 1 + (Te = aa - 1) >> 1; 0 <= --_e;) Ne = xe[_e], xe[_e] = xe[Te - _e], xe[Te - _e] = Ne;
+                for (Ne = aa, Mt[ve][Ct] = Ea = Fe == de && aa == Mt[ve][Ct].length ? Mt[ve][Ct] : new Int32Array(aa); 0 <= --Ne;) Ea[Ne] = Ve[xe[Ne]];
+                a(Ea, Kt, Aa[ve][Ct]), Ee |= ke
+              }
+            }
+          }
+          if (3 != Ee) {
+            for (a(Mt[ke = (de = 1 == Ee ? va : sa) >> 9][pe = 511 & de] = Mt[me = --nt >> 9][Fe = 511 & nt], Kt, Aa[ke][pe]), De[1 == Ee ? Ia : ua] = De[Te = De.length - 1], s(De, 0, De = new Int32Array(Te), 0, Te); 0 < Te--;) if (De[Te] == nt) {
+              De[Te] = de;
+              break
+            }
+            sa == nt && (sa = de), 2 == Ee && (Ia = --ua), Ft[ke][pe] = Ft[me][Fe], pt[ke][pe] = pt[me][Fe]
+          }
+        }
+      }
+      ya[Me] = De
+    }
+    for (Ue = Xe = ya = Ve = Pe = qe = xe = Le = Be = null, Me = nt, De = new Int32Array(nr); 0 <= --Me;) De[Ft[Me >> 9][511 & Me]]++;
+    for (Me = rt; 0 <= --Me;) wn[Me] = new Int32Array(De[Me]);
+    for (_n = Array(Me = nt); 0 <= --Me;) _n[wn[me = Ft[Me >> 9][511 & Me]][--De[me]] = Me] = (Fe = Qe[me]) < 0 ? _c[31 & -Fe] : ze[Fe];
+    for (Et.length = be, jr = Et, Fn = et, Z = $e, Na = hn = Array((dn = new Int32Array(Me = Ie = $ = nt)).length), oe = 0; 0 <= --Me;) (Fe = (De = Mt[(me = kt[Ne = Me >> 9][ke = 511 & Me] = Me) >> 9][511 & me]).length) > oe && (oe = Fe), s(De, 0, Na[Me] = new Int32Array(Fe), 0, Fe), dt[Ne][ke] = 1;
+    for (Ta = Array(3), Me = 3, me = (_a = Array(oe + 1)).length; 0 <= --Me;) Ta[Me] = new Int32Array(me);
+    for (Me = oe + 1, me = ha - 2 + (3 * oe >> 1); 0 <= --Me;) _a[Me] = new Int32Array(me);
+    for (La = Array((Ca = new Int32Array(Me = nt)).length); 0 <= --Me;) La[Me] = new Int32Array(0);
+    for (Me = 0, Sa = new Float64Array((Ba = new Float64Array(4294967294 & oe)).length); Me < nt; Me++) for (X = (Vt = Aa[ke = (me = Me) >> 9][Te = 511 & Me])[0], D = Vt[1], R = Vt[2], G = Vt[3], Y = Vt[4], W = Vt[5], Cr = (Xa = Et[et[Ft[ke][Te]]])[0], Br = Xa[1], Un = Xa[2], Ua = pt[ke][Te], De = Mt[ke][Te]; ++me < nt;) pt[Ee = me >> 9][Ne = 511 & me] != Ua && D > (Vt = Aa[Ee][Ne])[0] && X < Vt[1] && G > Vt[2] && R < Vt[3] && W > Vt[4] && Y < Vt[5] && (C = Math.abs(Cr * (kr = (Va = Et[et[Ft[Ee][Ne]]])[1]) - (er = Va[0]) * Br), 0 != (pe = m(Ba, Fe = (f = Math.abs(Br * (Tr = Va[2]) - kr * Un)) > (M = Math.abs(Un * er - Tr * Cr)) ? C < f ? -1 : 1 : C < M ? 0 : 1, De, Mt[Ee][Ne], Xa, Va, Kt)) && 0 != (de = m(Sa, Fe, Mt[Ee][Ne], De, Va, Xa, Kt)) && (de < 0 || pe < 0) && o(Ba, Sa, 2147483647 & pe, 2147483647 & de) * N(f, M, C) > nf * (Fe < 0 ? f : 0 == Fe ? M : C) && (de < 0 && (La[me] = c(La[me], Ca[me]++, Me, 16)), pe < 0 && (La[Me] = c(La[Me], Ca[Me]++, me, 16))));
+    for (Aa = null, Pa = Array(Ie << 1), qa = new Int32Array(Me = 4096); 0 <= --Me;) qa[Me] = -1;
+    for (Ra = Array(Me = 5), me = (xa = new Int32Array(ga)).length; 0 <= --Me;) Ra[Me] = new Float64Array(me);
+    for (Me = te, Ya = 0; 0 <= --Me;) 0 == (re = N(f = (Se = Kt[(_e = Bt[Me]) >> 7])[_e &= 127] - (D = (Da = Kt[(Te = St[Me]) >> 7])[Te &= 127]), M = Se[_e + 128] - (G = Da[Te + 128]), C = Se[_e + 256] - (W = Da[Te + 256]))) && 0 == (re = N(f *= tf, M *= tf, C *= tf)) || (f /= re = C < 0 ? -re : re, M /= re, C /= re), p(f, M, C, D, G, W, Gr, Ra, qa, xa, Ya) == Ya && Ya++;
+    for (Nt = null, Me = nt, Oa = !1, Wa = new Int32Array((Ga = new Int32Array(512)).length << 1); 0 <= --Me;) {
+      for (Cr = (Xa = Et[et[Ft[Me >> 9][511 & Me]]])[0], Br = Xa[1], Un = Xa[2], me = Ca[Wa[Ga[0] = 0] = Me], Te = 1, De = La[Me], Ne = (Fe = nt) - 1; 0 <= --me;) for (Va = Et[et[Ft[(Ia = De[me]) >> 9][511 & Ia]]], W = Math.abs(C = Cr * (kr = Va[1]) - (er = Va[0]) * Br), Qa = (Ct = (D = Math.abs(f = Br * (Tr = Va[2]) - kr * Un)) > (G = Math.abs(M = Un * er - Tr * Cr)) ? W < D ? -1 : 1 : W < G ? 0 : 1) < 0 ? D : 0 == Ct ? G : W, f /= re = (C < 0 ? -1 : 1) * (fa = N(f, M, C)), M /= re, C /= re, fa = nf * Qa / fa, pe = Fe - (Ee = Me), ve = nt, Ot = Na[Ia]; Ee < ve; Ee += pe, pe = 1) if ((ke = m(Ba, Ct, da = Mt[Ee >> 9][511 & Ee], Ot, Xa, Va, Kt)) < 0 && 0 != (_e = m(Sa, Ct, Ot, da, Va, Xa, Kt)) && o(Ba, Sa, 2147483647 & ke, 2147483647 & _e) > fa) for (Oa = !0, p(f, M, C, (Se = Kt[(_e = F(Ee, Va, Mt, dt, mt, _a, Ta, jt, ut, st, It, Zt, Kt)) >> 7])[_e &= 127], Se[_e + 128], Se[_e + 256], Gr, Ra, qa, xa, Ya) == Ya && Ya++, Te + (ke = (_e = $) - nt + 1) > Wa.length && s(Wa, 0, Wa = new Int32Array(Wa.length + 4096), 0, Te), Wa[Ga[de = Ee == Me ? 0 : Ee - Ne]] = ke << 20 | Te, Wa[Ga[de] = Te++] = Ee, _e - Ne > Ga.length && s(Ga, 0, Ga = new Int32Array(Ga.length + 2048), 0, nt - Ne); nt < _e; Wa[Ga[nt - Ne] = Te++] = nt++) ;
+      Pa[Me] = Tt = new Int32Array(Te);
+      r:for (me = Fe = 0, ve = 1048575, ke = 1; ;) if (1048575 < (Ne = Wa[me]) && (Wa[me] = ke << 20 | ve, ve = me, me = 1048575 & Ne, Ne = -(ke = Ne >>> 20)), 0 <= (Tt[Fe++] = Ne)) {
+        for (; 0 == --ke;) {
+          if (1048575 == ve) break r;
+          ve = 1048575 & (ke = Wa[me = ve]), ke >>>= 20
+        }
+        me++
+      }
+    }
+    for (Ga = Wa = null, za = Array((ja = new Int32Array(Me = ga)).length); 0 <= --Me;) za[Me] = new Int32Array(5);
+    for (Ce = Ba = Sa = La = Ca = null, _t = Array((vt = new Int32Array($e = J)).length), Ya = h(nt, Ya, Mt, Kt, Gr, Ra, qa, xa, za, ja, Ha = Array(nt), vt), Me = $e; 0 <= --Me;) _t[Me] = new Int32Array(vt[Me]);
+    for (Me = nt; 0 <= --Me;) for (me = ~~((De = Ha[Me]).length / 3); 0 <= --me;) _t[Fe = De[me]][--vt[Fe]] = me << 18 | Me;
+    for (Me = nt, Ja = new Float64Array((Ka = new Int32Array(4)).length); 0 <= --Me;) for (me = Fe = ~~((De = Ha[Me]).length / 3), Te = De[0], Ea = null; 0 <= --me; Te = De[me]) if (De[Fe + me] < 0) {
+      for (null == Ea && (Cr = (Ea = Et[et[Ft[Me >> 9][511 & Me]]])[0], Br = Ea[1], Un = Ea[2]), Ne = (Tt = _t[_e = De[me]]).length, pa = 1, Ka[0] = me << 18 | Me; 0 <= --Ne;) if ((ve = 262143 & (de = Tt[Ne])) != Me && ((Ot = Ha[ve])[((Ee = (de >>>= 18) + (ke = ~~(Ot.length / 3))) - (pe = -1)) % ke] == Te || Ot[de = (Ee - (pe = 1)) % ke] == Te)) {
+        for (re = Math.atan2(N(X = Br * (C = (Ea = Et[et[Ft[ve >> 9][511 & ve]]])[2] * pe) - Un * (M = Ea[1] * pe), R = Un * (f = Ea[0] * pe) - Cr * C, Y = Cr * M - Br * f), Cr * f + Br * M + Un * C), (re *= 0 <= X * ((Da = Kt[Te >> 7])[Ee = 127 & Te] - (Se = Kt[_e >> 7])[ke = 127 & _e]) + R * (Da[Ee + 128] - Se[ke + 128]) + Y * (Da[Ee + 256] - Se[ke + 256]) ? -1 : 1) <= -3.141592653589793 && (re += 6.283185307179586), Ee = 0; ++Ee < pa && ((fa = Ja[Ee]) - re >= ef || re - fa < ef && (Ha[262143 & (ke = Ka[Ee])][ke >>> 18] == Te ? pe < 0 && re <= fa : pe < 0 || re <= fa));) ;
+        Vt = Ja, (ke = pa++) == (da = Ka).length && (s(Ka, 0, Ka = new Int32Array(Ka.length + 2), 0, Ee), I(Ja, 0, Ja = new Float64Array(Ja.length + 2), 0, Ee)), s(da, Ee, Ka, Ee + 1, ke - Ee), I(Vt, Ee, Ja, Ee + 1, ke - Ee), Ka[Ee] = de << 18 | ve, Ja[Ee] = re
+      }
+      for (pe = Me, de = 1, ke = me, Ne = Fe, Ot = De; 0 <= --pa; de = 1 - Ct, ke = Ee, Ne = Ia, Ot = da) Ct = (da = Ha[ve = 262143 & (Ee = Ka[pa])])[Ee >>>= 18] == Te ? 1 : 0, da[((Ia = ~~(da.length / 3)) << Ct) + Ee] = de * nt + pe, Ot[(Ne << de) + ke] = Ct * nt + (pe = ve)
+    }
+    for ($a = new Int32Array((rl = new Int32Array((nl = new Int32Array((Za = new Float64Array(nt)).length)).length)).length), Me = nt; 0 <= --Me;) $a[Me] = -1;
+    for (el = new Int32Array((Dt = new Uint8Array((Yt = new Int32Array(Me = nt << 1)).length)).length), tl = al = 0; 0 <= --Me;) if (!Dt[Me]) {
+      for (Dt[Yt[Fe = 0] = Me] = !0, me = 1; Fe < me; Fe++) for (el[al + Fe] = de = Yt[Fe], ($a[pe = de % nt] < 0 ? $a : rl)[pe] = tl, Ne = (ke = ~~((De = Ha[pe]).length / 3)) << ~~(de / nt); 0 <= --ke;) Dt[ve = De[Ne + ke]] || (Dt[Yt[me++] = ve] = !0);
+      for (ve = (nl[tl] = al) + me, re = 0; al < ve; al++) for (me = 1, Ne = ~~((De = Ha[(Fe = el[al]) % nt]).length / 3), _e = 1 - (~~(Fe / nt) << 1), D = (Se = Kt[(Te = De[0]) >> 7])[Te &= 127], G = Se[Te + 128], W = Se[Te + 256], er = (Se = Kt[(Te = De[1]) >> 7])[Te &= 127], kr = Se[Te + 128], Tr = Se[Te + 256]; ++me < Ne;) re += ((kr - G) * ((Y = (Se = Kt[(Te = De[me]) >> 7])[256 + (Te &= 127)]) - W) - (Tr - W) * ((kr = Se[Te + 128]) - G)) * (D + er + (er = Se[Te])) * _e, Tr = Y;
+      Za[tl++] = re / 6
+    }
+    for (Dt = _t = Ha = null, ol = new Int32Array((fl = new Int32Array((ll = new Int32Array(Me = tl)).length)).length); 0 <= --Me;) ll[fl[Me] = ol[Me] = Me] = -1;
+    for (Me = nt; 0 <= --Me;) {
+      if ((me = ol[$a[Me]]) != (Fe = ol[rl[Me]])) for (de = me + Fe - (ke = me < Fe ? me : Fe), fl[ke] = fl[ll[fl[ke]] = de], fl[de] = -1; -1 != de; de = ll[de]) ol[de] = ke;
+      dt[Me >> 9][511 & Me] = 0
+    }
+    for (Me = tl; 0 <= --Me;) if (-1 != (Ne = fl[Me])) {
+      for (me = Me, re = -Number.MAX_VALUE; Za[me] > re && (re = Za[me], Fe = me), me != Ne; me = ll[me]) ;
+      for (me = nl[Fe++] - 1, Ne = Fe == tl ? nt << 1 : nl[Fe]; ++me < Ne;) dt[(ke = (Fe = el[me]) % nt) >> 9][511 & ke] |= 1 + ~~(Fe / nt)
+    }
+    Ja = Za = null, gl = new Int32Array((hl = new Int32Array(nt)).length), Ka = rl = $a = nl = Yt = el = ll = fl = ol = null;
+    r:for (Me = -1, ve = nt; ++Me < ve;) if (0 == dt[me = (gl[Me] = Me) >> 9][Ne = 511 & Me]) {
+      for (gl[Me] = -1; ; gl[ve] = -1) {
+        if (--ve <= Me) break r;
+        if (0 != (Fe = dt[pe = ve >> 9][de = 511 & ve])) break
+      }
+      Mt[(gl[ve] = Me) >> 9][Ne] = Mt[pe][de], Ft[me][Ne] = Ft[pe][de], kt[me][Ne] = kt[pe][de], pt[me][Ne] = pt[pe][de], dt[me][Ne] = Fe
+    }
+    for (me = Ie; 0 <= --me;) {
+      for (ke = Ne = (De = Pa[me]).length, Fe = 0; 0 <= --ke;) 0 <= (Me = De[ke]) && 0 <= (De[ke] = _e = gl[Me]) && (Fe |= dt[_e >> 9][511 & _e]);
+      3 == Fe && s(De, 0, Pa[me + Ie] = new Int32Array(Ne), 0, Ne)
+    }
+    for (me = Ie, nt = ve; 0 <= --me;) for (ke = (il = Pa[me]).length, yl = Pa[me + Ie]; 0 <= --ke;) if (0 <= (Me = il[ke])) if (1 == (Fe = dt[Ne = Me >> 9][ve = 511 & Me])) null != yl && (yl[ke] = -1); else if (Te = (_e = (De = Mt[Ne][ve]).length) - 1, 3 == Fe) {
+      for (null == Mt[pe = nt >> 9] && (pt[pe] = new Int16Array((kt[pe] = new Int16Array((Ft[pe] = new Int16Array((dt[pe] = new Int8Array((Mt[pe] = Array(512)).length)).length)).length)).length)), Mt[pe][de = 511 & nt] = Tt = new Int32Array(De.length); 0 <= --_e;) Tt[Te - _e] = De[_e];
+      Ft[pe][de] = Ft[Ne][ve], kt[pe][de] = kt[Ne][ve], pt[pe][de] = pt[Ne][ve], dt[pe][de] = -(dt[Ne][ve] = 1), yl[ke] = nt++
+    } else {
+      for (_e >>= 1, dt[Ne][ve] = -1; 0 <= --_e;) Ee = De[_e], De[_e] = De[Te - _e], De[Te - _e] = Ee;
+      null != yl && (il[ke] = -1)
+    }
+    for (me = Pa.length; 0 <= --me;) if (null != (De = Pa[me])) {
+      if ((_e = De[pe = 0]) < -1) r:for (Me = 0, Ne = -1; ;) if ((De[pe] = _e = De[Me++]) < -1) 0 <= Ne && (De[gl[Ne]] = Te, hl[Ne] = Ee), gl[++Ne] = pe++, Te = Ee = _e; else for (_e < 0 ? Te++ : pe++; 0 == ++Ee;) {
+        if (0 == Te ? pe-- : -1 == (De[Fe = gl[Ne]] = Te) && s(De, Fe + 1, De, Fe, --pe - Fe), 0 == Ne) break r;
+        Fe = gl[--Ne], 0 == Te && ++De[Fe], Te = De[Fe], Ee = hl[Ne]
+      }
+      pe < 2 && (Pa[me] = null)
+    }
+    for (me = Pa.length, ul = nt, Al = new Uint8Array(120); 0 <= --me;) if (null != (De = Pa[me])) {
+      for (Me = 0; (_e = De[Me++]) < 0;) ;
+      Cr = (Ea = Et[et[Fe = Ft[_e >> 9][511 & _e]]])[0], Br = Ea[1], D = (1 - (W = -Cr) * W / (re = 1 + (Un = Ea[2]) * (ra = Un < 0 ? -1 : 1))) * ra, kr = 1 - (Tr = -Br * ra) * Tr / re, er = (G = Cr * Tr / re) * ra;
+      r:for (de = 1, X = at[Fe *= 3], R = lt[Fe], Y = ft[Fe]; ; de = 2) n:for (Me = pe = ke = wl = 0, Ne = -1; ;) if ((De[pe++] = _e = De[Me++]) < 0) 0 <= Ne && (hl[Ne] = Ee), gl[++Ne] = pe - 1, Ee = _e, ke = de; else for (1 == de && e(Mt[_e >> 9][511 & _e], Kt, X, R, Y, D, G, W, er, kr, Tr); 0 == ++Ee;) {
+        if (0 == --ke) {
+          for (ua = Fe = Ct = gl[Ne] - (Te = -1), wa = Ia = 0, wl = 1; Fe < pe; wa++) for ((_e = De[Fe++]) < 0 ? (ve = wa, Te = _e, _e = De[Fe++]) : 0 == ++Te && (ve = 2147483647), De[ua++] = _e, (sa = Ia + wa) > (ta = Al.length) && function (r, n, e, t, a) {
+            var l, f;
+            if (l = t + a, (f = 0 - t) < 0) for (; --l >= t;) e[l] = r[l + f]; else for (; t < l; t++) e[t] = r[t + f]
+          }(Al, 0, Al = new Uint8Array(sa), 0, ta), sa = -1; ++sa < wa;) Al[Ia++] = ve <= sa;
+          for (Te = Ct, ve = 0, sa = ua; ++Te < ua;) e:for (_e = Ct - 1; ++_e < Te; ve++) if (!Al[ve] && 0 <= (xt = De[_e])) {
+            for (Fe = (Tt = Mt[xt >> 9][511 & xt]).length, Vt = Mt[(Rt = De[Te]) >> 9][511 & Rt], qn = (Se = Kt[(Pt = Tt[0]) >> 7])[384 + (Pt &= 127)], xn = Se[Pt + 512], Il = (Se = Kt[(Pt = Vt[0]) >> 7])[384 + (Pt &= 127)], cl = Se[Pt + 512], sl = 0; 0 <= --Fe; qn = Rn, xn = Yn) for (Ee = Vt.length, Zn = (Rn = (Se = Kt[(Pt = Tt[Fe]) >> 7])[384 + (Pt &= 127)]) - qn, $n = (Yn = Se[Pt + 512]) - xn, Dn = Il, Gn = cl; 0 <= --Ee; Dn = Wn, Gn = On) if (Math.hypot(Jn = Rn - (Wn = (Se = Kt[(Pt = Vt[Ee]) >> 7])[384 + (Pt &= 127)]), Kn = Yn - (On = Se[Pt + 512])) > Gr && Math.hypot(zn = Dn - qn, Hn = Gn - xn) > Gr && Math.abs(zn * $n - Hn * Zn) < (zn * Zn + Hn * $n) * $l && Math.abs(Jn * $n - Kn * Zn) < (Jn * Zn + Kn * $n) * $l) {
+              if (0 < sl++) continue e;
+              f = qn, M = xn, Cr = Rn, Br = Yn, Qn = Dn, jn = Gn, Xn = Wn, Vn = On, wa = Fe, Ia = Ee
+            }
+            if (0 < sl) {
+              for (Fe = Tt.length; 0 <= --Fe;) for (Ee = Vt.length, Pt = Tt[Fe]; 0 <= --Ee;) if (Vt[Ee] == Pt) {
+                if (Math.hypot((qn = (Se = Kt[Pt >> 7])[384 + (Pt &= 127)]) - f, (xn = Se[Pt + 512]) - M) <= Gr ? Math.hypot(qn - Xn, xn - Vn) > Gr : Math.hypot(qn - Cr, xn - Br) > Gr || Math.hypot(qn - Qn, xn - jn) > Gr) continue e;
+                break
+              }
+              for ((va = Tt.length + Vt.length - (bl = g(f, M, Xn, Vn, Ia, wa, Vt, Tt, Kt)) - (vl = g(Cr, Br, Qn, jn, wa, Ia, Tt, Vt, Kt))) == Tt.length || va == Vt.length ? (ml = wa + Ia - (Ml = va == Tt.length ? wa : Ia) + 2, 3 == (da = (Ot = va == Tt.length ? Tt : Vt) == Tt ? Vt : Tt).length ? Ot[(Ml + ((va == Tt.length ? bl : vl) >> 1)) % Ot.length] = da[ml % 3] : (Ot[Ml] = da[3 & ml], Ot[(Ml + 1) % Ot.length] = da[ml + 1 & 3])) : (s(Tt, Ml = (wa + (bl + 3 >> 1)) % Tt.length, Ot = new Int32Array(va), 0, Fl = ((ml = wa + (3 - vl >> 1)) > Ml ? ml : Tt.length) - Ml), (kl = ml - Ml) <= 0 && (kl += Tt.length, s(Tt, 0, Ot, Fl, ml)), s(Vt, Ml = (Ia + (vl + 3 >> 1)) % Vt.length, Ot, kl, Fl = ((ml = Ia + (3 - bl >> 1)) > Ml ? ml : Vt.length) - Ml), ml <= Ml && s(Vt, 0, Ot, kl + Fl, ml)), Mt[(De[Te] = va = xt + Rt - (ml = Rt < xt ? xt : Rt)) >> 9][511 & va] = Ot, Ml = Te - Ct - 1, Mt[ml >> 9][511 & ml] = null, ml = ua - Ct + (De[_e] = -1), Fl = ve + (kl = Te - _e), sa--, ul--; ++Ml < ml;) Al[Fl += Ml] &= Al[Fl - kl]
+            }
+          }
+          if (1 == Ct) break r;
+          if (De[Ct - 1] = Ct - sa, (pe = sa) < ua) e:for (; Ct < ua; Ct++) if (De[Ct] < 0) {
+            do {
+              if (--ua <= Ct) break e
+            } while (De[ua] < 0);
+            De[Ct] = De[ua]
+          }
+        }
+        if (0 == Ne) {
+          if (0 != wl) break n;
+          break r
+        }
+        Ee = hl[--Ne], ke = de - 1
+      }
+    }
+    if (Al = hl = gl = null, ul < nt) {
+      r:for (Me = -1, fe = 0; ++Me < ul;) {
+        if (null == (De = Mt[Fe = Me >> 9][Ne = 511 & Me])) {
+          do {
+            if (--nt <= Me) break r
+          } while (null == Mt[pe = nt >> 9][de = 511 & nt]);
+          Mt[Fe][Ne] = De = Mt[pe][de], Ft[Fe][Ne] = Ft[pe][de], kt[Fe][Ne] = kt[pe][de], pt[Fe][Ne] = pt[pe][de], dt[Fe][Ne] = dt[pe][de]
+        }
+        (me = De.length) > fe && (fe = me)
+      }
+      if (nt = ul, oe < fe) {
+        for (_a = Array(fe + 1), Me = fe + 1, me = ha - 2 + (3 * fe >> 1); 0 <= --Me;) _a[Me] = new Int32Array(me);
+        for (Ta = Array(Me = 3); 0 <= --Me;) Ta[Me] = new Int32Array(_a.length)
+      }
+    }
+    for (Me = $ = nt, Fe = -1, pl = Array(512); 0 <= --Me; pl[me][511 & Me] = Fe, Fe = Me) null == pl[me = Me >> 9] && (pl[me] = new Int32Array(512));
+    r:for (Te = El = 0, Nl = ke = -1, dl = 2, _l = null, De = new Int32Array(ha), Cl = new Int32Array(ha), Tl = Array(256); ; Nl--) {
+      for (me = Te, Me = -1; 0 <= me; me = pl[Ia][Ct]) Cl[Fe = ia[Ft[Ia = me >> 9][Ct = 511 & me]]] != Nl && (Cl[Fe] = Nl, Me < 0 ? Me = Fe : De[Ne] = Fe, Ne = Fe);
+      for (Fe = 0, De[Ne] = -1, Ne = 2147483647; 0 <= Me; Me = De[Me]) {
+        for (me = Te, ve = Ee = _e = 0; 0 <= me; me = pl[Ia][Ct]) ia[Bl = Ft[Ia = me >> 9][Ct = 511 & me]] == Me ? ve++ : (3 == (de = v(Tt = Mt[Ia][Ct], Ll = Et[oa[Me]], Kt)) && (Ee += function (r, n, e, t, a) {
+          var l, f, o, h, g, i, y, A, u, w, s, I, c, b, v, M, m, F, k, p, d, E, N, _, T, C, L, B, S, U, X, V, P, q;
+          for (f = (q = jr[Fn[t]])[0] * r, o = q[1] * r, h = q[2] * r, g = e[0], i = e[1], y = e[2], A = e[3], V = 0; ; V++) if (Math.abs(_ = (I = (l = a[(X = n[V]) >> 7])[X &= 127]) * g + (c = l[X + 128]) * i + (b = l[X + 256]) * y + A) > Gr) {
+            L = _ / Math.abs(_);
+            break
+          }
+          for (P = V++ + n.length, T = U = 0; ; V++) {
+            if (B = Math.abs(_ = (v = (l = a[(X = n[V % n.length]) >> 7])[X &= 127]) * g + (M = l[X + 128]) * i + (m = l[X + 256]) * y + A) > Gr ? _ / Math.abs(_) : 0, 0 == T) 0 == B ? T = 1 : B != L && U++; else if (1 == T) 0 != B && B != C ? (U++, T = 0) : (T = ((k = c - w) * (N = m - b) - (E = M - c) * (p = b - s)) * f + (p * (d = v - I) - N * (F = I - u)) * o + (F * E - d * k) * h < 0 ? 8 : 2, 0 == B ? S = C : (U += T >> 2, T = 0)); else {
+              if (0 == B) {
+                I = v, c = M, b = m;
+                continue
+              }
+              U += B != S ? 1 : T >> 2, T = 0
+            }
+            if (P <= V) return U >> 1;
+            u = I, w = c, s = b, C = L, I = v, c = M, b = m, L = B
+          }
+        }(dt[Ia][Ct], Tt, Ll, Bl, Kt)), _e |= de);
+        (0 != ve || 3 == _e) && Ee <= Ne && (Ee < Ne || Fe < ve) && (pe = Me, Ne = Ee, Fe = ve)
+      }
+      for (null != _l && (_l[dl] = El), Ll = Et[oa[((Tl[Ia = El >> 8] = null == Tl[Ia] ? Array(256) : Tl[Ia])[255 & El++] = _l = new Int32Array(Fe + 3))[0] = pe]], Fe = Te, _e = Te = -1, ve = 3; 0 <= (me = Fe);) if (Fe = pl[Ia = me >> 9][Ct = 511 & me], ia[Ft[Ia][Ct]] == pe) _l[ve++] = me; else {
+        if (3 == (de = v(Tt = Mt[Ia][Ct], Ll, Kt))) {
+          for (Oa = !0, F(me, Ll, Mt, dt, mt, _a, Ta, jt, ut, st, It, Zt, Kt), de = v(Mt[Ia][Ct], Ll, Kt), Ee = nt, nt = $; Ee < nt; pl[sa][511 & Ee] = Fe, Fe = Ee++) null == pl[sa = Ee >> 9] && (pl[sa] = new Int32Array(512));
+          pl[Ia][Ct] = Fe
+        }
+        1 == de ? (_e < 0 ? _e = me : pl[Ne >> 9][511 & Ne] = me, Ne = me) : (Te < 0 ? Te = me : pl[Me >> 9][511 & Me] = me, Me = me)
+      }
+      for (0 <= Te && (pl[Me >> 9][511 & Me] = -1), 0 <= _e && (pl[Ne >> 9][511 & Ne] = -1), _l[1] = Te, _l[2] = _e; ;) {
+        if (1 == (dl = 3 - dl) && ++ke >= El) break r;
+        if (0 <= (Te = (_l = Tl[ke >> 8][255 & ke])[dl])) break
+      }
+    }
+    for (me = El + 256 - ((Me = El + 255 >> 8) << 8), An = Array(El); 0 <= --Me; me = 256) w(Tl[Me], 0, An, Me << 8, me);
+    if (h($ = nt, Ya, Mt, Kt, Gr, Ra, qa, xa, za, ja, null, null), za = _a = Ta = Pa = Zt = pl = ja = xa = qa = Ra = null, ($e = J) > ee) {
+      for (vt = new Int32Array(Me = $e); --Me >= Z;) vt[Me] = -1;
+      for (Me = Z; 0 <= --Me;) vt[Me] = Me;
+      for (Me = nt; 0 <= --Me;) for (me = (De = Mt[Me >> 9][511 & Me]).length; 0 <= --me;) vt[Fe = De[me]] = Fe;
+      r:for (Me = Z - 1, Te = $e; ++Me < Te;) if (vt[Me] < 0) {
+        do {
+          if (--Te <= Me) break r
+        } while (vt[Te] < 0);
+        vt[Te] = Me
+      }
+      for (it = $r = new Float64Array((gt = Zr = new Float64Array((ht = Kr = new Float64Array((Jr = new Float64Array((Hr = new Float64Array(Te)).length)).length)).length)).length), Me = $e; 0 <= --Me;) 0 <= (Fe = vt[Me]) && (ht[Fe] = (Se = Kt[Me >> 7])[pe = 127 & Me], gt[Fe] = Se[pe + 128], it[Fe] = Se[pe + 256]);
+      for ($e = J = Te, Me = nt; 0 <= --Me;) for (me = (De = Mt[Me >> 9][511 & Me]).length; 0 <= --me;) De[me] = vt[De[me]]
+    }
+    for (vt = It = oa = ia = Cl = Kt = null, Me = nt, De = new Int32Array(rt), Sl = Array((We = new Int32Array(Ie)).length); 0 <= --Me;) De[Ft[me = Me >> 9][Fe = 511 & Me]]++, We[kt[me][Fe]]++;
+    for (Me = rt; 0 <= --Me;) tt[Me] = new Int32Array(De[Me]), De[Me] = 0;
+    for (Me = Ie; 0 <= --Me;) Sl[Me] = new Int32Array(We[Me]), We[Me] = 0;
+    for (Nn = Array(Me = nt), fe = 0; 0 <= --Me;) tt[me = Ft[Ne = Me >> 9][ke = 511 & Me]][De[me]++] = Me, Sl[Fe = kt[Ne][ke]][We[Fe]++] = Me, Nn[Me] = (Fe = Qe[me]) < 0 ? _b[31 & -Fe] : je[Fe], (Fe = Mt[Ne][ke].length) > fe && (fe = Fe);
+    for (me = nt + 512 - ((Me = nt + 511 >> 9) << 9), vn = new Int8Array((gn = Array(nt)).length); 0 <= --Me; me = 512) w(Mt[Me], 0, gn, Fe = Me << 9, me), function (r, n, e, t, a) {
+      var l, f;
+      if (l = t + a, (f = 0 - t) < 0) for (; --l >= t;) e[l] = r[l + f]; else for (; t < l; t++) e[t] = r[t + f]
+    }(dt[Me], 0, vn, Fe, me);
+    for (dt = Mt = Tl = null, fn = Array((on = Array(nt)).length), Ye = new Int32Array((Re = new Int32Array((Ge = new Int32Array(fe)).length + 1)).length), Oa && (We = new Int32Array(fe)), Ul = yn = Array(nt), Xl = Hr, Vl = Jr, Pl = new Int32Array(0), ql = new Int32Array(0), Ee = Ie; 0 <= --Ee;) if (0 != (xl = Sl[Ee]).length) {
+      for (re = 1 + (Un = (Vt = Et[et[Bl = Ft[(Me = xl[0]) >> 9][511 & Me]]])[2]) * (ra = Un < 0 ? -1 : 1), D = (1 - (W = -Vt[0]) * W / re) * ra, kr = 1 - (Tr = -Vt[1] * ra) * Tr / re, er = (G = -W * Tr / re) * ra, X = at[Fe = 3 * Bl], R = lt[Fe], Y = ft[Fe], me = (Ot = Na[Ee]).length; 0 <= --me;) Xl[Te = Ot[me]] = D * (f = ht[Te] - X) + G * (M = gt[Te] - R) + W * (C = it[Te] - Y), Vl[Te] = er * f + kr * M + Tr * C;
+      for (Me = xl.length; 0 <= --Me;) {
+        for (me = (Ea = gn[ve = xl[Me]]).length; 0 <= --me;) Xl[Te = Ea[me]] = D * (f = ht[Te] - X) + G * (M = gt[Te] - R) + W * (C = it[Te] - Y), Vl[Te] = er * f + kr * M + Tr * C;
+        for (De = Re, al = Ot.length - 1, da = Array(0), qn = Xl[Te = Ea[Gl = de = (1 - (_e = vn[ve]) >> 1) * ((pe = Ea.length) - 1)]], xn = Vl[Te], Yl = Dl = -1, Rl = me = Fe = ke = 0; 0 <= --pe;) {
+          for (re = Math.hypot(Zn = (Rn = Xl[Pt = Ea[Wl = de + _e * pe]]) - qn, $n = (Yn = Vl[Pt]) - xn), Ne = al, Dn = Xl[qt = Ot[0]], Gn = Vl[qt]; Wn = Xl[Hl = Ot[Ne]], On = Vl[Hl], na = ea = Number.MAX_VALUE, (Hl == Pt && qt == Te || (na = Math.hypot(zn = Wn - qn, Hn = On - xn)) > Gr && (ea = Math.hypot(Jn = Rn - Dn, Kn = Yn - Gn)) > Gr && Math.abs(zn * $n - Hn * Zn) < (zn * Zn + Hn * $n) * $l && Math.abs(Jn * $n - Kn * Zn) < (Jn * Zn + Kn * $n) * $l) && ((Jl = ea < re ? qt : Te) != Te || 0 != ke && Ge[ke - 1] == Gl || (Ge[ke++] = Gl), (Kl = na < re ? Hl : Pt) != Pt || 0 != ke && Ge[0] == Wl || (Ge[ke++] = Wl), 0 != me && Jl == Dl || (0 == me ? (Yl = Jl, jl = Gl) : (De == Re ? (Fe = me, De = Ye, zl = Ql) : (Pl = c(Pl, da.length, Ol, 1), ql = c(ql, da.length, Ql, 1), da = b(da, Tt = new Int32Array(me)), s(De, 0, Tt, 0, me), Rl += me), Ol = Gl), De[0] = Jl, me = 1), De[me++] = Dl = Kl, Ql = Gl), 0 != Ne; Ne--) qt = Hl, Dn = Wn, Gn = On;
+          Te = Pt, Gl = Wl, qn = Rn, xn = Yn
+        }
+        if (0 <= Yl) if (Yl != Dl ? (De == Re ? (Fe = me, zl = Ql) : (Pl = c(Pl, da.length, Ol, 1), ql = c(ql, da.length, Ql, 1), da = b(da, Tt = new Int32Array(me)), s(Ye, 0, Tt, 0, me), Rl += me), Pl = c(Pl, da.length, jl, 1), ql = c(ql, da.length, zl, 1), fn[ve] = da = b(da, Tt = new Int32Array(Fe)), s(Re, 0, Tt, 0, Fe), Rl += Fe) : 0 == Fe ? Rl = Ea.length : (Pl = c(Pl, da.length, Ol, 1), ql = c(ql, da.length, zl, 1), fn[ve] = da = b(da, Tt = new Int32Array(pe = --me + Fe)), s(Ye, 0, Tt, 0, me), s(Re, 0, Tt, me, Fe), Rl += pe), 0 == da.length) on[ve] = Array(0); else for (on[ve] = Zl = Array(da.length), Fe = -1, Ne = da.length - 1, _e = Ea.length - _e; ++Fe < da.length; Ne = Fe) {
+          if (Gl = ql[Ne], Re[0] = Pt = (Tt = da[Ne])[Tt.length - (me = 1)], Wl = Pl[Fe], qt = da[Fe][0], Gl == Wl && Math.hypot((qn = Xl[Yl = Ea[Gl]]) - Xl[Pt], (xn = Vl[Yl]) - Vl[Pt]) < Math.hypot(qn - Xl[qt], xn - Vl[qt]) && (Re[me++] = qt), 1 == me) {
+            for (Pt != (Te = Ea[Ol = (Gl + _e) % Ea.length]) && Math.hypot(Xl[Te] - Xl[Pt], Vl[Te] - Vl[Pt]) > Gr && (Re[me++] = Te); Ol != Wl;) Re[me++] = Te = Ea[Ol = (Ol + _e) % Ea.length];
+            Te != qt && Math.hypot(Xl[qt] - Xl[Te], Vl[qt] - Vl[Te]) > Gr && (Re[me++] = qt)
+          }
+          s(Re, 0, Zl[Fe] = new Int32Array(me), 0, me)
+        } else fn[ve] = da = Array(0);
+        if (ke == Ea.length && Rl == Ea.length) Ul[ve] = Ea; else {
+          if (s(Ea, 0, We, 0, me = Ea.length), 0 < ke) {
+            for (; 0 < ke;) We[Ge[--ke]] = -1;
+            for (pe = me = 0; pe < Ea.length;) 0 <= (We[me] = We[pe++]) && me++
+          }
+          for (s(We, 0, Ul[ve] = il = new Int32Array(Rl + me), 0, me), pe = 0; pe < da.length; me += Tt.length) s(Tt = da[pe++], 0, il, me, Tt.length)
+        }
+      }
+    }
+    for (Sl = mt = je = ze = Fn = Re = Ye = Ge = We = Pl = ql = Qe = jr = null, sn = Array(Me = 2), me = (Fe = ae < fe ? fe : ae) > oe ? Fe : oe; 0 <= --Me;) sn[Me] = new Int32Array(me);
+    for (In = Array(Me = 2), me = (mn = new Int32Array($e)).length; 0 <= --Me;) In[Me] = new Int32Array(me);
+    pn = new Int32Array((Mn = new Int8Array(Ie < nt ? nt : Ie)).length), cn = new Uint8Array(nt), En = new Int32Array(El), Sr = Ur = Xr = !1, n.addEventListener("contextmenu", T, !1), n.addEventListener("mousedown", L, !1), n.addEventListener("touchstart", B, !1), document.addEventListener("mouseup", S, !1), document.addEventListener("touchend", U, !1), document.addEventListener("mousemove", V, !1), document.addEventListener("touchmove", P, !1), document.addEventListener("mouseleave", q, !1), Lr = 0, x(), O()
+  }())
+}
+
+window.addEventListener("load", _n, !1);

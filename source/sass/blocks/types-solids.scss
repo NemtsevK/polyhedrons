@@ -1,11 +1,15 @@
-
+@use "../global/variables" as *;
 
 .types-solids__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 40px 60px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
