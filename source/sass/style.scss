@@ -1,13 +1,17 @@
 @use "global/variables" as *;
+@use "global/fonts";
 @use "global/normalize";
 @use "global/visually-hidden";
 @use "blocks/page";
 @use "blocks/container";
+@use "global/title-h1";
+@use "global/title-h2";
 @use "blocks/header";
 @use "blocks/main";
 @use "blocks/intro";
 @use "blocks/types-solids";
+@use "blocks/types-item";
 @use "blocks/solids";
-@use "blocks/solid";
+@use "blocks/solids-item";
 @use "blocks/canvas";
 @use "blocks/footer";

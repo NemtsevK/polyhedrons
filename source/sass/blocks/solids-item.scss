@@ -1,0 +1,13 @@
+@use "../global/variables" as *;
+
+.solids-item {
+  position: relative;
+  padding: 20px 40px;
+  text-align: center;
+  background: #eeeeee;
+}
+
+.solids-item__content {
+  position: relative;
+  width: 100%;
+}

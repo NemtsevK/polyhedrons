@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
@@ -11,14 +11,12 @@
 <main class="main">
   <section class="solids">
     <div class="container">
-      <h1 class="solids__title">Archimedean-Catalan Hulls</h1>
+      <h1 class="solids__title title-h1">Archimedean-Catalan Hulls</h1>
       <p class="solids__text">Each polyhedron on this page is the convex hull of an Archimedean solid compounded with its Catalan dual. This operation is equivalent to John Conway's "join" operation applied to either the Archimedean solid or the Catalan dual. </p>
       <ul class="solids__list">
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 20 18">
             <input type="hidden" class="Constants" value="0.353553390593273762200422181052,
 0.636396103067892771960759925894,
@@ -40,11 +38,9 @@ C1 C1 -C1,-C1 C1 C1,-C1 -C1 -C1">
             <h2>Joined Truncated Tetrahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 26 24">
             <input type="hidden" class="Constants" value="0.530330085889910643300633271579,
 0.7071067811865475244008443621048,
@@ -68,11 +64,9 @@ C1 C1 0.0,C1 -C1 0.0,-C1 C1 0.0,-C1 -C1 0.0,0.0 C1 C1,0.0 C1 -C1,0.0 -C1 C1,
             <h2>Joined Cuboctahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 38 36">
             <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,
 1.06066017177982128660126654316,
@@ -101,11 +95,9 @@ C1 C1 -C1,C1 -C1 C1,C1 -C1 -C1,-C1 C1 C1,-C1 C1 -C1,-C1 -C1 C1,-C1 -C1 -C1">
             <h2>Joined Truncated Octahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 38 36">
             <input type="hidden" class="Constants" value="1.20710678118654752440084436210,
 2.41421356237309504880168872421">
@@ -131,11 +123,9 @@ C0 -C0 0.5,C0 -C0 -0.5,-C0 C0 0.5,-C0 C0 -0.5,-C0 -C0 0.5,-C0 -C0 -0.5,
             <h2>Joined Truncated Cube</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 50 48">
             <input type="hidden" class="Constants" value="0.773459080339013578400241246316,
 1.20710678118654752440084436210,
@@ -168,11 +158,9 @@ C0 -C0 -C0,-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
             <h2>Joined Rhombicuboctahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 62 60">
             <input type="hidden" class="Constants" value="0.218796643000480441021525033712,
 0.33775397381375235213753224516503,
@@ -216,11 +204,9 @@ C0 -C4 C3,C0 C4 -C3,-C0 C4 C3,-C0 -C4 -C3,C0 C3 C4,C0 -C3 -C4,-C0 -C3 C4,
             <h2>Joined Snub Cube (laevo)</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 62 60">
             <input type="hidden" class="Constants" value="0.218796643000480441021525033712,
 0.33775397381375235213753224516503,
@@ -264,11 +250,9 @@ C0 C4 C3,C0 -C4 -C3,-C0 -C4 C3,-C0 C4 -C3,C0 -C3 C4,C0 C3 -C4,-C0 C3 C4,
             <h2>Joined Snub Cube (dextro)</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="6 62 60">
             <input type="hidden" class="Constants" value="0.559016994374947424102293417183,
 0.809016994374947424102293417183,
@@ -311,11 +295,9 @@ C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
             <h2>Joined Icosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 74 72">
             <input type="hidden" class="Constants" value="1.20710678118654752440084436210,
 1.41421356237309504880168872421,
@@ -359,11 +341,9 @@ C1 C1 -C1,C1 -C1 C1,C1 -C1 -C1,-C1 C1 C1,-C1 C1 -C1,-C1 -C1 C1,-C1 -C1 -C1">
             <h2>Joined Truncated Cuboctahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="8 92 90">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,
 0.927050983124842272306880251548,
@@ -421,11 +401,9 @@ C3 -C4 -0.5,-C3 C4 0.5,-C3 C4 -0.5,-C3 -C4 0.5,-C3 -C4 -0.5,1.5 1.5 1.5,
             <h2>Joined Truncated Icosahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="9 92 90">
             <input type="hidden" class="Constants" value="1.04955317926133973822831518963,
 1.30901699437494742410229341718,
@@ -482,11 +460,9 @@ C2 C5 C1,C2 C5 -C1,C2 -C5 C1,C2 -C5 -C1,-C2 C5 C1,-C2 C5 -C1,-C2 -C5 C1,
             <h2>Joined Truncated Dodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="13 122 120">
             <input type="hidden" class="Constants" value="0.690983005625052575897706582817,
 0.783457635340899531654962439488,
@@ -566,11 +542,9 @@ C7 C6 C2,C7 C6 -C2,C7 -C6 C2,C7 -C6 -C2,-C7 C6 C2,-C7 C6 -C2,-C7 -C6 C2,
             <h2>Joined Rhombicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="27 152 150">
             <input type="hidden" class="Constants" value="0.192893711352359022108262546061,
 0.218483370127321224365534157111,
@@ -694,11 +668,9 @@ C15 -C15 C15,C15 -C15 -C15,-C15 C15 C15,-C15 C15 -C15,-C15 -C15 C15,
             <h2>Joined Snub Dodecahedron (laevo)</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="27 152 150">
             <input type="hidden" class="Constants" value="0.192893711352359022108262546061,
 0.218483370127321224365534157111,
@@ -822,11 +794,9 @@ C15 C15 C15,C15 C15 -C15,-C15 -C15 C15,-C15 -C15 -C15,-C15 C15 C15,
             <h2>Joined Snub Dodecahedron (dextro)</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniConvex">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniConvex">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="19 182 180">
             <input type="hidden" class="Constants" value="1.17518645301134929748244365923,
 1.30901699437494742410229341718,

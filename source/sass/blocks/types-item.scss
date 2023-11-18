@@ -1,6 +1,6 @@
 @use "../global/variables" as *;
 
-.solid {
+.types-item {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -17,11 +17,11 @@
   }
 }
 
-.solid__title {
+.types-item__title {
   margin: 0 0 10px;
 }
 
-.solid__image {
+.types-item__image {
   @media (min-width: $tablet) {
     grid-column: 2;
     grid-row: span 3;
@@ -33,8 +33,20 @@
   }
 }
 
-.solid__text {
+.types-item__text {
   @media (min-width: $desktop) {
     grid-column: span 2;
+  }
+}
+
+.types-item__link {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

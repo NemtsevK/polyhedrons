@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
@@ -11,15 +11,13 @@
 <main class="main">
   <section class="solids">
     <div class="container">
-      <h1 class="solids__title">Versi-Quasi-Regular Polyhedra</h1>
+      <h1 class="solids__title title-h1">Versi-Quasi-Regular Polyhedra</h1>
       <p class="solids__text">A polyhedron is versi-quasi-regular if it is vertex-transitive with crossed trapezoidal vertex figures. Vertex transitivity means that for any two vertices of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one vertex to the other. A vertex figure is the polygon produced by connecting the midpoints of the edges meeting at the vertex in the same order that the edges appear around the vertex. There are seven versi-quasi-regular polyhedra, all of which are self-intersecting. All seven have non-orientable surfaces (like that of a Klein Bottle or the Real Projective Plane).</p>
       <p class="solids__text">Albert Badoureau described six of these polyhedra (all except the Small Dodecicosahedron) in 1881. H. S. M. Coxeter and J. C. P. Miller discovered the Small Dodecicosahedron between 1930 and 1932.</p>
       <ul class="solids__list">
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 24 18">
             <input type="hidden" class="Constants" value="1.20710678118654752440084436210">
             <!--
@@ -39,11 +37,9 @@ C0 0.5 -0.5,C0 -0.5 0.5,C0 -0.5 -0.5,-C0 0.5 0.5,-C0 0.5 -0.5,-C0 -0.5 0.5,
             <h2>Small Rhombihexahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 24 18">
             <input type="hidden" class="Constants" value="0.2071067811865475244008443621048">
             <!--
@@ -63,11 +59,9 @@ C0 -0.5 -0.5,C0 -0.5 0.5,C0 0.5 -0.5,C0 0.5 0.5,-C0 -0.5 -0.5,-C0 -0.5 0.5,
             <h2>Great Rhombihexahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 60 32">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,
 1.11803398874989484820458683437,
@@ -106,11 +100,9 @@ C2 -1.0 0.5,C2 -1.0 -0.5,-C2 1.0 0.5,-C2 1.0 -0.5,-C2 -1.0 0.5,-C2 -1.0 -0.5,
             <h2>Small Dodecicosahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 60 32">
             <input type="hidden" class="Constants" value="0.190983005625052575897706582817,
 0.618033988749894848204586834366,
@@ -149,11 +141,9 @@ C0 0.5 -1.0,-C0 0.5 1.0,-C0 0.5 -1.0,C0 -0.5 1.0,C0 -0.5 -1.0,-C0 -0.5 1.0,
             <h2>Great Dodecicosahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 60 42">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,
 1.30901699437494742410229341718,
@@ -193,11 +183,9 @@ C0 -C2 -C1,-C0 C2 C1,-C0 C2 -C1,-C0 -C2 C1,-C0 -C2 -C1">
             <h2>Small Rhombidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 60 42">
             <input type="hidden" class="Constants" value="0.118033988749894848204586834366,
 0.190983005625052575897706582817,
@@ -237,11 +225,9 @@ C1 C3 -C2,-C1 -C3 C2,-C1 -C3 -C2,C1 -C3 C2,C1 -C3 -C2,C3 C2 -C1,C3 C2 C1,
             <h2>Great Rhombidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 60 50">
             <input type="hidden" class="Constants" value="0.190983005625052575897706582817,
 0.309016994374947424102293417183,

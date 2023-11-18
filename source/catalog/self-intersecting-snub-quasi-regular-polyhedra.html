@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
@@ -11,15 +11,13 @@
 <main class="main">
   <section class="solids">
     <div class="container">
-      <h1 class="solids__title">Self-Intersecting Snub Quasi-Regular Polyhedra</h1>
+      <h1 class="solids__title title-h1">Self-Intersecting Snub Quasi-Regular Polyhedra</h1>
       <p class="solids__text">A polyhedron is snub quasi-regular if it is vertex-transitive with irregular pentagonal, hexagonal, or octagonal vertex figures. Vertex transitivity means that for any two vertices of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one vertex to the other. A vertex figure is the polygon produced by connecting the midpoints of the edges meeting at the vertex in the same order that the edges appear around the vertex. There are only two snub quasi-regular polyhedra that are not self-intersecting, namely the Snub Cube and the Snub Dodecahedron. When self-intersection is allowed, there are 10 other snub quasi-regular polyhedra. </p>
       <p class="solids__text">H. S. M. Coxeter and J. C. P. Miller discovered all 10 between 1930 and 1932. M. S. Longuet-Higgins and H. C. Longuet-Higgins rediscovered nine (all except the Great Dirhombicosidodecahedron) between 1942 and 1944. J. Lesavre and R. Mercier described five (the Snub Dodecadodecahedron, the Inverted Snub Dodecadodecahedron, the Great Snub Icosidodecahedron, the Great Inverted Snub Icosidodecahedron, and the Great Retrosnub Icosidodecahedron) in 1947. </p>
       <ul class="solids__list">
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="15 60 84">
             <input type="hidden" class="Constants" value="0.109916902433172651090492403707,
 0.201581385528028781981346763340,
@@ -110,11 +108,9 @@ C5 -C10 -C9,-C5 -C10 C9,-C5 C10 -C9">
             <h2>Snub Dodecadodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="15 60 84">
             <input type="hidden" class="Constants" value="0.0696395523817213604419851293951,
 0.09104043995654983602406069932748,
@@ -205,11 +201,9 @@ C14 -C1 -C0,-C14 -C1 C0,-C14 C1 -C0,C0 -C14 -C1,C0 C14 C1,-C0 C14 -C1,
             <h2>Inverted Snub Dodecadodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="15 60 92">
             <input type="hidden" class="Constants" value="0.0812642829572718262058790219454,
 0.113690409611386992694315866713,
@@ -288,11 +282,9 @@ C0 -C14 -C1,C14 C1 C0,-C14 C1 -C0,-C14 -C1 C0,C14 -C1 -C0,C1 C0 C14,
             <h2>Great Snub Icosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="15 60 92">
             <input type="hidden" class="Constants" value="0.0458322048361746757966472099854,
 0.0926952885354777710872481278869,
@@ -371,11 +363,9 @@ C14 -C1 C0,-C14 -C1 -C0">
             <h2>Great Inverted Snub Icosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="15 60 92">
             <input type="hidden" class="Constants" value="0.0500355497789497107813240716460,
 0.0560019989928211678603893479474,
@@ -454,11 +444,9 @@ C8 C3 C10,C8 -C3 -C10,-C8 -C3 C10,-C3 -C10 C8,C3 -C10 -C8,C3 C10 C8,
             <h2>Great Retrosnub Icosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="15 60 104">
             <input type="hidden" class="Constants" value="0.105398765906697216676314189282,
 0.139623637868037118589881535187,
@@ -537,11 +525,9 @@ C9 -C10 -C5,-C9 -C10 C5,-C9 C10 -C5">
             <h2>Snub Icosidodecadodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="8 60 104">
             <input type="hidden" class="Constants" value="0.142901106756847359195252445424,
 0.1817730157320175301311393090951,
@@ -593,11 +579,9 @@ C2 C5 C3,C2 C5 -C3,C2 -C5 C3,C2 -C5 -C3,-C2 C5 C3,-C2 C5 -C3,-C2 -C5 C3,
             <h2>Great Snub Dodecicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 60 112">
             <input type="hidden" class="Constants" value="0.267843693395936526330702957199,
 0.309016994374947424102293417183,
@@ -647,11 +631,9 @@ C5 -C2 -0.5,-C5 C2 0.5,-C5 C2 -0.5,-C5 -C2 0.5,-C5 -C2 -0.5,0.5 C5 C2,
             <h2>Small Snub Icosicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 60 112">
             <input type="hidden" class="Constants" value="0.0666198004130689535045639687526,
 0.12436320521198362239314261406454,
@@ -701,11 +683,9 @@ C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4">
             <h2>Small Retrosnub Icosicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="8 60 124">
             <input type="hidden" class="Constants" value="0.142901106756847359195252445424,
 0.1817730157320175301311393090951,

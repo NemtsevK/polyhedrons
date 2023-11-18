@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
@@ -11,14 +11,12 @@
 <main class="main">
   <section class="solids">
     <div class="container">
-      <h1 class="solids__title">Self-Intersecting Quasi-Quasi-Regular Duals</h1>
+      <h1 class="solids__title title-h1">Self-Intersecting Quasi-Quasi-Regular Duals</h1>
       <p class="solids__text">The dual of a quasi-quasi-regular polyhedron is face-transitive with faces shaped like kites or darts. Face transitivity means that for any two faces of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one face to the other. There are only two quasi-quasi-regular duals that are not self-intersecting, namely the Deltoidal Icositetrahedron and the Deltoidal Hexecontahedron. When self-intersection is allowed, there are 12 other quasi-quasi-regular duals. </p>
       <ul class="solids__list">
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 20 24">
             <input type="hidden" class="Constants" value="0.773459080339013578400241246316,
 1.41421356237309504880168872421,
@@ -41,11 +39,9 @@
             <h2>Small Hexacronic Icositetrahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 20 24">
             <input type="hidden" class="Constants" value="0.369398062518129278742615896541,
 0.585786437626904951198311275790,
@@ -68,11 +64,9 @@ C0 -C0 -C0,C0 -C0 C0,C0 C0 -C0,C0 C0 C0">
             <h2>Great Hexacronic Icositetrahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 26 24">
             <input type="hidden" class="Constants" value="0.369398062518129278742615896541,
 1.41421356237309504880168872421">
@@ -94,11 +88,9 @@ C0 -C0 -C0,C0 -C0 C0,C0 C0 -C0,C0 C0 C0">
             <h2>Great Deltoidal Icositetrahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 44 60">
             <input type="hidden" class="Constants" value="0.783457635340899531654962439488,
 1.20601132958329828273486227812,
@@ -138,11 +130,9 @@ C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
             <h2>Small Dodecacronic Hexecontahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 44 60">
             <input type="hidden" class="Constants" value="0.221608554659176942378065317337,
 0.284700655416561514871253501032,
@@ -182,11 +172,9 @@ C4 -C1 0.0,C1 0.0 -C4,C1 0.0 C4,-C1 0.0 -C4,-C1 0.0 C4,C2 C2 C2,C2 C2 -C2,
             <h2>Great Dodecacronic Hexecontahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 44 60">
             <input type="hidden" class="Constants" value="0.597024149901241076355890645470,
 0.870268092443196157063010886223,
@@ -226,11 +214,9 @@ C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
             <h2>Small Ditrigonal Dodecacronic Hexecontahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 44 60">
             <input type="hidden" class="Constants" value="0.378818990230171841861878040370,
 0.572949016875157727693119748452,
@@ -270,11 +256,9 @@ C2 -C2 -C2,C2 -C2 C2,-C2 C2 -C2,-C2 C2 C2,C2 C2 -C2,C2 C2 C2">
             <h2>Great Ditrigonal Dodecacronic Hexecontahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="6 44 60">
             <input type="hidden" class="Constants" value="0.618033988749894848204586834366,
 0.649627093977301405035112681537,
@@ -313,11 +297,9 @@ C1 0.0 C3,C1 0.0 -C3,-C1 0.0 C3,-C1 0.0 -C3,C3 C1 0.0,C3 -C1 0.0,-C3 C1 0.0,
             <h2>Medial Icosacronic Hexecontahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="8 52 60">
             <input type="hidden" class="Constants" value="0.597024149901241076355890645470,
 0.690983005625052575897706582817,
@@ -360,11 +342,9 @@ C3 C3 -C3,-C3 C3 C3,-C3 C3 -C3,C3 -C3 C3,C3 -C3 -C3,-C3 -C3 C3,-C3 -C3 -C3">
             <h2>Small Icosacronic Hexecontahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="8 52 60">
             <input type="hidden" class="Constants" value="0.378818990230171841861878040370,
 0.6129420017763323923887494472054,
@@ -407,11 +387,9 @@ C1 C1 -C1,C1 -C1 C1,C1 -C1 -C1,-C1 C1 C1,-C1 C1 -C1,-C1 -C1 C1,-C1 -C1 -C1">
             <h2>Great Icosacronic Hexecontahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="8 54 60">
             <input type="hidden" class="Constants" value="0.414589803375031545538623949690,
 0.649627093977301405035112681537,
@@ -456,11 +434,9 @@ C6 C3 0.0,C6 -C3 0.0,-C6 C3 0.0,-C6 -C3 0.0,0.0 C6 C3,0.0 C6 -C3,0.0 -C6 C3,
             <h2>Medial Deltoidal Hexecontahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200">
-              Please use a browser that supports "canvas"
-            </canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="9 62 60">
             <input type="hidden" class="Constants" value="0.221608554659176942378065317337,
 0.284700655416561514871253501032,

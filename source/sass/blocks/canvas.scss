@@ -1,7 +1,13 @@
-canvas:hover {
-  cursor: pointer;
-}
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 
-canvas:active {
-  cursor: move;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    cursor: move;
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
@@ -11,13 +11,13 @@
 <main class="main">
   <section class="solids">
     <div class="container">
-      <h1 class="solids__title">Self-Intersecting Quasi-Regular Polyhedra</h1>
+      <h1 class="solids__title title-h1">Self-Intersecting Quasi-Regular Polyhedra</h1>
       <p class="solids__text">A polyhedron is quasi-regular if it is vertex-transitive and edge-transitive but not face-transitive. In this context, transitivity means that for any two vertices (edges, faces) of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one vertex (edge, face) to the other. This definition implies that a quasi-regular polyhedron must have two kinds of regular faces, where each face of one type is surrounded on all sides by faces of the other type. There are only two quasi-regular polyhedra that are not self-intersecting, namely the Cuboctahedron and the Icosidodecahedron. When self-intersection is allowed, there are 14 other quasi-regular polyhedra. Nine have faces that pass through their centers and are often subcategorized as versi-regular polyhedra. The remaining five are listed on this page.</p>
       <p class="solids__text">Edmund Hess described the Dodecadodecahedron and the Great Icosidodecahedron in 1878. Johann Pitsch described these two plus the Small Ditrigonal Icosidodecahedron in 1881 [3]. Albert Badoureau described all five in 1881. </p>
       <ul class="solids__list">
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200"></canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 20 24">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183">
             <input type="hidden" class="Vertices" value="0.0 C0 C1,0.0 C0 -C1,0.0 -C0 C1,0.0 -C0 -C1,C1 0.0 C0,C1 0.0 -C0,-C1 0.0 C0,-C1 0.0 -C0,C0 C1 0.0,C0 -C1 0.0,-C0 C1 0.0,-C0 -C1 0.0,0.5 0.5 0.5,0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5">
@@ -26,9 +26,9 @@
             <h2>Ditrigonal Dodecadodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200"></canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 20 32">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183">
             <input type="hidden" class="Vertices" value="-C1 0.0 -C0,-C1 0.0 C0,C1 0.0 -C0,C1 0.0 C0,0.0 -C0 -C1,0.0 -C0 C1,0.0 C0 -C1,0.0 C0 C1,-C0 -C1 0.0,C0 -C1 0.0,-C0 C1 0.0,C0 C1 0.0,0.5 0.5 0.5,0.5 0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5">
@@ -37,9 +37,9 @@
             <h2>Small Ditrigonal Icosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200"></canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 20 32">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183">
             <input type="hidden" class="Vertices" value="0.0 C0 C1,0.0 C0 -C1,0.0 -C0 C1,0.0 -C0 -C1,C1 0.0 C0,C1 0.0 -C0,-C1 0.0 C0,-C1 0.0 -C0,C0 C1 0.0,C0 -C1 0.0,-C0 C1 0.0,-C0 -C1 0.0,0.5 0.5 0.5,0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5">
@@ -48,9 +48,9 @@
             <h2>Great Ditrigonal Icosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200"></canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 30 24">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183">
             <input type="hidden" class="Vertices" value="0.0 0.0 1.0,0.0 0.0 -1.0,1.0 0.0 0.0,-1.0 0.0 0.0,0.0 1.0 0.0,0.0 -1.0 0.0,C0 0.5 C1,C0 0.5 -C1,C0 -0.5 C1,C0 -0.5 -C1,-C0 0.5 C1,-C0 0.5 -C1,-C0 -0.5 C1,-C0 -0.5 -C1,C1 C0 0.5,C1 C0 -0.5,C1 -C0 0.5,C1 -C0 -0.5,-C1 C0 0.5,-C1 C0 -0.5,-C1 -C0 0.5,-C1 -C0 -0.5,0.5 C1 C0,0.5 C1 -C0,0.5 -C1 C0,0.5 -C1 -C0,-0.5 C1 C0,-0.5 C1 -C0,-0.5 -C1 C0,-0.5 -C1 -C0">
@@ -59,9 +59,9 @@
             <h2>Dodecadodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item">
-          <div name="miniViewer">
-            <canvas name="canvas" width="200" height="200"></canvas>
+        <li class="solids__item solids-item">
+          <div class="solids-item__content" name="miniViewer">
+            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 30 32">
             <input type="hidden" class="Constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366">
             <input type="hidden" class="Vertices" value="0.0 0.0 C2,0.0 0.0 -C2,0.0 C2 0.0,0.0 -C2 0.0,C2 0.0 0.0,-C2 0.0 0.0,C1 -0.5 -C0,C1 -0.5 C0,-C1 -0.5 -C0,-C1 -0.5 C0,C1 0.5 -C0,C1 0.5 C0,-C1 0.5 -C0,-C1 0.5 C0,-0.5 -C0 C1,-0.5 -C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,0.5 C0 C1,0.5 C0 -C1,-C0 C1 -0.5,-C0 C1 0.5,C0 C1 -0.5,C0 C1 0.5,-C0 -C1 -0.5,-C0 -C1 0.5,C0 -C1 -0.5,C0 -C1 0.5">
