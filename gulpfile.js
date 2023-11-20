@@ -21,9 +21,9 @@ export const styles = () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
-      csso()
+      // csso()
     ]))
-    .pipe(rename({suffix: '.min'}))
+    // .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
     .pipe(browser.stream());
 }
@@ -31,8 +31,8 @@ export const styles = () => {
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
-    .pipe(terser())
-    .pipe(rename({suffix: '.min'}))
+    // .pipe(terser())
+    // .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -40,9 +40,9 @@ const scripts = () => {
 // HTML
 const html = () => {
   return gulp.src('source/**/*.html')
-    .pipe(replace('.css', '.min.css'))
-    .pipe(replace('.js', '.min.js'))
-    .pipe(htmlmin({collapseWhitespace: true}))
+    // .pipe(replace('.css', '.min.css'))
+    // .pipe(replace('.js', '.min.js'))
+    // .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
 

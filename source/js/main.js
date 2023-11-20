@@ -1,7 +1,7 @@
 const solidsList = document.querySelector('.solids__list');
 const backgroundCanvas = solidsList.querySelectorAll('.Background');
 backgroundCanvas.forEach((element)=>{
-    element.value = '#eeeeee';
+    element.value = '#ffffff';
 })
 const canvasList = solidsList.querySelectorAll('canvas');
 const solidsItem = solidsList.querySelector('.solids-item__content');

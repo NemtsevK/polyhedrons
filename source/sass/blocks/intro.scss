@@ -8,3 +8,28 @@
 .intro__title {
   margin: 0 0 20px;
 }
+
+.intro__quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  margin: 0 0 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  max-width: 500px;
+  text-align: left;
+}
+
+.intro__quote-text {
+  margin: 0;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.intro__quote-author {
+  align-self: end;
+  font-weight: 700;
+  text-align: right;
+
+}
