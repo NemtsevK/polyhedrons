@@ -9,1101 +9,152 @@
 <body class="page__body">
 <header class="header"></header>
 <main class="main">
-  <section class="solids">
+  <section class="intro">
     <div class="container">
-      <h1 class="solids__title title-h1">Johnson Solids</h1>
-      <p class="solids__text">The Platonic solids, Archimedean solids, and the regular prisms and antiprisms are vertex-transitive convex polyhedra with regular polygon faces. Vertex transitivity means that for any two vertices of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one vertex to the other. What happens if the vertex transitivity criterion is removed? As it turns out, there are 92 non-vertex-transitive convex polyhedra with regular polygon faces. </p>
-      <p class="solids__text">In 1966, Norman Johnson published a paper titled "Convex Polyhedra with Regular Faces" where he described in detail all 92 of these polyhedra. He introduced names for those that weren't named previously, and he mentions that there appear to be no more than 92 of them. These 92 polyhedra are currently known as the Johnson solids. In 1967, Viktor Zalgaller proved that there are no more than 92. </p>
-      <p class="solids__text">In 2008, Aleksei Timofeenko presented analytically-expressed coordinate values for eight of these polyhedra. It seems most of these values were known only up to numerical approximations previously. For two of these polyhedra, the Bilunabirotunda (J91) and the Triangular Hebesphenorotunda (J92), the values have relatively simple expressions and were probably known prior to Timofeenko's work. </p>
-      <p class="solids__text">Unlike most polyhedra found in these pages, the Johnson solids have relatively low symmetry orders, and only a few are in canonical form, which makes them unsuitable for automatic generation on a computer. I am grateful to Loïs Mignard-Debise, who spent the time to gather the coordinate values for all 92 polyhedra that are presented here. </p>
-      <ul class="solids__list">
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 5 5">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048">
-            <input type="hidden" class="Vertices" value="C0 0.0 0.0,-C0 0.0 0.0,0.0 C0 0.0,0.0 -C0 0.0,0.0 0.0 C0">
-            <input type="hidden" class="Faces" value="0 3 1 2 #,4 0 2 #,4 2 1 #,4 1 3 #,4 3 0 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="800103145 -461939766 191341716 331413574">
-          </div>
-          <h2 class="solids-item__title title-h2">Square Pyramid (J1)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 6 6">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.525731112119133606025669084848,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063">
-            <input type="hidden" class="Vertices" value="C3 C0 0.0,-C3 C0 0.0,0.5 -C2 0.0,-0.5 -C2 0.0,0.0 C4 0.0,0.0 0.0 C1">
-            <input type="hidden" class="Faces" value="0 2 3 1 4 #,5 0 4 #,5 4 1 #,5 1 3 #,5 3 2 #,5 2 0 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Pentagonal Pyramid (J2)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 9 8">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048">
-            <input type="hidden" class="Vertices" value="C0 0.0 C0,C0 0.0 -C0,-C0 0.0 C0,C0 C0 0.0,C0 -C0 0.0,-C0 C0 0.0,0.0 C0 C0,0.0 C0 -C0,0.0 -C0 C0">
-            <input type="hidden" class="Faces" value="1 4 8 2 5 7 #,0 6 2 8 #,6 3 7 5 #,3 0 4 1 #,0 3 6 #,0 8 4 #,6 5 2 #,3 1 7 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="915975615 -120590477 49950211 379409523">
-          </div>
-          <h2 class="solids-item__title title-h2">Triangular Cupola (J3)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 12 10">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210">
-            <input type="hidden" class="Vertices" value="C1 0.5 0.0,C1 -0.5 0.0,-C1 0.5 0.0,-C1 -0.5 0.0,0.5 C1 0.0,0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,0.5 0.5 C0,0.5 -0.5 C0,-0.5 0.5 C0,-0.5 -0.5 C0">
-            <input type="hidden" class="Faces" value="0 1 5 7 3 2 6 4 #,8 10 11 9 #,8 4 6 10 #,10 2 3 11 #,11 7 5 9 #,9 1 0 8 #,8 0 4 #,10 6 2 #,11 3 7 #,9 5 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="866025404 -500000000 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Square Cupola (J4)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 15 12">
-            <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C3 0.0 0.0,-C3 0.0 0.0,C2 -C1 0.5,C2 C1 -0.5,-C2 -C1 0.5,-C2 C1 -0.5,0.5 -C2 C1,0.5 C2 -C1,-0.5 -C2 C1,-0.5 C2 -C1,C1 0.5 C0,-C1 0.5 C0,0.5 -C0 C1,-0.5 -C0 C1,0.0 1.0 0.0">
-            <input type="hidden" class="Faces" value="0 2 6 8 4 1 5 9 7 3 #,10 14 11 13 12 #,10 3 7 14 #,14 9 5 11 #,11 1 4 13 #,13 8 6 12 #,12 2 0 10 #,10 0 3 #,14 7 9 #,11 5 1 #,13 4 8 #,12 6 2 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="0 0 1 1">
-          </div>
-          <h2 class="solids-item__title title-h2">Pentagonal Cupola (J5)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 20 17">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C2 0.0 0.0,-C2 0.0 0.0,0.0 0.0 C2,0.0 C2 0.0,C1 0.5 C0,C1 0.5 -C0,C1 -0.5 C0,-C1 0.5 C0,-C1 0.5 -C0,-C1 -0.5 C0,C0 C1 0.5,C0 C1 -0.5,-C0 C1 0.5,-C0 C1 -0.5,0.5 C0 C1,0.5 C0 -C1,0.5 -C0 C1,-0.5 C0 C1,-0.5 C0 -C1,-0.5 -C0 C1">
-            <input type="hidden" class="Faces" value="0 6 16 19 9 1 8 18 15 5 #,3 12 17 14 10 #,13 3 11 15 18 #,7 12 13 8 1 #,2 17 7 9 19 #,4 14 2 16 6 #,11 10 4 0 5 #,13 18 8 #,7 1 9 #,2 19 16 #,4 6 0 #,11 5 15 #,13 12 3 #,7 17 12 #,2 14 17 #,4 10 14 #,11 3 10 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Pentagonal Rotunda (J6)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 7 7">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.577350269189625764509148780502,1.31649658092772603273242802490">
-            <input type="hidden" class="Vertices" value="0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5,0.0 C1 0.5,0.0 C1 -0.5,0.0 0.0 C2">
-            <input type="hidden" class="Faces" value="0 1 5 4 #,4 5 3 2 #,2 3 1 0 #,1 3 5 #,6 0 4 #,6 4 2 #,6 2 0 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="0 0 793353340 608761429">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Triangular Pyramid (J7)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 9 9">
-            <input type="hidden" class="Constants" value="1.20710678118654752440084436210">
-            <input type="hidden" class="Vertices" value="0.5 0.5 0.5,0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5,0.0 0.0 C0">
-            <input type="hidden" class="Faces" value="1 3 7 5 #,0 1 5 4 #,4 5 7 6 #,6 7 3 2 #,2 3 1 0 #,8 0 4 #,8 4 6 #,8 6 2 #,8 2 0 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="562422224 -732962913 303603179 232962913">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Square Pyramid (J8)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 11 11">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,1.025731112119133606025669084848">
-            <input type="hidden" class="Vertices" value="C2 C0 0.5,C2 C0 -0.5,-C2 C0 0.5,-C2 C0 -0.5,0.5 -C1 0.5,0.5 -C1 -0.5,-0.5 -C1 0.5,-0.5 -C1 -0.5,0.0 C3 0.5,0.0 C3 -0.5,0.0 0.0 C4">
-            <input type="hidden" class="Faces" value="1 5 7 3 9 #,0 1 9 8 #,8 9 3 2 #,2 3 7 6 #,6 7 5 4 #,4 5 1 0 #,10 0 8 #,10 8 2 #,10 2 6 #,10 6 4 #,10 4 0 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="0 0 793353340 608761429">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Pyramid (J9)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 9 13">
-            <input type="hidden" class="Constants" value="0.420448207626857271515562738117,0.7071067811865475244008443621048,1.12755498881340479591640710022">
-            <input type="hidden" class="Vertices" value="0.0 C1 C0,0.0 -C1 C0,C1 0.0 C0,-C1 0.0 C0,0.5 0.5 -C0,0.5 -0.5 -C0,-0.5 0.5 -C0,-0.5 -0.5 -C0,0.0 0.0 C2">
-            <input type="hidden" class="Faces" value="4 5 7 6 #,0 4 6 #,2 5 4 #,1 7 5 #,3 6 7 #,0 2 4 #,2 1 5 #,1 3 7 #,3 0 6 #,8 0 3 #,8 3 1 #,8 1 2 #,8 2 0 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="603553391 -786566092 103553391 79459311">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Square Pyramid (J10)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 11 16">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183">
-            <input type="hidden" class="Vertices" value="0.5 0.0 C0,0.5 0.0 -C0,-0.5 0.0 C0,-0.5 0.0 -C0,C0 0.5 0.0,C0 -0.5 0.0,-C0 0.5 0.0,-C0 -0.5 0.0,0.0 C0 0.5,0.0 C0 -0.5,0.0 -C0 -0.5">
-            <input type="hidden" class="Faces" value="2 7 10 5 0 #,3 10 7 #,1 5 10 #,4 0 5 #,8 2 0 #,6 7 2 #,3 1 10 #,1 4 5 #,4 8 0 #,8 6 2 #,6 3 7 #,9 3 6 #,9 6 8 #,9 8 4 #,9 4 1 #,9 1 3 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="987688341 156434465 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Pentagonal Pyramid (J11)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 5 6">
-            <input type="hidden" class="Constants" value="0.235702260395515841466948120702,0.471404520791031682933896241403">
-            <input type="hidden" class="Vertices" value="C1 C1 C1,-C1 -C1 -C1,C1 -C0 -C0,-C0 C1 -C0,-C0 -C0 C1">
-            <input type="hidden" class="Faces" value="0 2 3 #,0 3 4 #,0 4 2 #,1 2 4 #,1 4 3 #,1 3 2 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Triangular Dipyramid (J12)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 7 10">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.525731112119133606025669084848,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063">
-            <input type="hidden" class="Vertices" value="0.0 0.0 -C1,0.0 0.0 C1,C3 C0 0.0,-C3 C0 0.0,0.5 -C2 0.0,-0.5 -C2 0.0,0.0 C4 0.0">
-            <input type="hidden" class="Faces" value="0 2 4 #,0 4 5 #,0 5 3 #,0 3 6 #,0 6 2 #,1 2 6 #,1 6 3 #,1 3 5 #,1 5 4 #,1 4 2 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 -1 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Pentagonal Dipyramid (J13)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 8 9">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.577350269189625764509148780502,1.31649658092772603273242802490">
-            <input type="hidden" class="Vertices" value="0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5,0.0 C1 0.5,0.0 C1 -0.5,0.0 0.0 C2,0.0 0.0 -C2">
-            <input type="hidden" class="Faces" value="0 1 5 4 #,4 5 3 2 #,2 3 1 0 #,6 0 4 #,6 4 2 #,6 2 0 #,7 1 3 #,7 3 5 #,7 5 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="612372436 353553391 -353553391 -612372436">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Triangular Dipyramid (J14)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 10 12">
-            <input type="hidden" class="Constants" value="1.20710678118654752440084436210">
-            <input type="hidden" class="Vertices" value="0.5 0.5 0.5,0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5,0.0 0.0 C0,0.0 0.0 -C0">
-            <input type="hidden" class="Faces" value="0 1 5 4 #,4 5 7 6 #,6 7 3 2 #,2 3 1 0 #,8 0 4 #,8 4 6 #,8 6 2 #,8 2 0 #,9 1 3 #,9 3 7 #,9 7 5 #,9 5 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="866025404 0 -500000000 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Square Dipyramid (J15)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 12 15">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,1.025731112119133606025669084848">
-            <input type="hidden" class="Vertices" value="C2 C0 0.5,C2 C0 -0.5,-C2 C0 0.5,-C2 C0 -0.5,0.5 -C1 0.5,0.5 -C1 -0.5,-0.5 -C1 0.5,-0.5 -C1 -0.5,0.0 C3 0.5,0.0 C3 -0.5,0.0 0.0 C4,0.0 0.0 -C4">
-            <input type="hidden" class="Faces" value="0 1 9 8 #,8 9 3 2 #,2 3 7 6 #,6 7 5 4 #,4 5 1 0 #,10 0 8 #,10 8 2 #,10 2 6 #,10 6 4 #,10 4 0 #,11 1 5 #,11 5 7 #,11 7 3 #,11 3 9 #,11 9 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="560985527 -430459335 -430459335 560985527">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Dipyramid (J16)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 10 16">
-            <input type="hidden" class="Constants" value="0.420448207626857271515562738117,0.7071067811865475244008443621048,1.12755498881340479591640710022">
-            <input type="hidden" class="Vertices" value="C1 0.0 C0,-C1 0.0 C0,0.0 C1 C0,0.0 -C1 C0,0.5 0.5 -C0,0.5 -0.5 -C0,-0.5 0.5 -C0,-0.5 -0.5 -C0,0.0 0.0 C2,0.0 0.0 -C2">
-            <input type="hidden" class="Faces" value="0 4 2 #,2 6 1 #,1 7 3 #,3 5 0 #,4 0 5 #,5 3 7 #,7 1 6 #,6 2 4 #,8 0 2 #,8 2 1 #,8 1 3 #,8 3 0 #,9 4 5 #,9 5 7 #,9 7 6 #,9 6 4 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="693519923 -137949690 -693519923 137949690">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Square Dipyramid (J17)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 15 14">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.418431646591734642146269971854,0.995781915781360406655418752356">
-            <input type="hidden" class="Vertices" value="C2 -C1 C0,-C2 C1 -C0,-C0 -C2 C1,C0 C2 -C1,-C1 C0 C2,C1 -C0 -C2,-C2 -C0 C1,C2 C0 -C1,-C1 C2 C0,C1 -C2 -C0,C0 -C1 C2,-C0 C1 -C2,C0 C2 C2,C2 C0 C2,C2 C2 C0">
-            <input type="hidden" class="Faces" value="1 11 5 9 2 6 #,8 12 14 3 #,10 13 12 4 #,7 14 13 0 #,8 3 11 1 #,10 4 6 2 #,7 0 9 5 #,8 1 6 4 #,10 2 9 0 #,7 5 11 3 #,8 4 12 #,10 0 13 #,7 3 14 #,12 13 14 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="892399101 -239117618 -369643811 99045761">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Triangular Cupola (J18)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 20 18">
-            <input type="hidden" class="Constants" value="1.20710678118654752440084436210">
-            <input type="hidden" class="Vertices" value="C0 0.5 0.5,C0 0.5 -0.5,C0 -0.5 0.5,C0 -0.5 -0.5,-C0 0.5 0.5,-C0 0.5 -0.5,-C0 -0.5 0.5,-C0 -0.5 -0.5,0.5 C0 0.5,0.5 C0 -0.5,0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 C0 0.5,-0.5 C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5,0.5 0.5 C0,0.5 -0.5 C0,-0.5 0.5 C0,-0.5 -0.5 C0">
-            <input type="hidden" class="Faces" value="1 3 11 15 7 5 13 9 #,16 18 19 17 #,0 16 17 2 #,12 18 16 8 #,6 19 18 4 #,10 17 19 14 #,0 2 3 1 #,12 8 9 13 #,6 4 5 7 #,10 14 15 11 #,0 1 9 8 #,12 13 5 4 #,6 7 15 14 #,10 11 3 2 #,0 8 16 #,12 4 18 #,6 14 19 #,10 2 17 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="866025404 -500000000 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Square Cupola (J19)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="9 25 22">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.025731112119133606025669084848,1.30901699437494742410229341718,1.53884176858762670128514528802,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C8 0.0 0.5,C8 0.0 -0.5,-C8 0.0 0.5,-C8 0.0 -0.5,C6 C4 0.5,C6 C4 -0.5,C6 -C4 0.5,C6 -C4 -0.5,-C6 C4 0.5,-C6 C4 -0.5,-C6 -C4 0.5,-C6 -C4 -0.5,0.5 C7 0.5,0.5 C7 -0.5,0.5 -C7 0.5,0.5 -C7 -0.5,-0.5 C7 0.5,-0.5 C7 -0.5,-0.5 -C7 0.5,-0.5 -C7 -0.5,C2 C0 C5,-C2 C0 C5,0.5 -C1 C5,-0.5 -C1 C5,0.0 C3 C5">
-            <input type="hidden" class="Faces" value="1 7 15 19 11 3 9 17 13 5 #,20 24 21 23 22 #,0 20 22 6 #,12 24 20 4 #,8 21 24 16 #,10 23 21 2 #,14 22 23 18 #,0 6 7 1 #,12 4 5 13 #,8 16 17 9 #,10 2 3 11 #,14 18 19 15 #,0 1 5 4 #,12 13 17 16 #,8 9 3 2 #,10 11 19 18 #,14 15 7 6 #,0 4 20 #,12 16 24 #,8 2 21 #,10 18 23 #,14 6 22 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Cupola (J20)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="13 30 27">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.11351636441160673519437503949,1.30901699437494742410229341718,1.35065080835203993218154049706,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437,1.87638192047117353820720958191">
-            <input type="hidden" class="Vertices" value="C11 0.0 0.5,C11 0.0 -0.5,-C11 0.0 0.5,-C11 0.0 -0.5,C7 C5 0.5,C7 C5 -0.5,C7 -C5 0.5,C7 -C5 -0.5,-C7 C5 0.5,-C7 C5 -0.5,-C7 -C5 0.5,-C7 -C5 -0.5,0.5 C10 0.5,0.5 C10 -0.5,0.5 -C10 0.5,0.5 -C10 -0.5,-0.5 C10 0.5,-0.5 C10 -0.5,-0.5 -C10 0.5,-0.5 -C10 -0.5,C7 -C1 C8,-C7 -C1 C8,C3 C6 C8,-C3 C6 C8,0.0 -C9 C8,C3 C0 C12,-C3 C0 C12,0.5 -C2 C12,-0.5 -C2 C12,0.0 C4 C12">
-            <input type="hidden" class="Faces" value="1 7 15 19 11 3 9 17 13 5 #,25 29 26 28 27 #,4 22 25 20 0 #,16 23 29 22 12 #,2 21 26 23 8 #,18 24 28 21 10 #,6 20 27 24 14 #,4 0 1 5 #,16 12 13 17 #,2 8 9 3 #,18 10 11 19 #,6 14 15 7 #,4 5 13 12 #,16 17 9 8 #,2 3 11 10 #,18 19 15 14 #,6 7 1 0 #,4 12 22 #,16 8 23 #,2 10 21 #,18 14 24 #,6 0 20 #,25 27 20 #,29 25 22 #,26 29 23 #,28 26 21 #,27 28 24 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Rotunda (J21)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 15 20">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.427799838583676096484617883106,0.577350269189625764509148780502,0.866025403784438646763723170753,1.24429641951140212921704590801">
-            <input type="hidden" class="Vertices" value="1.0 0.0 C1,-1.0 0.0 C1,0.5 C3 C1,0.5 -C3 C1,-0.5 C3 C1,-0.5 -C3 C1,C3 0.5 -C1,C3 -0.5 -C1,-C3 0.5 -C1,-C3 -0.5 -C1,0.0 1.0 -C1,0.0 -1.0 -C1,0.5 -C0 C4,-0.5 -C0 C4,0.0 C2 C4">
-            <input type="hidden" class="Faces" value="6 7 11 9 8 10 #,3 12 13 5 #,2 14 12 0 #,1 13 14 4 #,3 5 11 #,2 0 6 #,1 4 8 #,3 11 7 #,2 6 10 #,1 8 9 #,3 7 0 #,2 10 4 #,1 9 5 #,3 0 12 #,2 4 14 #,1 5 13 #,0 7 6 #,4 10 8 #,5 9 11 #,12 14 13 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="0 0 500000000 866025404">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Triangular Cupola (J22)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 20 26">
-            <input type="hidden" class="Constants" value="0.430147784931485783221150388002,0.923879532511286756128183189397,1.13725456611803330762199475011,1.20710678118654752440084436210,1.30656296487637652785664317343">
-            <input type="hidden" class="Vertices" value="C3 0.5 C0,C3 -0.5 C0,-C3 0.5 C0,-C3 -0.5 C0,0.5 C3 C0,0.5 -C3 C0,-0.5 C3 C0,-0.5 -C3 C0,C4 0.0 -C0,-C4 0.0 -C0,0.0 C4 -C0,0.0 -C4 -C0,C1 C1 -C0,C1 -C1 -C0,-C1 C1 -C0,-C1 -C1 -C0,0.5 0.5 C2,0.5 -0.5 C2,-0.5 0.5 C2,-0.5 -0.5 C2">
-            <input type="hidden" class="Faces" value="10 12 8 13 11 15 9 14 #,16 18 19 17 #,0 16 17 1 #,6 18 16 4 #,3 19 18 2 #,5 17 19 7 #,0 1 8 #,6 4 10 #,3 2 9 #,5 7 11 #,0 8 12 #,6 10 14 #,3 9 15 #,5 11 13 #,0 12 4 #,6 14 2 #,3 15 7 #,5 13 1 #,0 4 16 #,6 2 18 #,3 7 19 #,5 1 17 #,4 12 10 #,2 14 9 #,7 15 11 #,1 13 8 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="866025404 -500000000 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Square Cupola (J23)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="10 25 32">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.431198501929729241723526342454,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,0.956929614048862847749195427302,1.30901699437494742410229341718,1.53884176858762670128514528802,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C9 0.0 C1,-C9 0.0 C1,C7 C5 C1,C7 -C5 C1,-C7 C5 C1,-C7 -C5 C1,0.5 C8 C1,0.5 -C8 C1,-0.5 C8 C1,-0.5 -C8 C1,C8 0.5 -C1,C8 -0.5 -C1,-C8 0.5 -C1,-C8 -0.5 -C1,C5 C7 -C1,C5 -C7 -C1,-C5 C7 -C1,-C5 -C7 -C1,0.0 C9 -C1,0.0 -C9 -C1,C3 C0 C6,-C3 C0 C6,0.5 -C2 C6,-0.5 -C2 C6,0.0 C4 C6">
-            <input type="hidden" class="Faces" value="10 11 15 19 17 13 12 16 18 14 #,20 24 21 23 22 #,0 20 22 3 #,6 24 20 2 #,4 21 24 8 #,5 23 21 1 #,7 22 23 9 #,0 3 11 #,6 2 14 #,4 8 16 #,5 1 13 #,7 9 19 #,0 11 10 #,6 14 18 #,4 16 12 #,5 13 17 #,7 19 15 #,0 10 2 #,6 18 8 #,4 12 1 #,5 17 9 #,7 15 3 #,0 2 20 #,6 8 24 #,4 1 21 #,5 9 23 #,7 3 22 #,2 10 14 #,8 18 16 #,1 12 13 #,9 17 19 #,3 15 11 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Pentagonal Cupola (J24)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="14 30 37">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.431198501929729241723526342454,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.11351636441160673519437503949,1.28184931028176917390506683952,1.30901699437494742410229341718,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437,1.80758042240090277993073592436">
-            <input type="hidden" class="Vertices" value="C12 0.0 C2,-C12 0.0 C2,C9 C6 C2,C9 -C6 C2,-C9 C6 C2,-C9 -C6 C2,0.5 C11 C2,0.5 -C11 C2,-0.5 C11 C2,-0.5 -C11 C2,C11 0.5 -C2,C11 -0.5 -C2,-C11 0.5 -C2,-C11 -0.5 -C2,C6 C9 -C2,C6 -C9 -C2,-C6 C9 -C2,-C6 -C9 -C2,0.0 C12 -C2,0.0 -C12 -C2,C9 -C1 C8,-C9 -C1 C8,C4 C7 C8,-C4 C7 C8,0.0 -C10 C8,C4 C0 C13,-C4 C0 C13,0.5 -C3 C13,-0.5 -C3 C13,0.0 C5 C13">
-            <input type="hidden" class="Faces" value="10 11 15 19 17 13 12 16 18 14 #,25 29 26 28 27 #,2 22 25 20 0 #,8 23 29 22 6 #,1 21 26 23 4 #,9 24 28 21 5 #,3 20 27 24 7 #,2 0 10 #,8 6 18 #,1 4 12 #,9 5 17 #,3 7 15 #,2 10 14 #,8 18 16 #,1 12 13 #,9 17 19 #,3 15 11 #,2 14 6 #,8 16 4 #,1 13 5 #,9 19 7 #,3 11 0 #,2 6 22 #,8 4 23 #,1 5 21 #,9 7 24 #,3 0 20 #,6 14 18 #,4 16 12 #,5 13 17 #,7 19 15 #,0 11 10 #,25 27 20 #,29 25 22 #,26 29 23 #,28 26 21 #,27 28 24 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Pentagonal Rotunda (J25)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 8 8">
-            <input type="hidden" class="Constants" value="0.866025403784438646763723170753">
-            <input type="hidden" class="Vertices" value="0.5 0.0 C0,-0.5 0.0 C0,0.0 0.5 -C0,0.0 -0.5 -C0,0.5 0.5 0.0,0.5 -0.5 0.0,-0.5 0.5 0.0,-0.5 -0.5 0.0">
-            <input type="hidden" class="Faces" value="0 4 6 1 #,0 1 7 5 #,2 4 5 3 #,2 3 7 6 #,0 5 4 #,1 6 7 #,2 6 4 #,3 5 7 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="653281482 270598050 653281482 270598050">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyrobifastigium (J26)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 12 14">
-            <input type="hidden" class="Constants" value="0.235702260395515841466948120702,0.7071067811865475244008443621048,0.942809041582063365867792482806">
-            <input type="hidden" class="Vertices" value="-C0 -C0 -C2,-C0 -C2 -C0,-C2 -C0 -C0,C1 0.0 C1,C1 0.0 -C1,-C1 0.0 C1,C1 C1 0.0,C1 -C1 0.0,-C1 C1 0.0,0.0 C1 C1,0.0 C1 -C1,0.0 -C1 C1">
-            <input type="hidden" class="Faces" value="10 0 2 8 #,5 2 1 11 #,7 1 0 4 #,10 8 9 6 #,5 11 3 9 #,7 4 6 3 #,10 6 4 #,5 9 8 #,7 3 11 #,10 4 0 #,5 8 2 #,7 11 1 #,0 1 2 #,3 6 9 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="915975615 -120590477 49950211 379409523">
-          </div>
-          <h2 class="solids-item__title title-h2">Triangular Orthobicupola (J27)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 16 18">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210">
-            <input type="hidden" class="Vertices" value="C1 0.5 0.0,C1 -0.5 0.0,-C1 0.5 0.0,-C1 -0.5 0.0,0.5 C1 0.0,0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,0.5 0.5 C0,0.5 0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,-0.5 -0.5 C0,-0.5 -0.5 -C0">
-            <input type="hidden" class="Faces" value="8 12 14 10 #,13 9 11 15 #,0 8 10 1 #,6 12 8 4 #,3 14 12 2 #,5 10 14 7 #,0 1 11 9 #,6 4 9 13 #,3 2 13 15 #,5 7 15 11 #,0 9 4 #,6 13 2 #,3 15 7 #,5 11 1 #,0 4 8 #,6 2 12 #,3 7 14 #,5 1 10 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="819152044 -573576436 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Square Orthobicupola (J28)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 16 18">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210">
-            <input type="hidden" class="Vertices" value="C1 0.5 0.0,C1 -0.5 0.0,-C1 0.5 0.0,-C1 -0.5 0.0,0.5 C1 0.0,0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,C0 0.0 C0,-C0 0.0 C0,0.0 C0 C0,0.0 -C0 C0,0.5 0.5 -C0,0.5 -0.5 -C0,-0.5 0.5 -C0,-0.5 -0.5 -C0">
-            <input type="hidden" class="Faces" value="8 10 9 11 #,12 13 15 14 #,1 8 11 5 #,4 10 8 0 #,2 9 10 6 #,7 11 9 3 #,1 13 12 0 #,4 12 14 6 #,2 14 15 3 #,7 15 13 5 #,1 5 13 #,4 0 12 #,2 6 14 #,7 3 15 #,1 0 8 #,4 6 10 #,2 3 9 #,7 5 11 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="819152044 -573576436 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Square Gyrobicupola (J29)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="9 20 22">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.525731112119133606025669084848,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.30901699437494742410229341718,1.53884176858762670128514528802,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="-C8 0.0 0.0,C8 0.0 0.0,-0.5 C7 0.0,0.5 C7 0.0,-0.5 -C7 0.0,0.5 -C7 0.0,-C6 C5 0.0,C6 C5 0.0,-C6 -C5 0.0,C6 -C5 0.0,0.0 C4 C1,0.0 C4 -C1,-C3 C0 C1,-C3 C0 -C1,C3 C0 C1,C3 C0 -C1,-0.5 -C2 C1,-0.5 -C2 -C1,0.5 -C2 C1,0.5 -C2 -C1">
-            <input type="hidden" class="Faces" value="10 12 16 18 14 #,11 15 19 17 13 #,3 10 14 7 #,6 12 10 2 #,8 16 12 0 #,5 18 16 4 #,1 14 18 9 #,3 7 15 11 #,6 2 11 13 #,8 0 13 17 #,5 4 17 19 #,1 9 19 15 #,3 11 2 #,6 13 0 #,8 17 4 #,5 19 9 #,1 15 7 #,3 2 10 #,6 0 12 #,8 4 16 #,5 9 18 #,1 7 14 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Pentagonal Orthobicupola (J30)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 20 22">
-            <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.0 0.0 C3,0.0 0.0 -C3,C1 -0.5 C2,C1 -0.5 -C2,-C1 0.5 C2,-C1 0.5 -C2,C2 -C1 0.5,C2 -C1 -0.5,-C2 C1 0.5,-C2 C1 -0.5,1.0 0.0 0.0,-1.0 0.0 0.0,0.5 C0 C1,0.5 C0 -C1,-0.5 -C0 C1,-0.5 -C0 -C1,C0 -C1 0.5,C0 -C1 -0.5,-C0 C1 0.5,-C0 C1 -0.5">
-            <input type="hidden" class="Faces" value="10 13 19 18 12 #,11 15 17 16 14 #,6 10 12 2 #,3 13 10 7 #,5 19 13 1 #,8 18 19 9 #,0 12 18 4 #,6 16 17 7 #,3 17 15 1 #,5 15 11 9 #,8 11 14 4 #,0 14 16 2 #,6 2 16 #,3 7 17 #,5 1 15 #,8 9 11 #,0 4 14 #,6 7 10 #,3 1 13 #,5 9 19 #,8 4 18 #,0 2 12 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="699595385 -102792498 -699595385 102792498">
-          </div>
-          <a href="http://dmccooey.com/polyhedra/PentagonalGyrobicupola.html"></a>
-          <h2 class="solids-item__title title-h2">Pentagonal Gyrobicupola (J31)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 25 27">
-            <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.0 0.0 C3,0.0 0.0 -C3,C3 0.0 0.0,0.0 C3 0.0,-C1 0.5 C2,-C1 0.5 -C2,C1 -0.5 C2,C1 -0.5 -C2,C1 0.5 C2,C1 0.5 -C2,-C2 C1 0.5,-C2 C1 -0.5,C2 -C1 0.5,C2 -C1 -0.5,C2 C1 0.5,C2 C1 -0.5,-0.5 C2 C1,-0.5 C2 -C1,0.5 C2 C1,0.5 C2 -C1,-1.0 0.0 0.0,-0.5 -C0 C1,-0.5 -C0 -C1,C0 -C1 0.5,C0 -C1 -0.5">
-            <input type="hidden" class="Faces" value="3 18 14 15 19 #,20 22 24 23 21 #,10 16 3 17 11 #,0 8 18 16 4 #,12 2 14 8 6 #,7 9 15 2 13 #,5 17 19 9 1 #,10 20 21 4 #,0 21 23 6 #,12 23 24 13 #,7 24 22 1 #,5 22 20 11 #,10 11 20 #,0 4 21 #,12 6 23 #,7 13 24 #,5 1 22 #,10 4 16 #,0 6 8 #,12 13 2 #,7 1 9 #,5 11 17 #,3 19 17 #,18 3 16 #,14 18 8 #,15 14 2 #,19 15 9 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="701057385 -92295956 -701057385 92295956">
-          </div>
-          <h2 class="solids-item__title title-h2">Pentagonal Orthocupolarotunda (J32)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="9 25 27">
-            <input type="hidden" class="Constants" value="0.0527864045000420607181652662537,0.0854101966249684544613760503097,0.447213595499957939281834733746,0.585410196624968454461376050310,0.809016994374947424102293417183,0.861803398874989484820458683437,0.894427190999915878563669467493,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.0 0.0 C8,0.0 0.0 -C8,C8 0.0 0.0,0.0 C8 0.0,C4 0.5 C7,C4 0.5 -C7,C4 -0.5 C7,C4 -0.5 -C7,-C4 0.5 C7,-C4 0.5 -C7,C7 C4 0.5,C7 C4 -0.5,C7 -C4 0.5,C7 -C4 -0.5,-C7 C4 0.5,-C7 C4 -0.5,0.5 C7 C4,0.5 C7 -C4,-0.5 C7 C4,-0.5 C7 -C4,C2 -C6 0.0,-C5 -C1 0.5,-C5 -C1 -0.5,-C0 -C3 C4,-C0 -C3 -C4">
-            <input type="hidden" class="Faces" value="3 16 10 11 17 #,20 23 21 22 24 #,14 18 3 19 15 #,0 4 16 18 8 #,12 2 10 4 6 #,7 5 11 2 13 #,9 19 17 5 1 #,14 15 22 21 #,0 8 21 23 #,12 6 23 20 #,7 13 20 24 #,9 1 24 22 #,14 21 8 #,0 23 6 #,12 20 13 #,7 24 1 #,9 22 15 #,14 8 18 #,0 6 4 #,12 13 2 #,7 1 5 #,9 15 19 #,3 17 19 #,16 3 18 #,10 16 4 #,11 10 2 #,17 11 5 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="644877886 290056049 644877886 290056049">
-          </div>
-          <h2 class="solids-item__title title-h2">Pentagonal Gyrocupolarotunda (J33)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 30 32">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.11351636441160673519437503949,1.30901699437494742410229341718,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C10 0.0 0.0,-C10 0.0 0.0,C7 C5 0.0,C7 -C5 0.0,-C7 C5 0.0,-C7 -C5 0.0,0.5 C9 0.0,0.5 -C9 0.0,-0.5 C9 0.0,-0.5 -C9 0.0,C3 C0 C8,C3 C0 -C8,-C3 C0 C8,-C3 C0 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,0.0 C4 C8,0.0 C4 -C8,C7 -C1 C4,C7 -C1 -C4,-C7 -C1 C4,-C7 -C1 -C4,C3 C6 C4,C3 C6 -C4,-C3 C6 C4,-C3 C6 -C4,0.0 -C8 C4,0.0 -C8 -C4">
-            <input type="hidden" class="Faces" value="18 12 16 14 10 #,19 11 15 17 13 #,26 18 24 6 8 #,22 12 26 4 1 #,28 16 22 5 9 #,20 14 28 7 3 #,24 10 20 0 2 #,25 19 27 8 6 #,21 11 25 2 0 #,29 15 21 3 7 #,23 17 29 9 5 #,27 13 23 1 4 #,26 8 4 #,22 1 5 #,28 9 7 #,20 3 0 #,24 2 6 #,26 12 18 #,22 16 12 #,28 14 16 #,20 10 14 #,24 18 10 #,25 6 2 #,21 0 3 #,29 7 9 #,23 5 1 #,27 4 8 #,25 11 19 #,21 15 11 #,29 17 15 #,23 13 17 #,27 19 13 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="809016994 -587785252 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Pentagonal Orthobirotunda (J34)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 18 20">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.418431646591734642146269971854,0.524377394990328723721522510953,0.995781915781360406655418752356,1.23148417617687624812236687306">
-            <input type="hidden" class="Vertices" value="C3 -C1 C0,-C3 C1 -C0,-C0 -C3 C1,C0 C3 -C1,-C1 C0 C3,C1 -C0 -C3,-C3 -C0 C1,C3 C0 -C1,-C1 C3 C0,C1 -C3 -C0,C0 -C1 C3,-C0 C1 -C3,C0 C3 C3,C3 C0 C3,C3 C3 C0,-C4 -C2 -C2,-C2 -C4 -C2,-C2 -C2 -C4">
-            <input type="hidden" class="Faces" value="8 12 14 3 #,10 13 12 4 #,7 14 13 0 #,6 15 16 2 #,11 17 15 1 #,9 16 17 5 #,8 3 11 1 #,10 4 6 2 #,7 0 9 5 #,8 1 6 4 #,10 2 9 0 #,7 5 11 3 #,8 4 12 #,10 0 13 #,7 3 14 #,6 1 15 #,11 5 17 #,9 2 16 #,12 13 14 #,15 17 16 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="294284478 244628811 710465579 590586193">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Triangular Orthobicupola (J35)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 18 20">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.418431646591734642146269971854,0.995781915781360406655418752356">
-            <input type="hidden" class="Vertices" value="C2 -C1 C0,-C2 C1 -C0,-C0 -C2 C1,C0 C2 -C1,-C1 C0 C2,C1 -C0 -C2,-C2 -C0 C1,C2 C0 -C1,-C1 C2 C0,C1 -C2 -C0,C0 -C1 C2,-C0 C1 -C2,C0 C2 C2,-C0 -C2 -C2,C2 C0 C2,-C2 -C0 -C2,C2 C2 C0,-C2 -C2 -C0">
-            <input type="hidden" class="Faces" value="10 14 12 4 #,7 16 14 0 #,8 12 16 3 #,1 15 17 6 #,5 13 15 11 #,2 17 13 9 #,10 4 6 2 #,7 0 9 5 #,8 3 11 1 #,10 2 9 0 #,7 5 11 3 #,8 1 6 4 #,10 0 14 #,7 3 16 #,8 4 12 #,1 11 15 #,5 9 13 #,2 6 17 #,14 16 12 #,15 13 17 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="892399101 -239117618 -369643811 99045761">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Triangular Gyrobicupola (J36)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 24 26">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210">
-            <input type="hidden" class="Vertices" value="C0 0.0 C1,-C0 0.0 C1,0.0 C0 C1,0.0 -C0 C1,0.5 0.5 -C1,0.5 -0.5 -C1,-0.5 0.5 -C1,-0.5 -0.5 -C1,C1 0.5 0.5,C1 0.5 -0.5,C1 -0.5 0.5,C1 -0.5 -0.5,-C1 0.5 0.5,-C1 0.5 -0.5,-C1 -0.5 0.5,-C1 -0.5 -0.5,0.5 C1 0.5,0.5 C1 -0.5,0.5 -C1 0.5,0.5 -C1 -0.5,-0.5 C1 0.5,-0.5 C1 -0.5,-0.5 -C1 0.5,-0.5 -C1 -0.5">
-            <input type="hidden" class="Faces" value="0 3 18 10 #,1 2 20 12 #,2 0 8 16 #,3 1 14 22 #,4 6 21 17 #,5 4 9 11 #,6 7 15 13 #,7 5 19 23 #,16 17 21 20 #,17 16 8 9 #,18 19 11 10 #,19 18 22 23 #,8 10 11 9 #,15 14 12 13 #,20 21 13 12 #,23 22 14 15 #,0 2 1 3 #,7 6 4 5 #,0 10 8 #,1 12 14 #,2 16 20 #,3 22 18 #,4 17 9 #,5 11 19 #,6 13 21 #,7 23 15 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="809016994 -587785252 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Square Gyrobicupola (J37)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="9 30 32">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.025731112119133606025669084848,1.30901699437494742410229341718,1.53884176858762670128514528802,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C8 0.0 0.5,C8 0.0 -0.5,-C8 0.0 0.5,-C8 0.0 -0.5,C6 C4 0.5,C6 C4 -0.5,C6 -C4 0.5,C6 -C4 -0.5,-C6 C4 0.5,-C6 C4 -0.5,-C6 -C4 0.5,-C6 -C4 -0.5,0.5 C7 0.5,0.5 C7 -0.5,0.5 -C7 0.5,0.5 -C7 -0.5,-0.5 C7 0.5,-0.5 C7 -0.5,-0.5 -C7 0.5,-0.5 -C7 -0.5,C2 C0 C5,C2 C0 -C5,-C2 C0 C5,-C2 C0 -C5,0.5 -C1 C5,0.5 -C1 -C5,-0.5 -C1 C5,-0.5 -C1 -C5,0.0 C3 C5,0.0 C3 -C5">
-            <input type="hidden" class="Faces" value="20 28 22 26 24 #,21 25 27 23 29 #,0 20 24 6 #,12 28 20 4 #,8 22 28 16 #,10 26 22 2 #,14 24 26 18 #,5 21 29 13 #,7 25 21 1 #,19 27 25 15 #,3 23 27 11 #,17 29 23 9 #,0 6 7 1 #,12 4 5 13 #,8 16 17 9 #,10 2 3 11 #,14 18 19 15 #,0 1 5 4 #,12 13 17 16 #,8 9 3 2 #,10 11 19 18 #,14 15 7 6 #,0 4 20 #,12 16 28 #,8 2 22 #,10 18 26 #,14 6 24 #,5 1 21 #,7 15 25 #,19 11 27 #,3 9 23 #,17 13 29 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Orthobicupola (J38)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="9 30 32">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.025731112119133606025669084848,1.30901699437494742410229341718,1.53884176858762670128514528802,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C8 0.0 0.5,C8 0.0 -0.5,-C8 0.0 0.5,-C8 0.0 -0.5,C6 C4 0.5,C6 C4 -0.5,C6 -C4 0.5,C6 -C4 -0.5,-C6 C4 0.5,-C6 C4 -0.5,-C6 -C4 0.5,-C6 -C4 -0.5,0.5 C7 0.5,0.5 C7 -0.5,0.5 -C7 0.5,0.5 -C7 -0.5,-0.5 C7 0.5,-0.5 C7 -0.5,-0.5 -C7 0.5,-0.5 -C7 -0.5,C2 C0 C5,C2 -C0 -C5,-C2 C0 C5,-C2 -C0 -C5,0.5 -C1 C5,0.5 C1 -C5,-0.5 -C1 C5,-0.5 C1 -C5,0.0 C3 C5,0.0 -C3 -C5">
-            <input type="hidden" class="Faces" value="20 28 22 26 24 #,21 29 23 27 25 #,0 20 24 6 #,12 28 20 4 #,8 22 28 16 #,10 26 22 2 #,14 24 26 18 #,1 21 25 5 #,15 29 21 7 #,11 23 29 19 #,9 27 23 3 #,13 25 27 17 #,0 6 7 1 #,12 4 5 13 #,8 16 17 9 #,10 2 3 11 #,14 18 19 15 #,0 1 5 4 #,12 13 17 16 #,8 9 3 2 #,10 11 19 18 #,14 15 7 6 #,0 4 20 #,12 16 28 #,8 2 22 #,10 18 26 #,14 6 24 #,1 7 21 #,15 19 29 #,11 3 23 #,9 17 27 #,13 5 25 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="0 0 608761429 793353340">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Gyrobicupola (J39)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="14 35 37">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.025731112119133606025669084848,1.11351636441160673519437503949,1.30901699437494742410229341718,1.35065080835203993218154049706,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437,1.87638192047117353820720958191">
-            <input type="hidden" class="Vertices" value="C12 0.0 0.5,C12 0.0 -0.5,-C12 0.0 0.5,-C12 0.0 -0.5,C8 C5 0.5,C8 C5 -0.5,C8 -C5 0.5,C8 -C5 -0.5,-C8 C5 0.5,-C8 C5 -0.5,-C8 -C5 0.5,-C8 -C5 -0.5,0.5 C11 0.5,0.5 C11 -0.5,0.5 -C11 0.5,0.5 -C11 -0.5,-0.5 C11 0.5,-0.5 C11 -0.5,-0.5 -C11 0.5,-0.5 -C11 -0.5,C8 -C1 C9,-C8 -C1 C9,C3 C7 C9,-C3 C7 C9,0.0 -C10 C9,C3 C0 C13,-C3 C0 C13,0.5 -C2 C13,-0.5 -C2 C13,0.0 C4 C13,C3 C0 -C6,-C3 C0 -C6,0.5 -C2 -C6,-0.5 -C2 -C6,0.0 C4 -C6">
-            <input type="hidden" class="Faces" value="25 29 26 28 27 #,30 32 33 31 34 #,22 25 20 0 4 #,23 29 22 12 16 #,21 26 23 8 2 #,24 28 21 10 18 #,20 27 24 14 6 #,5 30 34 13 #,7 32 30 1 #,19 33 32 15 #,3 31 33 11 #,17 34 31 9 #,5 13 12 4 #,7 1 0 6 #,19 15 14 18 #,3 11 10 2 #,17 9 8 16 #,5 4 0 1 #,7 6 14 15 #,19 18 10 11 #,3 2 8 9 #,17 16 12 13 #,22 4 12 #,23 16 8 #,21 2 10 #,24 18 14 #,20 6 0 #,22 29 25 #,23 26 29 #,21 28 26 #,24 27 28 #,20 25 27 #,5 1 30 #,7 15 32 #,19 11 33 #,3 9 31 #,17 13 34 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Orthocupolarotunda (J40)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="14 35 37">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.025731112119133606025669084848,1.11351636441160673519437503949,1.30901699437494742410229341718,1.35065080835203993218154049706,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437,1.87638192047117353820720958191">
-            <input type="hidden" class="Vertices" value="C12 0.0 0.5,C12 0.0 -0.5,-C12 0.0 0.5,-C12 0.0 -0.5,C8 C5 0.5,C8 C5 -0.5,C8 -C5 0.5,C8 -C5 -0.5,-C8 C5 0.5,-C8 C5 -0.5,-C8 -C5 0.5,-C8 -C5 -0.5,0.5 C11 0.5,0.5 C11 -0.5,0.5 -C11 0.5,0.5 -C11 -0.5,-0.5 C11 0.5,-0.5 C11 -0.5,-0.5 -C11 0.5,-0.5 -C11 -0.5,C8 -C1 C9,-C8 -C1 C9,C3 C7 C9,-C3 C7 C9,0.0 -C10 C9,C3 C0 C13,-C3 C0 C13,0.5 -C2 C13,-0.5 -C2 C13,0.0 C4 C13,C3 -C0 -C6,-C3 -C0 -C6,0.5 C2 -C6,-0.5 C2 -C6,0.0 -C4 -C6">
-            <input type="hidden" class="Faces" value="25 29 26 28 27 #,30 34 31 33 32 #,22 25 20 0 4 #,23 29 22 12 16 #,21 26 23 8 2 #,24 28 21 10 18 #,20 27 24 14 6 #,1 30 32 5 #,15 34 30 7 #,11 31 34 19 #,9 33 31 3 #,13 32 33 17 #,1 5 4 0 #,15 7 6 14 #,11 19 18 10 #,9 3 2 8 #,13 17 16 12 #,1 0 6 7 #,15 14 18 19 #,11 10 2 3 #,9 8 16 17 #,13 12 4 5 #,22 4 12 #,23 16 8 #,21 2 10 #,24 18 14 #,20 6 0 #,22 29 25 #,23 26 29 #,21 28 26 #,24 27 28 #,20 25 27 #,1 7 30 #,15 19 34 #,11 3 31 #,9 17 33 #,13 5 32 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="0 0 608761429 793353340">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Gyrocupolarotunda (J41)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="13 40 42">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.11351636441160673519437503949,1.30901699437494742410229341718,1.35065080835203993218154049706,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437,1.87638192047117353820720958191">
-            <input type="hidden" class="Vertices" value="C11 0.0 0.5,C11 0.0 -0.5,-C11 0.0 0.5,-C11 0.0 -0.5,C7 C5 0.5,C7 C5 -0.5,C7 -C5 0.5,C7 -C5 -0.5,-C7 C5 0.5,-C7 C5 -0.5,-C7 -C5 0.5,-C7 -C5 -0.5,0.5 C10 0.5,0.5 C10 -0.5,0.5 -C10 0.5,0.5 -C10 -0.5,-0.5 C10 0.5,-0.5 C10 -0.5,-0.5 -C10 0.5,-0.5 -C10 -0.5,C3 C0 C12,C3 C0 -C12,-C3 C0 C12,-C3 C0 -C12,0.5 -C2 C12,0.5 -C2 -C12,-0.5 -C2 C12,-0.5 -C2 -C12,0.0 C4 C12,0.0 C4 -C12,C7 -C1 C8,C7 -C1 -C8,-C7 -C1 C8,-C7 -C1 -C8,C3 C6 C8,C3 C6 -C8,-C3 C6 C8,-C3 C6 -C8,0.0 -C9 C8,0.0 -C9 -C8">
-            <input type="hidden" class="Faces" value="20 28 22 26 24 #,21 25 27 23 29 #,34 20 30 0 4 #,36 28 34 12 16 #,32 22 36 8 2 #,38 26 32 10 18 #,30 24 38 14 6 #,31 21 35 5 1 #,39 25 31 7 15 #,33 27 39 19 11 #,37 23 33 3 9 #,35 29 37 17 13 #,0 6 7 1 #,12 4 5 13 #,8 16 17 9 #,10 2 3 11 #,14 18 19 15 #,4 0 1 5 #,16 12 13 17 #,2 8 9 3 #,18 10 11 19 #,6 14 15 7 #,34 4 12 #,36 16 8 #,32 2 10 #,38 18 14 #,30 6 0 #,34 28 20 #,36 22 28 #,32 26 22 #,38 24 26 #,30 20 24 #,31 1 7 #,39 15 19 #,33 11 3 #,37 9 17 #,35 13 5 #,31 25 21 #,39 27 25 #,33 23 27 #,37 29 23 #,35 21 29 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="793353340 -608761429 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Orthobirotunda (J42)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="13 40 42">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.11351636441160673519437503949,1.30901699437494742410229341718,1.35065080835203993218154049706,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437,1.87638192047117353820720958191">
-            <input type="hidden" class="Vertices" value="C11 0.0 0.5,C11 0.0 -0.5,-C11 0.0 0.5,-C11 0.0 -0.5,C7 C5 0.5,C7 C5 -0.5,C7 -C5 0.5,C7 -C5 -0.5,-C7 C5 0.5,-C7 C5 -0.5,-C7 -C5 0.5,-C7 -C5 -0.5,0.5 C10 0.5,0.5 C10 -0.5,0.5 -C10 0.5,0.5 -C10 -0.5,-0.5 C10 0.5,-0.5 C10 -0.5,-0.5 -C10 0.5,-0.5 -C10 -0.5,C3 C0 C12,C3 -C0 -C12,-C3 C0 C12,-C3 -C0 -C12,0.5 -C2 C12,0.5 C2 -C12,-0.5 -C2 C12,-0.5 C2 -C12,0.0 C4 C12,0.0 -C4 -C12,C7 -C1 C8,C7 C1 -C8,-C7 -C1 C8,-C7 C1 -C8,C3 C6 C8,C3 -C6 -C8,-C3 C6 C8,-C3 -C6 -C8,0.0 -C9 C8,0.0 C9 -C8">
-            <input type="hidden" class="Faces" value="21 29 23 27 25 #,20 28 22 26 24 #,35 21 31 1 7 #,37 29 35 15 19 #,33 23 37 11 3 #,39 27 33 9 17 #,31 25 39 13 5 #,34 20 30 0 4 #,36 28 34 12 16 #,32 22 36 8 2 #,38 26 32 10 18 #,30 24 38 14 6 #,7 1 0 6 #,19 15 14 18 #,3 11 10 2 #,17 9 8 16 #,5 13 12 4 #,4 0 1 5 #,16 12 13 17 #,2 8 9 3 #,18 10 11 19 #,6 14 15 7 #,35 7 15 #,37 19 11 #,33 3 9 #,39 17 13 #,31 5 1 #,35 29 21 #,37 23 29 #,33 27 23 #,39 25 27 #,31 21 25 #,34 4 12 #,36 16 8 #,32 2 10 #,38 18 14 #,30 6 0 #,34 28 20 #,36 22 28 #,32 26 22 #,38 24 26 #,30 20 24 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="0 0 608761429 793353340">
-          </div>
-          <h2 class="solids-item__title title-h2">Elongated Pentagonal Gyrobirotunda (J43)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 18 26">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.427799838583676096484617883106,0.577350269189625764509148780502,0.866025403784438646763723170753,1.24429641951140212921704590801">
-            <input type="hidden" class="Vertices" value="1.0 0.0 C1,-1.0 0.0 C1,0.5 C3 C1,0.5 -C3 C1,-0.5 C3 C1,-0.5 -C3 C1,C3 0.5 -C1,C3 -0.5 -C1,-C3 0.5 -C1,-C3 -0.5 -C1,0.0 1.0 -C1,0.0 -1.0 -C1,0.5 -C0 C4,-0.5 -C0 C4,0.0 C2 C4,C0 0.5 -C4,C0 -0.5 -C4,-C2 0.0 -C4">
-            <input type="hidden" class="Faces" value="3 12 13 5 #,2 14 12 0 #,1 13 14 4 #,10 15 17 8 #,7 16 15 6 #,9 17 16 11 #,3 5 11 #,2 0 6 #,1 4 8 #,10 8 4 #,7 6 0 #,9 11 5 #,3 11 7 #,2 6 10 #,1 8 9 #,10 4 2 #,7 0 3 #,9 5 1 #,3 0 12 #,2 4 14 #,1 5 13 #,10 6 15 #,7 11 16 #,9 8 17 #,12 14 13 #,15 16 17 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="810093561 -526080910 140962955 217063916">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Triangular Bicupola (J44)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="7 24 34">
-            <input type="hidden" class="Constants" value="0.270598050073098492199861602683,0.430147784931485783221150388002,0.653281482438188263928321586714,0.923879532511286756128183189397,1.13725456611803330762199475011,1.20710678118654752440084436210,1.30656296487637652785664317343">
-            <input type="hidden" class="Vertices" value="C5 0.5 C1,C5 -0.5 C1,-C5 0.5 C1,-C5 -0.5 C1,0.5 C5 C1,0.5 -C5 C1,-0.5 C5 C1,-0.5 -C5 C1,C6 0.0 -C1,-C6 0.0 -C1,0.0 C6 -C1,0.0 -C6 -C1,C3 C3 -C1,C3 -C3 -C1,-C3 C3 -C1,-C3 -C3 -C1,0.5 0.5 C4,0.5 -0.5 C4,-0.5 0.5 C4,-0.5 -0.5 C4,C2 -C0 -C4,-C2 C0 -C4,C0 C2 -C4,-C0 -C2 -C4">
-            <input type="hidden" class="Faces" value="16 18 19 17 #,20 23 21 22 #,1 0 16 17 #,4 6 18 16 #,2 3 19 18 #,7 5 17 19 #,12 8 20 22 #,13 11 23 20 #,15 9 21 23 #,14 10 22 21 #,1 17 5 #,4 16 0 #,2 18 6 #,7 19 3 #,12 22 10 #,13 20 8 #,15 23 11 #,14 21 9 #,1 5 13 #,4 0 12 #,2 6 14 #,7 3 15 #,12 10 4 #,13 8 1 #,15 11 7 #,14 9 2 #,1 8 0 #,4 10 6 #,2 9 3 #,7 11 5 #,12 0 8 #,13 5 11 #,15 3 9 #,14 6 10 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="803412267 -562555326 -111899212 -159808636">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Square Bicupola (J45)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="10 30 42">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.431198501929729241723526342454,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,0.956929614048862847749195427302,1.30901699437494742410229341718,1.53884176858762670128514528802,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C9 0.0 C1,-C9 0.0 C1,0.0 C9 -C1,0.0 -C9 -C1,C7 C5 C1,C7 -C5 C1,-C7 C5 C1,-C7 -C5 C1,C5 C7 -C1,C5 -C7 -C1,-C5 C7 -C1,-C5 -C7 -C1,0.5 C8 C1,0.5 -C8 C1,-0.5 C8 C1,-0.5 -C8 C1,C8 0.5 -C1,C8 -0.5 -C1,-C8 0.5 -C1,-C8 -0.5 -C1,0.0 C4 C6,C4 0.0 -C6,C3 C0 C6,-C3 C0 C6,C0 C3 -C6,C0 -C3 -C6,0.5 -C2 C6,-0.5 -C2 C6,-C2 0.5 -C6,-C2 -0.5 -C6">
-            <input type="hidden" class="Faces" value="20 23 27 26 22 #,21 25 29 28 24 #,4 12 20 22 #,14 6 23 20 #,1 7 27 23 #,15 13 26 27 #,5 0 22 26 #,8 16 21 24 #,17 9 25 21 #,3 11 29 25 #,19 18 28 29 #,10 2 24 28 #,4 22 0 #,14 20 12 #,1 23 6 #,15 27 7 #,5 26 13 #,8 24 2 #,17 21 16 #,3 25 9 #,19 29 11 #,10 28 18 #,4 0 16 #,14 12 2 #,1 6 18 #,15 7 11 #,5 13 9 #,8 2 12 #,17 16 0 #,3 9 13 #,19 11 7 #,10 18 6 #,4 8 12 #,14 10 6 #,1 19 7 #,15 3 13 #,5 17 0 #,8 4 16 #,17 5 9 #,3 15 11 #,19 1 18 #,10 14 2 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="783585844 -601266566 95231268 124107805">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Pentagonal Bicupola (J46)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="15 35 47">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.431198501929729241723526342454,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,0.956929614048862847749195427302,1.11351636441160673519437503949,1.28184931028176917390506683952,1.30901699437494742410229341718,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437,1.80758042240090277993073592436">
-            <input type="hidden" class="Vertices" value="C13 0.0 C2,-C13 0.0 C2,0.0 C13 -C2,0.0 -C13 -C2,0.5 C12 C2,0.5 -C12 C2,-0.5 C12 C2,-0.5 -C12 C2,C12 0.5 -C2,C12 -0.5 -C2,-C12 0.5 -C2,-C12 -0.5 -C2,C10 C6 C2,C10 -C6 C2,-C10 C6 C2,-C10 -C6 C2,C6 C10 -C2,C6 -C10 -C2,-C6 C10 -C2,-C6 -C10 -C2,C4 C0 C14,-C4 C0 C14,0.5 -C3 C14,-0.5 -C3 C14,0.0 C5 C14,C10 -C1 C9,-C10 -C1 C9,C4 C8 C9,-C4 C8 C9,0.0 -C11 C9,C0 C4 -C7,C0 -C4 -C7,-C3 0.5 -C7,-C3 -0.5 -C7,C5 0.0 -C7">
-            <input type="hidden" class="Faces" value="20 24 21 23 22 #,30 34 31 33 32 #,0 12 27 20 25 #,4 6 28 24 27 #,14 1 26 21 28 #,15 7 29 23 26 #,5 13 25 22 29 #,2 30 32 18 #,8 34 30 16 #,17 31 34 9 #,19 33 31 3 #,10 32 33 11 #,2 18 6 #,8 16 12 #,17 9 13 #,19 3 7 #,10 11 1 #,2 6 4 #,8 12 0 #,17 13 5 #,19 7 15 #,10 1 14 #,2 4 16 #,8 0 9 #,17 5 3 #,19 15 11 #,10 14 18 #,2 16 30 #,8 9 34 #,17 3 31 #,19 11 33 #,10 18 32 #,0 25 13 #,4 27 12 #,14 28 6 #,15 26 1 #,5 29 7 #,0 13 9 #,4 12 16 #,14 6 18 #,15 1 11 #,5 7 3 #,20 22 25 #,24 20 27 #,21 24 28 #,23 21 26 #,22 23 29 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="783585844 -601266566 95231268 124107805">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Pentagonal Cupolarotunda (J47)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="14 40 52">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.431198501929729241723526342454,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.11351636441160673519437503949,1.28184931028176917390506683952,1.30901699437494742410229341718,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437,1.80758042240090277993073592436">
-            <input type="hidden" class="Vertices" value="0.0 C5 C13,-C5 0.0 -C13,C4 C0 C13,-C4 C0 C13,-C0 C4 -C13,-C0 -C4 -C13,0.5 -C3 C13,-0.5 -C3 C13,C3 0.5 -C13,C3 -0.5 -C13,0.0 -C10 C8,C10 0.0 -C8,C9 -C1 C8,-C9 -C1 C8,C1 C9 -C8,C1 -C9 -C8,C4 C7 C8,-C4 C7 C8,-C7 C4 -C8,-C7 -C4 -C8,C12 0.0 C2,-C12 0.0 C2,0.0 C12 -C2,0.0 -C12 -C2,0.5 C11 C2,0.5 -C11 C2,-0.5 C11 C2,-0.5 -C11 C2,C11 0.5 -C2,C11 -0.5 -C2,-C11 0.5 -C2,-C11 -0.5 -C2,C9 C6 C2,C9 -C6 C2,-C9 C6 C2,-C9 -C6 C2,C6 C9 -C2,C6 -C9 -C2,-C6 C9 -C2,-C6 -C9 -C2">
-            <input type="hidden" class="Faces" value="0 3 7 6 2 #,1 4 8 9 5 #,24 26 17 0 16 #,34 21 13 3 17 #,35 27 10 7 13 #,25 33 12 6 10 #,20 32 16 2 12 #,31 30 18 1 19 #,38 22 14 4 18 #,36 28 11 8 14 #,29 37 15 9 11 #,23 39 19 5 15 #,24 16 32 #,34 17 26 #,35 13 21 #,25 10 27 #,20 12 33 #,31 19 39 #,38 18 30 #,36 14 22 #,29 11 28 #,23 15 37 #,24 32 36 #,34 26 38 #,35 21 31 #,25 27 23 #,20 33 29 #,31 39 35 #,38 30 34 #,36 22 24 #,29 28 20 #,23 37 25 #,24 22 26 #,34 30 21 #,35 39 27 #,25 37 33 #,20 28 32 #,31 21 30 #,38 26 22 #,36 32 28 #,29 33 37 #,23 27 39 #,0 2 16 #,3 0 17 #,7 3 13 #,6 7 10 #,2 6 12 #,1 5 19 #,4 1 18 #,8 4 14 #,9 8 11 #,5 9 15 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="783585844 -601266566 -95231268 -124107805">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyroelongated Pentagonal Birotunda(J48)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 7 8">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.577350269189625764509148780502,0.995781915781360406655418752356">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C0,0.5 -0.5 C0,-0.5 0.5 C0,-0.5 -0.5 C0,0.0 0.5 -C1,0.0 -0.5 -C1,0.0 0.0 C2">
-            <input type="hidden" class="Faces" value="4 5 3 2 #,5 4 0 1 #,4 2 0 #,5 1 3 #,6 0 2 #,6 2 3 #,6 3 1 #,6 1 0 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="612372436 -353553391 353553391 612372436">
-          </div>
-          <h2 class="solids-item__title title-h2">Augmented Triangular Prism (J49)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 8 11">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.497890957890680203327709376178,0.577350269189625764509148780502,0.862372435695794524549321018676">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C0,0.5 -0.5 C0,-0.5 0.5 C0,-0.5 -0.5 C0,0.0 0.5 -C2,0.0 -0.5 -C2,C3 0.0 -C1,-C3 0.0 -C1">
-            <input type="hidden" class="Faces" value="0 2 3 1 #,1 3 5 #,2 0 4 #,6 0 1 #,6 1 5 #,6 5 4 #,6 4 0 #,7 3 2 #,7 2 4 #,7 4 5 #,7 5 3 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="866025404 500000000 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Biaugmented Triangular Prism (J50)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 9 14">
-            <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.497890957890680203327709376178,0.577350269189625764509148780502,0.862372435695794524549321018676,0.995781915781360406655418752356">
-            <input type="hidden" class="Vertices" value="0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5,0.0 C2 0.5,0.0 C2 -0.5,C3 C1 0.0,-C3 C1 0.0,0.0 -C4 0.0">
-            <input type="hidden" class="Faces" value="0 4 2 #,1 3 5 #,6 0 1 #,6 1 5 #,6 5 4 #,6 4 0 #,7 2 4 #,7 4 5 #,7 5 3 #,7 3 2 #,8 0 2 #,8 2 3 #,8 3 1 #,8 1 0 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Triaugmented Triangular Prism (J51)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 11 10">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,1.39529774142213429350444915306">
-            <input type="hidden" class="Vertices" value="C2 0.5 -C0,C2 -0.5 -C0,-C2 0.5 -C0,-C2 -0.5 -C0,0.5 0.5 C1,0.5 -0.5 C1,-0.5 0.5 C1,-0.5 -0.5 C1,0.0 0.5 -C3,0.0 -0.5 -C3,0.0 0.0 C4">
-            <input type="hidden" class="Faces" value="0 8 2 6 4 #,3 9 1 5 7 #,0 1 9 8 #,3 2 8 9 #,0 4 5 1 #,3 7 6 2 #,10 4 6 #,10 6 7 #,10 7 5 #,10 5 4 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="980785280 -195090322 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Augmented Pentagonal Prism (J52)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="6 12 13">
-            <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.431170714312420518445035726794,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,1.32700700915143103901120567748">
-            <input type="hidden" class="Vertices" value="C3 0.5 C0,C3 -0.5 C0,-C3 0.5 C0,-C3 -0.5 C0,0.5 0.5 -C2,0.5 -0.5 -C2,-0.5 0.5 -C2,-0.5 -0.5 -C2,0.0 0.5 C4,0.0 -0.5 C4,C5 0.0 -C1,-C5 0.0 -C1">
-            <input type="hidden" class="Faces" value="0 4 6 2 8 #,3 7 5 1 9 #,0 8 9 1 #,3 9 8 2 #,4 5 7 6 #,10 0 1 #,10 1 5 #,10 5 4 #,10 4 0 #,11 3 2 #,11 2 6 #,11 6 7 #,11 7 3 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="965925826 -258819045 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Biaugmented Pentagonal Prism (J53)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 13 11">
-            <input type="hidden" class="Constants" value="0.866025403784438646763723170753,1.57313218497098617116456753286">
-            <input type="hidden" class="Vertices" value="1.0 0.5 0.0,1.0 -0.5 0.0,-1.0 0.5 0.0,-1.0 -0.5 0.0,0.5 0.5 C0,0.5 0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,-0.5 -0.5 C0,-0.5 -0.5 -C0,0.0 0.0 C1">
-            <input type="hidden" class="Faces" value="0 5 9 2 8 4 #,3 11 7 1 6 10 #,0 4 6 1 #,3 10 8 2 #,0 1 7 5 #,3 2 9 11 #,5 7 11 9 #,12 4 8 #,12 8 10 #,12 10 6 #,12 6 4 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="980785280 -195090322 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Augmented Hexagonal Prism (J54)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 14 14">
-            <input type="hidden" class="Constants" value="0.866025403784438646763723170753,1.57313218497098617116456753286">
-            <input type="hidden" class="Vertices" value="C0 0.5 0.5,C0 0.5 -0.5,C0 -0.5 0.5,C0 -0.5 -0.5,-C0 0.5 0.5,-C0 0.5 -0.5,-C0 -0.5 0.5,-C0 -0.5 -0.5,0.0 1.0 0.5,0.0 1.0 -0.5,0.0 -1.0 0.5,0.0 -1.0 -0.5,C1 0.0 0.0,-C1 0.0 0.0">
-            <input type="hidden" class="Faces" value="0 8 4 6 10 2 #,5 9 1 3 11 7 #,8 9 5 4 #,9 8 0 1 #,10 11 3 2 #,11 10 6 7 #,12 0 2 #,12 2 3 #,12 3 1 #,12 1 0 #,13 5 7 #,13 7 6 #,13 6 4 #,13 4 5 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="866025404 500000000 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Parabiaugmented Hexagonal Prism (J55)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 14 14">
-            <input type="hidden" class="Constants" value="0.786566092485493085582283766429,0.866025403784438646763723170753,1.36237243569579452454932101868">
-            <input type="hidden" class="Vertices" value="1.0 0.5 0.0,1.0 -0.5 0.0,-1.0 0.5 0.0,-1.0 -0.5 0.0,0.5 0.5 C1,0.5 0.5 -C1,0.5 -0.5 C1,0.5 -0.5 -C1,-0.5 0.5 C1,-0.5 0.5 -C1,-0.5 -0.5 C1,-0.5 -0.5 -C1,C2 0.0 C0,-C2 0.0 C0">
-            <input type="hidden" class="Faces" value="0 5 9 2 8 4 #,3 11 7 1 6 10 #,0 1 7 5 #,3 2 9 11 #,4 8 10 6 #,5 7 11 9 #,12 0 4 #,12 4 6 #,12 6 1 #,12 1 0 #,13 3 10 #,13 10 8 #,13 8 2 #,13 2 3 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="382683432 923879533 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Metabiaugmented Hexagonal Prism(J56)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 15 17">
-            <input type="hidden" class="Constants" value="0.786566092485493085582283766429,0.866025403784438646763723170753,1.36237243569579452454932101868,1.57313218497098617116456753286">
-            <input type="hidden" class="Vertices" value="1.0 0.0 0.5,1.0 0.0 -0.5,-1.0 0.0 0.5,-1.0 0.0 -0.5,0.5 C1 0.5,0.5 C1 -0.5,0.5 -C1 0.5,0.5 -C1 -0.5,-0.5 C1 0.5,-0.5 C1 -0.5,-0.5 -C1 0.5,-0.5 -C1 -0.5,C2 C0 0.0,-C2 C0 0.0,0.0 -C3 0.0">
-            <input type="hidden" class="Faces" value="0 4 8 2 10 6 #,3 9 5 1 7 11 #,2 3 11 10 #,4 5 9 8 #,6 7 1 0 #,12 0 1 #,12 1 5 #,12 5 4 #,12 4 0 #,13 3 2 #,13 2 8 #,13 8 9 #,13 9 3 #,14 6 10 #,14 10 11 #,14 11 7 #,14 7 6 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="0 0 -382683432 923879533">
-          </div>
-          <h2 class="solids-item__title title-h2">Triaugmented Hexagonal Prism (J57)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 21 16">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C2,0.0 0.5 -C2,0.0 -0.5 C2,0.0 -0.5 -C2,C2 0.0 0.5,C2 0.0 -0.5,-C2 0.0 0.5,-C2 0.0 -0.5,0.5 C2 0.0,0.5 -C2 0.0,-0.5 C2 0.0,-0.5 -C2 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0,0.0 C3 C1">
-            <input type="hidden" class="Faces" value="0 2 14 4 12 #,0 16 6 18 2 #,7 6 16 10 17 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #,9 15 5 4 14 #,9 14 2 18 11 #,13 1 17 10 8 #,13 8 12 4 5 #,13 5 15 3 1 #,20 0 12 #,20 12 8 #,20 8 10 #,20 10 16 #,20 16 0 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Augmented Dodecahedron (J58)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 22 20">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C2,0.0 0.5 -C2,0.0 -0.5 C2,0.0 -0.5 -C2,C2 0.0 0.5,C2 0.0 -0.5,-C2 0.0 0.5,-C2 0.0 -0.5,0.5 C2 0.0,0.5 -C2 0.0,-0.5 C2 0.0,-0.5 -C2 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0,0.0 C3 -C1,0.0 -C3 C1">
-            <input type="hidden" class="Faces" value="0 2 14 4 12 #,0 12 8 10 16 #,0 16 6 18 2 #,7 6 16 10 17 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #,9 15 5 4 14 #,13 5 15 3 1 #,13 8 12 4 5 #,20 1 17 #,20 17 10 #,20 10 8 #,20 8 13 #,20 13 1 #,21 2 18 #,21 18 11 #,21 11 9 #,21 9 14 #,21 14 2 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 -1 1 1">
-          </div>
-          <h2 class="solids-item__title title-h2">Parabiaugmented Dodecahedron (J59)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 22 20">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C2,0.0 0.5 -C2,0.0 -0.5 C2,0.0 -0.5 -C2,C2 0.0 0.5,C2 0.0 -0.5,-C2 0.0 0.5,-C2 0.0 -0.5,0.5 C2 0.0,0.5 -C2 0.0,-0.5 C2 0.0,-0.5 -C2 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0,0.0 C3 C1,0.0 -C3 C1">
-            <input type="hidden" class="Faces" value="0 2 14 4 12 #,0 16 6 18 2 #,7 6 16 10 17 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #,9 15 5 4 14 #,13 1 17 10 8 #,13 5 15 3 1 #,13 8 12 4 5 #,20 16 0 #,20 0 12 #,21 14 2 #,21 2 18 #,20 10 16 #,20 12 8 #,21 9 14 #,21 18 11 #,20 8 10 #,21 11 9 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Metabiaugmented Dodecahedron (J60)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 23 24">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C2,0.0 0.5 -C2,0.0 -0.5 C2,0.0 -0.5 -C2,C2 0.0 0.5,C2 0.0 -0.5,-C2 0.0 0.5,-C2 0.0 -0.5,0.5 C2 0.0,0.5 -C2 0.0,-0.5 C2 0.0,-0.5 -C2 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0,C3 C1 0.0,-C3 C1 0.0,0.0 -C3 C1">
-            <input type="hidden" class="Faces" value="0 2 14 4 12 #,0 12 8 10 16 #,0 16 6 18 2 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #,9 15 5 4 14 #,13 5 15 3 1 #,13 1 17 10 8 #,20 4 5 #,20 5 13 #,20 13 8 #,20 8 12 #,20 12 4 #,21 6 16 #,21 16 10 #,21 10 17 #,21 17 7 #,21 7 6 #,22 2 18 #,22 18 11 #,22 11 9 #,22 9 14 #,22 14 2 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Triaugmented Dodecahedron (J61)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 10 12">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183">
-            <input type="hidden" class="Vertices" value="0.5 0.0 C0,0.5 0.0 -C0,-0.5 0.0 C0,-0.5 0.0 -C0,C0 0.5 0.0,C0 -0.5 0.0,-C0 0.5 0.0,-C0 -0.5 0.0,0.0 C0 -0.5,0.0 -C0 -0.5">
-            <input type="hidden" class="Faces" value="0 2 7 9 5 #,2 0 4 8 6 #,0 5 4 #,2 6 7 #,1 3 8 #,3 1 9 #,1 8 4 #,3 9 7 #,1 4 5 #,3 7 6 #,1 5 9 #,3 6 8 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="582413532 400991867 -400991867 582413532">
-          </div>
-          <h2 class="solids-item__title title-h2">Metabidiminished Icosahedron (J62)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 9 8">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183">
-            <input type="hidden" class="Vertices" value="0.5 0.0 C0,0.5 0.0 -C0,-0.5 0.0 C0,-0.5 0.0 -C0,C0 0.5 0.0,-C0 0.5 0.0,0.0 -C0 0.5,0.0 -C0 -0.5,0.0 C0 -0.5">
-            <input type="hidden" class="Faces" value="0 4 8 5 2 #,2 5 3 7 6 #,6 7 1 4 0 #,4 1 8 #,5 8 3 #,7 3 1 #,1 3 8 #,0 2 6 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="983405399 -181421665 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Tridiminished Icosahedron (J63)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 10 10">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.907743518916014157634660713798">
-            <input type="hidden" class="Vertices" value="C0 0.5 0.0,0.0 C0 0.5,0.5 0.0 C0,-C0 0.5 0.0,0.0 -C0 0.5,0.5 0.0 -C0,-C0 -0.5 0.0,0.0 -C0 -0.5,-0.5 0.0 -C0,C1 C1 C1">
-            <input type="hidden" class="Faces" value="0 5 8 3 1 #,1 3 6 4 2 #,2 4 7 5 0 #,6 8 7 #,6 7 4 #,8 6 3 #,7 8 5 #,9 0 1 #,9 1 2 #,9 2 0 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="886302513 344929490 -303888981 56062378">
-          </div>
-          <h2 class="solids-item__title title-h2"> (J64)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 15 14">
-            <input type="hidden" class="Constants" value="0.353553390593273762200422181052,0.589255650988789603667370301754,1.06066017177982128660126654316,1.29636243217533712806821466386">
-            <input type="hidden" class="Vertices" value="C0 -C0 C2,C0 C0 -C2,-C0 C0 C2,-C0 -C0 -C2,C2 -C0 C0,C2 C0 -C0,-C2 C0 C0,-C2 -C0 -C0,C0 -C2 C0,C0 C2 -C0,-C0 C2 C0,-C0 -C2 -C0,C1 C1 C3,C3 C1 C1,C1 C3 C1">
-            <input type="hidden" class="Faces" value="0 2 6 7 11 8 #,5 4 8 11 3 1 #,10 9 1 3 7 6 #,0 4 13 12 #,5 9 14 13 #,10 2 12 14 #,0 8 4 #,5 1 9 #,10 6 2 #,0 12 2 #,5 13 4 #,10 14 9 #,3 11 7 #,12 13 14 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="923879533 0 0 382683432">
-          </div>
-          <h2 class="solids-item__title title-h2">Augmented Truncated Tetrahedron (J65)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 28 22">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210,1.91421356237309504880168872421">
-            <input type="hidden" class="Vertices" value="C1 0.5 C1,C1 0.5 -C1,C1 -0.5 C1,C1 -0.5 -C1,-C1 0.5 C1,-C1 0.5 -C1,-C1 -0.5 C1,-C1 -0.5 -C1,C1 C1 0.5,C1 C1 -0.5,C1 -C1 0.5,C1 -C1 -0.5,-C1 C1 0.5,-C1 C1 -0.5,-C1 -C1 0.5,-C1 -C1 -0.5,0.5 C1 C1,0.5 C1 -C1,0.5 -C1 C1,0.5 -C1 -C1,-0.5 C1 C1,-0.5 C1 -C1,-0.5 -C1 C1,-0.5 -C1 -C1,C0 0.0 C2,-C0 0.0 C2,0.0 C0 C2,0.0 -C0 C2">
-            <input type="hidden" class="Faces" value="1 3 19 23 7 5 21 17 #,0 2 10 11 3 1 9 8 #,20 16 8 9 17 21 13 12 #,6 4 12 13 5 7 15 14 #,18 22 14 15 23 19 11 10 #,24 26 25 27 #,0 16 26 24 #,20 4 25 26 #,6 22 27 25 #,18 2 24 27 #,0 8 16 #,20 12 4 #,6 14 22 #,18 10 2 #,0 24 2 #,20 26 16 #,6 25 4 #,18 27 22 #,3 11 19 #,23 15 7 #,5 13 21 #,17 9 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="800103145 -461939766 191341716 331413574">
-          </div>
-          <h2 class="solids-item__title title-h2">Augmented Truncated Cube (J66)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 32 30">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210,1.91421356237309504880168872421">
-            <input type="hidden" class="Vertices" value="C1 0.5 C1,C1 0.5 -C1,C1 -0.5 C1,C1 -0.5 -C1,-C1 0.5 C1,-C1 0.5 -C1,-C1 -0.5 C1,-C1 -0.5 -C1,C1 C1 0.5,C1 C1 -0.5,C1 -C1 0.5,C1 -C1 -0.5,-C1 C1 0.5,-C1 C1 -0.5,-C1 -C1 0.5,-C1 -C1 -0.5,0.5 C1 C1,0.5 C1 -C1,0.5 -C1 C1,0.5 -C1 -C1,-0.5 C1 C1,-0.5 C1 -C1,-0.5 -C1 C1,-0.5 -C1 -C1,C0 0.0 C2,C0 0.0 -C2,-C0 0.0 C2,-C0 0.0 -C2,0.0 C0 C2,0.0 C0 -C2,0.0 -C0 C2,0.0 -C0 -C2">
-            <input type="hidden" class="Faces" value="0 2 10 11 3 1 9 8 #,20 16 8 9 17 21 13 12 #,6 4 12 13 5 7 15 14 #,18 22 14 15 23 19 11 10 #,24 28 26 30 #,25 31 27 29 #,0 16 28 24 #,20 4 26 28 #,6 22 30 26 #,18 2 24 30 #,5 21 29 27 #,17 1 25 29 #,3 19 31 25 #,23 7 27 31 #,0 8 16 #,20 12 4 #,6 14 22 #,18 10 2 #,5 13 21 #,17 9 1 #,3 11 19 #,23 15 7 #,0 24 2 #,20 28 16 #,6 26 4 #,18 30 22 #,5 27 7 #,17 29 21 #,3 25 1 #,23 31 19 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 0 1 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Biaugmented Truncated Cube (J67)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="12 65 42">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 C9 C3,-C0 C9 C3,0.5 C7 C6,-0.5 C7 C6,0.0 C11 C1">
-            <input type="hidden" class="Faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,11 9 30 54 38 14 18 42 58 34 #,60 64 61 63 62 #,60 62 36 52 #,61 64 10 32 #,62 63 16 12 #,63 61 56 40 #,64 60 28 8 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 52 28 #,61 32 56 #,62 12 36 #,63 40 16 #,64 8 10 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Augmented Truncated Dodecahedron (J68)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="12 70 52">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 -C9 C3,C0 C9 -C3,-C0 -C9 C3,-C0 C9 -C3,0.5 -C7 C6,0.5 C7 -C6,-0.5 -C7 C6,-0.5 C7 -C6,0.0 -C11 C1,0.0 C11 -C1">
-            <input type="hidden" class="Faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,8 10 32 56 40 16 12 36 52 28 #,9 11 35 59 43 19 15 39 55 31 #,60 64 66 62 68 #,61 65 67 63 69 #,60 68 9 30 #,61 69 8 29 #,62 66 42 58 #,63 67 41 57 #,64 60 54 38 #,65 61 53 37 #,66 64 14 18 #,67 65 13 17 #,68 62 34 11 #,69 63 33 10 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 30 54 #,61 29 53 #,62 58 34 #,63 57 33 #,64 38 14 #,65 37 13 #,66 18 42 #,67 17 41 #,68 11 9 #,69 10 8 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 -1 1 1">
-          </div>
-          <h2 class="solids-item__title title-h2">Parabiaugmented Truncated Dodecahedron (J69)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="12 70 52">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 C9 C3,C0 -C9 C3,-C0 C9 C3,-C0 -C9 C3,0.5 C7 C6,0.5 -C7 C6,-0.5 C7 C6,-0.5 -C7 C6,0.0 C11 C1,0.0 -C11 C1">
-            <input type="hidden" class="Faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,60 68 62 66 64 #,61 65 67 63 69 #,60 64 36 52 #,61 69 9 30 #,62 68 10 32 #,63 67 42 58 #,64 66 16 12 #,65 61 54 38 #,66 62 56 40 #,67 65 14 18 #,68 60 28 8 #,69 63 34 11 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 52 28 #,61 30 54 #,62 32 56 #,63 58 34 #,64 12 36 #,65 38 14 #,66 40 16 #,67 18 42 #,68 8 10 #,69 11 9 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Metabiaugmented Truncated Dodecahedron (J70)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="12 75 62">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C9 C3 C0,C9 C3 -C0,-C9 C3 C0,-C9 C3 -C0,C0 -C9 C3,-C0 -C9 C3,C7 C6 0.5,C7 C6 -0.5,-C7 C6 0.5,-C7 C6 -0.5,0.5 -C7 C6,-0.5 -C7 C6,C11 C1 0.0,-C11 C1 0.0,0.0 -C11 C1">
-            <input type="hidden" class="Faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,8 10 32 56 40 16 12 36 52 28 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,60 72 61 67 66 #,62 68 69 63 73 #,64 70 71 65 74 #,60 66 52 44 #,61 72 5 21 #,62 73 6 24 #,63 69 57 49 #,64 74 9 30 #,65 71 42 58 #,66 67 29 28 #,67 61 45 53 #,68 62 48 56 #,69 68 32 33 #,70 64 54 38 #,71 70 14 18 #,72 60 20 4 #,73 63 25 7 #,74 65 34 11 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 44 20 #,61 21 45 #,62 24 48 #,63 49 25 #,64 30 54 #,65 58 34 #,66 28 52 #,67 53 29 #,68 56 32 #,69 33 57 #,70 38 14 #,71 18 42 #,72 4 5 #,73 7 6 #,74 11 9 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Triaugmented Truncated Dodecahedron (J71)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 60 62">
-            <input type="hidden" class="Constants" value="0.361803398874989484820458683437,0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749,1.61803398874989484820458683437,1.67082039324993690892275210062,1.80901699437494742410229341718,1.89442719099991587856366946749,2.11803398874989484820458683437,2.20344418537486330266596288468">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C9,0.5 0.5 -C9,0.5 -0.5 C9,0.5 -0.5 -C9,-0.5 0.5 C9,-0.5 0.5 -C9,-0.5 -0.5 C9,-0.5 -0.5 -C9,C9 0.5 0.5,C9 0.5 -0.5,C9 -0.5 0.5,C9 -0.5 -0.5,-C9 0.5 0.5,-C9 0.5 -0.5,-C9 -0.5 0.5,-C9 -0.5 -0.5,0.5 C4 C6,0.5 C9 -0.5,0.5 -C9 0.5,0.5 -C9 -0.5,-0.5 C4 C6,-0.5 C9 -0.5,-0.5 -C9 0.5,-0.5 -C9 -0.5,0.0 C10 C0,0.0 C3 -C7,0.0 -C3 C7,0.0 -C3 -C7,C7 0.0 C3,C7 0.0 -C3,-C7 0.0 C3,-C7 0.0 -C3,C3 C7 0.0,C3 -C7 0.0,-C3 C7 0.0,-C3 -C7 0.0,C3 C1 C5,C3 C1 -C5,C3 -C1 C5,C3 -C1 -C5,-C3 C1 C5,-C3 C1 -C5,-C3 -C1 C5,-C3 -C1 -C5,C5 C3 C1,C5 C3 -C1,C5 -C3 C1,C5 -C3 -C1,-C5 C3 C1,-C5 C3 -C1,-C5 -C3 C1,-C5 -C3 -C1,C1 C8 C2,C1 C5 -C3,C1 -C5 C3,C1 -C5 -C3,-C1 C8 C2,-C1 C5 -C3,-C1 -C5 C3,-C1 -C5 -C3">
-            <input type="hidden" class="Faces" value="24 56 20 16 52 #,25 57 21 17 53 #,26 58 22 18 54 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,32 17 24 52 #,1 25 53 37 #,2 26 54 38 #,3 39 55 27 #,34 56 24 21 #,5 41 57 25 #,6 42 58 26 #,7 27 59 43 #,8 44 36 28 #,9 29 37 45 #,10 28 38 46 #,11 47 39 29 #,12 30 40 48 #,13 49 41 31 #,14 50 42 30 #,15 31 43 51 #,36 44 52 16 #,17 32 45 53 #,18 33 46 54 #,19 55 47 33 #,40 20 56 48 #,21 57 49 34 #,22 58 50 35 #,23 35 51 59 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,20 4 0 16 #,18 22 23 19 #,24 17 21 #,25 1 5 #,26 2 6 #,27 7 3 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 52 44 #,33 18 19 #,34 48 56 #,35 23 22 #,36 16 0 #,37 53 45 #,38 54 46 #,39 47 55 #,40 4 20 #,41 49 57 #,42 50 58 #,43 59 51 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyrate Rhombicosidodecahedron (J72)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 60 62">
-            <input type="hidden" class="Constants" value="0.361803398874989484820458683437,0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749,1.61803398874989484820458683437,1.67082039324993690892275210062,1.80901699437494742410229341718,1.89442719099991587856366946749,2.11803398874989484820458683437,2.20344418537486330266596288468">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C9,0.5 0.5 -C9,0.5 -0.5 C9,0.5 -0.5 -C9,-0.5 0.5 C9,-0.5 0.5 -C9,-0.5 -0.5 C9,-0.5 -0.5 -C9,C9 0.5 0.5,C9 0.5 -0.5,C9 -0.5 0.5,C9 -0.5 -0.5,-C9 0.5 0.5,-C9 0.5 -0.5,-C9 -0.5 0.5,-C9 -0.5 -0.5,0.5 C4 C6,0.5 C9 -0.5,0.5 -C9 0.5,0.5 -C4 -C6,-0.5 C4 C6,-0.5 C9 -0.5,-0.5 -C9 0.5,-0.5 -C4 -C6,0.0 C10 C0,0.0 C3 -C7,0.0 -C3 C7,0.0 -C10 -C0,C7 0.0 C3,C7 0.0 -C3,-C7 0.0 C3,-C7 0.0 -C3,C3 C7 0.0,C3 -C7 0.0,-C3 C7 0.0,-C3 -C7 0.0,C3 C1 C5,C3 C1 -C5,C3 -C1 C5,C3 -C1 -C5,-C3 C1 C5,-C3 C1 -C5,-C3 -C1 C5,-C3 -C1 -C5,C5 C3 C1,C5 C3 -C1,C5 -C3 C1,C5 -C3 -C1,-C5 C3 C1,-C5 C3 -C1,-C5 -C3 C1,-C5 -C3 -C1,C1 C8 C2,C1 C5 -C3,C1 -C5 C3,C1 -C8 -C2,-C1 C8 C2,-C1 C5 -C3,-C1 -C5 C3,-C1 -C8 -C2">
-            <input type="hidden" class="Faces" value="24 56 20 16 52 #,25 57 21 17 53 #,26 58 22 18 54 #,27 59 23 19 55 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,32 17 24 52 #,1 25 53 37 #,2 26 54 38 #,33 18 27 55 #,34 56 24 21 #,5 41 57 25 #,6 42 58 26 #,35 59 27 22 #,8 44 36 28 #,9 29 37 45 #,10 28 38 46 #,11 47 39 29 #,12 30 40 48 #,13 49 41 31 #,14 50 42 30 #,15 31 43 51 #,36 44 52 16 #,17 32 45 53 #,18 33 46 54 #,39 47 55 19 #,40 20 56 48 #,21 57 49 34 #,22 58 50 35 #,43 23 59 51 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,20 4 0 16 #,7 3 19 23 #,24 17 21 #,25 1 5 #,26 2 6 #,27 18 22 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 52 44 #,33 55 47 #,34 48 56 #,35 51 59 #,36 16 0 #,37 53 45 #,38 54 46 #,39 19 3 #,40 4 20 #,41 49 57 #,42 50 58 #,43 7 23 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 1 -1 1">
-          </div>
-          <h2 class="solids-item__title title-h2">Parabigyrate Rhombicosidodecahedron (J73)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 60 62">
-            <input type="hidden" class="Constants" value="0.361803398874989484820458683437,0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749,1.61803398874989484820458683437,1.67082039324993690892275210062,1.80901699437494742410229341718,1.89442719099991587856366946749,2.11803398874989484820458683437,2.20344418537486330266596288468">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C9,0.5 0.5 -C9,0.5 -0.5 C9,0.5 -0.5 -C9,-0.5 0.5 C9,-0.5 0.5 -C9,-0.5 -0.5 C9,-0.5 -0.5 -C9,C9 0.5 0.5,C9 0.5 -0.5,C9 -0.5 0.5,C9 -0.5 -0.5,-C9 0.5 0.5,-C9 0.5 -0.5,-C9 -0.5 0.5,-C9 -0.5 -0.5,0.5 C4 C6,0.5 C9 -0.5,0.5 -C4 C6,0.5 -C9 -0.5,-0.5 C4 C6,-0.5 C9 -0.5,-0.5 -C4 C6,-0.5 -C9 -0.5,0.0 C10 C0,0.0 C3 -C7,0.0 -C10 C0,0.0 -C3 -C7,C7 0.0 C3,C7 0.0 -C3,-C7 0.0 C3,-C7 0.0 -C3,C3 C7 0.0,C3 -C7 0.0,-C3 C7 0.0,-C3 -C7 0.0,C3 C1 C5,C3 C1 -C5,C3 -C1 C5,C3 -C1 -C5,-C3 C1 C5,-C3 C1 -C5,-C3 -C1 C5,-C3 -C1 -C5,C5 C3 C1,C5 C3 -C1,C5 -C3 C1,C5 -C3 -C1,-C5 C3 C1,-C5 C3 -C1,-C5 -C3 C1,-C5 -C3 -C1,C1 C8 C2,C1 C5 -C3,C1 -C8 C2,C1 -C5 -C3,-C1 C8 C2,-C1 C5 -C3,-C1 -C8 C2,-C1 -C5 -C3">
-            <input type="hidden" class="Faces" value="24 56 20 16 52 #,25 57 21 17 53 #,26 54 18 22 58 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,32 17 24 52 #,1 25 53 37 #,33 54 26 19 #,3 39 55 27 #,34 56 24 21 #,5 41 57 25 #,35 23 26 58 #,7 27 59 43 #,8 44 36 28 #,9 29 37 45 #,10 28 38 46 #,11 47 39 29 #,12 30 40 48 #,13 49 41 31 #,14 50 42 30 #,15 31 43 51 #,36 44 52 16 #,17 32 45 53 #,38 18 54 46 #,19 55 47 33 #,40 20 56 48 #,21 57 49 34 #,42 50 58 22 #,23 35 51 59 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,20 4 0 16 #,22 18 2 6 #,24 17 21 #,25 1 5 #,26 23 19 #,27 7 3 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 52 44 #,33 46 54 #,34 48 56 #,35 58 50 #,36 16 0 #,37 53 45 #,38 2 18 #,39 47 55 #,40 4 20 #,41 49 57 #,42 22 6 #,43 59 51 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Metabigyrate Rhombicosidodecahedron (J74)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 60 62">
-            <input type="hidden" class="Constants" value="0.361803398874989484820458683437,0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749,1.61803398874989484820458683437,1.67082039324993690892275210062,1.80901699437494742410229341718,1.89442719099991587856366946749,2.11803398874989484820458683437,2.20344418537486330266596288468">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C9,0.5 0.5 -C9,0.5 -0.5 C9,0.5 -0.5 -C9,-0.5 0.5 C9,-0.5 0.5 -C9,-0.5 -0.5 C9,-0.5 -0.5 -C9,C4 C6 0.5,C4 C6 -0.5,C9 -0.5 0.5,C9 -0.5 -0.5,-C4 C6 0.5,-C4 C6 -0.5,-C9 -0.5 0.5,-C9 -0.5 -0.5,0.5 C9 0.5,0.5 C9 -0.5,0.5 -C4 C6,0.5 -C9 -0.5,-0.5 C9 0.5,-0.5 C9 -0.5,-0.5 -C4 C6,-0.5 -C9 -0.5,0.0 C3 C7,0.0 C3 -C7,0.0 -C10 C0,0.0 -C3 -C7,C7 0.0 C3,C7 0.0 -C3,-C7 0.0 C3,-C7 0.0 -C3,C10 C0 0.0,C3 -C7 0.0,-C10 C0 0.0,-C3 -C7 0.0,C3 C1 C5,C3 C1 -C5,C3 -C1 C5,C3 -C1 -C5,-C3 C1 C5,-C3 C1 -C5,-C3 -C1 C5,-C3 -C1 -C5,C8 C2 C1,C8 C2 -C1,C5 -C3 C1,C5 -C3 -C1,-C8 C2 C1,-C8 C2 -C1,-C5 -C3 C1,-C5 -C3 -C1,C1 C5 C3,C1 C5 -C3,C1 -C8 C2,C1 -C5 -C3,-C1 C5 C3,-C1 C5 -C3,-C1 -C8 C2,-C1 -C5 -C3">
-            <input type="hidden" class="Faces" value="24 52 16 20 56 #,25 57 21 17 53 #,26 54 18 22 58 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 45 9 8 44 #,33 47 11 10 46 #,34 48 12 13 49 #,35 50 14 15 51 #,0 36 52 24 #,1 25 53 37 #,33 54 26 19 #,3 39 55 27 #,4 24 56 40 #,5 41 57 25 #,35 23 26 58 #,7 27 59 43 #,52 36 44 8 #,53 9 45 37 #,10 28 38 46 #,11 47 39 29 #,56 12 48 40 #,57 41 49 13 #,14 50 42 30 #,15 31 43 51 #,28 10 32 44 #,29 45 32 11 #,38 18 54 46 #,19 55 47 33 #,30 48 34 14 #,31 15 34 49 #,42 50 58 22 #,23 35 51 59 #,0 4 6 2 #,1 3 7 5 #,9 17 16 8 #,13 12 20 21 #,16 17 21 20 #,22 18 2 6 #,24 4 0 #,25 1 5 #,26 23 19 #,27 7 3 #,16 52 8 #,17 9 53 #,20 12 56 #,21 57 13 #,32 10 11 #,33 46 54 #,34 15 14 #,35 58 50 #,36 28 44 #,37 45 29 #,38 2 18 #,39 47 55 #,40 48 30 #,41 31 49 #,42 22 6 #,43 59 51 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Trigyrate Rhombicosidodecahedron (J75)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 55 52">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C4,0.5 0.5 -C4,0.5 -0.5 C4,0.5 -0.5 -C4,-0.5 0.5 C4,-0.5 0.5 -C4,-0.5 -0.5 C4,-0.5 -0.5 -C4,C4 0.5 0.5,C4 0.5 -0.5,C4 -0.5 0.5,C4 -0.5 -0.5,-C4 0.5 0.5,-C4 0.5 -0.5,-C4 -0.5 0.5,-C4 -0.5 -0.5,0.5 C4 -0.5,0.5 -C4 0.5,0.5 -C4 -0.5,-0.5 C4 -0.5,-0.5 -C4 0.5,-0.5 -C4 -0.5,0.0 C1 -C3,0.0 -C1 C3,0.0 -C1 -C3,C3 0.0 C1,C3 0.0 -C1,-C3 0.0 C1,-C3 0.0 -C1,C1 C3 0.0,C1 -C3 0.0,-C1 C3 0.0,-C1 -C3 0.0,C1 C0 C2,C1 C0 -C2,C1 -C0 C2,C1 -C0 -C2,-C1 C0 C2,-C1 C0 -C2,-C1 -C0 C2,-C1 -C0 -C2,C2 C1 C0,C2 C1 -C0,C2 -C1 C0,C2 -C1 -C0,-C2 C1 C0,-C2 C1 -C0,-C2 -C1 C0,-C2 -C1 -C0,C0 C2 -C1,C0 -C2 C1,C0 -C2 -C1,-C0 C2 -C1,-C0 -C2 C1,-C0 -C2 -C1">
-            <input type="hidden" class="Faces" value="0 33 41 29 16 19 31 45 37 4 #,22 52 19 16 49 #,23 53 20 17 50 #,24 51 18 21 54 #,25 33 0 2 35 #,26 36 3 1 34 #,27 39 6 4 37 #,28 38 5 7 40 #,29 41 8 9 42 #,30 44 11 10 43 #,31 46 13 12 45 #,32 47 14 15 48 #,1 22 49 34 #,2 23 50 35 #,3 36 51 24 #,5 38 52 22 #,6 39 53 23 #,7 24 54 40 #,8 41 33 25 #,9 26 34 42 #,10 25 35 43 #,11 44 36 26 #,12 27 37 45 #,13 46 38 28 #,14 47 39 27 #,15 28 40 48 #,16 29 42 49 #,17 30 43 50 #,18 51 44 30 #,19 52 46 31 #,20 53 47 32 #,21 32 48 54 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,17 20 21 18 #,22 1 5 #,23 2 6 #,24 7 3 #,25 10 8 #,26 9 11 #,27 12 14 #,28 15 13 #,30 17 18 #,32 21 20 #,34 49 42 #,35 50 43 #,36 44 51 #,38 46 52 #,39 47 53 #,40 54 48 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Diminished Rhombicosidodecahedron (J76)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 55 52">
-            <input type="hidden" class="Constants" value="0.361803398874989484820458683437,0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749,1.61803398874989484820458683437,1.67082039324993690892275210062,1.80901699437494742410229341718,1.89442719099991587856366946749,2.11803398874989484820458683437,2.20344418537486330266596288468">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C9,0.5 0.5 -C9,0.5 -0.5 C9,0.5 -0.5 -C9,-0.5 0.5 C9,-0.5 0.5 -C9,-0.5 -0.5 C9,-0.5 -0.5 -C9,C9 0.5 0.5,C9 0.5 -0.5,C9 -0.5 0.5,C9 -0.5 -0.5,-C9 0.5 0.5,-C9 0.5 -0.5,-C9 -0.5 0.5,-C9 -0.5 -0.5,0.5 C9 -0.5,0.5 -C9 0.5,0.5 -C4 -C6,-0.5 C9 -0.5,-0.5 -C9 0.5,-0.5 -C4 -C6,0.0 C3 -C7,0.0 -C3 C7,0.0 -C10 -C0,C7 0.0 C3,C7 0.0 -C3,-C7 0.0 C3,-C7 0.0 -C3,C3 C7 0.0,C3 -C7 0.0,-C3 C7 0.0,-C3 -C7 0.0,C3 C1 C5,C3 C1 -C5,C3 -C1 C5,C3 -C1 -C5,-C3 C1 C5,-C3 C1 -C5,-C3 -C1 C5,-C3 -C1 -C5,C5 C3 C1,C5 C3 -C1,C5 -C3 C1,C5 -C3 -C1,-C5 C3 C1,-C5 C3 -C1,-C5 -C3 C1,-C5 -C3 -C1,C1 C5 -C3,C1 -C5 C3,C1 -C8 -C2,-C1 C5 -C3,-C1 -C5 C3,-C1 -C8 -C2">
-            <input type="hidden" class="Faces" value="0 33 41 29 16 19 31 45 37 4 #,22 52 19 16 49 #,23 53 20 17 50 #,24 54 21 18 51 #,25 33 0 2 35 #,26 36 3 1 34 #,27 39 6 4 37 #,28 38 5 7 40 #,29 41 8 9 42 #,30 44 11 10 43 #,31 46 13 12 45 #,32 47 14 15 48 #,1 22 49 34 #,2 23 50 35 #,3 18 21 7 #,5 38 52 22 #,6 39 53 23 #,8 41 33 25 #,9 26 34 42 #,10 25 35 43 #,11 44 36 26 #,12 27 37 45 #,13 46 38 28 #,14 47 39 27 #,15 28 40 48 #,16 29 42 49 #,17 30 43 50 #,18 36 44 51 #,19 52 46 31 #,20 53 47 32 #,21 54 48 40 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,17 24 51 30 #,20 32 54 24 #,22 1 5 #,23 2 6 #,24 17 20 #,25 10 8 #,26 9 11 #,27 12 14 #,28 15 13 #,30 51 44 #,32 48 54 #,34 49 42 #,35 50 43 #,36 18 3 #,38 46 52 #,39 47 53 #,40 7 21 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 -1 -1 -1">
-          </div>
-          <h2 class="solids-item__title title-h2">Paragyrate Diminished Rhombicosidodecahedron (J77)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 55 52">
-            <input type="hidden" class="Constants" value="0.361803398874989484820458683437,0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749,1.61803398874989484820458683437,1.67082039324993690892275210062,1.80901699437494742410229341718,1.89442719099991587856366946749,2.11803398874989484820458683437,2.20344418537486330266596288468">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C9,0.5 0.5 -C9,0.5 -0.5 C9,0.5 -0.5 -C9,-0.5 0.5 C9,-0.5 0.5 -C9,-0.5 -0.5 C9,-0.5 -0.5 -C9,C9 0.5 0.5,C9 0.5 -0.5,C9 -0.5 0.5,C9 -0.5 -0.5,-C9 0.5 0.5,-C9 0.5 -0.5,-C9 -0.5 0.5,-C9 -0.5 -0.5,0.5 C9 -0.5,0.5 -C4 C6,0.5 -C9 -0.5,-0.5 C9 -0.5,-0.5 -C4 C6,-0.5 -C9 -0.5,0.0 C3 -C7,0.0 -C10 C0,0.0 -C3 -C7,C7 0.0 C3,C7 0.0 -C3,-C7 0.0 C3,-C7 0.0 -C3,C3 C7 0.0,C3 -C7 0.0,-C3 C7 0.0,-C3 -C7 0.0,C3 C1 C5,C3 C1 -C5,C3 -C1 C5,C3 -C1 -C5,-C3 C1 C5,-C3 C1 -C5,-C3 -C1 C5,-C3 -C1 -C5,C5 C3 C1,C5 C3 -C1,C5 -C3 C1,C5 -C3 -C1,-C5 C3 C1,-C5 C3 -C1,-C5 -C3 C1,-C5 -C3 -C1,C1 C5 -C3,C1 -C8 C2,C1 -C5 -C3,-C1 C5 -C3,-C1 -C8 C2,-C1 -C5 -C3">
-            <input type="hidden" class="Faces" value="0 33 41 29 16 19 31 45 37 4 #,22 52 19 16 49 #,23 50 17 20 53 #,24 51 18 21 54 #,25 33 0 2 35 #,26 36 3 1 34 #,27 39 6 4 37 #,28 38 5 7 40 #,29 41 8 9 42 #,30 44 11 10 43 #,31 46 13 12 45 #,32 47 14 15 48 #,1 22 49 34 #,2 6 20 17 #,3 36 51 24 #,5 38 52 22 #,7 24 54 40 #,8 41 33 25 #,9 26 34 42 #,10 25 35 43 #,11 44 36 26 #,12 27 37 45 #,13 46 38 28 #,14 47 39 27 #,15 28 40 48 #,16 29 42 49 #,17 50 43 35 #,18 51 44 30 #,19 52 46 31 #,20 39 47 53 #,21 32 48 54 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,18 30 50 23 #,21 23 53 32 #,22 1 5 #,23 21 18 #,24 7 3 #,25 10 8 #,26 9 11 #,27 12 14 #,28 15 13 #,30 43 50 #,32 53 47 #,34 49 42 #,35 2 17 #,36 44 51 #,38 46 52 #,39 20 6 #,40 54 48 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Metagyrate Diminished Rhombicosidodecahedron (J78)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 55 52">
-            <input type="hidden" class="Constants" value="0.361803398874989484820458683437,0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749,1.61803398874989484820458683437,1.67082039324993690892275210062,1.80901699437494742410229341718,1.89442719099991587856366946749,2.11803398874989484820458683437,2.20344418537486330266596288468">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C9,0.5 0.5 -C9,0.5 -0.5 C9,0.5 -0.5 -C9,-0.5 0.5 C9,-0.5 0.5 -C9,-0.5 -0.5 C9,-0.5 -0.5 -C9,C9 0.5 0.5,C9 0.5 -0.5,C4 -C6 0.5,C4 -C6 -0.5,-C9 0.5 0.5,-C9 0.5 -0.5,-C4 -C6 0.5,-C4 -C6 -0.5,0.5 C9 -0.5,0.5 -C9 0.5,0.5 -C9 -0.5,-0.5 C9 -0.5,-0.5 -C9 0.5,-0.5 -C9 -0.5,0.0 C3 -C7,0.0 -C3 C7,0.0 -C3 -C7,C7 0.0 C3,C7 0.0 -C3,-C7 0.0 C3,-C7 0.0 -C3,C3 C7 0.0,C10 -C0 0.0,-C3 C7 0.0,-C10 -C0 0.0,C3 C1 C5,C3 C1 -C5,C3 -C1 C5,C3 -C1 -C5,-C3 C1 C5,-C3 C1 -C5,-C3 -C1 C5,-C3 -C1 -C5,C5 C3 C1,C5 C3 -C1,C8 -C2 C1,C8 -C2 -C1,-C5 C3 C1,-C5 C3 -C1,-C8 -C2 C1,-C8 -C2 -C1,C1 C5 -C3,C1 -C5 C3,C1 -C5 -C3,-C1 C5 -C3,-C1 -C5 C3,-C1 -C5 -C3">
-            <input type="hidden" class="Faces" value="0 33 41 29 16 19 31 45 37 4 #,22 52 19 16 49 #,23 53 20 17 50 #,24 51 18 21 54 #,25 33 0 2 35 #,26 36 3 1 34 #,27 39 6 4 37 #,28 38 5 7 40 #,29 41 8 9 42 #,30 43 10 11 44 #,31 46 13 12 45 #,32 48 15 14 47 #,1 22 49 34 #,2 23 50 35 #,3 36 51 24 #,5 38 52 22 #,6 39 53 23 #,7 24 54 40 #,8 41 33 25 #,9 26 34 42 #,10 43 35 50 #,11 51 36 44 #,12 32 47 27 #,13 46 38 28 #,14 53 39 47 #,15 48 40 54 #,16 29 42 49 #,17 18 11 10 #,18 17 20 21 #,19 52 46 31 #,20 14 15 21 #,0 4 6 2 #,1 3 7 5 #,8 25 43 30 #,9 30 44 26 #,12 27 37 45 #,13 28 48 32 #,17 10 50 #,18 51 11 #,20 53 14 #,21 15 54 #,22 1 5 #,23 2 6 #,24 7 3 #,25 35 43 #,26 44 36 #,27 47 39 #,28 40 48 #,30 9 8 #,32 12 13 #,34 49 42 #,38 46 52 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Bigyrate Diminished Rhombicosidodecahedron (J79)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 50 42">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C4,0.5 0.5 -C4,0.5 -0.5 C4,0.5 -0.5 -C4,-0.5 0.5 C4,-0.5 0.5 -C4,-0.5 -0.5 C4,-0.5 -0.5 -C4,C4 0.5 0.5,C4 0.5 -0.5,C4 -0.5 0.5,C4 -0.5 -0.5,-C4 0.5 0.5,-C4 0.5 -0.5,-C4 -0.5 0.5,-C4 -0.5 -0.5,0.5 -C4 0.5,0.5 C4 -0.5,-0.5 -C4 0.5,-0.5 C4 -0.5,0.0 -C1 C3,0.0 C1 -C3,C3 0.0 C1,C3 0.0 -C1,-C3 0.0 C1,-C3 0.0 -C1,C1 C3 0.0,C1 -C3 0.0,-C1 C3 0.0,-C1 -C3 0.0,C1 C0 C2,C1 C0 -C2,C1 -C0 C2,C1 -C0 -C2,-C1 C0 C2,-C1 C0 -C2,-C1 -C0 C2,-C1 -C0 -C2,C2 C1 C0,C2 C1 -C0,C2 -C1 C0,C2 -C1 -C0,-C2 C1 C0,-C2 C1 -C0,-C2 -C1 C0,-C2 -C1 -C0,C0 -C2 C1,C0 C2 -C1,-C0 -C2 C1,-C0 C2 -C1">
-            <input type="hidden" class="Faces" value="0 30 38 26 17 19 28 42 34 4 #,3 33 41 27 16 18 29 45 37 7 #,20 48 18 16 46 #,21 49 19 17 47 #,22 30 0 2 32 #,23 33 3 1 31 #,24 36 6 4 34 #,25 35 5 7 37 #,26 38 8 9 39 #,27 41 11 10 40 #,28 43 13 12 42 #,29 44 14 15 45 #,1 21 47 31 #,2 20 46 32 #,5 35 49 21 #,6 36 48 20 #,8 38 30 22 #,9 23 31 39 #,10 22 32 40 #,11 41 33 23 #,12 24 34 42 #,13 43 35 25 #,14 44 36 24 #,15 25 37 45 #,16 27 40 46 #,17 26 39 47 #,18 48 44 29 #,19 49 43 28 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,20 2 6 #,21 1 5 #,22 10 8 #,23 9 11 #,24 12 14 #,25 15 13 #,46 40 32 #,47 39 31 #,48 36 44 #,49 35 43 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 1 -1 1">
-          </div>
-          <h2 class="solids-item__title title-h2">Parabidiminished Rhombicosidodecahedron (J80)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 50 42">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C4,0.5 0.5 -C4,0.5 -0.5 C4,0.5 -0.5 -C4,-0.5 0.5 C4,-0.5 0.5 -C4,-0.5 -0.5 C4,-0.5 -0.5 -C4,C4 0.5 0.5,C4 0.5 -0.5,C4 -0.5 0.5,C4 -0.5 -0.5,-C4 0.5 0.5,-C4 0.5 -0.5,-C4 -0.5 0.5,-C4 -0.5 -0.5,0.5 C4 -0.5,0.5 -C4 -0.5,-0.5 C4 -0.5,-0.5 -C4 -0.5,0.0 C1 -C3,0.0 -C1 -C3,C3 0.0 C1,C3 0.0 -C1,-C3 0.0 C1,-C3 0.0 -C1,C1 C3 0.0,C1 -C3 0.0,-C1 C3 0.0,-C1 -C3 0.0,C1 C0 C2,C1 C0 -C2,C1 -C0 C2,C1 -C0 -C2,-C1 C0 C2,-C1 C0 -C2,-C1 -C0 C2,-C1 -C0 -C2,C2 C1 C0,C2 C1 -C0,C2 -C1 C0,C2 -C1 -C0,-C2 C1 C0,-C2 C1 -C0,-C2 -C1 C0,-C2 -C1 -C0,C0 C2 -C1,C0 -C2 -C1,-C0 C2 -C1,-C0 -C2 -C1">
-            <input type="hidden" class="Faces" value="0 30 38 26 16 18 28 42 34 4 #,2 6 36 44 29 19 17 27 40 32 #,20 48 18 16 46 #,21 47 17 19 49 #,22 30 0 2 32 #,23 33 3 1 31 #,24 36 6 4 34 #,25 35 5 7 37 #,26 38 8 9 39 #,27 41 11 10 40 #,28 43 13 12 42 #,29 44 14 15 45 #,1 20 46 31 #,3 33 47 21 #,5 35 48 20 #,7 21 49 37 #,8 38 30 22 #,9 23 31 39 #,10 22 32 40 #,11 41 33 23 #,12 24 34 42 #,13 43 35 25 #,14 44 36 24 #,15 25 37 45 #,16 26 39 46 #,17 47 41 27 #,18 48 43 28 #,19 29 45 49 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,20 1 5 #,21 7 3 #,22 10 8 #,23 9 11 #,24 12 14 #,25 15 13 #,46 39 31 #,47 33 41 #,48 35 43 #,49 45 37 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Metabidiminished Rhombicosidodecahedron (J81)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="11 50 42">
-            <input type="hidden" class="Constants" value="0.361803398874989484820458683437,0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749,1.61803398874989484820458683437,1.67082039324993690892275210062,1.80901699437494742410229341718,1.89442719099991587856366946749,2.11803398874989484820458683437,2.20344418537486330266596288468">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C9,0.5 0.5 -C9,0.5 -0.5 C9,0.5 -0.5 -C9,-0.5 0.5 C9,-0.5 0.5 -C9,-0.5 -0.5 C9,-0.5 -0.5 -C9,C9 0.5 0.5,C9 0.5 -0.5,-C9 0.5 0.5,-C9 0.5 -0.5,0.5 C4 C6,0.5 C9 -0.5,0.5 -C9 0.5,0.5 -C9 -0.5,-0.5 C4 C6,-0.5 C9 -0.5,-0.5 -C9 0.5,-0.5 -C9 -0.5,0.0 C10 C0,0.0 C3 -C7,0.0 -C3 C7,0.0 -C3 -C7,C7 0.0 C3,C7 0.0 -C3,-C7 0.0 C3,-C7 0.0 -C3,C3 C7 0.0,-C3 C7 0.0,C3 C1 C5,C3 C1 -C5,C3 -C1 C5,C3 -C1 -C5,-C3 C1 C5,-C3 C1 -C5,-C3 -C1 C5,-C3 -C1 -C5,C5 C3 C1,C5 C3 -C1,-C5 C3 C1,-C5 C3 -C1,C1 C8 C2,C1 C5 -C3,C1 -C5 C3,C1 -C5 -C3,-C1 C8 C2,-C1 C5 -C3,-C1 -C5 C3,-C1 -C5 -C3">
-            <input type="hidden" class="Faces" value="8 24 32 44 14 15 45 33 25 9 #,10 11 27 37 49 19 18 48 36 26 #,20 46 16 12 42 #,21 47 17 13 43 #,22 48 18 14 44 #,23 45 15 19 49 #,24 30 0 2 32 #,25 33 3 1 31 #,26 36 6 4 34 #,27 35 5 7 37 #,28 38 8 9 39 #,29 41 11 10 40 #,0 12 16 4 #,1 21 43 31 #,2 22 44 32 #,3 33 45 23 #,5 35 47 21 #,6 36 48 22 #,7 23 49 37 #,8 38 30 24 #,9 25 31 39 #,10 26 34 40 #,11 41 35 27 #,12 30 38 42 #,13 28 39 43 #,16 46 40 34 #,17 47 41 29 #,0 4 6 2 #,1 3 7 5 #,13 20 42 28 #,14 18 19 15 #,17 29 46 20 #,20 13 17 #,21 1 5 #,22 2 6 #,23 7 3 #,28 42 38 #,29 40 46 #,30 12 0 #,31 43 39 #,34 4 16 #,35 41 47 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Gyrate Bidiminished Rhombicosidodecahedron (J82)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 45 32">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C4,0.5 0.5 -C4,0.5 -0.5 C4,0.5 -0.5 -C4,-0.5 0.5 C4,-0.5 0.5 -C4,-0.5 -0.5 C4,-0.5 -0.5 -C4,C4 0.5 0.5,C4 0.5 -0.5,-C4 0.5 0.5,-C4 0.5 -0.5,0.5 C4 -0.5,0.5 -C4 0.5,0.5 -C4 -0.5,-0.5 C4 -0.5,-0.5 -C4 0.5,-0.5 -C4 -0.5,0.0 C1 -C3,0.0 -C1 C3,0.0 -C1 -C3,C3 0.0 C1,C3 0.0 -C1,-C3 0.0 C1,-C3 0.0 -C1,C1 C3 0.0,-C1 C3 0.0,C1 C0 C2,C1 C0 -C2,C1 -C0 C2,C1 -C0 -C2,-C1 C0 C2,-C1 C0 -C2,-C1 -C0 C2,-C1 -C0 -C2,C2 C1 C0,C2 C1 -C0,-C2 C1 C0,-C2 C1 -C0,C0 C2 -C1,C0 -C2 C1,C0 -C2 -C1,-C0 C2 -C1,-C0 -C2 C1,-C0 -C2 -C1">
-            <input type="hidden" class="Faces" value="0 27 35 25 12 15 26 37 31 4 #,8 21 29 40 13 14 41 30 22 9 #,10 11 24 34 44 17 16 43 33 23 #,18 42 15 12 39 #,19 43 16 13 40 #,20 41 14 17 44 #,21 27 0 2 29 #,22 30 3 1 28 #,23 33 6 4 31 #,24 32 5 7 34 #,25 35 8 9 36 #,26 38 11 10 37 #,1 18 39 28 #,2 19 40 29 #,3 30 41 20 #,5 32 42 18 #,6 33 43 19 #,7 20 44 34 #,8 35 27 21 #,9 22 28 36 #,10 23 31 37 #,11 38 32 24 #,12 25 36 39 #,13 16 17 14 #,15 42 38 26 #,0 4 6 2 #,1 3 7 5 #,18 1 5 #,19 2 6 #,20 7 3 #,38 42 32 #,39 36 28 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Tridiminished Rhombicosidodecahedron (J83)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 8 12">
-            <input type="hidden" class="Constants" value="0.205561565853259538077851199951,0.644584273224154984541338729084,0.783930924232563649920229273668">
-            <input type="hidden" class="Vertices" value="0.5 0.0 -C2,-0.5 0.0 -C2,0.0 0.5 C2,0.0 -0.5 C2,C1 0.0 C0,-C1 0.0 C0,0.0 C1 -C0,0.0 -C1 -C0">
-            <input type="hidden" class="Faces" value="0 1 6 #,1 0 7 #,2 3 4 #,3 2 5 #,0 6 4 #,1 7 5 #,2 4 6 #,3 5 7 #,0 4 7 #,1 5 6 #,2 6 5 #,3 7 4 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 1 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Snub Disphenoid (J84)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 16 26">
-            <input type="hidden" class="Constants" value="0.185607021282179847571203642807,0.676868509031356082287074277611,0.7071067811865475244008443621048,0.857865868455197166868512416108,1.21320554586631333082602219607">
-            <input type="hidden" class="Vertices" value="C4 0.0 C0,-C4 0.0 C0,0.0 C4 C0,0.0 -C4 C0,C3 C3 -C0,C3 -C3 -C0,-C3 C3 -C0,-C3 -C3 -C0,C2 0.0 -C1,-C2 0.0 -C1,0.0 C2 -C1,0.0 -C2 -C1,0.5 0.5 C1,0.5 -0.5 C1,-0.5 0.5 C1,-0.5 -0.5 C1">
-            <input type="hidden" class="Faces" value="8 11 9 10 #,12 14 15 13 #,0 12 13 #,1 15 14 #,2 14 12 #,3 13 15 #,4 8 10 #,5 11 8 #,6 10 9 #,7 9 11 #,0 5 8 #,0 8 4 #,1 6 9 #,1 9 7 #,2 4 10 #,2 10 6 #,3 7 11 #,3 11 5 #,4 2 12 #,4 12 0 #,5 0 13 #,5 13 3 #,6 1 14 #,6 14 2 #,7 3 15 #,7 15 1 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Snub Square Antiprism (J85)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 10 14">
-            <input type="hidden" class="Constants" value="0.434842971507254352296662409737,0.522356928683638427093375584456,0.789427626660871648860975960242,0.790938495579915857943553462283,0.852726942846416855407461565223">
-            <input type="hidden" class="Vertices" value="C4 0.5 0.0,C4 -0.5 0.0,-C4 0.5 0.0,-C4 -0.5 0.0,0.5 0.0 C3,-0.5 0.0 C3,0.0 0.5 -C1,0.0 -0.5 -C1,0.0 C2 C0,0.0 -C2 C0">
-            <input type="hidden" class="Faces" value="7 6 0 1 #,6 7 3 2 #,4 1 0 #,5 2 3 #,8 5 4 #,9 4 5 #,8 4 0 #,9 5 3 #,8 2 5 #,9 1 4 #,8 0 6 #,9 3 7 #,8 6 2 #,9 7 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="587785252 -809016994 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Sphenocorona (J86)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="7 11 17">
-            <input type="hidden" class="Constants" value="0.434842971507254352296662409737,0.522356928683638427093375584456,0.789427626660871648860975960242,0.790938495579915857943553462283,0.7957255978951869551531919363151,0.852726942846416855407461565223,0.864147468128994113735899747097">
-            <input type="hidden" class="Vertices" value="0.5 C5 0.0,0.5 -C5 0.0,-0.5 C5 0.0,-0.5 -C5 0.0,C2 0.0 -C0,-C2 0.0 -C0,0.5 0.0 C1,-0.5 0.0 C1,0.0 0.5 -C3,0.0 -0.5 -C3,0.0 C4 C6">
-            <input type="hidden" class="Faces" value="1 6 7 3 #,4 0 6 #,5 7 2 #,4 6 1 #,5 3 7 #,4 1 9 #,5 9 3 #,4 9 8 #,5 8 9 #,4 8 0 #,5 2 8 #,10 6 0 #,10 2 7 #,10 0 2 #,10 7 6 #,8 2 0 #,9 1 3 #">
-            <input type="hidden" class="Background" value="#606060">
-          </div>
-          <h2 class="solids-item__title title-h2">Augmented Sphenocorona (J87)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="7 12 18">
-            <input type="hidden" class="Constants" value="0.182104154459469031158808796626,0.594633335632638530052424402292,0.721504360056562056313738491681,0.803997012528281635188182334859,0.854743082488965126494679515012,0.860839434381952780381784457032,1.28310233883126903991682231290">
-            <input type="hidden" class="Vertices" value="0.5 C1 0.0,0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,C6 0.0 -C0,-C6 0.0 -C0,C4 0.0 C2,-C4 0.0 C2,0.5 0.0 -C3,-0.5 0.0 -C3,0.0 0.5 C5,0.0 -0.5 C5">
-            <input type="hidden" class="Faces" value="8 9 2 0 #,9 8 1 3 #,4 1 8 #,5 2 9 #,4 8 0 #,5 9 3 #,4 0 6 #,5 3 7 #,4 6 1 #,5 7 2 #,10 6 0 #,11 7 3 #,10 2 7 #,11 1 6 #,10 0 2 #,11 3 1 #,10 11 6 #,11 10 7 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="866025404 -500000000 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Sphenomegacorona (J88)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="7 14 21">
-            <input type="hidden" class="Constants" value="0.352954076337160748350563750952,0.611119053667302298663235226481,0.716844815713456837170379849891,0.8356590717223668282340298501347,0.838438027464282504174890444081,0.976206087820700359494909591442,1.10129604204727791362728704824">
-            <input type="hidden" class="Vertices" value="0.5 C2 0.0,0.5 -C2 0.0,-0.5 C2 0.0,-0.5 -C2 0.0,0.5 0.5 -C5,0.5 -0.5 -C5,-0.5 0.5 -C5,-0.5 -0.5 -C5,C6 0.0 -C0,-C6 0.0 -C0,C3 0.0 C1,-C3 0.0 C1,0.0 0.5 C4,0.0 -0.5 C4">
-            <input type="hidden" class="Faces" value="4 5 7 6 #,0 4 6 2 #,3 7 5 1 #,8 0 10 #,9 3 11 #,8 10 1 #,9 11 2 #,8 1 5 #,9 2 6 #,8 4 0 #,9 7 3 #,10 0 12 #,11 3 13 #,10 13 1 #,11 12 2 #,8 5 4 #,9 6 7 #,10 12 13 #,11 13 12 #,12 0 2 #,13 3 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="500000000 -866025404 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Hebesphenomegacorona (J89)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 16 24">
-            <input type="hidden" class="Constants" value="0.325002975949970270938890065536,0.462947603915364756277242582941,0.767131113983461501918167748749,1.10443794207993399479899964792,1.12648314707897953366700530057">
-            <input type="hidden" class="Vertices" value="0.5 C2 C1,0.5 -C2 C1,-0.5 C2 C1,-0.5 -C2 C1,C2 0.5 -C1,C2 -0.5 -C1,-C2 0.5 -C1,-C2 -0.5 -C1,0.5 0.0 C3,-0.5 0.0 C3,0.0 0.5 -C3,0.0 -0.5 -C3,C4 0.0 C0,-C4 0.0 C0,0.0 C4 -C0,0.0 -C4 -C0">
-            <input type="hidden" class="Faces" value="8 9 3 1 #,9 8 0 2 #,10 11 7 6 #,11 10 4 5 #,12 0 8 #,12 8 1 #,13 3 9 #,13 9 2 #,14 4 10 #,14 10 6 #,15 7 11 #,15 11 5 #,12 4 0 #,12 1 5 #,13 7 3 #,13 2 6 #,14 6 2 #,14 0 4 #,15 5 1 #,15 3 7 #,12 5 4 #,13 6 7 #,14 2 0 #,15 1 3 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="579227965 405579788 -405579788 579227965">
-          </div>
-          <h2 class="solids-item__title title-h2">Disphenocingulum (J90)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 14 14">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718">
-            <input type="hidden" class="Vertices" value="0.5 C0 0.5,0.5 C0 -0.5,0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 C0 0.5,-0.5 C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5,C1 0.5 0.0,C1 -0.5 0.0,-C1 0.5 0.0,-C1 -0.5 0.0,0.0 0.0 C0,0.0 0.0 -C0">
-            <input type="hidden" class="Faces" value="12 2 9 8 0 #,12 4 10 11 6 #,13 1 8 9 3 #,13 7 11 10 5 #,0 1 5 4 #,3 2 6 7 #,8 1 0 #,9 2 3 #,10 4 5 #,11 7 6 #,12 0 4 #,12 6 2 #,13 3 7 #,13 5 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="258819045 965925826 0 0">
-          </div>
-          <h2 class="solids-item__title title-h2">Bilunabirotunda (J91)</h2>
-        </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="9 18 20">
-            <input type="hidden" class="Constants" value="0.0716186271093947159616399685564,0.119364378515657859936066614261,0.380635621484342140063933385739,0.428381372890605284038360031444,0.689652615859289564166226802922,0.880635621484342140063933385739,0.928381372890605284038360031444,1.18965261585928956416622680292,1.23739836726555270814065344863">
-            <input type="hidden" class="Vertices" value="C8 -C2 -C2,-C2 C8 -C2,-C2 -C2 C8,C6 C3 -C5,-C5 C6 C3,C3 -C5 C6,C3 -C5 -C4,-C4 C3 -C5,-C5 -C4 C3,C1 -C0 -C7,-C7 C1 -C0,-C0 -C7 C1,C6 C3 C1,C1 C6 C3,C3 C1 C6,C6 -C7 C1,C1 C6 -C7,-C7 C1 C6">
-            <input type="hidden" class="Faces" value="6 11 8 10 7 9 #,0 12 14 5 15 #,1 13 12 3 16 #,2 14 13 4 17 #,0 6 9 3 #,1 7 10 4 #,2 8 11 5 #,0 3 12 #,1 4 13 #,2 5 14 #,0 15 6 #,1 16 7 #,2 17 8 #,3 9 16 #,4 10 17 #,5 11 15 #,6 15 11 #,7 16 9 #,8 17 10 #,12 13 14 #">
-            <input type="hidden" class="Background" value="#606060">
-            <input type="hidden" class="Quaternion" value="-382808536 870612498 -175239872 -254524046">
-          </div>
-          <h2 class="solids-item__title title-h2">Triangular Hebesphenorotunda (J92)</h2>
-        </li>
+      <div class="intro__content">
+        <h1 class="intro__title title-h1">Johnson Solids</h1>
+        <p class="intro__text">The Platonic solids, Archimedean solids, and the regular prisms and antiprisms are vertex-transitive convex polyhedra with regular polygon faces. Vertex transitivity means that for any two vertices of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one vertex to the other. What happens if the vertex transitivity criterion is removed? As it turns out, there are 92 non-vertex-transitive convex polyhedra with regular polygon faces.</p>
+        <p class="intro__text">In 1966, Norman Johnson published a paper titled "Convex Polyhedra with Regular Faces" where he described in detail all 92 of these polyhedra. He introduced names for those that weren't named previously, and he mentions that there appear to be no more than 92 of them. These 92 polyhedra are currently known as the Johnson solids. In 1967, Viktor Zalgaller proved that there are no more than 92.</p>
+        <p class="intro__text">In 2008, Aleksei Timofeenko presented analytically-expressed coordinate values for eight of these polyhedra. It seems most of these values were known only up to numerical approximations previously. For two of these polyhedra, the Bilunabirotunda (J91) and the Triangular Hebesphenorotunda (J92), the values have relatively simple expressions and were probably known prior to Timofeenko's work.</p>
+        <p class="intro__text">Unlike most polyhedra found in these pages, the Johnson solids have relatively low symmetry orders, and only a few are in canonical form, which makes them unsuitable for automatic generation on a computer. I am grateful to Loïs Mignard-Debise, who spent the time to gather the coordinate values for all 92 polyhedra that are presented here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="types-solids">
+    <div class="container">
+      <ul class="types-solids__list">
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="pyramids.html">
+            <h2 class="types-item__title title-h2">Pyramids</h2>
+            <p class="types-item__subtitle">J1 – J2</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="cupola-rotunda.html">
+            <h2 class="types-item__title title-h2">Cupola & Rotunda</h2>
+            <p class="types-item__subtitle">J3 – J6</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">The next four Johnson solids are three cupolae and one rotunda. They represent sections of uniform polyhedra.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="elongated-pyramids.html">
+            <h2 class="types-item__title title-h2">Elongated pyramids</h2>
+            <p class="types-item__subtitle">J7 – J11</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">In the gyroelongated triangular pyramid, three pairs of adjacent triangles are coplanar and form non-square rhombi, so it is not a Johnson solid.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="bipyramids.html">
+            <h2 class="types-item__title title-h2">Bipyramids</h2>
+            <p class="types-item__subtitle">J12 – J13</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">The square bipyramid is the regular octahedron, while the gyroelongated pentagonal bipyramid is the regular icosahedron, so they are not Johnson solids. In the gyroelongated triangular bipyramid, six pairs of adjacent triangles are coplanar and form non-square rhombi, so it is also not a Johnson solid.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="elongated-bipyramids.html">
+            <h2 class="types-item__title title-h2">Elongated bipyramids</h2>
+            <p class="types-item__subtitle">J14 – J17</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="elongated-cupolae-rotundas.html">
+            <h2 class="types-item__title title-h2">Elongated cupolae and rotundas</h2>
+            <p class="types-item__subtitle">J18 – J25</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="bicupolae.html">
+            <h2 class="types-item__title title-h2">Bicupolae</h2>
+            <p class="types-item__subtitle">J26 – J31</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="cupola-rotundas-birotundas.html">
+            <h2 class="types-item__title title-h2">Cupola-rotundas and birotundas</h2>
+            <p class="types-item__subtitle">J32 – J34</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">The pentagonal gyrobirotunda is an Archimedean solid (in this case the icosidodecahedron), so it is not a Johnson solid.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="elongated-bicupolae.html">
+            <h2 class="types-item__title title-h2">Elongated bicupolae</h2>
+            <p class="types-item__subtitle">J35 – J39, J44 – J46</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="elongated-cupola-rotundas-birotundas.html">
+            <h2 class="types-item__title title-h2">Elongated cupola-rotundas and birotundas</h2>
+            <p class="types-item__subtitle">J40 – J43, J47 – J48</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="augmented-prisms.html">
+            <h2 class="types-item__title title-h2">Augmented prisms</h2>
+            <p class="types-item__subtitle">J49 – J57</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="augmented-diminished-platonic-solids.html">
+            <h2 class="types-item__title title-h2">Augmented and diminished Platonic solids</h2>
+            <p class="types-item__subtitle">J58 – J64</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="augmented-archimedean-solids.html">
+            <h2 class="types-item__title title-h2">Augmented Archimedean solids</h2>
+            <p class="types-item__subtitle">J65 – J71</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="gyrate-diminished-rhombicosidodecahedron.html">
+            <h2 class="types-item__title title-h2">Gyrate and diminished rhombicosidodecahedron</h2>
+            <p class="types-item__subtitle">J72 – J83</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="snub-antiprisms.html">
+            <h2 class="types-item__title title-h2">Snub antiprisms</h2>
+            <p class="types-item__subtitle">J84 – J85</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">The snub antiprisms can be constructed as an alternation of a truncated antiprism. The gyrobianticupolae are another construction for the snub antiprisms. Only snub antiprisms with at most 4 sides can be constructed from regular polygons. The snub triangular antiprism is the regular icosahedron, so it is not a Johnson solid.</p>
+        </li>
+
+        <li class="types-solids__item types-item">
+          <a class="types-item__link" href="others.html">
+            <h2 class="types-item__title title-h2">Others</h2>
+            <p class="types-item__subtitle">J86 – J92</p>
+          </a>
+          <img class="types-item__image" width="60" height="60" src="" alt="">
+          <p class="types-item__text">Text.</p>
+        </li>
+
       </ul>
-      <a href="../../index.html">Назад</a>
     </div>
   </section>
 </main>
