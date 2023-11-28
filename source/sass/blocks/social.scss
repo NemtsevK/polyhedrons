@@ -1,0 +1,58 @@
+@use "../global/variables" as *;
+
+.social {
+  padding: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    border: 0;
+  }
+}
+
+.social__list {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  &--github::before {
+    background-image: url("../images/icons/github.svg");
+  }
+
+  &--youtube::before {
+    background-image: url("../images/icons/youtube.svg");
+  }
+
+  &--telegram::before {
+    background-image: url("../images/icons/telegram.svg");
+  }
+}
