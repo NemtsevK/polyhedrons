@@ -21,7 +21,8 @@
     "postcss": "8.3.11",
     "postcss-csso": "5.0.1",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.11"
+    "stylelint-config-htmlacademy": "^0.1.11",
+    "fs": "^0.0.1-security"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

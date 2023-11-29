@@ -1,8 +1,42 @@
 @use "../global/variables" as *;
 
 .header {
-  color: #000000;
-  border-bottom: 1px solid #2d2d44;
+  padding: 20px 0;
+  background-color: #2d2d44;
+  color: #ffffff;
+
+}
+
+.header__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header__logo {
+  grid-column: 1;
+
+  @media (min-width: $tablet) {
+    grid-column: 2;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__logo-image {
+  width: 110px;
+  height: 35px;
+
+  @media (min-width: $tablet) {
+    width: 313px;
+    height: 50px;
+
+  }
 }
 
 .header__title {

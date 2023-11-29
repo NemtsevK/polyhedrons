@@ -2,5 +2,28 @@
 
 .main {
   flex: 1 0 auto;
-  background: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%);
+}
+
+.main__intro {
+  margin: 20px 0 0;
+
+  @media (min-width: $tablet) {
+    margin-top: 40px;
+  }
+}
+
+.main__types-solids {
+  margin: 20px 0;
+
+  @media (min-width: $tablet) {
+    margin: 40px 0;
+  }
+}
+
+.main__solids {
+  margin: 20px 0;
+
+  @media (min-width: $tablet) {
+    margin: 40px 0;
+  }
 }

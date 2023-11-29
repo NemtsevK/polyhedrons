@@ -6,18 +6,33 @@
   align-items: center;
 }
 
+.solids__header {
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.solids__title {
+  margin: 0;
+}
+
+.solids__text {
+  margin: 10px 0 0;
+}
+
 .solids__list {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: stretch;
   gap: 20px;
+  margin: 20px 0 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop) {

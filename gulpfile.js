@@ -62,7 +62,7 @@ const copyImages = () => {
 // SVG
 const svg = () =>
   gulp.src('source/images/**/*.svg')
-    .pipe(svgo())
+    // .pipe(svgo())
     .pipe(gulp.dest('build/images'));
 
 
@@ -105,7 +105,7 @@ const reload = (done) => {
 
 // Watcher
 const watcher = () => {
-  gulp.watch('source/images/**/*.svg', gulp.series(styles));
+  gulp.watch('source/images/**/*.svg', gulp.series(svg));
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/**/*.html', gulp.series(html, reload));
