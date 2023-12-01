@@ -12,7 +12,9 @@ function _n() {
       ) _c[n][r] = 'rgba' + a[n][r].slice(3, -1) + ',.125)'
     }
   }
-  for (l = document.getElementsByTagName('div'), _m = [], r = -1; ++r < l.length;) 'miniViewer' == l[r].getAttribute('name') && (f = l[r].getElementsByTagName('canvas')).length && _o(l[r], f[0])
+  for (l = document.querySelectorAll('.solid__content'), _m = [], r = -1; ++r < l.length;) {
+    (f = l[r].querySelectorAll('.solid__canvas')).length && _o(l[r], f[0])
+  }
 }
 
 function _o(jt, zt) {
@@ -349,22 +351,22 @@ function _o(jt, zt) {
     var r, n, e, t, a, l, f, o, h, g, i, y, A, u, w, s, I, c, b, v, M, m, F, k, p, d, E, N, T, C, L, B, S, U, X, V, P, _, q, x, R, Y, D, G, W, O, Q, j, z, H, J, K, Z, $, rr, nr, er, tr, ar, lr, fr, or, hr, gr, ir, yr, Ar, ur, wr, sr, Ir, cr, br, vr, Mr, mr, Fr, kr, pr, dr, Er, Nr, Tr, Cr, Lr, Br, Sr, Ur, Xr, Vr, Pr, qr, xr, Rr, Yr, Dr, Gr, Wr, Or, Qr, jr, zr, Hr, Jr, Kr, Zr, $r, rn, nn, en, tn, an, ln, fn, on, hn, gn, yn, An, un, wn, sn, In, cn, bn, vn, Mn, mn, Fn, kn, pn, dn, En, Nn, Tn, Cn, Ln, Bn, Sn, Un, Xn, Vn, Pn, qn, xn, Rn, Yn, Dn, Gn, Wn, On, Qn, jn, zn, Hn, Jn, Kn,
       Zn, $n, re, ne, ee, te, ae, le, fe, oe, he, ge, ie, ye, Ae, ue, we, se, Ie, ce, be, ve, Me, me, Fe, ke, pe, de, Ee, Ne, Te, Ce, Le, Be, Se, Ue, Xe, Ve, Pe, qe, xe, Re, Ye, De, Ge, We, Oe, Qe, je, ze, He, Je, Ke, Ze, $e, rt, nt, et, tt, at, lt, ft, ot, ht, gt, it, yt, At, ut, wt, st, It, ct, bt, vt, Mt, mt, Ft, kt, pt, dt, Et, Nt, Tt, Ct, Lt, Bt, St, Ut, Xt, Vt, Pt, _t, qt, xt = 5820766091346741e-26, Rt = 33881317890172014e-37, Yt = 2.3283064365386963e-10, Dt = 1.4629180792671596e-9, Gt = 6.283185307179586, Wt = -3.141592653589793, Ot = 5.960464477539063e-8, Qt = 3019169939857233e154;
     if (xa = Ya = La = (Br = Ta = zt.width
-    ) >> 1, Ra = Da = Ba = (Sr = Ca = zt.height) >> 1, of = (Ur = jt.getElementsByClassName('Background')).length ? Ur[0].value : '#606060', hf = (Ur = jt.getElementsByClassName('EdgeColor')).length ? Ur[0].value : 'black', gf = (Ur = jt.getElementsByClassName('WireColor')).length ? Ur[0].value : 'black', Af.fillStyle = of, Af.fillRect(0, 0, Br, Sr), Za = (Qa = (Oa = er = Sr >> 6) + (za = tr = Sr < 256 ? 8 : Sr >> 5)) - 1, Ka = er + 1, nl = tr >> 1, Ja = (al = ar = (3 * (Y = (tl = (Wa = (Ga = Br >> 2) + (ja = Br >> 1)) - ($a = rl = tr - 2) - 1) - (el = Ga + 1)) >> 2) + el) + (Y >> 4), Ha = ar + ($a >> 1), Ml = (pl = .5 / (Fl = Br >> 1)) / (P = 3 * (tl - ar
+    ) >> 1, Ra = Da = Ba = (Sr = Ca = zt.height) >> 1, of = (Ur = jt.getElementsByClassName('solid__background')).length ? Ur[0].value : '#606060', hf = (Ur = jt.getElementsByClassName('EdgeColor')).length ? Ur[0].value : 'black', gf = (Ur = jt.getElementsByClassName('WireColor')).length ? Ur[0].value : 'black', Af.fillStyle = of, Af.fillRect(0, 0, Br, Sr), Za = (Qa = (Oa = er = Sr >> 6) + (za = tr = Sr < 256 ? 8 : Sr >> 5)) - 1, Ka = er + 1, nl = tr >> 1, Ja = (al = ar = (3 * (Y = (tl = (Wa = (Ga = Br >> 2) + (ja = Br >> 1)) - ($a = rl = tr - 2) - 1) - (el = Ga + 1)) >> 2) + el) + (Y >> 4), Ha = ar + ($a >> 1), Ml = (pl = .5 / (Fl = Br >> 1)) / (P = 3 * (tl - ar
     ) >> 3), (Ur = jt.getElementsByClassName('Perspective')).length && ((Ja = ar + ~~(parseFloat(Ur[0].value) * P)) > tl && (Ja = tl), Ja < el && (Ja = el)), fl = (ll = Br >> 6) + (gl = hr = tr << 1), hl = (ol = er) + hr, (Xr = El = new Float64Array(4))[0] = 1, (Ur = jt.getElementsByClassName('Quaternion')).length) {
       for (n = Ur[0].value.match(/[^ \t\n\r\f,;]+/g), er = -1, P = 0; ++er < 4;) P += (Xr[er] = parseFloat(n[er])) * Xr[er];
       for (0 == P && (Xr[0] = P = 1, Xr[1] = Xr[2] = Xr[3] = 0), er = 4, P = Math.sqrt(P); 0 <= --er;) Xr[er] /= P
     }
-    if (n = jt.getElementsByClassName('Counts')[0].value.match(
-      /[^ \t\n\r\f,;]+/g), _ = parseInt(n[0], 10), Vr = q = parseInt(n[1], 10), qr = Pr = qa = parseInt(n[2], 10), Rr = Ol = Array((xr = new Int32Array(qr)).length), Gr = ql = new Float64Array((Dr = Pl = new Float64Array((Yr = Vl = new Float64Array((Xl = new Float64Array((Ul = new Float64Array((Sl = new Float64Array(3 * Pr)).length)).length)).length)).length)).length), Jl = new Int8Array((Ql = Array(Pr)).length), Wr = new Float64Array(_), 0 < _) for (n = jt.getElementsByClassName('Constants')[0].value.match(/[^ \t\n\r\f,;]+/g), er = -1; ++er < _;) Wr[er] = parseFloat(
+    if (n = jt.getElementsByClassName('solid__counts')[0].value.match(
+      /[^ \t\n\r\f,;]+/g), _ = parseInt(n[0], 10), Vr = q = parseInt(n[1], 10), qr = Pr = qa = parseInt(n[2], 10), Rr = Ol = Array((xr = new Int32Array(qr)).length), Gr = ql = new Float64Array((Dr = Pl = new Float64Array((Yr = Vl = new Float64Array((Xl = new Float64Array((Ul = new Float64Array((Sl = new Float64Array(3 * Pr)).length)).length)).length)).length)).length), Jl = new Int8Array((Ql = Array(Pr)).length), Wr = new Float64Array(_), 0 < _) for (n = jt.getElementsByClassName('solid__constants')[0].value.match(/[^ \t\n\r\f,;]+/g), er = -1; ++er < _;) Wr[er] = parseFloat(
       n[er]);
-    for (jr = Bl = new Float64Array((Qr = Ll = new Float64Array((Or = Cl = new Float64Array((Tl = new Float64Array((Nl = new Float64Array(Vr)).length)).length)).length)).length), zr = new Float64Array(q), n = jt.getElementsByClassName('Vertices')[0].value.match(/[^ \t\n\r\f,;]+/g), Hr = 0, yr = er = -1, Kr = -(Jr = Number.MAX_VALUE); ++yr < Vr;) (zr[yr] = P = Ia(Zr = Or[yr] = ca(n[++er], Wr), Qr[yr] = ca(n[++er], Wr), jr[yr] = ca(n[++er], Wr))) > Hr && (Hr = P), Zr < Jr && (Jr = Zr), Kr < Zr && (Kr = Zr);
+    for (jr = Bl = new Float64Array((Qr = Ll = new Float64Array((Or = Cl = new Float64Array((Tl = new Float64Array((Nl = new Float64Array(Vr)).length)).length)).length)).length), zr = new Float64Array(q), n = jt.getElementsByClassName('solid__vertices')[0].value.match(/[^ \t\n\r\f,;]+/g), Hr = 0, yr = er = -1, Kr = -(Jr = Number.MAX_VALUE); ++yr < Vr;) (zr[yr] = P = Ia(Zr = Or[yr] = ca(n[++er], Wr), Qr[yr] = ca(n[++er], Wr), jr[yr] = ca(n[++er], Wr))) > Hr && (Hr = P), Zr < Jr && (Jr = Zr), Kr < Zr && (Kr = Zr);
     for (1 == ($r = new Int32Array(isFinite(Zr = 4095.99 / (Kr - Jr)) ? 4096 : 1)
     ).length && (Zr = 0), er = $r.length; 0 <= --er;) $r[er] = -1;
     for (Wr = null, rn = Array(Pr), nn = Array(q), en = new Int32Array((pr = new Int32Array(Vr)).length), hn = Array((tn = Array(512)).length), an = Array(er = 3); 0 <= --er;) an[er] = Array(hn.length);
     for (er = qr + 511 >> 9, ln = an[0], fn = an[1], on = an[2]; 0 <= --er;) on[er] = new Int16Array((fn[er] = new Int16Array((ln[er] = new Int16Array((hn[er] = new Int8Array((tn[er] = Array(512)).length)).length)).length)).length);
     for (gn = Array((Tr = new Int32Array(qr)).length), er = qr; 0 <= --er;) gn[er] = new Float64Array(4
     );
-    for (n = jt.getElementsByClassName('Faces')[0].value.match(/[^ \t\n\r\f,;]+/g), Nr = new Int32Array(W = 0), er = yr = -1, R = x = 0; ++er < Pr;) {
+    for (n = jt.getElementsByClassName('solid__faces')[0].value.match(/[^ \t\n\r\f,;]+/g), Nr = new Int32Array(W = 0), er = yr = -1, R = x = 0; ++er < Pr;) {
       for (ar = 0; '#' != (r = n[++yr]).charAt(0);) en[pr[ar++] = parseInt(r, 10)]++;
       if (x += ar, rn[er] = new Int32Array(ar), Tr[er] = -ar, la(pr, 0, tn[lr = er >> 9][gr = 511 & er] = new Int32Array(ar), 0, ar), R < ar && (R = ar), 1 < r.length) {
         for (tr = 16777215 & parseInt(r.substring(1), 16), or = W; 0 <= --or && Nr[or] != tr;) ;
