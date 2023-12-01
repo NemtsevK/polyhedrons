@@ -9,13 +9,13 @@
 <body class="page__body">
 <header class="header"></header>
 <main class="main">
-  <section class="solids">
+  <section class="main__solids solids">
     <div class="container">
       <h1 class="solids__title title-h1">Johnson Solids – Elongated bipyramids</h1>
       <p class="solids__text">Text.</p>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 8 9">
             <input type="hidden" class="Constants" value="0.288675134594812882254574390251,0.577350269189625764509148780502,1.31649658092772603273242802490">
@@ -27,7 +27,7 @@
           <h2 class="solids-item__title title-h2">Elongated Triangular Dipyramid (J14)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 10 12">
             <input type="hidden" class="Constants" value="1.20710678118654752440084436210">
@@ -39,7 +39,7 @@
           <h2 class="solids-item__title title-h2">Elongated Square Dipyramid (J15)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 12 15">
             <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,1.025731112119133606025669084848">
@@ -51,7 +51,7 @@
           <h2 class="solids-item__title title-h2">Elongated Pentagonal Dipyramid (J16)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 10 16">
             <input type="hidden" class="Constants" value="0.420448207626857271515562738117,0.7071067811865475244008443621048,1.12755498881340479591640710022">
@@ -70,6 +70,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>

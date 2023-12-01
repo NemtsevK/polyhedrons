@@ -9,13 +9,13 @@
 <body class="page__body">
 <header class="header"></header>
 <main class="main">
-  <section class="solids">
+  <section class="main__solids solids">
     <div class="container">
       <h1 class="solids__title title-h1">Cupola-rotundas and birotundas</h1>
       <p class="solids__text">Text.</p>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 25 27">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
@@ -27,7 +27,7 @@
           <h2 class="solids-item__title title-h2">Pentagonal Orthocupolarotunda (J32)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="9 25 27">
             <input type="hidden" class="Constants" value="0.0527864045000420607181652662537,0.0854101966249684544613760503097,0.447213595499957939281834733746,0.585410196624968454461376050310,0.809016994374947424102293417183,0.861803398874989484820458683437,0.894427190999915878563669467493,1.30901699437494742410229341718,1.61803398874989484820458683437">
@@ -39,7 +39,7 @@
           <h2 class="solids-item__title title-h2">Pentagonal Gyrocupolarotunda (J33)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="11 30 32">
             <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.425325404176019966090770248532,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.11351636441160673519437503949,1.30901699437494742410229341718,1.37638192047117353820720958191,1.53884176858762670128514528802,1.61803398874989484820458683437">
@@ -58,6 +58,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>

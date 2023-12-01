@@ -8,13 +8,16 @@
 </head>
 <body class="page__body">
 <header class="header"></header>
-<main>
-  <section class="solids">
-    <div class="container"><h1 class="solids__title title-h1">Trapezohedra</h1>
-      <p class="solids__text">Text.</p>
+<main class="main">
+  <section class="main__solids solids">
+    <div class="container">
+      <div class="solids__header">
+        <h1 class="solids__title title-h1">Trapezohedra</h1>
+        <p class="solids__text">Text.</p>
+      </div>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 8 6">
             <input type="hidden" class="Constants" value="0.353553390593273762200422181052">
@@ -27,7 +30,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 10 8">
             <input type="hidden" class="Constants" value="0.174155349874503261843187247164,0.7071067811865475244008443621048,1.01505176512821780487431272340">
@@ -39,7 +42,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 12 10">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718">
@@ -51,7 +54,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 14 12">
             <input type="hidden" class="Constants" value="0.156585608656507718901567227964,0.866025403784438646763723170753,2.18095618030422754264317321632">
@@ -63,7 +66,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="8 16 14">
             <input type="hidden" class="Constants" value="0.1531927682625616683458021483497,0.256429215818138474873324904069,0.7184986963636851321448067789251,0.900968867902419126236102319507,1.03826069828616828358176943074,1.12348980185873353052500488400,1.15238243548124325262057511177,2.94063772761851796655260234634">
@@ -75,7 +78,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 18 16">
             <input type="hidden" class="Constants" value="0.151047815180276180953489848716,0.923879532511286756128183189397,1.20710678118654752440084436210,1.30656296487637652785664317343,3.817603985406019048222189005746">
@@ -94,6 +97,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>

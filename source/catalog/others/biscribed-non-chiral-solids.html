@@ -9,13 +9,13 @@
 <body class="page__body">
 <header class="header"></header>
 <main class="main">
-  <section class="solids">
+  <section class="main__solids solids">
     <div class="container">
       <h1 class="solids__title title-h1">Biscribed Non-Chiral Solids</h1>
       <p class="solids__text">For these pages, a biscribed solid is defined to be any convex polyhedron that has concentric circumscribed and inscribed spheres, where the sphere center is also the centroid of the vertices and the centroid of the face tangency points. The five Platonic solids are biscribed solids, but none of the Archimedean or Catalan solids are. The convexity criterion rules out the rest of the uniform polyhedra.</p>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div name="miniConvex">
+          <div name="miniViewer">
             <canvas name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 24 14">
             <input type="hidden" class="Constants" value="0.732050807568877293527446341506">
@@ -26,7 +26,7 @@
           <h2 class="solids-item__title title-h2">Biscribed Truncated Octahedron</h2>
         </li>
         <li class="solids__item solids-item">
-          <div name="miniConvex">
+          <div name="miniViewer">
             <canvas name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 48 26">
             <input type="hidden" class="Constants" value="0.317837245195782244725757617296,0.414213562373095048801688724210">
@@ -37,7 +37,7 @@
           <h2 class="solids-item__title title-h2">Biscribed Truncated Cuboctahedron</h2>
         </li>
         <li class="solids__item solids-item">
-          <div name="miniConvex">
+          <div name="miniViewer">
             <canvas name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="8 60 32">
             <input type="hidden" class="Constants" value="0.170062225021429850705432325253,0.245761156614088823498052243557,0.397649904516081741304487411873,0.415823381635518674203484568810,0.672816364803188054521422117266,0.813473286151600415507971980683,0.918577521417276878019474360823,1.07046626931926979582590952914">
@@ -48,7 +48,7 @@
           <h2 class="solids-item__title title-h2">Biscribed Truncated Icosahedron</h2>
         </li>
         <li class="solids__item solids-item">
-          <div name="miniConvex">
+          <div name="miniViewer">
             <canvas name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="14 120 62">
             <input type="hidden" class="Constants" value="0.0177275189761239328523332292769,0.184483088138252241148769036278,0.213166816377829500155718375594,0.284079043840412296028291832393,0.301806562816536228880625061670,0.316227425933358619323961772696,0.327183635196811945478577882734,0.600306469773770915352253605089,0.628990198013348174359202944404,0.672816364803188054521422117266,0.786833183622170499844281624406,0.804560702598294432696614853683,0.813473286151600415507971980683,0.989043790736546673845383889961">
@@ -61,7 +61,7 @@
           <h2 class="solids-item__title title-h2">Biscribed Truncated Icosidodecahedron</h2>
         </li>
         <li class="solids__item solids-item">
-          <div name="miniConvex">
+          <div name="miniViewer">
             <canvas name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 14 24">
             <input type="hidden" class="Constants" value="0.577350269189625764509148780502">
@@ -72,7 +72,7 @@
           <h2 class="solids-item__title title-h2">Biscribed Tetrakis Hexahedron</h2>
         </li>
         <li class="solids__item solids-item">
-          <div name="miniConvex">
+          <div name="miniViewer">
             <canvas name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 26 48">
             <input type="hidden" class="Constants" value="0.577350269189625764509148780502,0.7071067811865475244008443621048">
@@ -83,7 +83,7 @@
           <h2 class="solids-item__title title-h2">Biscribed Disdyakis Dodecahedron</h2>
         </li>
         <li class="solids__item solids-item">
-          <div name="miniConvex">
+          <div name="miniViewer">
             <canvas name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 32 60">
             <input type="hidden" class="Constants" value="0.356822089773089931941969843046,0.525731112119133606025669084848,0.577350269189625764509148780502,0.850650808352039932181540497063,0.934172358962715696451118623548">
@@ -94,7 +94,7 @@
           <h2 class="solids-item__title title-h2">Biscribed Pentakis Dodecahedron</h2>
         </li>
         <li class="solids__item solids-item">
-          <div name="miniConvex">
+          <div name="miniViewer">
             <canvas name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="7 62 120">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.356822089773089931941969843046,0.525731112119133606025669084848,0.577350269189625764509148780502,0.809016994374947424102293417183,0.850650808352039932181540497063,0.934172358962715696451118623548">
@@ -113,6 +113,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>

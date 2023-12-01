@@ -8,15 +8,17 @@
 </head>
 <body class="page__body">
 <header class="header"></header>
-<main>
-  <section class="solids">
+<main class="main">
+  <section class="main__solids solids">
     <div class="container">
-      <h1 class="solids__title title-h1">Archimedean solids</h1>
-      <p class="solids__text">The Archimedean solids are a set of 13 polyhedra described by Pappus of Alexandria around 340 AD, who attributed them to the ancient Greek mathematician Archimedes (287-212 BC). Archimedes' own writings on the subject have been lost. Examining these 13 solids, it can be seen that each is a convex polyhedron whose faces are regular polygons of two or more types that meet in the same pattern around each vertex. It can also be seen that each has polyhedral group (tetrahedral, octahedral, or icosahedral) rotational symmetry. These 13 solids are the only polyhedra possessing both of these traits.</p>
-      <p class="solids__text">There are other convex polyhedra that have regular polygon faces of two or more types meeting in the same pattern around each vertex, namely the regular prisms and antiprisms and the Elongated Square Gyrobicupola, but none has polyhedral group rotational symmetry. Archimedes excluded the regular prisms from his set probably because they form a sufficiently self-similar series on their own. If he knew of the regular antiprisms, he probably excluded them for the same reason. If Archimedes knew of the Elongated Square Gyrobicupola, then his exclusion of it implies his awareness that polyhedral group rotational symmetries were involved. If he didn't know of the Elongated Square Gyrobicupola, then it is not known whether polyhedral group rotational symmetries occurred to him.</p>
+      <div class="solids__header">
+        <h1 class="solids__title title-h1">Archimedean solids</h1>
+        <p class="solids__text">The Archimedean solids are a set of 13 polyhedra described by Pappus of Alexandria around 340 AD, who attributed them to the ancient Greek mathematician Archimedes (287-212 BC). Archimedes' own writings on the subject have been lost. Examining these 13 solids, it can be seen that each is a convex polyhedron whose faces are regular polygons of two or more types that meet in the same pattern around each vertex. It can also be seen that each has polyhedral group (tetrahedral, octahedral, or icosahedral) rotational symmetry. These 13 solids are the only polyhedra possessing both of these traits.</p>
+        <p class="solids__text">There are other convex polyhedra that have regular polygon faces of two or more types meeting in the same pattern around each vertex, namely the regular prisms and antiprisms and the Elongated Square Gyrobicupola, but none has polyhedral group rotational symmetry. Archimedes excluded the regular prisms from his set probably because they form a sufficiently self-similar series on their own. If he knew of the regular antiprisms, he probably excluded them for the same reason. If Archimedes knew of the Elongated Square Gyrobicupola, then his exclusion of it implies his awareness that polyhedral group rotational symmetries were involved. If he didn't know of the Elongated Square Gyrobicupola, then it is not known whether polyhedral group rotational symmetries occurred to him.</p>
+      </div>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 12 8">
             <input type="hidden" class="Constants" value="0.353553390593273762200422181052, 1.06066017177982128660126654316">
@@ -27,7 +29,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 12 14">
             <input type="hidden" class="Constants" value="0.7071067811865475244008443621048">
@@ -38,7 +40,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 24 14">
             <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.41421356237309504880168872421">
@@ -49,7 +51,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 24 14">
             <input type="hidden" class="Constants" value="1.20710678118654752440084436210">
@@ -60,7 +62,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 24 26">
             <input type="hidden" class="Constants" value="1.20710678118654752440084436210">
@@ -71,7 +73,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 24 38">
             <input type="hidden" class="Constants" value="0.33775397381375235213753224516503,0.621226410556585311692500954490,1.14261350892596209347948408672">
@@ -82,7 +84,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 24 38">
             <input type="hidden" class="Constants" value="0.33775397381375235213753224516503,0.621226410556585311692500954490,1.14261350892596209347948408672">
@@ -93,7 +95,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 30 32">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
@@ -104,7 +106,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 48 26">
             <input type="hidden" class="Constants" value="1.20710678118654752440084436210,1.91421356237309504880168872421">
@@ -115,7 +117,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 60 32">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437,2.427050983124842272306880251548">
@@ -126,7 +128,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 60 32">
             <input type="hidden" class="Constants" value="1.30901699437494742410229341718,1.61803398874989484820458683437,2.11803398874989484820458683437,2.61803398874989484820458683437,2.927050983124842272306880251548">
@@ -137,7 +139,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 60 62">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437">
@@ -148,7 +150,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="15 60 92">
             <input type="hidden" class="Constants" value="0.192893711352359022108262546061,0.330921024729844230963655269187,0.374821658114562295266609516608,0.567715369466921317374872062669,0.643029605914072573107464141441,0.728335176957191477360671629838,0.847550046789060797396217956030,1.103156835071753772627281146446,1.24950378846302719500774109632,1.41526541625598211477109001870,1.45402422933801541929649491091,1.64691794069037444140475745697,1.74618644098582634573474528789,1.97783896542021867236841272616,2.097053835252087992403959052348">
@@ -160,7 +162,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="15 60 92">
             <input type="hidden" class="Constants" value="0.192893711352359022108262546061,0.330921024729844230963655269187,0.374821658114562295266609516608,0.567715369466921317374872062669,0.643029605914072573107464141441,0.728335176957191477360671629838,0.847550046789060797396217956030,1.103156835071753772627281146446,1.24950378846302719500774109632,1.41526541625598211477109001870,1.45402422933801541929649491091,1.64691794069037444140475745697,1.74618644098582634573474528789,1.97783896542021867236841272616,2.097053835252087992403959052348">
@@ -172,7 +174,7 @@
           </div>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="10 120 62">
             <input type="hidden" class="Constants" value="1.30901699437494742410229341718,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437,2.427050983124842272306880251548,2.61803398874989484820458683437,2.927050983124842272306880251548,3.11803398874989484820458683437,3.427050983124842272306880251548,3.73606797749978969640917366873">
@@ -192,6 +194,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>

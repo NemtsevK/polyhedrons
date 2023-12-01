@@ -9,13 +9,13 @@
 <body class="page__body">
 <header class="header"></header>
 <main class="main">
-  <section class="solids">
+  <section class="main__solids solids">
     <div class="container">
       <h1 class="solids__title title-h1">Cupola & rotunda</h1>
       <p class="solids__text">The next four Johnson solids are three cupolae and one rotunda. They represent sections of uniform polyhedra.</p>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 9 8">
             <input type="hidden" class="Constants" value="0.7071067811865475244008443621048">
@@ -27,7 +27,7 @@
           <h2 class="solids-item__title title-h2">Triangular Cupola (J3)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 12 10">
             <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210">
@@ -39,7 +39,7 @@
           <h2 class="solids-item__title title-h2">Square Cupola (J4)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 15 12">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
@@ -51,7 +51,7 @@
           <h2 class="solids-item__title title-h2">Pentagonal Cupola (J5)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 20 17">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
@@ -69,6 +69,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>

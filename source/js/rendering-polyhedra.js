@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 var _b, _c, _m;
 
 function _n() {
@@ -6,13 +6,13 @@ function _n() {
   if (null == _b) {
     for (_c = Array(32), a = _b = Array(32), n = 32; 0 <= --n;) _c[n] = Array(192), a[n] = Array(192);
     for (r = 192; 0 <= --r;) {
-      for (t = r + 64, n = 24; 0 <= --n;) e = o[n], a[n][r] = "rgb(" + ((e = e * (t >> 1) + (e >> 1 & 65793) * (1 & t)) >> 16) + "," + (e >> 8 & 255) + "," + (255 & e) + ")";
-      for (n = 9; 0 < --n;) a[n + 23][r] = "rgb(" + (e = t * n >> 3) + "," + e + "," + e + ")";
+      for (t = r + 64, n = 24; 0 <= --n;) e = o[n], a[n][r] = 'rgb(' + ((e = e * (t >> 1) + (e >> 1 & 65793) * (1 & t)) >> 16) + ',' + (e >> 8 & 255) + ',' + (255 & e) + ')';
+      for (n = 9; 0 < --n;) a[n + 23][r] = 'rgb(' + (e = t * n >> 3) + ',' + e + ',' + e + ')';
       for (n = 32; 0 <= --n;
-      ) _c[n][r] = "rgba" + a[n][r].slice(3, -1) + ",.125)"
+      ) _c[n][r] = 'rgba' + a[n][r].slice(3, -1) + ',.125)'
     }
   }
-  for (l = document.getElementsByTagName("div"), _m = [], r = -1; ++r < l.length;) "miniViewer" == l[r].getAttribute("name") && (f = l[r].getElementsByTagName("canvas")).length && _o(l[r], f[0])
+  for (l = document.getElementsByTagName('div'), _m = [], r = -1; ++r < l.length;) 'miniViewer' == l[r].getAttribute('name') && (f = l[r].getElementsByTagName('canvas')).length && _o(l[r], f[0])
 }
 
 function _o(jt, zt) {
@@ -223,7 +223,7 @@ function _o(jt, zt) {
 
   function ca(r, n) {
     var e;
-    return r = r.substring(1 - (e = "-" == r.charAt(0) ? -1 : 1) >> 1), e * ("C" == r.charAt(0) ? n[parseInt(r.substring(1), 10)] : parseFloat(r))
+    return r = r.substring(1 - (e = '-' == r.charAt(0) ? -1 : 1) >> 1), e * ('C' == r.charAt(0) ? n[parseInt(r.substring(1), 10)] : parseFloat(r))
   }
 
   function ba(r) {
@@ -339,33 +339,33 @@ function _o(jt, zt) {
       if (i == xl) break;
       Af.strokeStyle = hf, i = xl
     }
-    Af.fillStyle = "lightGray", c(Ga, r = Oa, ja, za, n = nl), Af.strokeStyle = of, Af.beginPath(), Af.moveTo(Ha, r), Af.lineTo(Ha, Qa), Af.closePath(), Af.stroke(), Af.fillStyle = "#505050", c(Ja, Ka, $a, rl, n), ul || (Af.fillStyle = _b[4][64], Af.fillRect(ll, ol, gl, gl)), Af.strokeStyle = Af.fillStyle = "black",
-      Af.strokeRect(ll, ol, gl, gl), 0 < (r = Pa) && (Af.font = ~~(Ta / 20) + "px Courier New", Af.fillText("WARNING: " + r + (1 == r ? " face is non-planar" : " faces are non-planar"), 0, 63 * Ca >> 6)), Ja == el && (Af.font = "10px Courier New", Af.fillText("v3.0", Ta >> 6, 63 * Ca >> 6))
+    Af.fillStyle = 'lightGray', c(Ga, r = Oa, ja, za, n = nl), Af.strokeStyle = of, Af.beginPath(), Af.moveTo(Ha, r), Af.lineTo(Ha, Qa), Af.closePath(), Af.stroke(), Af.fillStyle = '#505050', c(Ja, Ka, $a, rl, n), ul || (Af.fillStyle = _b[4][64], Af.fillRect(ll, ol, gl, gl)), Af.strokeStyle = Af.fillStyle = 'black',
+      Af.strokeRect(ll, ol, gl, gl), 0 < (r = Pa) && (Af.font = ~~(Ta / 20) + 'px Courier New', Af.fillText('WARNING: ' + r + (1 == r ? ' face is non-planar' : ' faces are non-planar'), 0, 63 * Ca >> 6)), Ja == el && (Af.font = '10px Courier New', Af.fillText('v3.0', Ta >> 6, 63 * Ca >> 6))
   }
 
   var Ta, Ca, La, Ba, Sa, Ua, Xa, Va, Pa, qa, o, xa, Ra, Ya, Da, Ga, Wa, Oa, Qa, ja, za, Ha, Ja, Ka, Za, $a, rl, nl, el, tl, al, h, ll, fl, ol, hl, gl, Cr, Lr, il, g, yl, Al, ul, wl, sl, Il, cl, bl, vl, Ml, ml, Fl, kl, pl, dl, El, Nl, Tl, Cl, Ll, Bl, Sl, Ul, Xl, Vl, Pl, ql, xl, Rl, Yl, Dl, Gl, Wl, Ol, Ql, jl, zl, Hl, Jl, Kl, Zl, $l, rf, nf, ef, tf,
     af, lf, ff, of, hf, gf, yf, Af;
-  _m[_m.length] = (Af = zt.getContext("2d"), void function () {
+  _m[_m.length] = (Af = zt.getContext('2d'), void function () {
     var r, n, e, t, a, l, f, o, h, g, i, y, A, u, w, s, I, c, b, v, M, m, F, k, p, d, E, N, T, C, L, B, S, U, X, V, P, _, q, x, R, Y, D, G, W, O, Q, j, z, H, J, K, Z, $, rr, nr, er, tr, ar, lr, fr, or, hr, gr, ir, yr, Ar, ur, wr, sr, Ir, cr, br, vr, Mr, mr, Fr, kr, pr, dr, Er, Nr, Tr, Cr, Lr, Br, Sr, Ur, Xr, Vr, Pr, qr, xr, Rr, Yr, Dr, Gr, Wr, Or, Qr, jr, zr, Hr, Jr, Kr, Zr, $r, rn, nn, en, tn, an, ln, fn, on, hn, gn, yn, An, un, wn, sn, In, cn, bn, vn, Mn, mn, Fn, kn, pn, dn, En, Nn, Tn, Cn, Ln, Bn, Sn, Un, Xn, Vn, Pn, qn, xn, Rn, Yn, Dn, Gn, Wn, On, Qn, jn, zn, Hn, Jn, Kn,
       Zn, $n, re, ne, ee, te, ae, le, fe, oe, he, ge, ie, ye, Ae, ue, we, se, Ie, ce, be, ve, Me, me, Fe, ke, pe, de, Ee, Ne, Te, Ce, Le, Be, Se, Ue, Xe, Ve, Pe, qe, xe, Re, Ye, De, Ge, We, Oe, Qe, je, ze, He, Je, Ke, Ze, $e, rt, nt, et, tt, at, lt, ft, ot, ht, gt, it, yt, At, ut, wt, st, It, ct, bt, vt, Mt, mt, Ft, kt, pt, dt, Et, Nt, Tt, Ct, Lt, Bt, St, Ut, Xt, Vt, Pt, _t, qt, xt = 5820766091346741e-26, Rt = 33881317890172014e-37, Yt = 2.3283064365386963e-10, Dt = 1.4629180792671596e-9, Gt = 6.283185307179586, Wt = -3.141592653589793, Ot = 5.960464477539063e-8, Qt = 3019169939857233e154;
     if (xa = Ya = La = (Br = Ta = zt.width
-    ) >> 1, Ra = Da = Ba = (Sr = Ca = zt.height) >> 1, of = (Ur = jt.getElementsByClassName("Background")).length ? Ur[0].value : "#606060", hf = (Ur = jt.getElementsByClassName("EdgeColor")).length ? Ur[0].value : "black", gf = (Ur = jt.getElementsByClassName("WireColor")).length ? Ur[0].value : "black", Af.fillStyle = of, Af.fillRect(0, 0, Br, Sr), Za = (Qa = (Oa = er = Sr >> 6) + (za = tr = Sr < 256 ? 8 : Sr >> 5)) - 1, Ka = er + 1, nl = tr >> 1, Ja = (al = ar = (3 * (Y = (tl = (Wa = (Ga = Br >> 2) + (ja = Br >> 1)) - ($a = rl = tr - 2) - 1) - (el = Ga + 1)) >> 2) + el) + (Y >> 4), Ha = ar + ($a >> 1), Ml = (pl = .5 / (Fl = Br >> 1)) / (P = 3 * (tl - ar
-    ) >> 3), (Ur = jt.getElementsByClassName("Perspective")).length && ((Ja = ar + ~~(parseFloat(Ur[0].value) * P)) > tl && (Ja = tl), Ja < el && (Ja = el)), fl = (ll = Br >> 6) + (gl = hr = tr << 1), hl = (ol = er) + hr, (Xr = El = new Float64Array(4))[0] = 1, (Ur = jt.getElementsByClassName("Quaternion")).length) {
+    ) >> 1, Ra = Da = Ba = (Sr = Ca = zt.height) >> 1, of = (Ur = jt.getElementsByClassName('Background')).length ? Ur[0].value : '#606060', hf = (Ur = jt.getElementsByClassName('EdgeColor')).length ? Ur[0].value : 'black', gf = (Ur = jt.getElementsByClassName('WireColor')).length ? Ur[0].value : 'black', Af.fillStyle = of, Af.fillRect(0, 0, Br, Sr), Za = (Qa = (Oa = er = Sr >> 6) + (za = tr = Sr < 256 ? 8 : Sr >> 5)) - 1, Ka = er + 1, nl = tr >> 1, Ja = (al = ar = (3 * (Y = (tl = (Wa = (Ga = Br >> 2) + (ja = Br >> 1)) - ($a = rl = tr - 2) - 1) - (el = Ga + 1)) >> 2) + el) + (Y >> 4), Ha = ar + ($a >> 1), Ml = (pl = .5 / (Fl = Br >> 1)) / (P = 3 * (tl - ar
+    ) >> 3), (Ur = jt.getElementsByClassName('Perspective')).length && ((Ja = ar + ~~(parseFloat(Ur[0].value) * P)) > tl && (Ja = tl), Ja < el && (Ja = el)), fl = (ll = Br >> 6) + (gl = hr = tr << 1), hl = (ol = er) + hr, (Xr = El = new Float64Array(4))[0] = 1, (Ur = jt.getElementsByClassName('Quaternion')).length) {
       for (n = Ur[0].value.match(/[^ \t\n\r\f,;]+/g), er = -1, P = 0; ++er < 4;) P += (Xr[er] = parseFloat(n[er])) * Xr[er];
       for (0 == P && (Xr[0] = P = 1, Xr[1] = Xr[2] = Xr[3] = 0), er = 4, P = Math.sqrt(P); 0 <= --er;) Xr[er] /= P
     }
-    if (n = jt.getElementsByClassName("Counts")[0].value.match(
-      /[^ \t\n\r\f,;]+/g), _ = parseInt(n[0], 10), Vr = q = parseInt(n[1], 10), qr = Pr = qa = parseInt(n[2], 10), Rr = Ol = Array((xr = new Int32Array(qr)).length), Gr = ql = new Float64Array((Dr = Pl = new Float64Array((Yr = Vl = new Float64Array((Xl = new Float64Array((Ul = new Float64Array((Sl = new Float64Array(3 * Pr)).length)).length)).length)).length)).length), Jl = new Int8Array((Ql = Array(Pr)).length), Wr = new Float64Array(_), 0 < _) for (n = jt.getElementsByClassName("Constants")[0].value.match(/[^ \t\n\r\f,;]+/g), er = -1; ++er < _;) Wr[er] = parseFloat(
+    if (n = jt.getElementsByClassName('Counts')[0].value.match(
+      /[^ \t\n\r\f,;]+/g), _ = parseInt(n[0], 10), Vr = q = parseInt(n[1], 10), qr = Pr = qa = parseInt(n[2], 10), Rr = Ol = Array((xr = new Int32Array(qr)).length), Gr = ql = new Float64Array((Dr = Pl = new Float64Array((Yr = Vl = new Float64Array((Xl = new Float64Array((Ul = new Float64Array((Sl = new Float64Array(3 * Pr)).length)).length)).length)).length)).length), Jl = new Int8Array((Ql = Array(Pr)).length), Wr = new Float64Array(_), 0 < _) for (n = jt.getElementsByClassName('Constants')[0].value.match(/[^ \t\n\r\f,;]+/g), er = -1; ++er < _;) Wr[er] = parseFloat(
       n[er]);
-    for (jr = Bl = new Float64Array((Qr = Ll = new Float64Array((Or = Cl = new Float64Array((Tl = new Float64Array((Nl = new Float64Array(Vr)).length)).length)).length)).length), zr = new Float64Array(q), n = jt.getElementsByClassName("Vertices")[0].value.match(/[^ \t\n\r\f,;]+/g), Hr = 0, yr = er = -1, Kr = -(Jr = Number.MAX_VALUE); ++yr < Vr;) (zr[yr] = P = Ia(Zr = Or[yr] = ca(n[++er], Wr), Qr[yr] = ca(n[++er], Wr), jr[yr] = ca(n[++er], Wr))) > Hr && (Hr = P), Zr < Jr && (Jr = Zr), Kr < Zr && (Kr = Zr);
+    for (jr = Bl = new Float64Array((Qr = Ll = new Float64Array((Or = Cl = new Float64Array((Tl = new Float64Array((Nl = new Float64Array(Vr)).length)).length)).length)).length), zr = new Float64Array(q), n = jt.getElementsByClassName('Vertices')[0].value.match(/[^ \t\n\r\f,;]+/g), Hr = 0, yr = er = -1, Kr = -(Jr = Number.MAX_VALUE); ++yr < Vr;) (zr[yr] = P = Ia(Zr = Or[yr] = ca(n[++er], Wr), Qr[yr] = ca(n[++er], Wr), jr[yr] = ca(n[++er], Wr))) > Hr && (Hr = P), Zr < Jr && (Jr = Zr), Kr < Zr && (Kr = Zr);
     for (1 == ($r = new Int32Array(isFinite(Zr = 4095.99 / (Kr - Jr)) ? 4096 : 1)
     ).length && (Zr = 0), er = $r.length; 0 <= --er;) $r[er] = -1;
     for (Wr = null, rn = Array(Pr), nn = Array(q), en = new Int32Array((pr = new Int32Array(Vr)).length), hn = Array((tn = Array(512)).length), an = Array(er = 3); 0 <= --er;) an[er] = Array(hn.length);
     for (er = qr + 511 >> 9, ln = an[0], fn = an[1], on = an[2]; 0 <= --er;) on[er] = new Int16Array((fn[er] = new Int16Array((ln[er] = new Int16Array((hn[er] = new Int8Array((tn[er] = Array(512)).length)).length)).length)).length);
     for (gn = Array((Tr = new Int32Array(qr)).length), er = qr; 0 <= --er;) gn[er] = new Float64Array(4
     );
-    for (n = jt.getElementsByClassName("Faces")[0].value.match(/[^ \t\n\r\f,;]+/g), Nr = new Int32Array(W = 0), er = yr = -1, R = x = 0; ++er < Pr;) {
-      for (ar = 0; "#" != (r = n[++yr]).charAt(0);) en[pr[ar++] = parseInt(r, 10)]++;
+    for (n = jt.getElementsByClassName('Faces')[0].value.match(/[^ \t\n\r\f,;]+/g), Nr = new Int32Array(W = 0), er = yr = -1, R = x = 0; ++er < Pr;) {
+      for (ar = 0; '#' != (r = n[++yr]).charAt(0);) en[pr[ar++] = parseInt(r, 10)]++;
       if (x += ar, rn[er] = new Int32Array(ar), Tr[er] = -ar, la(pr, 0, tn[lr = er >> 9][gr = 511 & er] = new Int32Array(ar), 0, ar), R < ar && (R = ar), 1 < r.length) {
         for (tr = 16777215 & parseInt(r.substring(1), 16), or = W; 0 <= --or && Nr[or] != tr;) ;
         or < 0 && (Nr = oa(Nr, or = W++, tr, 32)), Tr[er] = or
@@ -404,8 +404,8 @@ function _o(jt, zt) {
         }
       } else En[dn[tr++] = or] = !0, (Nn[or] = Ln) && nr++
     }
-    if (An = nn = rn = null, yf = sl ? gf : "#888888", bl = Fl * ((Ur = jt.getElementsByClassName("Scale")).length ? .75 * parseFloat(Ur[0].value) : .75) / Hr, vl = 1 / Fl, Fl += .5, kl = .5 + (Sr >> 1), Bn = (
-      ml = (cl = Hr) * xt) * ml, Cr = Lr = null, 0 != W) for (Lr = Array((Cr = Array(er = W)).length); 0 <= --er;) for (Lr[er] = Array(192), Cr[er] = Array(192), tr = 192, un = Cr[er], Mn = Lr[er], Un = (Sn = Nr[er]) >> 8 & 255, Xn = 255 & Sn, Sn >>= 16; 0 <= --tr;) un[tr] = "rgb(" + ~~((Sn * (ar = tr + 64) + 127) / 255) + "," + ~~((Un * ar + 127) / 255) + "," + ~~((Xn * ar + 127) / 255) + ")", Mn[tr] = "rgba" + un[tr].slice(3, -1) + ",.125)";
+    if (An = nn = rn = null, yf = sl ? gf : '#888888', bl = Fl * ((Ur = jt.getElementsByClassName('Scale')).length ? .75 * parseFloat(Ur[0].value) : .75) / Hr, vl = 1 / Fl, Fl += .5, kl = .5 + (Sr >> 1), Bn = (
+      ml = (cl = Hr) * xt) * ml, Cr = Lr = null, 0 != W) for (Lr = Array((Cr = Array(er = W)).length); 0 <= --er;) for (Lr[er] = Array(192), Cr[er] = Array(192), tr = 192, un = Cr[er], Mn = Lr[er], Un = (Sn = Nr[er]) >> 8 & 255, Xn = 255 & Sn, Sn >>= 16; 0 <= --tr;) un[tr] = 'rgb(' + ~~((Sn * (ar = tr + 64) + 127) / 255) + ',' + ~~((Un * ar + 127) / 255) + ',' + ~~((Xn * ar + 127) / 255) + ')', Mn[tr] = 'rgba' + un[tr].slice(3, -1) + ',.125)';
     for (yr = -1, Sa = ar = 0, Vn = Array((Pn = Array(1024)).length); ++yr < Vr;) (en[yr] = Aa(Vn, e = Or[yr], t = Qr[yr], a = jr[yr], Bn, Jr, Zr, $r, Pn)) != yr && (Sa++, ar = 1, (
       sr = Vn[er = yr >> 7] = null == Vn[er] ? new Float64Array(640) : Vn[er])[tr = 127 & yr] = e, sr[tr + 128] = t, sr[tr + 256] = a);
     if (0 != ar) for (er = qr; 0 <= --er;) for (tr = (pr = tn[er >> 9][511 & er]).length; 0 <= --tr;) for (; (pr[tr] = en[fr = pr[tr]]) != fr;) ;
@@ -824,9 +824,9 @@ function _o(jt, zt) {
     for (vt = an = Cr = Lr = rf = Fr = kr = dr = Er = kt = pt = Tr = dl = null, jl = Array(er = 2), tr = (ar = R < D ? D : R) > G ? ar : G; 0 <= --er;
     ) jl[er] = new Int32Array(tr);
     for (zl = Array(er = 2), tr = ($l = new Int32Array(Vr)).length; 0 <= --er;) zl[er] = new Int32Array(tr);
-    ef = new Int32Array((Zl = new Int8Array(Z < qr ? qr : Z)).length), Hl = new Uint8Array(qr), af = new Int32Array(At), yl = Al = ul = !1, zt.addEventListener("contextmenu", ba, !1), zt.addEventListener("mousedown", va, !1), zt.addEventListener("touchstart", Ma, !1), document.addEventListener("mouseup", ma, !1), document.addEventListener("touchend", Fa, !1), document.addEventListener("mousemove", ka, !1),
-      document.addEventListener("touchmove", pa, !1), document.addEventListener("mouseleave", da, !1), il = 0, Ea(), Na()
+    ef = new Int32Array((Zl = new Int8Array(Z < qr ? qr : Z)).length), Hl = new Uint8Array(qr), af = new Int32Array(At), yl = Al = ul = !1, zt.addEventListener('contextmenu', ba, !1), zt.addEventListener('mousedown', va, !1), zt.addEventListener('touchstart', Ma, !1), document.addEventListener('mouseup', ma, !1), document.addEventListener('touchend', Fa, !1), document.addEventListener('mousemove', ka, !1),
+      document.addEventListener('touchmove', pa, !1), document.addEventListener('mouseleave', da, !1), il = 0, Ea(), Na()
   }())
 }
 
-window.addEventListener("load", _n, !1);
+window.addEventListener('load', _n, !1);

@@ -9,13 +9,13 @@
 <body class="page__body">
 <header class="header"></header>
 <main class="main">
-  <section class="solids">
+  <section class="main__solids solids">
     <div class="container">
       <h1 class="solids__title title-h1">Johnson Solids – Bicupolae</h1>
       <p class="solids__text">Text.</p>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 8 8">
             <input type="hidden" class="Constants" value="0.866025403784438646763723170753">
@@ -27,7 +27,7 @@
           <h2 class="solids-item__title title-h2">Gyrobifastigium (J26)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 12 14">
             <input type="hidden" class="Constants" value="0.235702260395515841466948120702,0.7071067811865475244008443621048,0.942809041582063365867792482806">
@@ -39,7 +39,7 @@
           <h2 class="solids-item__title title-h2">Triangular Orthobicupola (J27)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 16 18">
             <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210">
@@ -51,7 +51,7 @@
           <h2 class="solids-item__title title-h2">Square Orthobicupola (J28)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 16 18">
             <input type="hidden" class="Constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210">
@@ -63,7 +63,7 @@
           <h2 class="solids-item__title title-h2">Square Gyrobicupola (J29)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="9 20 22">
             <input type="hidden" class="Constants" value="0.262865556059566803012834542424,0.525731112119133606025669084848,0.6881909602355867691036047909554,0.809016994374947424102293417183,0.850650808352039932181540497063,0.951056516295153572116439333379,1.30901699437494742410229341718,1.53884176858762670128514528802,1.61803398874989484820458683437">
@@ -75,7 +75,7 @@
           <h2 class="solids-item__title title-h2">Pentagonal Orthobicupola (J30)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 20 22">
             <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
@@ -95,6 +95,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>

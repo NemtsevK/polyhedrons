@@ -9,13 +9,13 @@
 <body class="page__body">
 <header class="header"></header>
 <main class="main">
-  <section class="solids">
+  <section class="main__solids solids">
     <div class="container">
       <h1 class="solids__title title-h1">Augmented and diminished Platonic solids</h1>
       <p class="solids__text">Text.</p>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 21 16">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749">
@@ -26,7 +26,7 @@
           <h2 class="solids-item__title title-h2">Augmented Dodecahedron (J58)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 22 20">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749">
@@ -38,7 +38,7 @@
           <h2 class="solids-item__title title-h2">Parabiaugmented Dodecahedron (J59)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 22 20">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749">
@@ -49,7 +49,7 @@
           <h2 class="solids-item__title title-h2">Metabiaugmented Dodecahedron (J60)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="4 23 24">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.39442719099991587856366946749">
@@ -60,7 +60,7 @@
           <h2 class="solids-item__title title-h2">Triaugmented Dodecahedron (J61)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 10 12">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183">
@@ -72,7 +72,7 @@
           <h2 class="solids-item__title title-h2">Metabidiminished Icosahedron (J62)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="1 9 8">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183">
@@ -84,7 +84,7 @@
           <h2 class="solids-item__title title-h2">Tridiminished Icosahedron (J63)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="2 10 10">
             <input type="hidden" class="Constants" value="0.809016994374947424102293417183,0.907743518916014157634660713798">
@@ -103,6 +103,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>

@@ -9,13 +9,13 @@
 <body class="page__body">
 <header class="header"></header>
 <main class="main">
-  <section class="solids">
+  <section class="main__solids solids">
     <div class="container">
       <h1 class="solids__title title-h1">Johnson Solids – Snub antiprisms</h1>
       <p class="solids__text">The snub antiprisms can be constructed as an alternation of a truncated antiprism. The gyrobianticupolae are another construction for the snub antiprisms. Only snub antiprisms with at most 4 sides can be constructed from regular polygons. The snub triangular antiprism is the regular icosahedron, so it is not a Johnson solid.</p>
       <ul class="solids__list">
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="3 8 12">
             <input type="hidden" class="Constants" value="0.205561565853259538077851199951,0.644584273224154984541338729084,0.783930924232563649920229273668">
@@ -27,7 +27,7 @@
           <h2 class="solids-item__title title-h2">Snub Disphenoid (J84)</h2>
         </li>
         <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
+          <div class="solids-item__content" name="miniViewer">
             <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
             <input type="hidden" class="Counts" value="5 16 26">
             <input type="hidden" class="Constants" value="0.185607021282179847571203642807,0.676868509031356082287074277611,0.7071067811865475244008443621048,0.857865868455197166868512416108,1.21320554586631333082602219607">
@@ -45,6 +45,6 @@
   <div class="container"></div>
 </footer>
 <script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 </body>
 </html>
