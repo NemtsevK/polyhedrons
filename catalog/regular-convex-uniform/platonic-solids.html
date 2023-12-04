@@ -1,74 +1,97 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
   <title>Platonic Solids</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta charset="UTF-8">
+<meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/favicons/apple.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body class="page__body">
-<header class="header"></header>
-<main>
-  <section class="solids">
+<header class="header">
+  <div class="header__inner container">
+    <div class="header__logo">
+      <a class="header__logo-link" href="/" aria-label="Home page">
+        <picture>
+          <source srcset="../../images/icons/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="header__logo-image" src="../../images/icons/logo.svg" width="110" height="35" alt="Encyclopedia Polyhedrons">
+        </picture>
+      </a>
+    </div>
+    <div></div>
+    <nav class="navigation"></nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="main__solids solids">
     <div class="container">
-      <h1 class="solids__title title-h1">Platonic Solids</h1>
-      <p class="solids__text">The five Platonic solids, also known as the five regular solids, were discovered in ancient times. Although each one was probably known prior to 500 BC, they are collectively named after the ancient Greek philosopher Plato (428-348 BC) who mentions them in his dialogue Timaeus, written circa 360 BC. Each Platonic solid uses the same regular polygon for each face, with the same number of faces meeting at each vertex. The five Platonic solids are the only convex polyhedra that meet these criteria.</p>
+      <div class="solids__header">
+        <h1 class="solids__title title-h1">Platonic Solids</h1>
+        <p class="solids__text">The five Platonic solids, also known as the five regular solids, were discovered in ancient times. Although each one was probably known prior to 500 BC, they are collectively named after the ancient Greek philosopher Plato (428-348 BC) who mentions them in his dialogue Timaeus, written circa 360 BC. Each Platonic solid uses the same regular polygon for each face, with the same number of faces meeting at each vertex. The five Platonic solids are the only convex polyhedra that meet these criteria.</p>
+      </div>
       <ul class="solids__list">
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 4 4">
-            <input type="hidden" class="Constants" value="0.353553390593273762200422181052">
-            <input type="hidden" class="Vertices" value="C0 -C0 C0,C0 C0 -C0,-C0 C0 C0, -C0 -C0 -C0">
-            <input type="hidden" class="Faces" value="0 1 2 #,1 0 3 #,2 3 0 #,3 2 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Tetrahedron</h2>
-            <p class="solids-item__subtitle">Triangular Pyramid</p>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="1 4 4">
+            <input type="hidden" class="solid__constants" value="0.353553390593273762200422181052">
+            <input type="hidden" class="solid__vertices" value="C0 -C0 C0,C0 C0 -C0,-C0 C0 C0, -C0 -C0 -C0">
+            <input type="hidden" class="solid__faces" value="0 1 2 #,1 0 3 #,2 3 0 #,3 2 1 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Tetrahedron</h2>
+            <p class="solid__subtitle">Triangular Pyramid</p>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 6 8">
-            <input type="hidden" class="Constants" value="0.7071067811865475244008443621048">
-            <input type="hidden" class="Vertices" value="0.0 0.0 C0,0.0 0.0 -C0,C0 0.0 0.0,-C0 0.0 0.0,0.0 C0 0.0,0.0 -C0 0.0">
-            <input type="hidden" class="Faces" value="0 2 4 #,0 4 3 #,0 3 5 #,0 5 2 #,1 2 5 #,1 5 3 #,1 3 4 #,1 4 2 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Octahedron</h2>
-            <p class="solids-item__subtitle">Square Dipyramid</p>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="1 6 8">
+            <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
+            <input type="hidden" class="solid__vertices" value="0.0 0.0 C0,0.0 0.0 -C0,C0 0.0 0.0,-C0 0.0 0.0,0.0 C0 0.0,0.0 -C0 0.0">
+            <input type="hidden" class="solid__faces" value="0 2 4 #,0 4 3 #,0 3 5 #,0 5 2 #,1 2 5 #,1 5 3 #,1 3 4 #,1 4 2 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Octahedron</h2>
+            <p class="solid__subtitle">Square Dipyramid</p>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="0 8 6">
-            <input type="hidden" class="Vertices" value="0.5 0.5 0.5,0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5">
-            <input type="hidden" class="Faces" value="0 1 5 4 #,0 4 6 2 #,0 2 3 1 #,7 3 2 6 #,7 6 4 5 #,7 5 1 3 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Cube</h2>
-            <p class="solids-item__subtitle">Hexahedron, Square prism, Trigonal Trapezohedron</p>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="0 8 6">
+            <input type="hidden" class="solid__vertices" value="0.5 0.5 0.5,0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5">
+            <input type="hidden" class="solid__faces" value="0 1 5 4 #,0 4 6 2 #,0 2 3 1 #,7 3 2 6 #,7 6 4 5 #,7 5 1 3 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Cube</h2>
+            <p class="solid__subtitle">Hexahedron, Square prism, Trigonal Trapezohedron</p>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 12 20">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183">
-            <input type="hidden" class="Vertices" value="0.5 0.0 C0,0.5 0.0 -C0,-0.5 0.0 C0,-0.5 0.0 -C0,C0 0.5 0.0,C0 -0.5 0.0,-C0 0.5 0.0,-C0 -0.5 0.0,0.0 C0 0.5,0.0 C0 -0.5,0.0 -C0 0.5,0.0 -C0 -0.5">
-            <input type="hidden" class="Faces" value="0 2 10 #,0 10 5 #,0 5 4 #,0 4 8 #,0 8 2 #,3 1 11 #,3 11 7 #,3 7 6 #,3 6 9 #,3 9 1 #,2 6 7 #,2 7 10 #,10 7 11 #,10 11 5 #,5 11 1 #,5 1 4 #,4 1 9 #,4 9 8 #,8 9 6 #,8 6 2 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Icosahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="1 12 20">
+            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183">
+            <input type="hidden" class="solid__vertices" value="0.5 0.0 C0,0.5 0.0 -C0,-0.5 0.0 C0,-0.5 0.0 -C0,C0 0.5 0.0,C0 -0.5 0.0,-C0 0.5 0.0,-C0 -0.5 0.0,0.0 C0 0.5,0.0 C0 -0.5,0.0 -C0 0.5,0.0 -C0 -0.5">
+            <input type="hidden" class="solid__faces" value="0 2 10 #,0 10 5 #,0 5 4 #,0 4 8 #,0 8 2 #,3 1 11 #,3 11 7 #,3 7 6 #,3 6 9 #,3 9 1 #,2 6 7 #,2 7 10 #,10 7 11 #,10 11 5 #,5 11 1 #,5 1 4 #,4 1 9 #,4 9 8 #,8 9 6 #,8 6 2 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Icosahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="2 20 12">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183, 1.30901699437494742410229341718">
-            <input type="hidden" class="Vertices" value="0.0 0.5 C1,0.0 0.5 -C1,0.0 -0.5 C1, 0.0 -0.5 -C1,C1 0.0 0.5,C1 0.0 -0.5,-C1 0.0 0.5,-C1 0.0 -0.5,0.5 C1 0.0, 0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0, -C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
-            <input type="hidden" class="Faces" value="0 2 14 4 12 #,0 12 8 10 16 #, 0 16 6 18 2 #,7 6 16 10 17 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #, 9 15 5 4 14 #,9 14 2 18 11 #,13 1 17 10 8 #,13 8 12 4 5 #,13 5 15 3 1 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Dodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="2 20 12">
+            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183, 1.30901699437494742410229341718">
+            <input type="hidden" class="solid__vertices" value="0.0 0.5 C1,0.0 0.5 -C1,0.0 -0.5 C1, 0.0 -0.5 -C1,C1 0.0 0.5,C1 0.0 -0.5,-C1 0.0 0.5,-C1 0.0 -0.5,0.5 C1 0.0, 0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0, -C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
+            <input type="hidden" class="solid__faces" value="0 2 14 4 12 #,0 12 8 10 16 #, 0 16 6 18 2 #,7 6 16 10 17 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #, 9 15 5 4 14 #,9 14 2 18 11 #,13 1 17 10 8 #,13 8 12 4 5 #,13 5 15 3 1 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Dodecahedron</h2>
           </div>
         </li>
       </ul>
@@ -76,9 +99,33 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="container"></div>
+  <div class="footer__container container">
+    <div class="footer__logo-wrapper">
+      <a class="footer__logo" href="/">
+        <img src="/images/icons/logo.svg" width="110" height="35" alt="Logo">
+      </a>
+    </div>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--github" href="https://github.com/nemtsev-k" target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/@NemtsevK_Studio" target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/studio_of_the_beautiful" target="_blank"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__slogan">
+      <p class="footer__slogan-text">Mathematics possesses not only truth, but supreme beauty – a&nbsp;beauty cold and austere.</p>
+    </div>
+  </div>
 </footer>
-<script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+
+<script src="/js/main.js"></script>
+<script src="/js/rendering-polyhedra.js"></script>
+
 </body>
 </html>

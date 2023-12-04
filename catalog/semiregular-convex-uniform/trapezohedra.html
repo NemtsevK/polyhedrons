@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
   <title>Trapezohedra</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta charset="UTF-8">
+<meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/favicons/apple.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body class="page__body">
-<header class="header"></header>
-<main>
-  <section class="solids">
-    <div class="container"><h1 class="solids__title title-h1">Trapezohedra</h1>
-      <p class="solids__text">Text.</p>
+<header class="header">
+  <div class="header__inner container">
+    <div class="header__logo">
+      <a class="header__logo-link" href="/" aria-label="Home page">
+        <picture>
+          <source srcset="../../images/icons/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="header__logo-image" src="../../images/icons/logo.svg" width="110" height="35" alt="Encyclopedia Polyhedrons">
+        </picture>
+      </a>
+    </div>
+    <div></div>
+    <nav class="navigation"></nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="main__solids solids">
+    <div class="container">
+      <div class="solids__header">
+        <h1 class="solids__title title-h1">Trapezohedra</h1>
+        <p class="solids__text">Text.</p>
+      </div>
       <ul class="solids__list">
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 8 6">
-            <input type="hidden" class="Constants" value="0.353553390593273762200422181052">
-            <input type="hidden" class="Vertices" value="C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
-            <input type="hidden" class="Faces" value="0 1 5 4 #,0 4 6 2 #,0 2 3 1 #,7 3 2 6 #,7 6 4 5 #,7 5 1 3 #">
-            <input type="hidden" class="Background" value="#606060">
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="1 8 6">
+            <input type="hidden" class="solid__constants" value="0.353553390593273762200422181052">
+            <input type="hidden" class="solid__vertices" value="C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0,-C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
+            <input type="hidden" class="solid__faces" value="0 1 5 4 #,0 4 6 2 #,0 2 3 1 #,7 3 2 6 #,7 6 4 5 #,7 5 1 3 #">
+            <input type="hidden" class="solid__background" value="#606060">
             <input type="hidden" class="Quaternion" value="673887339 -302905447 0 673887339">
-            <h2 class="solids-item__title title-h2">Trigonal Trapezohedron</h2>
-            <p class="solids-item__subtitle">Cube</p>
+            <h2 class="solid__title title-h2">Trigonal Trapezohedron</h2>
+            <p class="solid__subtitle">Cube</p>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 10 8">
-            <input type="hidden" class="Constants" value="0.174155349874503261843187247164,0.7071067811865475244008443621048,1.01505176512821780487431272340">
-            <input type="hidden" class="Vertices" value="0.0 0.0 C2,0.0 0.0 -C2,C1 0.0 C0,-C1 0.0 C0,0.0 C1 C0,0.0 -C1 C0,0.5 0.5 -C0,0.5 -0.5 -C0,-0.5 0.5 -C0,-0.5 -0.5 -C0">
-            <input type="hidden" class="Faces" value="0 2 6 4 #,0 4 8 3 #,0 3 9 5 #,0 5 7 2 #,1 6 2 7 #,1 7 5 9 #,1 9 3 8 #,1 8 4 6 #">
-            <input type="hidden" class="Background" value="#606060">
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="3 10 8">
+            <input type="hidden" class="solid__constants" value="0.174155349874503261843187247164,0.7071067811865475244008443621048,1.01505176512821780487431272340">
+            <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,C1 0.0 C0,-C1 0.0 C0,0.0 C1 C0,0.0 -C1 C0,0.5 0.5 -C0,0.5 -0.5 -C0,-0.5 0.5 -C0,-0.5 -0.5 -C0">
+            <input type="hidden" class="solid__faces" value="0 2 6 4 #,0 4 8 3 #,0 3 9 5 #,0 5 7 2 #,1 6 2 7 #,1 7 5 9 #,1 9 3 8 #,1 8 4 6 #">
+            <input type="hidden" class="solid__background" value="#606060">
             <input type="hidden" class="Quaternion" value="12 -9 -8 0">
-            <h2 class="solids-item__title title-h2">Tetragonal Trapezohedron</h2>
+            <h2 class="solid__title title-h2">Tetragonal Trapezohedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 12 10">
-            <input type="hidden" class="Constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718">
-            <input type="hidden" class="Vertices" value="0.0 C0 C1,0.0 C0 -C1,0.0 -C0 C1,0.0 -C0 -C1,0.5 0.5 0.5,0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5,C2 -C1 0.0,-C2 C1 0.0,C0 C1 0.0,-C0 -C1 0.0">
-            <input type="hidden" class="Faces" value="8 2 6 11 #,8 11 7 3 #,8 3 1 5 #,8 5 10 4 #,8 4 0 2 #,9 0 4 10 #,9 10 5 1 #,9 1 3 7 #,9 7 11 6 #,9 6 2 0 #">
-            <input type="hidden" class="Background" value="#606060">
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="3 12 10">
+            <input type="hidden" class="solid__constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183,1.30901699437494742410229341718">
+            <input type="hidden" class="solid__vertices" value="0.0 C0 C1,0.0 C0 -C1,0.0 -C0 C1,0.0 -C0 -C1,0.5 0.5 0.5,0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5,C2 -C1 0.0,-C2 C1 0.0,C0 C1 0.0,-C0 -C1 0.0">
+            <input type="hidden" class="solid__faces" value="8 2 6 11 #,8 11 7 3 #,8 3 1 5 #,8 5 10 4 #,8 4 0 2 #,9 0 4 10 #,9 10 5 1 #,9 1 3 7 #,9 7 11 6 #,9 6 2 0 #">
+            <input type="hidden" class="solid__background" value="#606060">
             <input type="hidden" class="Quaternion" value="9025 -3146 2623 -1328">
-            <h2 class="solids-item__title title-h2">Pentagonal Trapezohedron</h2>
+            <h2 class="solid__title title-h2">Pentagonal Trapezohedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="3 14 12">
-            <input type="hidden" class="Constants" value="0.156585608656507718901567227964,0.866025403784438646763723170753,2.18095618030422754264317321632">
-            <input type="hidden" class="Vertices" value="0.0 0.0 C2,0.0 0.0 -C2,0.0 1.0 C0,0.0 -1.0 C0,1.0 0.0 -C0,-1.0 0.0 -C0,C1 0.5 C0,C1 -0.5 C0,-C1 0.5 C0,-C1 -0.5 C0,0.5 C1 -C0,0.5 -C1 -C0,-0.5 C1 -C0,-0.5 -C1 -C0">
-            <input type="hidden" class="Faces" value="0 2 12 8 #,0 8 5 9 #,0 9 13 3 #,0 3 11 7 #,0 7 4 6 #,0 6 10 2 #,1 4 7 11 #,1 11 3 13 #,1 13 9 5 #,1 5 8 12 #,1 12 2 10 #,1 10 6 4 #">
-            <input type="hidden" class="Background" value="#606060">
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="3 14 12">
+            <input type="hidden" class="solid__constants" value="0.156585608656507718901567227964,0.866025403784438646763723170753,2.18095618030422754264317321632">
+            <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,0.0 1.0 C0,0.0 -1.0 C0,1.0 0.0 -C0,-1.0 0.0 -C0,C1 0.5 C0,C1 -0.5 C0,-C1 0.5 C0,-C1 -0.5 C0,0.5 C1 -C0,0.5 -C1 -C0,-0.5 C1 -C0,-0.5 -C1 -C0">
+            <input type="hidden" class="solid__faces" value="0 2 12 8 #,0 8 5 9 #,0 9 13 3 #,0 3 11 7 #,0 7 4 6 #,0 6 10 2 #,1 4 7 11 #,1 11 3 13 #,1 13 9 5 #,1 5 8 12 #,1 12 2 10 #,1 10 6 4 #">
+            <input type="hidden" class="solid__background" value="#606060">
             <input type="hidden" class="Quaternion" value="12 -9 -8 0">
-            <h2 class="solids-item__title title-h2">Hexagonal Trapezohedron</h2>
+            <h2 class="solid__title title-h2">Hexagonal Trapezohedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="8 16 14">
-            <input type="hidden" class="Constants" value="0.1531927682625616683458021483497,0.256429215818138474873324904069,0.7184986963636851321448067789251,0.900968867902419126236102319507,1.03826069828616828358176943074,1.12348980185873353052500488400,1.15238243548124325262057511177,2.94063772761851796655260234634">
-            <input type="hidden" class="Vertices" value="0.0 0.0 C7,0.0 0.0 -C7,C5 C1 C0,C5 -C1 -C0,-C5 C1 C0,-C5 -C1 -C0,C3 -C2 C0,C3 C2 -C0,-C3 -C2 C0,-C3 C2 -C0,0.5 C4 C0,0.5 -C4 -C0,-0.5 C4 C0,-0.5 -C4 -C0,0.0 -C6 C0,0.0 C6 -C0">
-            <input type="hidden" class="Faces" value="0 2 7 10 #,0 10 15 12 #,0 12 9 4 #,0 4 5 8 #,0 8 13 14 #,0 14 11 6 #,0 6 3 2 #,1 3 6 11 #,1 11 14 13 #,1 13 8 5 #,1 5 4 9 #,1 9 12 15 #,1 15 10 7 #,1 7 2 3 #">
-            <input type="hidden" class="Background" value="#606060">
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="8 16 14">
+            <input type="hidden" class="solid__constants" value="0.1531927682625616683458021483497,0.256429215818138474873324904069,0.7184986963636851321448067789251,0.900968867902419126236102319507,1.03826069828616828358176943074,1.12348980185873353052500488400,1.15238243548124325262057511177,2.94063772761851796655260234634">
+            <input type="hidden" class="solid__vertices" value="0.0 0.0 C7,0.0 0.0 -C7,C5 C1 C0,C5 -C1 -C0,-C5 C1 C0,-C5 -C1 -C0,C3 -C2 C0,C3 C2 -C0,-C3 -C2 C0,-C3 C2 -C0,0.5 C4 C0,0.5 -C4 -C0,-0.5 C4 C0,-0.5 -C4 -C0,0.0 -C6 C0,0.0 C6 -C0">
+            <input type="hidden" class="solid__faces" value="0 2 7 10 #,0 10 15 12 #,0 12 9 4 #,0 4 5 8 #,0 8 13 14 #,0 14 11 6 #,0 6 3 2 #,1 3 6 11 #,1 11 14 13 #,1 13 8 5 #,1 5 4 9 #,1 9 12 15 #,1 15 10 7 #,1 7 2 3 #">
+            <input type="hidden" class="solid__background" value="#606060">
             <input type="hidden" class="Quaternion" value="12 -9 -8 0">
-            <h2 class="solids-item__title title-h2">Heptagonal Trapezohedron</h2>
+            <h2 class="solid__title title-h2">Heptagonal Trapezohedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniConvex">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 18 16">
-            <input type="hidden" class="Constants" value="0.151047815180276180953489848716,0.923879532511286756128183189397,1.20710678118654752440084436210,1.30656296487637652785664317343,3.817603985406019048222189005746">
-            <input type="hidden" class="Vertices" value="0.0 0.0 C4,0.0 0.0 -C4,C3 0.0 C0,-C3 0.0 C0,0.0 C3 C0,0.0 -C3 C0,C1 C1 C0,C1 -C1 C0,-C1 C1 C0,-C1 -C1 C0,C2 0.5 -C0,C2 -0.5 -C0,-C2 0.5 -C0,-C2 -0.5 -C0,0.5 C2 -C0,0.5 -C2 -C0,-0.5 C2 -C0,-0.5 -C2 -C0">
-            <input type="hidden" class="Faces" value="0 2 10 6 #,0 6 14 4 #,0 4 16 8 #,0 8 12 3 #,0 3 13 9 #,0 9 17 5 #,0 5 15 7 #,0 7 11 2 #,1 10 2 11 #,1 11 7 15 #,1 15 5 17 #,1 17 9 13 #,1 13 3 12 #,1 12 8 16 #,1 16 4 14 #,1 14 6 10 #">
-            <input type="hidden" class="Background" value="#606060">
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="5 18 16">
+            <input type="hidden" class="solid__constants" value="0.151047815180276180953489848716,0.923879532511286756128183189397,1.20710678118654752440084436210,1.30656296487637652785664317343,3.817603985406019048222189005746">
+            <input type="hidden" class="solid__vertices" value="0.0 0.0 C4,0.0 0.0 -C4,C3 0.0 C0,-C3 0.0 C0,0.0 C3 C0,0.0 -C3 C0,C1 C1 C0,C1 -C1 C0,-C1 C1 C0,-C1 -C1 C0,C2 0.5 -C0,C2 -0.5 -C0,-C2 0.5 -C0,-C2 -0.5 -C0,0.5 C2 -C0,0.5 -C2 -C0,-0.5 C2 -C0,-0.5 -C2 -C0">
+            <input type="hidden" class="solid__faces" value="0 2 10 6 #,0 6 14 4 #,0 4 16 8 #,0 8 12 3 #,0 3 13 9 #,0 9 17 5 #,0 5 15 7 #,0 7 11 2 #,1 10 2 11 #,1 11 7 15 #,1 15 5 17 #,1 17 9 13 #,1 13 3 12 #,1 12 8 16 #,1 16 4 14 #,1 14 6 10 #">
+            <input type="hidden" class="solid__background" value="#606060">
             <input type="hidden" class="Quaternion" value="12 -9 -8 0">
-            <h2 class="solids-item__title title-h2">Octagonal Trapezohedron</h2>
+            <h2 class="solid__title title-h2">Octagonal Trapezohedron</h2>
           </div>
         </li>
       </ul>
@@ -91,9 +115,33 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="container"></div>
+  <div class="footer__container container">
+    <div class="footer__logo-wrapper">
+      <a class="footer__logo" href="/">
+        <img src="/images/icons/logo.svg" width="110" height="35" alt="Logo">
+      </a>
+    </div>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--github" href="https://github.com/nemtsev-k" target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/@NemtsevK_Studio" target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/studio_of_the_beautiful" target="_blank"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__slogan">
+      <p class="footer__slogan-text">Mathematics possesses not only truth, but supreme beauty – a&nbsp;beauty cold and austere.</p>
+    </div>
+  </div>
 </footer>
-<script src="../../js/main.js"></script>
-<script src="../../js/mini-convex.js"></script>
+
+<script src="/js/main.js"></script>
+<script src="/js/rendering-polyhedra.js"></script>
+
 </body>
 </html>

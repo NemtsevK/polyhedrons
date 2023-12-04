@@ -1,150 +1,173 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
   <title>Self-Intersecting Quasi-Quasi-Regular Polyhedra</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta charset="UTF-8">
+<meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/favicons/apple.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body class="page__body">
-<header class="header"></header>
+<header class="header">
+  <div class="header__inner container">
+    <div class="header__logo">
+      <a class="header__logo-link" href="/" aria-label="Home page">
+        <picture>
+          <source srcset="../../images/icons/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="header__logo-image" src="../../images/icons/logo.svg" width="110" height="35" alt="Encyclopedia Polyhedrons">
+        </picture>
+      </a>
+    </div>
+    <div></div>
+    <nav class="navigation"></nav>
+  </div>
+</header>
+
 <main class="main">
-  <section class="solids">
+  <section class="main__solids solids">
     <div class="container">
-      <h1 class="solids__title title-h1">Self-Intersecting Quasi-Quasi-Regular Polyhedra</h1>
-      <p class="solids__text">A polyhedron is quasi-quasi-regular if it is vertex-transitive with trapezoidal vertex figures. Vertex transitivity means that for any two vertices of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one vertex to the other. A vertex figure is the polygon produced by connecting the midpoints of the edges meeting at the vertex in the same order that the edges appear around the vertex. There are only two quasi-quasi-regular polyhedra that are not self-intersecting, namely the Rhombicuboctahedron and the Rhombicosidodecahedron. When self-intersection is allowed, there are 12 other quasi-quasi-regular polyhedra.</p>
-      <p class="solids__text">Albert Badoureau described 11 of these polyhedra (all except the Small Ditrigonal Dodecicosidodecahedron) in 1881. Johann Pitsch described five (the Great Cubicuboctahedron, the Great Dodecicosidodecahedron, the Great Ditrigonal Dodecicosidodecahedron, the Small Icosicosidodecahedron, and the Rhombidodecadodecahedron) in 1881. H. S. M. Coxeter and J. C. P. Miller discovered the Small Ditrigonal Dodecicosidodecahedron between 1930 and 1932.</p>
+      <div class="solids__header">
+        <h1 class="solids__title title-h1">Self-Intersecting Quasi-Quasi-Regular Polyhedra</h1>
+        <p class="solids__text">A polyhedron is quasi-quasi-regular if it is vertex-transitive with trapezoidal vertex figures. Vertex transitivity means that for any two vertices of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one vertex to the other. A vertex figure is the polygon produced by connecting the midpoints of the edges meeting at the vertex in the same order that the edges appear around the vertex. There are only two quasi-quasi-regular polyhedra that are not self-intersecting, namely the Rhombicuboctahedron and the Rhombicosidodecahedron. When self-intersection is allowed, there are 12 other quasi-quasi-regular polyhedra.</p>
+        <p class="solids__text">Albert Badoureau described 11 of these polyhedra (all except the Small Ditrigonal Dodecicosidodecahedron) in 1881. Johann Pitsch described five (the Great Cubicuboctahedron, the Great Dodecicosidodecahedron, the Great Ditrigonal Dodecicosidodecahedron, the Small Icosicosidodecahedron, and the Rhombidodecadodecahedron) in 1881. H. S. M. Coxeter and J. C. P. Miller discovered the Small Ditrigonal Dodecicosidodecahedron between 1930 and 1932.</p>
+      </div>
       <ul class="solids__list">
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 24 20">
-            <input type="hidden" class="Constants" value="1.20710678118654752440084436210">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C0,0.5 0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,-0.5 -0.5 C0,-0.5 -0.5 -C0,C0 0.5 0.5,C0 0.5 -0.5,C0 -0.5 0.5,C0 -0.5 -0.5,-C0 0.5 0.5,-C0 0.5 -0.5,-C0 -0.5 0.5,-C0 -0.5 -0.5,0.5 C0 0.5,0.5 C0 -0.5,0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 C0 0.5,-0.5 C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5">
-            <input type="hidden" class="Faces" value="0 2 18 19 3 1 17 16 #,0 8 9 1 5 13 12 4 #,11 10 2 6 14 15 7 3 #,11 19 23 15 13 21 17 9 #,20 12 14 22 18 10 8 16 #,20 21 5 7 23 22 6 4 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,16 17 21 20 #,18 22 23 19 #,0 16 8 #,1 9 17 #,2 10 18 #,3 19 11 #,4 12 20 #,5 21 13 #,6 22 14 #,7 15 23 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Small Cubicuboctahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="1 24 20">
+            <input type="hidden" class="solid__constants" value="1.20710678118654752440084436210">
+            <input type="hidden" class="solid__vertices" value="0.5 0.5 C0,0.5 0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,-0.5 -0.5 C0,-0.5 -0.5 -C0,C0 0.5 0.5,C0 0.5 -0.5,C0 -0.5 0.5,C0 -0.5 -0.5,-C0 0.5 0.5,-C0 0.5 -0.5,-C0 -0.5 0.5,-C0 -0.5 -0.5,0.5 C0 0.5,0.5 C0 -0.5,0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 C0 0.5,-0.5 C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5">
+            <input type="hidden" class="solid__faces" value="0 2 18 19 3 1 17 16 #,0 8 9 1 5 13 12 4 #,11 10 2 6 14 15 7 3 #,11 19 23 15 13 21 17 9 #,20 12 14 22 18 10 8 16 #,20 21 5 7 23 22 6 4 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,16 17 21 20 #,18 22 23 19 #,0 16 8 #,1 9 17 #,2 10 18 #,3 19 11 #,4 12 20 #,5 21 13 #,6 22 14 #,7 15 23 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Small Cubicuboctahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 24 20">
-            <input type="hidden" class="Constants" value="0.2071067811865475244008443621048">
-            <input type="hidden" class="Vertices" value="-0.5 -0.5 C0,-0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,0.5 0.5 C0,0.5 0.5 -C0,C0 -0.5 -0.5,C0 -0.5 0.5,C0 0.5 -0.5,C0 0.5 0.5,-C0 -0.5 -0.5,-C0 -0.5 0.5,-C0 0.5 -0.5,-C0 0.5 0.5,-0.5 C0 -0.5,-0.5 C0 0.5,-0.5 -C0 -0.5,-0.5 -C0 0.5,0.5 C0 -0.5,0.5 C0 0.5,0.5 -C0 -0.5,0.5 -C0 0.5">
-            <input type="hidden" class="Faces" value="0 2 18 19 3 1 17 16 #,0 8 9 1 5 13 12 4 #,11 10 2 6 14 15 7 3 #,11 19 23 15 13 21 17 9 #,20 12 14 22 18 10 8 16 #,20 21 5 7 23 22 6 4 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,16 17 21 20 #,18 22 23 19 #,0 16 8 #,1 9 17 #,2 10 18 #,3 19 11 #,4 12 20 #,5 21 13 #,6 22 14 #,7 15 23 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Great Cubicuboctahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="1 24 20">
+            <input type="hidden" class="solid__constants" value="0.2071067811865475244008443621048">
+            <input type="hidden" class="solid__vertices" value="-0.5 -0.5 C0,-0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,0.5 0.5 C0,0.5 0.5 -C0,C0 -0.5 -0.5,C0 -0.5 0.5,C0 0.5 -0.5,C0 0.5 0.5,-C0 -0.5 -0.5,-C0 -0.5 0.5,-C0 0.5 -0.5,-C0 0.5 0.5,-0.5 C0 -0.5,-0.5 C0 0.5,-0.5 -C0 -0.5,-0.5 -C0 0.5,0.5 C0 -0.5,0.5 C0 0.5,0.5 -C0 -0.5,0.5 -C0 0.5">
+            <input type="hidden" class="solid__faces" value="0 2 18 19 3 1 17 16 #,0 8 9 1 5 13 12 4 #,11 10 2 6 14 15 7 3 #,11 19 23 15 13 21 17 9 #,20 12 14 22 18 10 8 16 #,20 21 5 7 23 22 6 4 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,16 17 21 20 #,18 22 23 19 #,0 16 8 #,1 9 17 #,2 10 18 #,3 19 11 #,4 12 20 #,5 21 13 #,6 22 14 #,7 15 23 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Great Cubicuboctahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="1 24 26">
-            <input type="hidden" class="Constants" value="0.2071067811865475244008443621048">
-            <input type="hidden" class="Vertices" value="-0.5 -0.5 C0,-0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,0.5 0.5 C0,0.5 0.5 -C0,C0 -0.5 -0.5,C0 -0.5 0.5,C0 0.5 -0.5,C0 0.5 0.5,-C0 -0.5 -0.5,-C0 -0.5 0.5,-C0 0.5 -0.5,-C0 0.5 0.5,-0.5 C0 -0.5,-0.5 C0 0.5,-0.5 -C0 -0.5,-0.5 -C0 0.5,0.5 C0 -0.5,0.5 C0 0.5,0.5 -C0 -0.5,0.5 -C0 0.5">
-            <input type="hidden" class="Faces" value="0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,16 17 21 20 #,18 22 23 19 #,0 2 10 8 #,0 16 20 4 #,7 3 19 23 #,7 15 13 5 #,11 3 1 9 #,11 10 18 19 #,12 14 6 4 #,12 20 21 13 #,17 1 5 21 #,17 16 8 9 #,22 14 15 23 #,22 18 2 6 #,0 8 16 #,1 17 9 #,2 18 10 #,3 11 19 #,4 20 12 #,5 13 21 #,6 14 22 #,7 23 15 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Uniform Great Rhombicuboctahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="1 24 26">
+            <input type="hidden" class="solid__constants" value="0.2071067811865475244008443621048">
+            <input type="hidden" class="solid__vertices" value="-0.5 -0.5 C0,-0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,0.5 0.5 C0,0.5 0.5 -C0,C0 -0.5 -0.5,C0 -0.5 0.5,C0 0.5 -0.5,C0 0.5 0.5,-C0 -0.5 -0.5,-C0 -0.5 0.5,-C0 0.5 -0.5,-C0 0.5 0.5,-0.5 C0 -0.5,-0.5 C0 0.5,-0.5 -C0 -0.5,-0.5 -C0 0.5,0.5 C0 -0.5,0.5 C0 0.5,0.5 -C0 -0.5,0.5 -C0 0.5">
+            <input type="hidden" class="solid__faces" value="0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,16 17 21 20 #,18 22 23 19 #,0 2 10 8 #,0 16 20 4 #,7 3 19 23 #,7 15 13 5 #,11 3 1 9 #,11 10 18 19 #,12 14 6 4 #,12 20 21 13 #,17 1 5 21 #,17 16 8 9 #,22 14 15 23 #,22 18 2 6 #,0 8 16 #,1 17 9 #,2 18 10 #,3 11 19 #,4 20 12 #,5 13 21 #,6 14 22 #,7 23 15 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Uniform Great Rhombicuboctahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 60 44">
-            <input type="hidden" class="Constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.5 0.5 C4,0.5 0.5 -C4,0.5 -0.5 C4,0.5 -0.5 -C4,-0.5 0.5 C4,-0.5 0.5 -C4,-0.5 -0.5 C4,-0.5 -0.5 -C4,C4 0.5 0.5,C4 0.5 -0.5,C4 -0.5 0.5,C4 -0.5 -0.5,-C4 0.5 0.5,-C4 0.5 -0.5,-C4 -0.5 0.5,-C4 -0.5 -0.5,0.5 C4 0.5,0.5 C4 -0.5,0.5 -C4 0.5,0.5 -C4 -0.5,-0.5 C4 0.5,-0.5 C4 -0.5,-0.5 -C4 0.5,-0.5 -C4 -0.5,0.0 C1 C3,0.0 C1 -C3,0.0 -C1 C3,0.0 -C1 -C3,C3 0.0 C1,C3 0.0 -C1,-C3 0.0 C1,-C3 0.0 -C1,C1 C3 0.0,C1 -C3 0.0,-C1 C3 0.0,-C1 -C3 0.0,C1 C0 C2,C1 C0 -C2,C1 -C0 C2,C1 -C0 -C2,-C1 C0 C2,-C1 C0 -C2,-C1 -C0 C2,-C1 -C0 -C2,C2 C1 C0,C2 C1 -C0,C2 -C1 C0,C2 -C1 -C0,-C2 C1 C0,-C2 C1 -C0,-C2 -C1 C0,-C2 -C1 -C0,C0 C2 C1,C0 C2 -C1,C0 -C2 C1,C0 -C2 -C1,-C0 C2 C1,-C0 C2 -C1,-C0 -C2 C1,-C0 -C2 -C1">
-            <input type="hidden" class="Faces" value="0 24 56 48 12 14 50 58 26 2 #,0 36 44 32 17 21 34 48 40 4 #,7 3 39 47 33 18 22 35 51 43 #,7 5 25 53 45 9 11 47 55 27 #,10 8 44 52 24 4 6 26 54 46 #,10 11 29 37 53 17 16 52 36 28 #,13 31 43 59 23 22 58 42 30 12 #,13 49 57 25 1 3 27 59 51 15 #,19 33 46 38 2 6 42 50 35 23 #,19 55 39 29 9 8 28 38 54 18 #,20 16 32 45 37 1 5 41 49 34 #,20 21 57 41 31 15 14 30 40 56 #,24 52 16 20 56 #,25 57 21 17 53 #,26 58 22 18 54 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,24 0 4 #,25 5 1 #,26 6 2 #,27 3 7 #,28 8 10 #,29 11 9 #,30 14 12 #,31 13 15 #,32 16 17 #,33 19 18 #,34 21 20 #,35 22 23 #,36 52 44 #,37 45 53 #,38 46 54 #,39 55 47 #,40 48 56 #,41 57 49 #,42 58 50 #,43 51 59 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Small Dodecicosidodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="5 60 44">
+            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437,1.80901699437494742410229341718,2.11803398874989484820458683437">
+            <input type="hidden" class="solid__vertices" value="0.5 0.5 C4,0.5 0.5 -C4,0.5 -0.5 C4,0.5 -0.5 -C4,-0.5 0.5 C4,-0.5 0.5 -C4,-0.5 -0.5 C4,-0.5 -0.5 -C4,C4 0.5 0.5,C4 0.5 -0.5,C4 -0.5 0.5,C4 -0.5 -0.5,-C4 0.5 0.5,-C4 0.5 -0.5,-C4 -0.5 0.5,-C4 -0.5 -0.5,0.5 C4 0.5,0.5 C4 -0.5,0.5 -C4 0.5,0.5 -C4 -0.5,-0.5 C4 0.5,-0.5 C4 -0.5,-0.5 -C4 0.5,-0.5 -C4 -0.5,0.0 C1 C3,0.0 C1 -C3,0.0 -C1 C3,0.0 -C1 -C3,C3 0.0 C1,C3 0.0 -C1,-C3 0.0 C1,-C3 0.0 -C1,C1 C3 0.0,C1 -C3 0.0,-C1 C3 0.0,-C1 -C3 0.0,C1 C0 C2,C1 C0 -C2,C1 -C0 C2,C1 -C0 -C2,-C1 C0 C2,-C1 C0 -C2,-C1 -C0 C2,-C1 -C0 -C2,C2 C1 C0,C2 C1 -C0,C2 -C1 C0,C2 -C1 -C0,-C2 C1 C0,-C2 C1 -C0,-C2 -C1 C0,-C2 -C1 -C0,C0 C2 C1,C0 C2 -C1,C0 -C2 C1,C0 -C2 -C1,-C0 C2 C1,-C0 C2 -C1,-C0 -C2 C1,-C0 -C2 -C1">
+            <input type="hidden" class="solid__faces" value="0 24 56 48 12 14 50 58 26 2 #,0 36 44 32 17 21 34 48 40 4 #,7 3 39 47 33 18 22 35 51 43 #,7 5 25 53 45 9 11 47 55 27 #,10 8 44 52 24 4 6 26 54 46 #,10 11 29 37 53 17 16 52 36 28 #,13 31 43 59 23 22 58 42 30 12 #,13 49 57 25 1 3 27 59 51 15 #,19 33 46 38 2 6 42 50 35 23 #,19 55 39 29 9 8 28 38 54 18 #,20 16 32 45 37 1 5 41 49 34 #,20 21 57 41 31 15 14 30 40 56 #,24 52 16 20 56 #,25 57 21 17 53 #,26 58 22 18 54 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,24 0 4 #,25 5 1 #,26 6 2 #,27 3 7 #,28 8 10 #,29 11 9 #,30 14 12 #,31 13 15 #,32 16 17 #,33 19 18 #,34 21 20 #,35 22 23 #,36 52 44 #,37 45 53 #,38 46 54 #,39 55 47 #,40 48 56 #,41 57 49 #,42 58 50 #,43 51 59 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Small Dodecicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 60 44">
-            <input type="hidden" class="Constants" value="0.118033988749894848204586834366,0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366,0.690983005625052575897706582817">
-            <input type="hidden" class="Vertices" value="-0.5 -0.5 C0,-0.5 -0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,0.5 0.5 C0,0.5 0.5 -C0,-0.5 C0 -0.5,-0.5 C0 0.5,0.5 C0 -0.5,0.5 C0 0.5,-0.5 -C0 -0.5,-0.5 -C0 0.5,0.5 -C0 -0.5,0.5 -C0 0.5,C0 -0.5 -0.5,C0 -0.5 0.5,-C0 -0.5 -0.5,-C0 -0.5 0.5,C0 0.5 -0.5,C0 0.5 0.5,-C0 0.5 -0.5,-C0 0.5 0.5,-C1 0.0 -C4,-C1 0.0 C4,C1 0.0 -C4,C1 0.0 C4,0.0 -C4 -C1,0.0 -C4 C1,0.0 C4 -C1,0.0 C4 C1,-C4 -C1 0.0,C4 -C1 0.0,-C4 C1 0.0,C4 C1 0.0,C2 -C1 C3,C2 -C1 -C3,-C2 -C1 C3,-C2 -C1 -C3,C2 C1 C3,C2 C1 -C3,-C2 C1 C3,-C2 C1 -C3,-C1 C3 C2,-C1 C3 -C2,C1 C3 C2,C1 C3 -C2,-C1 -C3 C2,-C1 -C3 -C2,C1 -C3 C2,C1 -C3 -C2,C3 C2 -C1,C3 C2 C1,-C3 C2 -C1,-C3 C2 C1,C3 -C2 -C1,C3 -C2 C1,-C3 -C2 -C1,-C3 -C2 C1">
-            <input type="hidden" class="Faces" value="0 24 56 48 12 14 50 58 26 2 #,0 36 44 32 17 21 34 48 40 4 #,7 3 39 47 33 18 22 35 51 43 #,7 5 25 53 45 9 11 47 55 27 #,10 8 44 52 24 4 6 26 54 46 #,10 11 29 37 53 17 16 52 36 28 #,13 31 43 59 23 22 58 42 30 12 #,13 49 57 25 1 3 27 59 51 15 #,19 33 46 38 2 6 42 50 35 23 #,19 55 39 29 9 8 28 38 54 18 #,20 16 32 45 37 1 5 41 49 34 #,20 21 57 41 31 15 14 30 40 56 #,24 52 16 20 56 #,25 57 21 17 53 #,26 58 22 18 54 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,24 0 4 #,25 5 1 #,26 6 2 #,27 3 7 #,28 8 10 #,29 11 9 #,30 14 12 #,31 13 15 #,32 16 17 #,33 19 18 #,34 21 20 #,35 22 23 #,36 52 44 #,37 45 53 #,38 46 54 #,39 55 47 #,40 48 56 #,41 57 49 #,42 58 50 #,43 51 59 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Great Dodecicosidodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="5 60 44">
+            <input type="hidden" class="solid__constants" value="0.118033988749894848204586834366,0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366,0.690983005625052575897706582817">
+            <input type="hidden" class="solid__vertices" value="-0.5 -0.5 C0,-0.5 -0.5 -C0,0.5 -0.5 C0,0.5 -0.5 -C0,-0.5 0.5 C0,-0.5 0.5 -C0,0.5 0.5 C0,0.5 0.5 -C0,-0.5 C0 -0.5,-0.5 C0 0.5,0.5 C0 -0.5,0.5 C0 0.5,-0.5 -C0 -0.5,-0.5 -C0 0.5,0.5 -C0 -0.5,0.5 -C0 0.5,C0 -0.5 -0.5,C0 -0.5 0.5,-C0 -0.5 -0.5,-C0 -0.5 0.5,C0 0.5 -0.5,C0 0.5 0.5,-C0 0.5 -0.5,-C0 0.5 0.5,-C1 0.0 -C4,-C1 0.0 C4,C1 0.0 -C4,C1 0.0 C4,0.0 -C4 -C1,0.0 -C4 C1,0.0 C4 -C1,0.0 C4 C1,-C4 -C1 0.0,C4 -C1 0.0,-C4 C1 0.0,C4 C1 0.0,C2 -C1 C3,C2 -C1 -C3,-C2 -C1 C3,-C2 -C1 -C3,C2 C1 C3,C2 C1 -C3,-C2 C1 C3,-C2 C1 -C3,-C1 C3 C2,-C1 C3 -C2,C1 C3 C2,C1 C3 -C2,-C1 -C3 C2,-C1 -C3 -C2,C1 -C3 C2,C1 -C3 -C2,C3 C2 -C1,C3 C2 C1,-C3 C2 -C1,-C3 C2 C1,C3 -C2 -C1,C3 -C2 C1,-C3 -C2 -C1,-C3 -C2 C1">
+            <input type="hidden" class="solid__faces" value="0 24 56 48 12 14 50 58 26 2 #,0 36 44 32 17 21 34 48 40 4 #,7 3 39 47 33 18 22 35 51 43 #,7 5 25 53 45 9 11 47 55 27 #,10 8 44 52 24 4 6 26 54 46 #,10 11 29 37 53 17 16 52 36 28 #,13 31 43 59 23 22 58 42 30 12 #,13 49 57 25 1 3 27 59 51 15 #,19 33 46 38 2 6 42 50 35 23 #,19 55 39 29 9 8 28 38 54 18 #,20 16 32 45 37 1 5 41 49 34 #,20 21 57 41 31 15 14 30 40 56 #,24 52 16 20 56 #,25 57 21 17 53 #,26 58 22 18 54 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,24 0 4 #,25 5 1 #,26 6 2 #,27 3 7 #,28 8 10 #,29 11 9 #,30 14 12 #,31 13 15 #,32 16 17 #,33 19 18 #,34 21 20 #,35 22 23 #,36 52 44 #,37 45 53 #,38 46 54 #,39 55 47 #,40 48 56 #,41 57 49 #,42 58 50 #,43 51 59 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Great Dodecicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 60 44">
-            <input type="hidden" class="Constants" value="0.309016994374947424102293417183,1.11803398874989484820458683437,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.5 C0 C3,0.5 C0 -C3,0.5 -C0 C3,0.5 -C0 -C3,-0.5 C0 C3,-0.5 C0 -C3,-0.5 -C0 C3,-0.5 -C0 -C3,C3 0.5 C0,C3 0.5 -C0,C3 -0.5 C0,C3 -0.5 -C0,-C3 0.5 C0,-C3 0.5 -C0,-C3 -0.5 C0,-C3 -0.5 -C0,C0 C3 0.5,C0 C3 -0.5,C0 -C3 0.5,C0 -C3 -0.5,-C0 C3 0.5,-C0 C3 -0.5,-C0 -C3 0.5,-C0 -C3 -0.5,0.0 C1 C2,0.0 C1 -C2,0.0 -C1 C2,0.0 -C1 -C2,C2 0.0 C1,C2 0.0 -C1,-C2 0.0 C1,-C2 0.0 -C1,C1 C2 0.0,C1 -C2 0.0,-C1 C2 0.0,-C1 -C2 0.0,1.0 0.5 C2,1.0 0.5 -C2,1.0 -0.5 C2,1.0 -0.5 -C2,-1.0 0.5 C2,-1.0 0.5 -C2,-1.0 -0.5 C2,-1.0 -0.5 -C2,C2 1.0 0.5,C2 1.0 -0.5,C2 -1.0 0.5,C2 -1.0 -0.5,-C2 1.0 0.5,-C2 1.0 -0.5,-C2 -1.0 0.5,-C2 -1.0 -0.5,0.5 C2 1.0,0.5 C2 -1.0,0.5 -C2 1.0,0.5 -C2 -1.0,-0.5 C2 1.0,-0.5 C2 -1.0,-0.5 -C2 1.0,-0.5 -C2 -1.0">
-            <input type="hidden" class="Faces" value="0 4 30 14 51 59 55 47 10 28 #,0 38 46 47 39 1 25 21 20 24 #,2 26 22 23 27 3 37 45 44 36 #,2 28 8 45 53 57 49 12 30 6 #,5 1 29 11 46 54 58 50 15 31 #,5 43 51 50 42 4 24 16 17 25 #,7 27 19 18 26 6 40 48 49 41 #,7 31 13 48 56 52 44 9 29 3 #,33 11 9 32 16 56 40 42 58 18 #,33 19 59 43 41 57 17 32 8 10 #,34 13 15 35 22 54 38 36 52 20 #,34 21 53 37 39 55 23 35 14 12 #,24 20 52 56 16 #,25 17 57 53 21 #,26 18 58 54 22 #,27 23 55 59 19 #,28 2 36 38 0 #,29 1 39 37 3 #,30 4 42 40 6 #,31 7 41 43 5 #,32 9 44 45 8 #,33 10 47 46 11 #,34 12 49 48 13 #,35 15 50 51 14 #,24 4 0 #,25 1 5 #,26 2 6 #,27 7 3 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 17 16 #,33 18 19 #,34 20 21 #,35 23 22 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Small Ditrigonal Dodecicosidodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="4 60 44">
+            <input type="hidden" class="solid__constants" value="0.309016994374947424102293417183,1.11803398874989484820458683437,1.30901699437494742410229341718,1.61803398874989484820458683437">
+            <input type="hidden" class="solid__vertices" value="0.5 C0 C3,0.5 C0 -C3,0.5 -C0 C3,0.5 -C0 -C3,-0.5 C0 C3,-0.5 C0 -C3,-0.5 -C0 C3,-0.5 -C0 -C3,C3 0.5 C0,C3 0.5 -C0,C3 -0.5 C0,C3 -0.5 -C0,-C3 0.5 C0,-C3 0.5 -C0,-C3 -0.5 C0,-C3 -0.5 -C0,C0 C3 0.5,C0 C3 -0.5,C0 -C3 0.5,C0 -C3 -0.5,-C0 C3 0.5,-C0 C3 -0.5,-C0 -C3 0.5,-C0 -C3 -0.5,0.0 C1 C2,0.0 C1 -C2,0.0 -C1 C2,0.0 -C1 -C2,C2 0.0 C1,C2 0.0 -C1,-C2 0.0 C1,-C2 0.0 -C1,C1 C2 0.0,C1 -C2 0.0,-C1 C2 0.0,-C1 -C2 0.0,1.0 0.5 C2,1.0 0.5 -C2,1.0 -0.5 C2,1.0 -0.5 -C2,-1.0 0.5 C2,-1.0 0.5 -C2,-1.0 -0.5 C2,-1.0 -0.5 -C2,C2 1.0 0.5,C2 1.0 -0.5,C2 -1.0 0.5,C2 -1.0 -0.5,-C2 1.0 0.5,-C2 1.0 -0.5,-C2 -1.0 0.5,-C2 -1.0 -0.5,0.5 C2 1.0,0.5 C2 -1.0,0.5 -C2 1.0,0.5 -C2 -1.0,-0.5 C2 1.0,-0.5 C2 -1.0,-0.5 -C2 1.0,-0.5 -C2 -1.0">
+            <input type="hidden" class="solid__faces" value="0 4 30 14 51 59 55 47 10 28 #,0 38 46 47 39 1 25 21 20 24 #,2 26 22 23 27 3 37 45 44 36 #,2 28 8 45 53 57 49 12 30 6 #,5 1 29 11 46 54 58 50 15 31 #,5 43 51 50 42 4 24 16 17 25 #,7 27 19 18 26 6 40 48 49 41 #,7 31 13 48 56 52 44 9 29 3 #,33 11 9 32 16 56 40 42 58 18 #,33 19 59 43 41 57 17 32 8 10 #,34 13 15 35 22 54 38 36 52 20 #,34 21 53 37 39 55 23 35 14 12 #,24 20 52 56 16 #,25 17 57 53 21 #,26 18 58 54 22 #,27 23 55 59 19 #,28 2 36 38 0 #,29 1 39 37 3 #,30 4 42 40 6 #,31 7 41 43 5 #,32 9 44 45 8 #,33 10 47 46 11 #,34 12 49 48 13 #,35 15 50 51 14 #,24 4 0 #,25 1 5 #,26 2 6 #,27 7 3 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 17 16 #,33 18 19 #,34 20 21 #,35 23 22 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Small Ditrigonal Dodecicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 60 44">
-            <input type="hidden" class="Constants" value="0.190983005625052575897706582817,0.618033988749894848204586834366,0.809016994374947424102293417183,1.11803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C2 -0.5 C1,C2 -0.5 -C1,-C2 -0.5 C1,-C2 -0.5 -C1,C2 0.5 C1,C2 0.5 -C1,-C2 0.5 C1,-C2 0.5 -C1,-0.5 C1 C2,-0.5 C1 -C2,0.5 C1 C2,0.5 C1 -C2,-0.5 -C1 C2,-0.5 -C1 -C2,0.5 -C1 C2,0.5 -C1 -C2,C1 C2 -0.5,C1 C2 0.5,-C1 C2 -0.5,-C1 C2 0.5,C1 -C2 -0.5,C1 -C2 0.5,-C1 -C2 -0.5,-C1 -C2 0.5,C3 0.0 -C0,C3 0.0 C0,-C3 0.0 -C0,-C3 0.0 C0,0.0 -C0 C3,0.0 -C0 -C3,0.0 C0 C3,0.0 C0 -C3,-C0 C3 0.0,C0 C3 0.0,-C0 -C3 0.0,C0 -C3 0.0,-0.5 -1.0 -C0,-0.5 -1.0 C0,0.5 -1.0 -C0,0.5 -1.0 C0,-0.5 1.0 -C0,-0.5 1.0 C0,0.5 1.0 -C0,0.5 1.0 C0,-1.0 -C0 -0.5,-1.0 -C0 0.5,1.0 -C0 -0.5,1.0 -C0 0.5,-1.0 C0 -0.5,-1.0 C0 0.5,1.0 C0 -0.5,1.0 C0 0.5,-C0 -0.5 -1.0,-C0 -0.5 1.0,C0 -0.5 -1.0,C0 -0.5 1.0,-C0 0.5 -1.0,-C0 0.5 1.0,C0 0.5 -1.0,C0 0.5 1.0">
-            <input type="hidden" class="Faces" value="0 4 30 14 51 59 55 47 10 28 #,0 38 46 47 39 1 25 21 20 24 #,2 26 22 23 27 3 37 45 44 36 #,2 28 8 45 53 57 49 12 30 6 #,5 1 29 11 46 54 58 50 15 31 #,5 43 51 50 42 4 24 16 17 25 #,7 27 19 18 26 6 40 48 49 41 #,7 31 13 48 56 52 44 9 29 3 #,33 11 9 32 16 56 40 42 58 18 #,33 19 59 43 41 57 17 32 8 10 #,34 13 15 35 22 54 38 36 52 20 #,34 21 53 37 39 55 23 35 14 12 #,24 20 52 56 16 #,25 17 57 53 21 #,26 18 58 54 22 #,27 23 55 59 19 #,28 2 36 38 0 #,29 1 39 37 3 #,30 4 42 40 6 #,31 7 41 43 5 #,32 9 44 45 8 #,33 10 47 46 11 #,34 12 49 48 13 #,35 15 50 51 14 #,24 4 0 #,25 1 5 #,26 2 6 #,27 7 3 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 17 16 #,33 18 19 #,34 20 21 #,35 23 22 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Great Ditrigonal Dodecicosidodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="4 60 44">
+            <input type="hidden" class="solid__constants" value="0.190983005625052575897706582817,0.618033988749894848204586834366,0.809016994374947424102293417183,1.11803398874989484820458683437">
+            <input type="hidden" class="solid__vertices" value="C2 -0.5 C1,C2 -0.5 -C1,-C2 -0.5 C1,-C2 -0.5 -C1,C2 0.5 C1,C2 0.5 -C1,-C2 0.5 C1,-C2 0.5 -C1,-0.5 C1 C2,-0.5 C1 -C2,0.5 C1 C2,0.5 C1 -C2,-0.5 -C1 C2,-0.5 -C1 -C2,0.5 -C1 C2,0.5 -C1 -C2,C1 C2 -0.5,C1 C2 0.5,-C1 C2 -0.5,-C1 C2 0.5,C1 -C2 -0.5,C1 -C2 0.5,-C1 -C2 -0.5,-C1 -C2 0.5,C3 0.0 -C0,C3 0.0 C0,-C3 0.0 -C0,-C3 0.0 C0,0.0 -C0 C3,0.0 -C0 -C3,0.0 C0 C3,0.0 C0 -C3,-C0 C3 0.0,C0 C3 0.0,-C0 -C3 0.0,C0 -C3 0.0,-0.5 -1.0 -C0,-0.5 -1.0 C0,0.5 -1.0 -C0,0.5 -1.0 C0,-0.5 1.0 -C0,-0.5 1.0 C0,0.5 1.0 -C0,0.5 1.0 C0,-1.0 -C0 -0.5,-1.0 -C0 0.5,1.0 -C0 -0.5,1.0 -C0 0.5,-1.0 C0 -0.5,-1.0 C0 0.5,1.0 C0 -0.5,1.0 C0 0.5,-C0 -0.5 -1.0,-C0 -0.5 1.0,C0 -0.5 -1.0,C0 -0.5 1.0,-C0 0.5 -1.0,-C0 0.5 1.0,C0 0.5 -1.0,C0 0.5 1.0">
+            <input type="hidden" class="solid__faces" value="0 4 30 14 51 59 55 47 10 28 #,0 38 46 47 39 1 25 21 20 24 #,2 26 22 23 27 3 37 45 44 36 #,2 28 8 45 53 57 49 12 30 6 #,5 1 29 11 46 54 58 50 15 31 #,5 43 51 50 42 4 24 16 17 25 #,7 27 19 18 26 6 40 48 49 41 #,7 31 13 48 56 52 44 9 29 3 #,33 11 9 32 16 56 40 42 58 18 #,33 19 59 43 41 57 17 32 8 10 #,34 13 15 35 22 54 38 36 52 20 #,34 21 53 37 39 55 23 35 14 12 #,24 20 52 56 16 #,25 17 57 53 21 #,26 18 58 54 22 #,27 23 55 59 19 #,28 2 36 38 0 #,29 1 39 37 3 #,30 4 42 40 6 #,31 7 41 43 5 #,32 9 44 45 8 #,33 10 47 46 11 #,34 12 49 48 13 #,35 15 50 51 14 #,24 4 0 #,25 1 5 #,26 2 6 #,27 7 3 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 17 16 #,33 18 19 #,34 20 21 #,35 23 22 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Great Ditrigonal Dodecicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 60 44">
-            <input type="hidden" class="Constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.809016994374947424102293417183,1.11803398874989484820458683437,1.30901699437494742410229341718">
-            <input type="hidden" class="Vertices" value="C0 0.0 C4,C0 0.0 -C4,-C0 0.0 C4,-C0 0.0 -C4,C4 C0 0.0,C4 -C0 0.0,-C4 C0 0.0,-C4 -C0 0.0,0.0 C4 C0,0.0 C4 -C0,0.0 -C4 C0,0.0 -C4 -C0,0.5 0.5 C3,0.5 0.5 -C3,0.5 -0.5 C3,0.5 -0.5 -C3,-0.5 0.5 C3,-0.5 0.5 -C3,-0.5 -0.5 C3,-0.5 -0.5 -C3,C3 0.5 0.5,C3 0.5 -0.5,C3 -0.5 0.5,C3 -0.5 -0.5,-C3 0.5 0.5,-C3 0.5 -0.5,-C3 -0.5 0.5,-C3 -0.5 -0.5,0.5 C3 0.5,0.5 C3 -0.5,0.5 -C3 0.5,0.5 -C3 -0.5,-0.5 C3 0.5,-0.5 C3 -0.5,-0.5 -C3 0.5,-0.5 -C3 -0.5,C1 C2 1.0,C1 C2 -1.0,C1 -C2 1.0,C1 -C2 -1.0,-C1 C2 1.0,-C1 C2 -1.0,-C1 -C2 1.0,-C1 -C2 -1.0,1.0 C1 C2,1.0 C1 -C2,1.0 -C1 C2,1.0 -C1 -C2,-1.0 C1 C2,-1.0 C1 -C2,-1.0 -C1 C2,-1.0 -C1 -C2,C2 1.0 C1,C2 1.0 -C1,C2 -1.0 C1,C2 -1.0 -C1,-C2 1.0 C1,-C2 1.0 -C1,-C2 -1.0 C1,-C2 -1.0 -C1">
-            <input type="hidden" class="Faces" value="0 42 10 55 5 44 #,0 46 4 53 8 40 #,2 36 8 57 6 50 #,2 48 7 59 10 38 #,15 13 53 20 22 55 #,15 19 49 33 29 45 #,17 13 47 31 35 51 #,17 19 59 26 24 57 #,30 46 12 16 50 34 #,30 42 26 27 43 31 #,32 48 18 14 44 28 #,32 36 20 21 37 33 #,39 23 22 38 34 35 #,39 11 58 7 49 3 #,41 25 24 40 28 29 #,41 9 52 4 47 1 #,54 11 43 1 45 5 #,54 23 21 52 12 14 #,56 9 37 3 51 6 #,56 25 27 58 18 16 #,0 40 24 26 42 #,1 43 27 25 41 #,2 38 22 20 36 #,3 37 21 23 39 #,4 46 30 31 47 #,5 45 29 28 44 #,6 51 35 34 50 #,7 48 32 33 49 #,8 53 13 17 57 #,9 56 16 12 52 #,10 59 19 15 55 #,11 54 14 18 58 #,0 44 14 12 46 #,1 47 13 15 45 #,2 50 16 18 48 #,3 49 19 17 51 #,4 52 21 20 53 #,5 55 22 23 54 #,6 57 24 25 56 #,7 58 27 26 59 #,8 36 32 28 40 #,9 41 29 33 37 #,10 42 30 34 38 #,11 39 35 31 43 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Icosidodecadodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="5 60 44">
+            <input type="hidden" class="solid__constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.809016994374947424102293417183,1.11803398874989484820458683437,1.30901699437494742410229341718">
+            <input type="hidden" class="solid__vertices" value="C0 0.0 C4,C0 0.0 -C4,-C0 0.0 C4,-C0 0.0 -C4,C4 C0 0.0,C4 -C0 0.0,-C4 C0 0.0,-C4 -C0 0.0,0.0 C4 C0,0.0 C4 -C0,0.0 -C4 C0,0.0 -C4 -C0,0.5 0.5 C3,0.5 0.5 -C3,0.5 -0.5 C3,0.5 -0.5 -C3,-0.5 0.5 C3,-0.5 0.5 -C3,-0.5 -0.5 C3,-0.5 -0.5 -C3,C3 0.5 0.5,C3 0.5 -0.5,C3 -0.5 0.5,C3 -0.5 -0.5,-C3 0.5 0.5,-C3 0.5 -0.5,-C3 -0.5 0.5,-C3 -0.5 -0.5,0.5 C3 0.5,0.5 C3 -0.5,0.5 -C3 0.5,0.5 -C3 -0.5,-0.5 C3 0.5,-0.5 C3 -0.5,-0.5 -C3 0.5,-0.5 -C3 -0.5,C1 C2 1.0,C1 C2 -1.0,C1 -C2 1.0,C1 -C2 -1.0,-C1 C2 1.0,-C1 C2 -1.0,-C1 -C2 1.0,-C1 -C2 -1.0,1.0 C1 C2,1.0 C1 -C2,1.0 -C1 C2,1.0 -C1 -C2,-1.0 C1 C2,-1.0 C1 -C2,-1.0 -C1 C2,-1.0 -C1 -C2,C2 1.0 C1,C2 1.0 -C1,C2 -1.0 C1,C2 -1.0 -C1,-C2 1.0 C1,-C2 1.0 -C1,-C2 -1.0 C1,-C2 -1.0 -C1">
+            <input type="hidden" class="solid__faces" value="0 42 10 55 5 44 #,0 46 4 53 8 40 #,2 36 8 57 6 50 #,2 48 7 59 10 38 #,15 13 53 20 22 55 #,15 19 49 33 29 45 #,17 13 47 31 35 51 #,17 19 59 26 24 57 #,30 46 12 16 50 34 #,30 42 26 27 43 31 #,32 48 18 14 44 28 #,32 36 20 21 37 33 #,39 23 22 38 34 35 #,39 11 58 7 49 3 #,41 25 24 40 28 29 #,41 9 52 4 47 1 #,54 11 43 1 45 5 #,54 23 21 52 12 14 #,56 9 37 3 51 6 #,56 25 27 58 18 16 #,0 40 24 26 42 #,1 43 27 25 41 #,2 38 22 20 36 #,3 37 21 23 39 #,4 46 30 31 47 #,5 45 29 28 44 #,6 51 35 34 50 #,7 48 32 33 49 #,8 53 13 17 57 #,9 56 16 12 52 #,10 59 19 15 55 #,11 54 14 18 58 #,0 44 14 12 46 #,1 47 13 15 45 #,2 50 16 18 48 #,3 49 19 17 51 #,4 52 21 20 53 #,5 55 22 23 54 #,6 57 24 25 56 #,7 58 27 26 59 #,8 36 32 28 40 #,9 41 29 33 37 #,10 42 30 34 38 #,11 39 35 31 43 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Icosidodecadodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 60 52">
-            <input type="hidden" class="Constants" value="0.309016994374947424102293417183,1.11803398874989484820458683437,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="C2 0.0 -C1,C2 0.0 C1,-C2 0.0 -C1,-C2 0.0 C1,0.0 -C1 C2,0.0 -C1 -C2,0.0 C1 C2,0.0 C1 -C2,-C1 C2 0.0,C1 C2 0.0,-C1 -C2 0.0,C1 -C2 0.0,0.5 C2 1.0,0.5 C2 -1.0,-0.5 C2 1.0,-0.5 C2 -1.0,0.5 -C2 1.0,0.5 -C2 -1.0,-0.5 -C2 1.0,-0.5 -C2 -1.0,C2 1.0 0.5,C2 1.0 -0.5,-C2 1.0 0.5,-C2 1.0 -0.5,C2 -1.0 0.5,C2 -1.0 -0.5,-C2 -1.0 0.5,-C2 -1.0 -0.5,1.0 0.5 C2,1.0 0.5 -C2,-1.0 0.5 C2,-1.0 0.5 -C2,1.0 -0.5 C2,1.0 -0.5 -C2,-1.0 -0.5 C2,-1.0 -0.5 -C2,-C3 0.5 -C0,-C3 0.5 C0,C3 0.5 -C0,C3 0.5 C0,-C3 -0.5 -C0,-C3 -0.5 C0,C3 -0.5 -C0,C3 -0.5 C0,0.5 -C0 -C3,0.5 -C0 C3,-0.5 -C0 -C3,-0.5 -C0 C3,0.5 C0 -C3,0.5 C0 C3,-0.5 C0 -C3,-0.5 C0 C3,-C0 -C3 0.5,-C0 -C3 -0.5,C0 -C3 0.5,C0 -C3 -0.5,-C0 C3 0.5,-C0 C3 -0.5,C0 C3 0.5,C0 C3 -0.5">
-            <input type="hidden" class="Faces" value="0 42 11 55 5 44 #,0 48 7 59 9 38 #,1 39 9 58 6 49 #,1 45 4 54 11 43 #,2 36 8 57 7 50 #,2 46 5 53 10 40 #,3 41 10 52 4 47 #,3 51 6 56 8 37 #,15 13 29 44 46 31 #,15 23 22 14 58 59 #,18 16 32 49 51 34 #,18 26 27 19 55 54 #,20 21 13 57 56 12 #,20 28 32 24 42 38 #,25 24 16 52 53 17 #,25 33 29 21 39 43 #,30 22 36 40 26 34 #,30 47 45 28 12 14 #,35 27 41 37 23 31 #,35 50 48 33 17 19 #,0 44 29 33 48 #,1 49 32 28 45 #,2 50 35 31 46 #,3 47 30 34 51 #,4 52 16 18 54 #,5 55 19 17 53 #,6 58 14 12 56 #,7 57 13 15 59 #,8 36 22 23 37 #,9 39 21 20 38 #,10 41 27 26 40 #,11 42 24 25 43 #,0 38 42 #,1 43 39 #,2 40 36 #,3 37 41 #,4 45 47 #,5 46 44 #,6 51 49 #,7 48 50 #,8 56 57 #,9 59 58 #,10 53 52 #,11 54 55 #,12 28 20 #,13 21 29 #,14 22 30 #,15 31 23 #,16 24 32 #,17 33 25 #,18 34 26 #,19 27 35 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Small Icosicosidodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="4 60 52">
+            <input type="hidden" class="solid__constants" value="0.309016994374947424102293417183,1.11803398874989484820458683437,1.30901699437494742410229341718,1.61803398874989484820458683437">
+            <input type="hidden" class="solid__vertices" value="C2 0.0 -C1,C2 0.0 C1,-C2 0.0 -C1,-C2 0.0 C1,0.0 -C1 C2,0.0 -C1 -C2,0.0 C1 C2,0.0 C1 -C2,-C1 C2 0.0,C1 C2 0.0,-C1 -C2 0.0,C1 -C2 0.0,0.5 C2 1.0,0.5 C2 -1.0,-0.5 C2 1.0,-0.5 C2 -1.0,0.5 -C2 1.0,0.5 -C2 -1.0,-0.5 -C2 1.0,-0.5 -C2 -1.0,C2 1.0 0.5,C2 1.0 -0.5,-C2 1.0 0.5,-C2 1.0 -0.5,C2 -1.0 0.5,C2 -1.0 -0.5,-C2 -1.0 0.5,-C2 -1.0 -0.5,1.0 0.5 C2,1.0 0.5 -C2,-1.0 0.5 C2,-1.0 0.5 -C2,1.0 -0.5 C2,1.0 -0.5 -C2,-1.0 -0.5 C2,-1.0 -0.5 -C2,-C3 0.5 -C0,-C3 0.5 C0,C3 0.5 -C0,C3 0.5 C0,-C3 -0.5 -C0,-C3 -0.5 C0,C3 -0.5 -C0,C3 -0.5 C0,0.5 -C0 -C3,0.5 -C0 C3,-0.5 -C0 -C3,-0.5 -C0 C3,0.5 C0 -C3,0.5 C0 C3,-0.5 C0 -C3,-0.5 C0 C3,-C0 -C3 0.5,-C0 -C3 -0.5,C0 -C3 0.5,C0 -C3 -0.5,-C0 C3 0.5,-C0 C3 -0.5,C0 C3 0.5,C0 C3 -0.5">
+            <input type="hidden" class="solid__faces" value="0 42 11 55 5 44 #,0 48 7 59 9 38 #,1 39 9 58 6 49 #,1 45 4 54 11 43 #,2 36 8 57 7 50 #,2 46 5 53 10 40 #,3 41 10 52 4 47 #,3 51 6 56 8 37 #,15 13 29 44 46 31 #,15 23 22 14 58 59 #,18 16 32 49 51 34 #,18 26 27 19 55 54 #,20 21 13 57 56 12 #,20 28 32 24 42 38 #,25 24 16 52 53 17 #,25 33 29 21 39 43 #,30 22 36 40 26 34 #,30 47 45 28 12 14 #,35 27 41 37 23 31 #,35 50 48 33 17 19 #,0 44 29 33 48 #,1 49 32 28 45 #,2 50 35 31 46 #,3 47 30 34 51 #,4 52 16 18 54 #,5 55 19 17 53 #,6 58 14 12 56 #,7 57 13 15 59 #,8 36 22 23 37 #,9 39 21 20 38 #,10 41 27 26 40 #,11 42 24 25 43 #,0 38 42 #,1 43 39 #,2 40 36 #,3 37 41 #,4 45 47 #,5 46 44 #,6 51 49 #,7 48 50 #,8 56 57 #,9 59 58 #,10 53 52 #,11 54 55 #,12 28 20 #,13 21 29 #,14 22 30 #,15 31 23 #,16 24 32 #,17 33 25 #,18 34 26 #,19 27 35 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Small Icosicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="4 60 52">
-            <input type="hidden" class="Constants" value="0.190983005625052575897706582817,0.618033988749894848204586834366,0.809016994374947424102293417183,1.11803398874989484820458683437">
-            <input type="hidden" class="Vertices" value="0.0 C0 C3,0.0 C0 -C3,0.0 -C0 C3,0.0 -C0 -C3,C3 0.0 C0,C3 0.0 -C0,-C3 0.0 C0,-C3 0.0 -C0,C0 C3 0.0,C0 -C3 0.0,-C0 C3 0.0,-C0 -C3 0.0,C0 0.5 1.0,C0 0.5 -1.0,C0 -0.5 1.0,C0 -0.5 -1.0,-C0 0.5 1.0,-C0 0.5 -1.0,-C0 -0.5 1.0,-C0 -0.5 -1.0,1.0 C0 0.5,1.0 C0 -0.5,1.0 -C0 0.5,1.0 -C0 -0.5,-1.0 C0 0.5,-1.0 C0 -0.5,-1.0 -C0 0.5,-1.0 -C0 -0.5,0.5 1.0 C0,0.5 1.0 -C0,0.5 -1.0 C0,0.5 -1.0 -C0,-0.5 1.0 C0,-0.5 1.0 -C0,-0.5 -1.0 C0,-0.5 -1.0 -C0,0.5 C1 C2,0.5 C1 -C2,0.5 -C1 C2,0.5 -C1 -C2,-0.5 C1 C2,-0.5 C1 -C2,-0.5 -C1 C2,-0.5 -C1 -C2,C2 0.5 C1,C2 0.5 -C1,C2 -0.5 C1,C2 -0.5 -C1,-C2 0.5 C1,-C2 0.5 -C1,-C2 -0.5 C1,-C2 -0.5 -C1,C1 C2 0.5,C1 C2 -0.5,C1 -C2 0.5,C1 -C2 -0.5,-C1 C2 0.5,-C1 C2 -0.5,-C1 -C2 0.5,-C1 -C2 -0.5">
-            <input type="hidden" class="Faces" value="0 42 11 55 5 44 #,0 48 7 59 9 38 #,1 39 9 58 6 49 #,1 45 4 54 11 43 #,2 36 8 57 7 50 #,2 46 5 53 10 40 #,3 41 10 52 4 47 #,3 51 6 56 8 37 #,15 13 29 44 46 31 #,15 23 22 14 58 59 #,18 16 32 49 51 34 #,18 26 27 19 55 54 #,20 21 13 57 56 12 #,20 28 32 24 42 38 #,25 24 16 52 53 17 #,25 33 29 21 39 43 #,30 22 36 40 26 34 #,30 47 45 28 12 14 #,35 27 41 37 23 31 #,35 50 48 33 17 19 #,0 44 29 33 48 #,1 49 32 28 45 #,2 50 35 31 46 #,3 47 30 34 51 #,4 52 16 18 54 #,5 55 19 17 53 #,6 58 14 12 56 #,7 57 13 15 59 #,8 36 22 23 37 #,9 39 21 20 38 #,10 41 27 26 40 #,11 42 24 25 43 #,0 38 42 #,1 43 39 #,2 40 36 #,3 37 41 #,4 45 47 #,5 46 44 #,6 51 49 #,7 48 50 #,8 56 57 #,9 59 58 #,10 53 52 #,11 54 55 #,12 28 20 #,13 21 29 #,14 22 30 #,15 31 23 #,16 24 32 #,17 33 25 #,18 34 26 #,19 27 35 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Great Icosicosidodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="4 60 52">
+            <input type="hidden" class="solid__constants" value="0.190983005625052575897706582817,0.618033988749894848204586834366,0.809016994374947424102293417183,1.11803398874989484820458683437">
+            <input type="hidden" class="solid__vertices" value="0.0 C0 C3,0.0 C0 -C3,0.0 -C0 C3,0.0 -C0 -C3,C3 0.0 C0,C3 0.0 -C0,-C3 0.0 C0,-C3 0.0 -C0,C0 C3 0.0,C0 -C3 0.0,-C0 C3 0.0,-C0 -C3 0.0,C0 0.5 1.0,C0 0.5 -1.0,C0 -0.5 1.0,C0 -0.5 -1.0,-C0 0.5 1.0,-C0 0.5 -1.0,-C0 -0.5 1.0,-C0 -0.5 -1.0,1.0 C0 0.5,1.0 C0 -0.5,1.0 -C0 0.5,1.0 -C0 -0.5,-1.0 C0 0.5,-1.0 C0 -0.5,-1.0 -C0 0.5,-1.0 -C0 -0.5,0.5 1.0 C0,0.5 1.0 -C0,0.5 -1.0 C0,0.5 -1.0 -C0,-0.5 1.0 C0,-0.5 1.0 -C0,-0.5 -1.0 C0,-0.5 -1.0 -C0,0.5 C1 C2,0.5 C1 -C2,0.5 -C1 C2,0.5 -C1 -C2,-0.5 C1 C2,-0.5 C1 -C2,-0.5 -C1 C2,-0.5 -C1 -C2,C2 0.5 C1,C2 0.5 -C1,C2 -0.5 C1,C2 -0.5 -C1,-C2 0.5 C1,-C2 0.5 -C1,-C2 -0.5 C1,-C2 -0.5 -C1,C1 C2 0.5,C1 C2 -0.5,C1 -C2 0.5,C1 -C2 -0.5,-C1 C2 0.5,-C1 C2 -0.5,-C1 -C2 0.5,-C1 -C2 -0.5">
+            <input type="hidden" class="solid__faces" value="0 42 11 55 5 44 #,0 48 7 59 9 38 #,1 39 9 58 6 49 #,1 45 4 54 11 43 #,2 36 8 57 7 50 #,2 46 5 53 10 40 #,3 41 10 52 4 47 #,3 51 6 56 8 37 #,15 13 29 44 46 31 #,15 23 22 14 58 59 #,18 16 32 49 51 34 #,18 26 27 19 55 54 #,20 21 13 57 56 12 #,20 28 32 24 42 38 #,25 24 16 52 53 17 #,25 33 29 21 39 43 #,30 22 36 40 26 34 #,30 47 45 28 12 14 #,35 27 41 37 23 31 #,35 50 48 33 17 19 #,0 44 29 33 48 #,1 49 32 28 45 #,2 50 35 31 46 #,3 47 30 34 51 #,4 52 16 18 54 #,5 55 19 17 53 #,6 58 14 12 56 #,7 57 13 15 59 #,8 36 22 23 37 #,9 39 21 20 38 #,10 41 27 26 40 #,11 42 24 25 43 #,0 38 42 #,1 43 39 #,2 40 36 #,3 37 41 #,4 45 47 #,5 46 44 #,6 51 49 #,7 48 50 #,8 56 57 #,9 59 58 #,10 53 52 #,11 54 55 #,12 28 20 #,13 21 29 #,14 22 30 #,15 31 23 #,16 24 32 #,17 33 25 #,18 34 26 #,19 27 35 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Great Icosicosidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 60 54">
-            <input type="hidden" class="Constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.809016994374947424102293417183,1.11803398874989484820458683437,1.30901699437494742410229341718">
-            <input type="hidden" class="Vertices" value="C0 0.0 C4,C0 0.0 -C4,-C0 0.0 C4,-C0 0.0 -C4,C4 C0 0.0,C4 -C0 0.0,-C4 C0 0.0,-C4 -C0 0.0,0.0 C4 C0,0.0 C4 -C0,0.0 -C4 C0,0.0 -C4 -C0,0.5 0.5 C3,0.5 0.5 -C3,0.5 -0.5 C3,0.5 -0.5 -C3,-0.5 0.5 C3,-0.5 0.5 -C3,-0.5 -0.5 C3,-0.5 -0.5 -C3,C3 0.5 0.5,C3 0.5 -0.5,C3 -0.5 0.5,C3 -0.5 -0.5,-C3 0.5 0.5,-C3 0.5 -0.5,-C3 -0.5 0.5,-C3 -0.5 -0.5,0.5 C3 0.5,0.5 C3 -0.5,0.5 -C3 0.5,0.5 -C3 -0.5,-0.5 C3 0.5,-0.5 C3 -0.5,-0.5 -C3 0.5,-0.5 -C3 -0.5,C1 C2 1.0,C1 C2 -1.0,C1 -C2 1.0,C1 -C2 -1.0,-C1 C2 1.0,-C1 C2 -1.0,-C1 -C2 1.0,-C1 -C2 -1.0,1.0 C1 C2,1.0 C1 -C2,1.0 -C1 C2,1.0 -C1 -C2,-1.0 C1 C2,-1.0 C1 -C2,-1.0 -C1 C2,-1.0 -C1 -C2,C2 1.0 C1,C2 1.0 -C1,C2 -1.0 C1,C2 -1.0 -C1,-C2 1.0 C1,-C2 1.0 -C1,-C2 -1.0 C1,-C2 -1.0 -C1">
-            <input type="hidden" class="Faces" value="0 40 24 26 42 #,1 43 27 25 41 #,2 38 22 20 36 #,3 37 21 23 39 #,4 46 30 31 47 #,5 45 29 28 44 #,6 51 35 34 50 #,7 48 32 33 49 #,8 53 13 17 57 #,9 56 16 12 52 #,10 59 19 15 55 #,11 54 14 18 58 #,0 46 12 14 44 #,1 45 15 13 47 #,2 48 18 16 50 #,3 51 17 19 49 #,4 53 20 21 52 #,5 54 23 22 55 #,6 56 25 24 57 #,7 59 26 27 58 #,8 40 28 32 36 #,9 37 33 29 41 #,10 38 34 30 42 #,11 43 31 35 39 #,0 42 30 46 #,0 44 28 40 #,1 41 29 45 #,1 47 31 43 #,3 39 35 51 #,3 49 33 37 #,5 44 14 54 #,5 55 15 45 #,6 50 16 56 #,6 57 17 51 #,7 49 19 59 #,7 58 18 48 #,8 36 20 53 #,8 57 24 40 #,9 41 25 56 #,9 52 21 37 #,11 39 23 54 #,11 58 27 43 #,12 16 18 14 #,12 46 4 52 #,13 15 19 17 #,13 53 4 47 #,22 23 21 20 #,22 38 10 55 #,26 24 25 27 #,26 59 10 42 #,32 28 29 33 #,32 48 2 36 #,34 35 31 30 #,34 38 2 50 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Rhombidodecadodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="5 60 54">
+            <input type="hidden" class="solid__constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.809016994374947424102293417183,1.11803398874989484820458683437,1.30901699437494742410229341718">
+            <input type="hidden" class="solid__vertices" value="C0 0.0 C4,C0 0.0 -C4,-C0 0.0 C4,-C0 0.0 -C4,C4 C0 0.0,C4 -C0 0.0,-C4 C0 0.0,-C4 -C0 0.0,0.0 C4 C0,0.0 C4 -C0,0.0 -C4 C0,0.0 -C4 -C0,0.5 0.5 C3,0.5 0.5 -C3,0.5 -0.5 C3,0.5 -0.5 -C3,-0.5 0.5 C3,-0.5 0.5 -C3,-0.5 -0.5 C3,-0.5 -0.5 -C3,C3 0.5 0.5,C3 0.5 -0.5,C3 -0.5 0.5,C3 -0.5 -0.5,-C3 0.5 0.5,-C3 0.5 -0.5,-C3 -0.5 0.5,-C3 -0.5 -0.5,0.5 C3 0.5,0.5 C3 -0.5,0.5 -C3 0.5,0.5 -C3 -0.5,-0.5 C3 0.5,-0.5 C3 -0.5,-0.5 -C3 0.5,-0.5 -C3 -0.5,C1 C2 1.0,C1 C2 -1.0,C1 -C2 1.0,C1 -C2 -1.0,-C1 C2 1.0,-C1 C2 -1.0,-C1 -C2 1.0,-C1 -C2 -1.0,1.0 C1 C2,1.0 C1 -C2,1.0 -C1 C2,1.0 -C1 -C2,-1.0 C1 C2,-1.0 C1 -C2,-1.0 -C1 C2,-1.0 -C1 -C2,C2 1.0 C1,C2 1.0 -C1,C2 -1.0 C1,C2 -1.0 -C1,-C2 1.0 C1,-C2 1.0 -C1,-C2 -1.0 C1,-C2 -1.0 -C1">
+            <input type="hidden" class="solid__faces" value="0 40 24 26 42 #,1 43 27 25 41 #,2 38 22 20 36 #,3 37 21 23 39 #,4 46 30 31 47 #,5 45 29 28 44 #,6 51 35 34 50 #,7 48 32 33 49 #,8 53 13 17 57 #,9 56 16 12 52 #,10 59 19 15 55 #,11 54 14 18 58 #,0 46 12 14 44 #,1 45 15 13 47 #,2 48 18 16 50 #,3 51 17 19 49 #,4 53 20 21 52 #,5 54 23 22 55 #,6 56 25 24 57 #,7 59 26 27 58 #,8 40 28 32 36 #,9 37 33 29 41 #,10 38 34 30 42 #,11 43 31 35 39 #,0 42 30 46 #,0 44 28 40 #,1 41 29 45 #,1 47 31 43 #,3 39 35 51 #,3 49 33 37 #,5 44 14 54 #,5 55 15 45 #,6 50 16 56 #,6 57 17 51 #,7 49 19 59 #,7 58 18 48 #,8 36 20 53 #,8 57 24 40 #,9 41 25 56 #,9 52 21 37 #,11 39 23 54 #,11 58 27 43 #,12 16 18 14 #,12 46 4 52 #,13 15 19 17 #,13 53 4 47 #,22 23 21 20 #,22 38 10 55 #,26 24 25 27 #,26 59 10 42 #,32 28 29 33 #,32 48 2 36 #,34 35 31 30 #,34 38 2 50 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Rhombidodecadodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solids-item">
-          <div class="solids-item__content" name="miniViewer">
-            <canvas class="solids-item__canvas" name="canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="Counts" value="5 60 62">
-            <input type="hidden" class="Constants" value="0.118033988749894848204586834366,0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366,0.690983005625052575897706582817">
-            <input type="hidden" class="Vertices" value="0.5 0.5 -C0,0.5 0.5 C0,-0.5 0.5 -C0,-0.5 0.5 C0,0.5 -0.5 -C0,0.5 -0.5 C0,-0.5 -0.5 -C0,-0.5 -0.5 C0,0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5,0.5 C0 0.5,0.5 C0 -0.5,-0.5 C0 0.5,-0.5 C0 -0.5,-C0 0.5 0.5,-C0 0.5 -0.5,C0 0.5 0.5,C0 0.5 -0.5,-C0 -0.5 0.5,-C0 -0.5 -0.5,C0 -0.5 0.5,C0 -0.5 -0.5,C1 0.0 C4,C1 0.0 -C4,-C1 0.0 C4,-C1 0.0 -C4,0.0 C4 C1,0.0 C4 -C1,0.0 -C4 C1,0.0 -C4 -C1,C4 C1 0.0,-C4 C1 0.0,C4 -C1 0.0,-C4 -C1 0.0,-C2 C1 -C3,-C2 C1 C3,C2 C1 -C3,C2 C1 C3,-C2 -C1 -C3,-C2 -C1 C3,C2 -C1 -C3,C2 -C1 C3,C1 -C3 -C2,C1 -C3 C2,-C1 -C3 -C2,-C1 -C3 C2,C1 C3 -C2,C1 C3 C2,-C1 C3 -C2,-C1 C3 C2,-C3 -C2 C1,-C3 -C2 -C1,C3 -C2 C1,C3 -C2 -C1,-C3 C2 C1,-C3 C2 -C1,C3 C2 C1,C3 C2 -C1">
-            <input type="hidden" class="Faces" value="24 52 16 20 56 #,25 57 21 17 53 #,26 58 22 18 54 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,0 36 52 24 #,1 25 53 37 #,2 26 54 38 #,3 39 55 27 #,4 24 56 40 #,5 41 57 25 #,6 42 58 26 #,7 27 59 43 #,8 44 36 28 #,9 29 37 45 #,10 28 38 46 #,11 47 39 29 #,12 30 40 48 #,13 49 41 31 #,14 50 42 30 #,15 31 43 51 #,16 52 44 32 #,17 32 45 53 #,18 33 46 54 #,19 55 47 33 #,20 34 48 56 #,21 57 49 34 #,22 58 50 35 #,23 35 51 59 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,16 17 21 20 #,18 22 23 19 #,24 4 0 #,25 1 5 #,26 2 6 #,27 7 3 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 17 16 #,33 18 19 #,34 20 21 #,35 23 22 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #">
-            <input type="hidden" class="Background" value="#606060">
-            <h2 class="solids-item__title title-h2">Uniform Great Rhombicosidodecahedron</h2>
+        <li class="solids__item solid">
+          <div class="solid__content">
+            <canvas class="solid__canvas" width="200" height="200"></canvas>
+            <input type="hidden" class="solid__counts" value="5 60 62">
+            <input type="hidden" class="solid__constants" value="0.118033988749894848204586834366,0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366,0.690983005625052575897706582817">
+            <input type="hidden" class="solid__vertices" value="0.5 0.5 -C0,0.5 0.5 C0,-0.5 0.5 -C0,-0.5 0.5 C0,0.5 -0.5 -C0,0.5 -0.5 C0,-0.5 -0.5 -C0,-0.5 -0.5 C0,0.5 -C0 0.5,0.5 -C0 -0.5,-0.5 -C0 0.5,-0.5 -C0 -0.5,0.5 C0 0.5,0.5 C0 -0.5,-0.5 C0 0.5,-0.5 C0 -0.5,-C0 0.5 0.5,-C0 0.5 -0.5,C0 0.5 0.5,C0 0.5 -0.5,-C0 -0.5 0.5,-C0 -0.5 -0.5,C0 -0.5 0.5,C0 -0.5 -0.5,C1 0.0 C4,C1 0.0 -C4,-C1 0.0 C4,-C1 0.0 -C4,0.0 C4 C1,0.0 C4 -C1,0.0 -C4 C1,0.0 -C4 -C1,C4 C1 0.0,-C4 C1 0.0,C4 -C1 0.0,-C4 -C1 0.0,-C2 C1 -C3,-C2 C1 C3,C2 C1 -C3,C2 C1 C3,-C2 -C1 -C3,-C2 -C1 C3,C2 -C1 -C3,C2 -C1 C3,C1 -C3 -C2,C1 -C3 C2,-C1 -C3 -C2,-C1 -C3 C2,C1 C3 -C2,C1 C3 C2,-C1 C3 -C2,-C1 C3 C2,-C3 -C2 C1,-C3 -C2 -C1,C3 -C2 C1,C3 -C2 -C1,-C3 C2 C1,-C3 C2 -C1,C3 C2 C1,C3 C2 -C1">
+            <input type="hidden" class="solid__faces" value="24 52 16 20 56 #,25 57 21 17 53 #,26 58 22 18 54 #,27 55 19 23 59 #,28 36 0 2 38 #,29 39 3 1 37 #,30 42 6 4 40 #,31 41 5 7 43 #,32 44 8 9 45 #,33 47 11 10 46 #,34 49 13 12 48 #,35 50 14 15 51 #,0 36 52 24 #,1 25 53 37 #,2 26 54 38 #,3 39 55 27 #,4 24 56 40 #,5 41 57 25 #,6 42 58 26 #,7 27 59 43 #,8 44 36 28 #,9 29 37 45 #,10 28 38 46 #,11 47 39 29 #,12 30 40 48 #,13 49 41 31 #,14 50 42 30 #,15 31 43 51 #,16 52 44 32 #,17 32 45 53 #,18 33 46 54 #,19 55 47 33 #,20 34 48 56 #,21 57 49 34 #,22 58 50 35 #,23 35 51 59 #,0 4 6 2 #,1 3 7 5 #,8 10 11 9 #,12 13 15 14 #,16 17 21 20 #,18 22 23 19 #,24 4 0 #,25 1 5 #,26 2 6 #,27 7 3 #,28 10 8 #,29 9 11 #,30 12 14 #,31 15 13 #,32 17 16 #,33 18 19 #,34 20 21 #,35 23 22 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #">
+            <input type="hidden" class="solid__background" value="#606060">
+            <h2 class="solid__title title-h2">Uniform Great Rhombicosidodecahedron</h2>
           </div>
         </li>
       </ul>
@@ -152,9 +175,33 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="container"></div>
+  <div class="footer__container container">
+    <div class="footer__logo-wrapper">
+      <a class="footer__logo" href="/">
+        <img src="/images/icons/logo.svg" width="110" height="35" alt="Logo">
+      </a>
+    </div>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--github" href="https://github.com/nemtsev-k" target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/@NemtsevK_Studio" target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/studio_of_the_beautiful" target="_blank"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__slogan">
+      <p class="footer__slogan-text">Mathematics possesses not only truth, but supreme beauty – a&nbsp;beauty cold and austere.</p>
+    </div>
+  </div>
 </footer>
-<script src="../../js/main.js"></script>
-<script src="../../js/mini-viewer.js"></script>
+
+<script src="/js/main.js"></script>
+<script src="/js/rendering-polyhedra.js"></script>
+
 </body>
 </html>
