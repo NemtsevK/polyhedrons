@@ -13,6 +13,7 @@ import del from 'del';
 import browser from 'browser-sync';
 import replace from 'gulp-replace';
 import { stacksvg } from 'gulp-stacksvg';
+import nunjucksRender from 'gulp-nunjucks-render';
 
 // Styles
 export const styles = () => {
@@ -37,9 +38,11 @@ const scripts = () => {
     .pipe(browser.stream());
 }
 
+
 // HTML
 const html = () => {
   return gulp.src('source/**/*.html')
+    .pipe(nunjucksRender())
     // .pipe(replace('.css', '.min.css'))
     // .pipe(replace('.js', '.min.js'))
     // .pipe(htmlmin({collapseWhitespace: true}))

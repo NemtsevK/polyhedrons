@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
   <title>Gyrate and diminished rhombicosidodecahedron</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  {% include 'source/templates/_head.html' %}
 </head>
 <body class="page__body">
-<header class="header"></header>
+{% include 'source/templates/_header.html' %}
 <main class="main">
   <section class="main__solids solids">
     <div class="container">
@@ -155,10 +153,7 @@
     </div>
   </section>
 </main>
-<footer class="footer">
-  <div class="container"></div>
-</footer>
-<script src="../../js/main.js"></script>
-<script src="../../js/rendering-polyhedra.js"></script>
+{% include 'source/templates/_footer.html' %}
+{% include 'source/templates/_scripts.html' %}
 </body>
 </html>

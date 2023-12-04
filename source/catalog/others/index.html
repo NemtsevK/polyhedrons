@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
   <title>Others</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  {% include 'source/templates/_head.html' %}
 </head>
 <body class="page__body">
-<header class="header">
-  <div class="container">
-    <nav class="navigation"></nav>
-  </div>
-</header>
+{% include 'source/templates/_header.html' %}
 <main class="main">
   <section class="main__intro intro">
     <div class="container">
@@ -31,7 +25,6 @@
           <img class="types-item__image" width="60" height="60" src="../../images/content/others/joined-snub-cube.png" alt="">
           <p class="types-item__text">Each polyhedron on this page is the convex hull of an Archimedean solid compounded with its Catalan dual. This operation is equivalent to John Conway's "join" operation applied to either the Archimedean solid or the Catalan dual.</p>
         </li>
-
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="propellor-solids.html">
             <h2 class="types-item__title title-h2">Propellor Solids</h2>
@@ -39,7 +32,6 @@
           <img class="types-item__image" width="60" height="60" src="../../images/content/others/propello-tetrahedron.png" alt="">
           <p class="types-item__text">The solids appearing on this page were created by applying George Hart's propellor operation to the Platonic solids and some of the Archimedean and Catalan solids.</p>
         </li>
-
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="biscribed-non-chiral-solids.html">
             <h2 class="types-item__title title-h2">Biscribed Non-Chiral Solids</h2>
@@ -47,8 +39,6 @@
           <img class="types-item__image" width="60" height="60" src="../../images/content/others/biscribed-truncated-cuboctahedron.png" alt="">
           <p class="types-item__text">For these pages, a biscribed solid is defined to be any convex polyhedron that has concentric circumscribed and inscribed spheres, where the sphere center is also the centroid of the vertices and the centroid of the face tangency points. The five Platonic solids are biscribed solids, but none of the Archimedean or Catalan solids are. The convexity criterion rules out the rest of the uniform polyhedra.</p>
         </li>
-
-        <!-- make it-->
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="biscribed-chiral-solids.html">
             <h2 class="types-item__title title-h2">Biscribed Chiral Solids</h2>
@@ -56,8 +46,6 @@
           <img class="types-item__image" width="60" height="60" src="../../images/content/others/biscribed-snub-cube.png" alt="">
           <p class="types-item__text">For these pages, a biscribed solid is defined to be any convex polyhedron that has concentric circumscribed and inscribed spheres, where the sphere center is also the centroid of the vertices and the centroid of the face tangency points. The five Platonic solids are biscribed solids, but none of the Archimedean or Catalan solids are. The convexity criterion rules out the rest of the uniform polyhedra.</p>
         </li>
-
-        <!-- make it-->
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="rectified-archimedean-solids.html">
             <h2 class="types-item__title title-h2">Rectified Archimedean Solids</h2>
@@ -65,7 +53,6 @@
           <img class="types-item__image" width="60" height="60" src="" alt="">
           <p class="types-item__text">Each solid on this page was created by applying the rectify operation to one of the Archimedean solids. Rectification is a form of truncation where each vertex is truncated up to the midpoints of the edges meeting at that vertex. This operation is typically applied to one of the Platonic solids, but it can also be applied to a non-regular polyhedron as long as the midpoints of the edges meeting at each vertex are coplanar. If the non-regular polyhedron is convex, then the resulting polyhedron will not intersect itself.</p>
         </li>
-
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="truncated-archimedean-solids.html">
             <h2 class="types-item__title title-h2">Truncated Archimedean Solids</h2>
@@ -73,7 +60,6 @@
           <img class="types-item__image" width="60" height="60" src="../../images/content/others/truncated-rhombicuboctahedron.png" alt="">
           <p class="types-item__text">Each solid on this page was created by truncating one of the Archimedean solids, and then applying a canonicalization algorithm to the result.</p>
         </li>
-
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="truncated-catalan-solids.html">
             <h2 class="types-item__title title-h2">Truncated Catalan Solids</h2>
@@ -81,10 +67,6 @@
           <img class="types-item__image" width="60" height="60" src="../../images/content/others/truncated-deltoidal-icositetrahedron.png" alt="">
           <p class="types-item__text">Each solid on this page was created by starting with one of the Catalan solids and truncating some or all of its vertices.</p>
         </li>
-
-
-
-        <!-- make it-->
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="chamfered-solids.html">
             <h2 class="types-item__title title-h2">Chamfered Solids</h2>
@@ -92,8 +74,6 @@
           <img class="types-item__image" width="60" height="60" src="" alt="">
           <p class="types-item__text">The "chamfer" operation is defined as a truncation along a polyhedron's edges.</p>
         </li>
-
-        <!-- make it-->
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="derived-solids.html">
             <h2 class="types-item__title title-h2">Derived Solids</h2>
@@ -101,8 +81,6 @@
           <img class="types-item__image" width="60" height="60" src="" alt="">
           <p class="types-item__text">The "hexpropellor" operation is defined as a variant of George Hart's propellor operation, where hexagons rather than tetragons are inserted around the faces of the original polyhedron.</p>
         </li>
-
-        <!-- make it-->
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="greater-self-dual-solids.html">
             <h2 class="types-item__title title-h2">Greater Self-Dual Solids</h2>
@@ -110,8 +88,6 @@
           <img class="types-item__image" width="60" height="60" src="" alt="">
           <p class="types-item__text">Each self-dual polyhedron on this page has more than 16 faces and has full tetrahedral or chiral tetrahedral symmetry.</p>
         </li>
-
-        <!-- make it-->
         <li class="types-solids__item types-item">
           <a class="types-item__link" href="other-solids.html">
             <h2 class="types-item__title title-h2">Other Solids</h2>
@@ -119,14 +95,10 @@
           <img class="types-item__image" width="60" height="60" src="" alt="">
           <p class="types-item__text">This page contains a variety of other interesting polyhedra.</p>
         </li>
-
-
       </ul>
     </div>
   </section>
 </main>
-<footer class="footer">
-  <div class="container"></div>
-</footer>
+{% include 'source/templates/_footer.html' %}
 </body>
 </html>

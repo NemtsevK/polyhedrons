@@ -9,15 +9,10 @@
 
 .header__inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .header__logo {
-  grid-column: 1;
-
-  @media (min-width: $tablet) {
-    grid-column: 2;
-  }
 
   &:hover {
     opacity: 0.6;
