@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+
 <html class="page" lang="en">
 <head>
   <title>Augmented Archimedean solids</title>
   <meta charset="UTF-8">
 <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" href="/images/favicons/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/images/favicons/apple.png">
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="preload" href="/fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="/fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" href="../../images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../images/favicons/apple.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="preload" href="../../fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="../../fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="../../css/style.css">
 
 </head>
 <body class="page__body">
@@ -37,86 +38,100 @@
         <p class="solids__text">Text.</p>
       </div>
       <ul class="solids__list">
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="4 15 14">
-            <input type="hidden" class="solid__constants" value="0.353553390593273762200422181052,0.589255650988789603667370301754,1.06066017177982128660126654316,1.29636243217533712806821466386">
-            <input type="hidden" class="solid__vertices" value="C0 -C0 C2,C0 C0 -C2,-C0 C0 C2,-C0 -C0 -C2,C2 -C0 C0,C2 C0 -C0,-C2 C0 C0,-C2 -C0 -C0,C0 -C2 C0,C0 C2 -C0,-C0 C2 C0,-C0 -C2 -C0,C1 C1 C3,C3 C1 C1,C1 C3 C1">
-            <input type="hidden" class="solid__faces" value="0 2 6 7 11 8 #,5 4 8 11 3 1 #,10 9 1 3 7 6 #,0 4 13 12 #,5 9 14 13 #,10 2 12 14 #,0 8 4 #,5 1 9 #,10 6 2 #,0 12 2 #,5 13 4 #,10 14 9 #,3 11 7 #,12 13 14 #">
-            <input type="hidden" class="solid__background" value="#606060">
-            <input type="hidden" class="Quaternion" value="923879533 0 0 382683432">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="4 15 14">
+              <input type="hidden" class="solid__constants" value="0.353553390593273762200422181052,0.589255650988789603667370301754,1.06066017177982128660126654316,1.29636243217533712806821466386">
+              <input type="hidden" class="solid__vertices" value="C0 -C0 C2,C0 C0 -C2,-C0 C0 C2,-C0 -C0 -C2,C2 -C0 C0,C2 C0 -C0,-C2 C0 C0,-C2 -C0 -C0,C0 -C2 C0,C0 C2 -C0,-C0 C2 C0,-C0 -C2 -C0,C1 C1 C3,C3 C1 C1,C1 C3 C1">
+              <input type="hidden" class="solid__faces" value="0 2 6 7 11 8 #,5 4 8 11 3 1 #,10 9 1 3 7 6 #,0 4 13 12 #,5 9 14 13 #,10 2 12 14 #,0 8 4 #,5 1 9 #,10 6 2 #,0 12 2 #,5 13 4 #,10 14 9 #,3 11 7 #,12 13 14 #">
+              <input type="hidden" class="solid__background" value="#606060">
+              <input type="hidden" class="Quaternion" value="923879533 0 0 382683432">
+            </div>
+            <h2 class="solid__title title-h2">Augmented Truncated Tetrahedron (J65)</h2>
           </div>
-          <h2 class="solid__title title-h2">Augmented Truncated Tetrahedron (J65)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 28 22">
-            <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210,1.91421356237309504880168872421">
-            <input type="hidden" class="solid__vertices" value="C1 0.5 C1,C1 0.5 -C1,C1 -0.5 C1,C1 -0.5 -C1,-C1 0.5 C1,-C1 0.5 -C1,-C1 -0.5 C1,-C1 -0.5 -C1,C1 C1 0.5,C1 C1 -0.5,C1 -C1 0.5,C1 -C1 -0.5,-C1 C1 0.5,-C1 C1 -0.5,-C1 -C1 0.5,-C1 -C1 -0.5,0.5 C1 C1,0.5 C1 -C1,0.5 -C1 C1,0.5 -C1 -C1,-0.5 C1 C1,-0.5 C1 -C1,-0.5 -C1 C1,-0.5 -C1 -C1,C0 0.0 C2,-C0 0.0 C2,0.0 C0 C2,0.0 -C0 C2">
-            <input type="hidden" class="solid__faces" value="1 3 19 23 7 5 21 17 #,0 2 10 11 3 1 9 8 #,20 16 8 9 17 21 13 12 #,6 4 12 13 5 7 15 14 #,18 22 14 15 23 19 11 10 #,24 26 25 27 #,0 16 26 24 #,20 4 25 26 #,6 22 27 25 #,18 2 24 27 #,0 8 16 #,20 12 4 #,6 14 22 #,18 10 2 #,0 24 2 #,20 26 16 #,6 25 4 #,18 27 22 #,3 11 19 #,23 15 7 #,5 13 21 #,17 9 1 #">
-            <input type="hidden" class="solid__background" value="#606060">
-            <input type="hidden" class="Quaternion" value="800103145 -461939766 191341716 331413574">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 28 22">
+              <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210,1.91421356237309504880168872421">
+              <input type="hidden" class="solid__vertices" value="C1 0.5 C1,C1 0.5 -C1,C1 -0.5 C1,C1 -0.5 -C1,-C1 0.5 C1,-C1 0.5 -C1,-C1 -0.5 C1,-C1 -0.5 -C1,C1 C1 0.5,C1 C1 -0.5,C1 -C1 0.5,C1 -C1 -0.5,-C1 C1 0.5,-C1 C1 -0.5,-C1 -C1 0.5,-C1 -C1 -0.5,0.5 C1 C1,0.5 C1 -C1,0.5 -C1 C1,0.5 -C1 -C1,-0.5 C1 C1,-0.5 C1 -C1,-0.5 -C1 C1,-0.5 -C1 -C1,C0 0.0 C2,-C0 0.0 C2,0.0 C0 C2,0.0 -C0 C2">
+              <input type="hidden" class="solid__faces" value="1 3 19 23 7 5 21 17 #,0 2 10 11 3 1 9 8 #,20 16 8 9 17 21 13 12 #,6 4 12 13 5 7 15 14 #,18 22 14 15 23 19 11 10 #,24 26 25 27 #,0 16 26 24 #,20 4 25 26 #,6 22 27 25 #,18 2 24 27 #,0 8 16 #,20 12 4 #,6 14 22 #,18 10 2 #,0 24 2 #,20 26 16 #,6 25 4 #,18 27 22 #,3 11 19 #,23 15 7 #,5 13 21 #,17 9 1 #">
+              <input type="hidden" class="solid__background" value="#606060">
+              <input type="hidden" class="Quaternion" value="800103145 -461939766 191341716 331413574">
+            </div>
+            <h2 class="solid__title title-h2">Augmented Truncated Cube (J66)</h2>
           </div>
-          <h2 class="solid__title title-h2">Augmented Truncated Cube (J66)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 32 30">
-            <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210,1.91421356237309504880168872421">
-            <input type="hidden" class="solid__vertices" value="C1 0.5 C1,C1 0.5 -C1,C1 -0.5 C1,C1 -0.5 -C1,-C1 0.5 C1,-C1 0.5 -C1,-C1 -0.5 C1,-C1 -0.5 -C1,C1 C1 0.5,C1 C1 -0.5,C1 -C1 0.5,C1 -C1 -0.5,-C1 C1 0.5,-C1 C1 -0.5,-C1 -C1 0.5,-C1 -C1 -0.5,0.5 C1 C1,0.5 C1 -C1,0.5 -C1 C1,0.5 -C1 -C1,-0.5 C1 C1,-0.5 C1 -C1,-0.5 -C1 C1,-0.5 -C1 -C1,C0 0.0 C2,C0 0.0 -C2,-C0 0.0 C2,-C0 0.0 -C2,0.0 C0 C2,0.0 C0 -C2,0.0 -C0 C2,0.0 -C0 -C2">
-            <input type="hidden" class="solid__faces" value="0 2 10 11 3 1 9 8 #,20 16 8 9 17 21 13 12 #,6 4 12 13 5 7 15 14 #,18 22 14 15 23 19 11 10 #,24 28 26 30 #,25 31 27 29 #,0 16 28 24 #,20 4 26 28 #,6 22 30 26 #,18 2 24 30 #,5 21 29 27 #,17 1 25 29 #,3 19 31 25 #,23 7 27 31 #,0 8 16 #,20 12 4 #,6 14 22 #,18 10 2 #,5 13 21 #,17 9 1 #,3 11 19 #,23 15 7 #,0 24 2 #,20 28 16 #,6 26 4 #,18 30 22 #,5 27 7 #,17 29 21 #,3 25 1 #,23 31 19 #">
-            <input type="hidden" class="solid__background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 0 1 0">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 32 30">
+              <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048,1.20710678118654752440084436210,1.91421356237309504880168872421">
+              <input type="hidden" class="solid__vertices" value="C1 0.5 C1,C1 0.5 -C1,C1 -0.5 C1,C1 -0.5 -C1,-C1 0.5 C1,-C1 0.5 -C1,-C1 -0.5 C1,-C1 -0.5 -C1,C1 C1 0.5,C1 C1 -0.5,C1 -C1 0.5,C1 -C1 -0.5,-C1 C1 0.5,-C1 C1 -0.5,-C1 -C1 0.5,-C1 -C1 -0.5,0.5 C1 C1,0.5 C1 -C1,0.5 -C1 C1,0.5 -C1 -C1,-0.5 C1 C1,-0.5 C1 -C1,-0.5 -C1 C1,-0.5 -C1 -C1,C0 0.0 C2,C0 0.0 -C2,-C0 0.0 C2,-C0 0.0 -C2,0.0 C0 C2,0.0 C0 -C2,0.0 -C0 C2,0.0 -C0 -C2">
+              <input type="hidden" class="solid__faces" value="0 2 10 11 3 1 9 8 #,20 16 8 9 17 21 13 12 #,6 4 12 13 5 7 15 14 #,18 22 14 15 23 19 11 10 #,24 28 26 30 #,25 31 27 29 #,0 16 28 24 #,20 4 26 28 #,6 22 30 26 #,18 2 24 30 #,5 21 29 27 #,17 1 25 29 #,3 19 31 25 #,23 7 27 31 #,0 8 16 #,20 12 4 #,6 14 22 #,18 10 2 #,5 13 21 #,17 9 1 #,3 11 19 #,23 15 7 #,0 24 2 #,20 28 16 #,6 26 4 #,18 30 22 #,5 27 7 #,17 29 21 #,3 25 1 #,23 31 19 #">
+              <input type="hidden" class="solid__background" value="#606060">
+              <input type="hidden" class="Quaternion" value="1 0 1 0">
+            </div>
+            <h2 class="solid__title title-h2">Biaugmented Truncated Cube (J67)</h2>
           </div>
-          <h2 class="solid__title title-h2">Biaugmented Truncated Cube (J67)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="12 65 42">
-            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
-            <input type="hidden" class="solid__vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 C9 C3,-C0 C9 C3,0.5 C7 C6,-0.5 C7 C6,0.0 C11 C1">
-            <input type="hidden" class="solid__faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,11 9 30 54 38 14 18 42 58 34 #,60 64 61 63 62 #,60 62 36 52 #,61 64 10 32 #,62 63 16 12 #,63 61 56 40 #,64 60 28 8 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 52 28 #,61 32 56 #,62 12 36 #,63 40 16 #,64 8 10 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="12 65 42">
+              <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
+              <input type="hidden" class="solid__vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 C9 C3,-C0 C9 C3,0.5 C7 C6,-0.5 C7 C6,0.0 C11 C1">
+              <input type="hidden" class="solid__faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,11 9 30 54 38 14 18 42 58 34 #,60 64 61 63 62 #,60 62 36 52 #,61 64 10 32 #,62 63 16 12 #,63 61 56 40 #,64 60 28 8 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 52 28 #,61 32 56 #,62 12 36 #,63 40 16 #,64 8 10 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Augmented Truncated Dodecahedron (J68)</h2>
           </div>
-          <h2 class="solid__title title-h2">Augmented Truncated Dodecahedron (J68)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="12 70 52">
-            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
-            <input type="hidden" class="solid__vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 -C9 C3,C0 C9 -C3,-C0 -C9 C3,-C0 C9 -C3,0.5 -C7 C6,0.5 C7 -C6,-0.5 -C7 C6,-0.5 C7 -C6,0.0 -C11 C1,0.0 C11 -C1">
-            <input type="hidden" class="solid__faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,8 10 32 56 40 16 12 36 52 28 #,9 11 35 59 43 19 15 39 55 31 #,60 64 66 62 68 #,61 65 67 63 69 #,60 68 9 30 #,61 69 8 29 #,62 66 42 58 #,63 67 41 57 #,64 60 54 38 #,65 61 53 37 #,66 64 14 18 #,67 65 13 17 #,68 62 34 11 #,69 63 33 10 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 30 54 #,61 29 53 #,62 58 34 #,63 57 33 #,64 38 14 #,65 37 13 #,66 18 42 #,67 17 41 #,68 11 9 #,69 10 8 #">
-            <input type="hidden" class="solid__background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 -1 1 1">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="12 70 52">
+              <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
+              <input type="hidden" class="solid__vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 -C9 C3,C0 C9 -C3,-C0 -C9 C3,-C0 C9 -C3,0.5 -C7 C6,0.5 C7 -C6,-0.5 -C7 C6,-0.5 C7 -C6,0.0 -C11 C1,0.0 C11 -C1">
+              <input type="hidden" class="solid__faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,8 10 32 56 40 16 12 36 52 28 #,9 11 35 59 43 19 15 39 55 31 #,60 64 66 62 68 #,61 65 67 63 69 #,60 68 9 30 #,61 69 8 29 #,62 66 42 58 #,63 67 41 57 #,64 60 54 38 #,65 61 53 37 #,66 64 14 18 #,67 65 13 17 #,68 62 34 11 #,69 63 33 10 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 30 54 #,61 29 53 #,62 58 34 #,63 57 33 #,64 38 14 #,65 37 13 #,66 18 42 #,67 17 41 #,68 11 9 #,69 10 8 #">
+              <input type="hidden" class="solid__background" value="#606060">
+              <input type="hidden" class="Quaternion" value="1 -1 1 1">
+            </div>
+            <h2 class="solid__title title-h2">Parabiaugmented Truncated Dodecahedron (J69)</h2>
           </div>
-          <h2 class="solid__title title-h2">Parabiaugmented Truncated Dodecahedron (J69)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="12 70 52">
-            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
-            <input type="hidden" class="solid__vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 C9 C3,C0 -C9 C3,-C0 C9 C3,-C0 -C9 C3,0.5 C7 C6,0.5 -C7 C6,-0.5 C7 C6,-0.5 -C7 C6,0.0 C11 C1,0.0 -C11 C1">
-            <input type="hidden" class="solid__faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,60 68 62 66 64 #,61 65 67 63 69 #,60 64 36 52 #,61 69 9 30 #,62 68 10 32 #,63 67 42 58 #,64 66 16 12 #,65 61 54 38 #,66 62 56 40 #,67 65 14 18 #,68 60 28 8 #,69 63 34 11 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 52 28 #,61 30 54 #,62 32 56 #,63 58 34 #,64 12 36 #,65 38 14 #,66 40 16 #,67 18 42 #,68 8 10 #,69 11 9 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="12 70 52">
+              <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
+              <input type="hidden" class="solid__vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C0 C9 C3,C0 -C9 C3,-C0 C9 C3,-C0 -C9 C3,0.5 C7 C6,0.5 -C7 C6,-0.5 C7 C6,-0.5 -C7 C6,0.0 C11 C1,0.0 -C11 C1">
+              <input type="hidden" class="solid__faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,4 5 21 45 53 29 28 52 44 20 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,7 6 24 48 56 32 33 57 49 25 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,60 68 62 66 64 #,61 65 67 63 69 #,60 64 36 52 #,61 69 9 30 #,62 68 10 32 #,63 67 42 58 #,64 66 16 12 #,65 61 54 38 #,66 62 56 40 #,67 65 14 18 #,68 60 28 8 #,69 63 34 11 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 52 28 #,61 30 54 #,62 32 56 #,63 58 34 #,64 12 36 #,65 38 14 #,66 40 16 #,67 18 42 #,68 8 10 #,69 11 9 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Metabiaugmented Truncated Dodecahedron (J70)</h2>
           </div>
-          <h2 class="solid__title title-h2">Metabiaugmented Truncated Dodecahedron (J70)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="12 75 62">
-            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
-            <input type="hidden" class="solid__vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C9 C3 C0,C9 C3 -C0,-C9 C3 C0,-C9 C3 -C0,C0 -C9 C3,-C0 -C9 C3,C7 C6 0.5,C7 C6 -0.5,-C7 C6 0.5,-C7 C6 -0.5,0.5 -C7 C6,-0.5 -C7 C6,C11 C1 0.0,-C11 C1 0.0,0.0 -C11 C1">
-            <input type="hidden" class="solid__faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,8 10 32 56 40 16 12 36 52 28 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,60 72 61 67 66 #,62 68 69 63 73 #,64 70 71 65 74 #,60 66 52 44 #,61 72 5 21 #,62 73 6 24 #,63 69 57 49 #,64 74 9 30 #,65 71 42 58 #,66 67 29 28 #,67 61 45 53 #,68 62 48 56 #,69 68 32 33 #,70 64 54 38 #,71 70 14 18 #,72 60 20 4 #,73 63 25 7 #,74 65 34 11 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 44 20 #,61 21 45 #,62 24 48 #,63 49 25 #,64 30 54 #,65 58 34 #,66 28 52 #,67 53 29 #,68 56 32 #,69 33 57 #,70 38 14 #,71 18 42 #,72 4 5 #,73 7 6 #,74 11 9 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="12 75 62">
+              <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,0.861803398874989484820458683437,1.30901699437494742410229341718,1.36180339887498948482045868344,1.61803398874989484820458683437,2.11803398874989484820458683437,2.17082039324993690892275210062,2.20344418537486330266596288468,2.61803398874989484820458683437,2.70344418537486330266596288468,2.927050983124842272306880251548,3.01246117974981072676825630186">
+              <input type="hidden" class="solid__vertices" value="0.0 0.5 C10,0.0 0.5 -C10,0.0 -0.5 C10,0.0 -0.5 -C10,C10 0.0 0.5,C10 0.0 -0.5,-C10 0.0 0.5,-C10 0.0 -0.5,0.5 C10 0.0,0.5 -C10 0.0,-0.5 C10 0.0,-0.5 -C10 0.0,0.5 C2 C8,0.5 C2 -C8,0.5 -C2 C8,0.5 -C2 -C8,-0.5 C2 C8,-0.5 C2 -C8,-0.5 -C2 C8,-0.5 -C2 -C8,C8 0.5 C2,C8 0.5 -C2,C8 -0.5 C2,C8 -0.5 -C2,-C8 0.5 C2,-C8 0.5 -C2,-C8 -0.5 C2,-C8 -0.5 -C2,C2 C8 0.5,C2 C8 -0.5,C2 -C8 0.5,C2 -C8 -0.5,-C2 C8 0.5,-C2 C8 -0.5,-C2 -C8 0.5,-C2 -C8 -0.5,C2 C4 C5,C2 C4 -C5,C2 -C4 C5,C2 -C4 -C5,-C2 C4 C5,-C2 C4 -C5,-C2 -C4 C5,-C2 -C4 -C5,C5 C2 C4,C5 C2 -C4,C5 -C2 C4,C5 -C2 -C4,-C5 C2 C4,-C5 C2 -C4,-C5 -C2 C4,-C5 -C2 -C4,C4 C5 C2,C4 C5 -C2,C4 -C5 C2,C4 -C5 -C2,-C4 C5 C2,-C4 C5 -C2,-C4 -C5 C2,-C4 -C5 -C2,C9 C3 C0,C9 C3 -C0,-C9 C3 C0,-C9 C3 -C0,C0 -C9 C3,-C0 -C9 C3,C7 C6 0.5,C7 C6 -0.5,-C7 C6 0.5,-C7 C6 -0.5,0.5 -C7 C6,-0.5 -C7 C6,C11 C1 0.0,-C11 C1 0.0,0.0 -C11 C1">
+              <input type="hidden" class="solid__faces" value="0 2 14 38 46 22 20 44 36 12 #,1 3 19 43 51 27 25 49 41 17 #,2 0 16 40 48 24 26 50 42 18 #,3 1 13 37 45 21 23 47 39 15 #,5 4 22 46 54 30 31 55 47 23 #,6 7 27 51 59 35 34 58 50 26 #,8 10 32 56 40 16 12 36 52 28 #,9 11 35 59 43 19 15 39 55 31 #,10 8 29 53 37 13 17 41 57 33 #,60 72 61 67 66 #,62 68 69 63 73 #,64 70 71 65 74 #,60 66 52 44 #,61 72 5 21 #,62 73 6 24 #,63 69 57 49 #,64 74 9 30 #,65 71 42 58 #,66 67 29 28 #,67 61 45 53 #,68 62 48 56 #,69 68 32 33 #,70 64 54 38 #,71 70 14 18 #,72 60 20 4 #,73 63 25 7 #,74 65 34 11 #,0 12 16 #,1 17 13 #,2 18 14 #,3 15 19 #,4 20 22 #,5 23 21 #,6 26 24 #,7 25 27 #,8 28 29 #,9 31 30 #,10 33 32 #,11 34 35 #,36 44 52 #,37 53 45 #,38 54 46 #,39 47 55 #,40 56 48 #,41 49 57 #,42 50 58 #,43 59 51 #,60 44 20 #,61 21 45 #,62 24 48 #,63 49 25 #,64 30 54 #,65 58 34 #,66 28 52 #,67 53 29 #,68 56 32 #,69 33 57 #,70 38 14 #,71 18 42 #,72 4 5 #,73 7 6 #,74 11 9 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Triaugmented Truncated Dodecahedron (J71)</h2>
           </div>
-          <h2 class="solid__title title-h2">Triaugmented Truncated Dodecahedron (J71)</h2>
         </li>
       </ul>
     </div>
@@ -148,8 +163,8 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
-<script src="/js/rendering-polyhedra.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 
 </body>
 </html>

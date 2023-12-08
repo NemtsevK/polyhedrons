@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+
 <html class="page" lang="en">
 <head>
   <title>Self-Intersecting Quasi-Regular Duals</title>
   <meta charset="UTF-8">
 <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" href="/images/favicons/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/images/favicons/apple.png">
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="preload" href="/fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="/fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" href="../../images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../images/favicons/apple.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="preload" href="../../fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="../../fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="../../css/style.css">
 
 </head>
 <body class="page__body">
@@ -37,58 +38,68 @@
         <p class="solids__text">The dual of a quasi-regular polyhedron is face-transitive and edge-transitive but not vertex-transitive. In this context, transitivity means that for any two faces (edges, vertices) of the polyhedron, there exists a translation, rotation, and/or reflection that leaves the outward appearance of the polyhedron unchanged yet moves one face (edge, vertex) to the other. This definition implies that a quasi-regular dual must have two kinds of regular vertices, where each vertex of one type is connected along all of its edges to vertices of the other type. There are only two quasi-regular duals that are not self-intersecting, namely the Rhombic Dodecahedron and the Rhombic Triacontahedron. When self-intersection is allowed, there are 14 other quasi-regular duals, but only five of these are finite. The nine versi-regular polyhedra, due to their faces that pass through their centers, produce duals with vertices at infinity.</p>
       </div>
       <ul class="solids__list">
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="4 24 20">
-            <input type="hidden" class="solid__constants" value="0.381966011250105151795413165634,0.618033988749894848204586834366,1.61803398874989484820458683437,2.61803398874989484820458683437">
-            <input type="hidden" class="solid__vertices" value="C2 0.0 C3,C2 0.0 -C3,-C2 0.0 C3,-C2 0.0 -C3,C3 C2 0.0,C3 -C2 0.0,-C3 C2 0.0,-C3 -C2 0.0,0.0 C3 C2,0.0 C3 -C2,0.0 -C3 C2,0.0 -C3 -C2,C0 0.0 C1,C0 0.0 -C1,-C0 0.0 C1,-C0 0.0 -C1,C1 C0 0.0,C1 -C0 0.0,-C1 C0 0.0,-C1 -C0 0.0,0.0 C1 C0,0.0 C1 -C0,0.0 -C1 C0,0.0 -C1 -C0">
-            <input type="hidden" class="solid__faces" value="0 14 6 19 11 22 #,0 22 7 23 1 17 #,0 17 11 13 9 16 #,0 16 1 21 6 20 #,0 20 9 18 7 14 #,3 13 4 17 10 23 #,3 23 5 22 2 19 #,3 19 10 14 8 18 #,3 18 2 20 4 21 #,3 21 8 16 5 13 #,12 2 22 11 17 4 #,12 4 20 6 14 10 #,12 10 17 1 16 8 #,12 8 14 7 22 5 #,12 5 16 9 20 2 #,15 1 23 10 19 6 #,15 6 21 4 13 11 #,15 11 19 2 18 9 #,15 9 13 5 23 7 #,15 7 18 8 21 1 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="4 24 20">
+              <input type="hidden" class="solid__constants" value="0.381966011250105151795413165634,0.618033988749894848204586834366,1.61803398874989484820458683437,2.61803398874989484820458683437">
+              <input type="hidden" class="solid__vertices" value="C2 0.0 C3,C2 0.0 -C3,-C2 0.0 C3,-C2 0.0 -C3,C3 C2 0.0,C3 -C2 0.0,-C3 C2 0.0,-C3 -C2 0.0,0.0 C3 C2,0.0 C3 -C2,0.0 -C3 C2,0.0 -C3 -C2,C0 0.0 C1,C0 0.0 -C1,-C0 0.0 C1,-C0 0.0 -C1,C1 C0 0.0,C1 -C0 0.0,-C1 C0 0.0,-C1 -C0 0.0,0.0 C1 C0,0.0 C1 -C0,0.0 -C1 C0,0.0 -C1 -C0">
+              <input type="hidden" class="solid__faces" value="0 14 6 19 11 22 #,0 22 7 23 1 17 #,0 17 11 13 9 16 #,0 16 1 21 6 20 #,0 20 9 18 7 14 #,3 13 4 17 10 23 #,3 23 5 22 2 19 #,3 19 10 14 8 18 #,3 18 2 20 4 21 #,3 21 8 16 5 13 #,12 2 22 11 17 4 #,12 4 20 6 14 10 #,12 10 17 1 16 8 #,12 8 14 7 22 5 #,12 5 16 9 20 2 #,15 1 23 10 19 6 #,15 6 21 4 13 11 #,15 11 19 2 18 9 #,15 9 13 5 23 7 #,15 7 18 8 21 1 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Medial Triambic Icosahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="5 32 20">
-            <input type="hidden" class="solid__constants" value="0.276393202250021030359082633127,0.381966011250105151795413165634,0.447213595499957939281834733746,0.618033988749894848204586834366,0.723606797749978969640917366873">
-            <input type="hidden" class="solid__vertices" value="0.0 C0 C4,0.0 C0 -C4,0.0 -C0 C4,0.0 -C0 -C4,C4 0.0 C0,C4 0.0 -C0,-C4 0.0 C0,-C4 0.0 -C0,C0 C4 0.0,C0 -C4 0.0,-C0 C4 0.0,-C0 -C4 0.0,C1 0.0 C3,C1 0.0 -C3,-C1 0.0 C3,-C1 0.0 -C3,C3 C1 0.0,C3 -C1 0.0,-C3 C1 0.0,-C3 -C1 0.0,0.0 C3 C1,0.0 C3 -C1,0.0 -C3 C1,0.0 -C3 -C1,C2 C2 C2,C2 C2 -C2,C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
-            <input type="hidden" class="solid__faces" value="12 0 14 30 22 26 #,12 26 17 5 16 24 #,12 24 20 28 14 2 #,12 2 22 9 17 4 #,12 4 16 8 20 0 #,15 1 13 27 23 31 #,15 31 19 6 18 29 #,15 29 21 25 13 3 #,15 3 23 11 19 7 #,15 7 18 10 21 1 #,13 1 21 8 16 5 #,13 5 17 9 23 3 #,13 25 16 4 17 27 #,14 0 20 10 18 6 #,14 6 19 11 22 2 #,14 28 18 7 19 30 #,20 8 21 29 18 28 #,20 24 16 25 21 10 #,22 11 23 27 17 26 #,22 30 19 31 23 9 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="5 32 20">
+              <input type="hidden" class="solid__constants" value="0.276393202250021030359082633127,0.381966011250105151795413165634,0.447213595499957939281834733746,0.618033988749894848204586834366,0.723606797749978969640917366873">
+              <input type="hidden" class="solid__vertices" value="0.0 C0 C4,0.0 C0 -C4,0.0 -C0 C4,0.0 -C0 -C4,C4 0.0 C0,C4 0.0 -C0,-C4 0.0 C0,-C4 0.0 -C0,C0 C4 0.0,C0 -C4 0.0,-C0 C4 0.0,-C0 -C4 0.0,C1 0.0 C3,C1 0.0 -C3,-C1 0.0 C3,-C1 0.0 -C3,C3 C1 0.0,C3 -C1 0.0,-C3 C1 0.0,-C3 -C1 0.0,0.0 C3 C1,0.0 C3 -C1,0.0 -C3 C1,0.0 -C3 -C1,C2 C2 C2,C2 C2 -C2,C2 -C2 C2,C2 -C2 -C2,-C2 C2 C2,-C2 C2 -C2,-C2 -C2 C2,-C2 -C2 -C2">
+              <input type="hidden" class="solid__faces" value="12 0 14 30 22 26 #,12 26 17 5 16 24 #,12 24 20 28 14 2 #,12 2 22 9 17 4 #,12 4 16 8 20 0 #,15 1 13 27 23 31 #,15 31 19 6 18 29 #,15 29 21 25 13 3 #,15 3 23 11 19 7 #,15 7 18 10 21 1 #,13 1 21 8 16 5 #,13 5 17 9 23 3 #,13 25 16 4 17 27 #,14 0 20 10 18 6 #,14 6 19 11 22 2 #,14 28 18 7 19 30 #,20 8 21 29 18 28 #,20 24 16 25 21 10 #,22 11 23 27 17 26 #,22 30 19 31 23 9 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Small Triambic Icosahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="5 32 20">
-            <input type="hidden" class="solid__constants" value="0.276393202250021030359082633127,0.447213595499957939281834733746,0.723606797749978969640917366873,1.61803398874989484820458683437,2.61803398874989484820458683437">
-            <input type="hidden" class="solid__vertices" value="C2 0.0 C0,C2 0.0 -C0,-C2 0.0 C0,-C2 0.0 -C0,0.0 C0 C2,0.0 C0 -C2,0.0 -C0 C2,0.0 -C0 -C2,C0 C2 0.0,-C0 C2 0.0,C0 -C2 0.0,-C0 -C2 0.0,0.0 C4 -C3,0.0 C4 C3,0.0 -C4 -C3,0.0 -C4 C3,C4 -C3 0.0,-C4 -C3 0.0,C4 C3 0.0,-C4 C3 0.0,-C3 0.0 C4,-C3 0.0 -C4,C3 0.0 C4,C3 0.0 -C4,-C1 -C1 -C1,-C1 -C1 C1,C1 -C1 -C1,C1 -C1 C1,-C1 C1 -C1,-C1 C1 C1,C1 C1 -C1,C1 C1 C1">
-            <input type="hidden" class="solid__faces" value="12 0 14 30 22 26 #,12 26 17 5 16 24 #,12 24 20 28 14 2 #,12 2 22 9 17 4 #,12 4 16 8 20 0 #,15 1 13 27 23 31 #,15 31 19 6 18 29 #,15 29 21 25 13 3 #,15 3 23 11 19 7 #,15 7 18 10 21 1 #,13 1 21 8 16 5 #,13 5 17 9 23 3 #,13 25 16 4 17 27 #,14 0 20 10 18 6 #,14 6 19 11 22 2 #,14 28 18 7 19 30 #,20 8 21 29 18 28 #,20 24 16 25 21 10 #,22 11 23 27 17 26 #,22 30 19 31 23 9 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="5 32 20">
+              <input type="hidden" class="solid__constants" value="0.276393202250021030359082633127,0.447213595499957939281834733746,0.723606797749978969640917366873,1.61803398874989484820458683437,2.61803398874989484820458683437">
+              <input type="hidden" class="solid__vertices" value="C2 0.0 C0,C2 0.0 -C0,-C2 0.0 C0,-C2 0.0 -C0,0.0 C0 C2,0.0 C0 -C2,0.0 -C0 C2,0.0 -C0 -C2,C0 C2 0.0,-C0 C2 0.0,C0 -C2 0.0,-C0 -C2 0.0,0.0 C4 -C3,0.0 C4 C3,0.0 -C4 -C3,0.0 -C4 C3,C4 -C3 0.0,-C4 -C3 0.0,C4 C3 0.0,-C4 C3 0.0,-C3 0.0 C4,-C3 0.0 -C4,C3 0.0 C4,C3 0.0 -C4,-C1 -C1 -C1,-C1 -C1 C1,C1 -C1 -C1,C1 -C1 C1,-C1 C1 -C1,-C1 C1 C1,C1 C1 -C1,C1 C1 C1">
+              <input type="hidden" class="solid__faces" value="12 0 14 30 22 26 #,12 26 17 5 16 24 #,12 24 20 28 14 2 #,12 2 22 9 17 4 #,12 4 16 8 20 0 #,15 1 13 27 23 31 #,15 31 19 6 18 29 #,15 29 21 25 13 3 #,15 3 23 11 19 7 #,15 7 18 10 21 1 #,13 1 21 8 16 5 #,13 5 17 9 23 3 #,13 25 16 4 17 27 #,14 0 20 10 18 6 #,14 6 19 11 22 2 #,14 28 18 7 19 30 #,20 8 21 29 18 28 #,20 24 16 25 21 10 #,22 11 23 27 17 26 #,22 30 19 31 23 9 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Great Triambic Icosahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="2 24 30">
-            <input type="hidden" class="solid__constants" value="0.463525491562421136153440125774,1.21352549156242113615344012577">
-            <input type="hidden" class="solid__vertices" value="0.75 0.0 C1,0.75 0.0 -C1,-0.75 0.0 C1,-0.75 0.0 -C1,C1 0.75 0.0,C1 -0.75 0.0,-C1 0.75 0.0,-C1 -0.75 0.0,0.0 C1 0.75,0.0 C1 -0.75,0.0 -C1 0.75,0.0 -C1 -0.75,C0 0.0 0.75,C0 0.0 -0.75,-C0 0.0 0.75,-C0 0.0 -0.75,0.75 C0 0.0,0.75 -C0 0.0,-0.75 C0 0.0,-0.75 -C0 0.0,0.0 0.75 C0,0.0 0.75 -C0,0.0 -0.75 C0,0.0 -0.75 -C0">
-            <input type="hidden" class="solid__faces" value="0 14 7 22 #,0 22 11 17 #,0 17 1 16 #,0 16 9 20 #,0 20 6 14 #,3 13 5 23 #,3 23 10 19 #,3 19 2 18 #,3 18 8 21 #,3 21 4 13 #,1 15 6 21 #,1 21 8 16 #,2 19 11 22 #,2 22 5 12 #,4 21 6 20 #,4 20 2 12 #,5 13 9 16 #,5 16 8 12 #,6 15 11 19 #,6 19 10 14 #,7 15 1 23 #,7 23 5 22 #,8 18 7 14 #,8 14 10 12 #,9 15 7 18 #,9 18 2 20 #,10 23 1 17 #,10 17 4 12 #,11 15 9 13 #,11 13 4 17 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="2 24 30">
+              <input type="hidden" class="solid__constants" value="0.463525491562421136153440125774,1.21352549156242113615344012577">
+              <input type="hidden" class="solid__vertices" value="0.75 0.0 C1,0.75 0.0 -C1,-0.75 0.0 C1,-0.75 0.0 -C1,C1 0.75 0.0,C1 -0.75 0.0,-C1 0.75 0.0,-C1 -0.75 0.0,0.0 C1 0.75,0.0 C1 -0.75,0.0 -C1 0.75,0.0 -C1 -0.75,C0 0.0 0.75,C0 0.0 -0.75,-C0 0.0 0.75,-C0 0.0 -0.75,0.75 C0 0.0,0.75 -C0 0.0,-0.75 C0 0.0,-0.75 -C0 0.0,0.0 0.75 C0,0.0 0.75 -C0,0.0 -0.75 C0,0.0 -0.75 -C0">
+              <input type="hidden" class="solid__faces" value="0 14 7 22 #,0 22 11 17 #,0 17 1 16 #,0 16 9 20 #,0 20 6 14 #,3 13 5 23 #,3 23 10 19 #,3 19 2 18 #,3 18 8 21 #,3 21 4 13 #,1 15 6 21 #,1 21 8 16 #,2 19 11 22 #,2 22 5 12 #,4 21 6 20 #,4 20 2 12 #,5 13 9 16 #,5 16 8 12 #,6 15 11 19 #,6 19 10 14 #,7 15 1 23 #,7 23 5 22 #,8 18 7 14 #,8 14 10 12 #,9 15 7 18 #,9 18 2 20 #,10 23 1 17 #,10 17 4 12 #,11 15 9 13 #,11 13 4 17 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Medial Rhombic Triacontahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 32 30">
-            <input type="hidden" class="solid__constants" value="0.213525491562421136153440125774,0.345491502812526287948853291409,0.559016994374947424102293417183">
-            <input type="hidden" class="solid__vertices" value="0.0 -C1 C0,0.0 -C1 -C0,0.0 C1 C0,0.0 C1 -C0,-C1 C0 0.0,C1 C0 0.0,-C1 -C0 0.0,C1 -C0 0.0,C0 0.0 -C1,C0 0.0 C1,-C0 0.0 -C1,-C0 0.0 C1,C2 0.0 C0,C2 0.0 -C0,-C2 0.0 C0,-C2 0.0 -C0,0.0 C0 C2,0.0 C0 -C2,0.0 -C0 C2,0.0 -C0 -C2,C0 C2 0.0,-C0 C2 0.0,C0 -C2 0.0,-C0 -C2 0.0,-C1 -C1 -C1,-C1 -C1 C1,C1 -C1 -C1,C1 -C1 C1,-C1 C1 -C1,-C1 C1 C1,C1 C1 -C1,C1 C1 C1">
-            <input type="hidden" class="solid__faces" value="0 12 2 14 #,0 14 10 26 #,0 26 5 16 #,1 13 9 25 #,1 25 4 17 #,1 17 5 27 #,2 28 6 18 #,2 18 7 30 #,2 30 10 14 #,3 19 6 29 #,3 29 9 13 #,3 13 1 15 #,4 20 8 24 #,4 24 0 16 #,4 16 5 17 #,7 18 6 19 #,7 19 3 31 #,7 31 11 23 #,8 22 6 28 #,8 28 2 12 #,8 12 0 24 #,9 29 6 22 #,9 22 8 20 #,9 20 4 25 #,10 30 7 23 #,10 23 11 21 #,10 21 5 26 #,11 31 3 15 #,11 15 1 27 #,11 27 5 21 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 32 30">
+              <input type="hidden" class="solid__constants" value="0.213525491562421136153440125774,0.345491502812526287948853291409,0.559016994374947424102293417183">
+              <input type="hidden" class="solid__vertices" value="0.0 -C1 C0,0.0 -C1 -C0,0.0 C1 C0,0.0 C1 -C0,-C1 C0 0.0,C1 C0 0.0,-C1 -C0 0.0,C1 -C0 0.0,C0 0.0 -C1,C0 0.0 C1,-C0 0.0 -C1,-C0 0.0 C1,C2 0.0 C0,C2 0.0 -C0,-C2 0.0 C0,-C2 0.0 -C0,0.0 C0 C2,0.0 C0 -C2,0.0 -C0 C2,0.0 -C0 -C2,C0 C2 0.0,-C0 C2 0.0,C0 -C2 0.0,-C0 -C2 0.0,-C1 -C1 -C1,-C1 -C1 C1,C1 -C1 -C1,C1 -C1 C1,-C1 C1 -C1,-C1 C1 C1,C1 C1 -C1,C1 C1 C1">
+              <input type="hidden" class="solid__faces" value="0 12 2 14 #,0 14 10 26 #,0 26 5 16 #,1 13 9 25 #,1 25 4 17 #,1 17 5 27 #,2 28 6 18 #,2 18 7 30 #,2 30 10 14 #,3 19 6 29 #,3 29 9 13 #,3 13 1 15 #,4 20 8 24 #,4 24 0 16 #,4 16 5 17 #,7 18 6 19 #,7 19 3 31 #,7 31 11 23 #,8 22 6 28 #,8 28 2 12 #,8 12 0 24 #,9 29 6 22 #,9 22 8 20 #,9 20 4 25 #,10 30 7 23 #,10 23 11 21 #,10 21 5 26 #,11 31 3 15 #,11 15 1 27 #,11 27 5 21 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Great Rhombic Triacontahedron</h2>
           </div>
         </li>
@@ -122,8 +133,8 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
-<script src="/js/rendering-polyhedra.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 
 </body>
 </html>

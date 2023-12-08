@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+
 <html class="page" lang="en">
 <head>
   <title>Greater Self-Dual Solids</title>
   <meta charset="UTF-8">
 <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" href="/images/favicons/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/images/favicons/apple.png">
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="preload" href="/fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="/fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" href="../../images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../images/favicons/apple.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="preload" href="../../fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="../../fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="../../css/style.css">
 
 </head>
 <body class="page__body">
@@ -37,126 +38,149 @@
         <p class="solids__text">Each self-dual polyhedron on this page has more than 16 faces and has full tetrahedral or chiral tetrahedral symmetry.</p>
       </div>
       <ul class="solids__list">
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="6 28 28">
-            <input type="hidden" class="solid__constants" value="0.0830416743186270747724725622094,0.162729744807577638189374631423,0.348052140635926157560613508237,0.635368081519064647543856640606,0.661908915929608782239574388151,0.792372129605812073433658936844">
-            <input type="hidden" class="solid__vertices" value="C2 C1 1.0,C2 -C1 -1.0,-C2 -C1 1.0,-C2 C1 -1.0,1.0 C2 C1,1.0 -C2 -C1,-1.0 -C2 C1,-1.0 C2 -C1,C1 1.0 C2,C1 -1.0 -C2,-C1 -1.0 C2,-C1 1.0 -C2,C0 C3 C5,C0 -C3 -C5,-C0 -C3 C5,-C0 C3 -C5,C5 C0 C3,C5 -C0 -C3,-C5 -C0 C3,-C5 C0 -C3,C3 C5 C0,C3 -C5 -C0,-C3 -C5 C0,-C3 C5 -C0,C4 -C4 C4,C4 C4 -C4,-C4 C4 C4,-C4 -C4 -C4">
-            <input type="hidden" class="solid__faces" value="0 16 4 20 8 12 #,1 17 5 21 9 13 #,2 18 6 22 10 14 #,3 19 7 23 11 15 #,12 26 2 0 #,13 27 3 1 #,14 24 0 2 #,15 25 1 3 #,16 24 5 4 #,17 25 4 5 #,18 26 7 6 #,19 27 6 7 #,20 25 11 8 #,21 24 10 9 #,22 27 9 10 #,23 26 8 11 #,12 8 26 #,13 9 27 #,14 10 24 #,15 11 25 #,16 0 24 #,17 1 25 #,18 2 26 #,19 3 27 #,20 4 25 #,21 5 24 #,22 6 27 #,23 7 26 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="6 28 28">
+              <input type="hidden" class="solid__constants" value="0.0830416743186270747724725622094,0.162729744807577638189374631423,0.348052140635926157560613508237,0.635368081519064647543856640606,0.661908915929608782239574388151,0.792372129605812073433658936844">
+              <input type="hidden" class="solid__vertices" value="C2 C1 1.0,C2 -C1 -1.0,-C2 -C1 1.0,-C2 C1 -1.0,1.0 C2 C1,1.0 -C2 -C1,-1.0 -C2 C1,-1.0 C2 -C1,C1 1.0 C2,C1 -1.0 -C2,-C1 -1.0 C2,-C1 1.0 -C2,C0 C3 C5,C0 -C3 -C5,-C0 -C3 C5,-C0 C3 -C5,C5 C0 C3,C5 -C0 -C3,-C5 -C0 C3,-C5 C0 -C3,C3 C5 C0,C3 -C5 -C0,-C3 -C5 C0,-C3 C5 -C0,C4 -C4 C4,C4 C4 -C4,-C4 C4 C4,-C4 -C4 -C4">
+              <input type="hidden" class="solid__faces" value="0 16 4 20 8 12 #,1 17 5 21 9 13 #,2 18 6 22 10 14 #,3 19 7 23 11 15 #,12 26 2 0 #,13 27 3 1 #,14 24 0 2 #,15 25 1 3 #,16 24 5 4 #,17 25 4 5 #,18 26 7 6 #,19 27 6 7 #,20 25 11 8 #,21 24 10 9 #,22 27 9 10 #,23 26 8 11 #,12 8 26 #,13 9 27 #,14 10 24 #,15 11 25 #,16 0 24 #,17 1 25 #,18 2 26 #,19 3 27 #,20 4 25 #,21 5 24 #,22 6 27 #,23 7 26 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Icosioctahedron #1 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Icosioctahedron #1 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 28 28">
-            <input type="hidden" class="solid__constants" value="0.142857142857142857142857142857,0.333333333333333333333333333333,0.714285714285714285714285714286">
-            <input type="hidden" class="solid__vertices" value="C1 C1 1.0,C1 -C1 -1.0,-C1 -C1 1.0,-C1 C1 -1.0,1.0 C1 C1,1.0 -C1 -C1,-1.0 -C1 C1,-1.0 C1 -C1,C1 1.0 C1,C1 -1.0 -C1,-C1 -1.0 C1,-C1 1.0 -C1,C2 -C0 C2,C2 C0 -C2,-C2 C0 C2,-C2 -C0 -C2,C2 -C2 C0,C2 C2 -C0,-C2 C2 C0,-C2 -C2 -C0,C0 -C2 C2,C0 C2 -C2,-C0 C2 C2,-C0 -C2 -C2,0.6 -0.6 0.6,0.6 0.6 -0.6,-0.6 0.6 0.6,-0.6 -0.6 -0.6">
-            <input type="hidden" class="solid__faces" value="24 12 0 2 20 #,24 20 10 9 16 #,24 16 5 4 12 #,25 13 1 3 21 #,25 21 11 8 17 #,25 17 4 5 13 #,26 14 2 0 22 #,26 22 8 11 18 #,26 18 7 6 14 #,27 15 3 1 23 #,27 23 9 10 19 #,27 19 6 7 15 #,0 4 8 #,1 5 9 #,2 6 10 #,3 7 11 #,12 4 0 #,13 5 1 #,14 6 2 #,15 7 3 #,16 9 5 #,17 8 4 #,18 11 7 #,19 10 6 #,20 2 10 #,21 3 11 #,22 0 8 #,23 1 9 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 28 28">
+              <input type="hidden" class="solid__constants" value="0.142857142857142857142857142857,0.333333333333333333333333333333,0.714285714285714285714285714286">
+              <input type="hidden" class="solid__vertices" value="C1 C1 1.0,C1 -C1 -1.0,-C1 -C1 1.0,-C1 C1 -1.0,1.0 C1 C1,1.0 -C1 -C1,-1.0 -C1 C1,-1.0 C1 -C1,C1 1.0 C1,C1 -1.0 -C1,-C1 -1.0 C1,-C1 1.0 -C1,C2 -C0 C2,C2 C0 -C2,-C2 C0 C2,-C2 -C0 -C2,C2 -C2 C0,C2 C2 -C0,-C2 C2 C0,-C2 -C2 -C0,C0 -C2 C2,C0 C2 -C2,-C0 C2 C2,-C0 -C2 -C2,0.6 -0.6 0.6,0.6 0.6 -0.6,-0.6 0.6 0.6,-0.6 -0.6 -0.6">
+              <input type="hidden" class="solid__faces" value="24 12 0 2 20 #,24 20 10 9 16 #,24 16 5 4 12 #,25 13 1 3 21 #,25 21 11 8 17 #,25 17 4 5 13 #,26 14 2 0 22 #,26 22 8 11 18 #,26 18 7 6 14 #,27 15 3 1 23 #,27 23 9 10 19 #,27 19 6 7 15 #,0 4 8 #,1 5 9 #,2 6 10 #,3 7 11 #,12 4 0 #,13 5 1 #,14 6 2 #,15 7 3 #,16 9 5 #,17 8 4 #,18 11 7 #,19 10 6 #,20 2 10 #,21 3 11 #,22 0 8 #,23 1 9 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Icosioctahedron #2 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Icosioctahedron #2 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="6 28 28">
-            <input type="hidden" class="solid__constants" value="0.139680581996106531822799916239,0.451970099801088404689512849409,0.509755332493385520099017792717,0.579379294193552041397433744121,0.5863044679044376705219565084653,0.687710482195018127133287066830">
-            <input type="hidden" class="solid__vertices" value="C0 C2 1.0,C0 -C2 -1.0,-C0 -C2 1.0,-C0 C2 -1.0,1.0 C0 C2,1.0 -C0 -C2,-1.0 -C0 C2,-1.0 C0 -C2,C2 1.0 C0,C2 -1.0 -C0,-C2 -1.0 C0,-C2 1.0 -C0,C1 -C4 C5,C1 C4 -C5,-C1 C4 C5,-C1 -C4 -C5,C5 -C1 C4,C5 C1 -C4,-C5 C1 C4,-C5 -C1 -C4,C4 -C5 C1,C4 C5 -C1,-C4 C5 C1,-C4 -C5 -C1,C3 C3 C3,C3 -C3 -C3,-C3 -C3 C3,-C3 C3 -C3">
-            <input type="hidden" class="solid__faces" value="0 8 11 22 14 #,1 9 10 23 15 #,2 10 9 20 12 #,3 11 8 21 13 #,4 0 2 12 16 #,5 1 3 13 17 #,6 2 0 14 18 #,7 3 1 15 19 #,8 4 5 17 21 #,9 5 4 16 20 #,10 6 7 19 23 #,11 7 6 18 22 #,24 0 4 #,24 4 8 #,24 8 0 #,25 1 5 #,25 5 9 #,25 9 1 #,26 2 6 #,26 6 10 #,26 10 2 #,27 3 7 #,27 7 11 #,27 11 3 #,12 20 16 #,13 21 17 #,14 22 18 #,15 23 19 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="6 28 28">
+              <input type="hidden" class="solid__constants" value="0.139680581996106531822799916239,0.451970099801088404689512849409,0.509755332493385520099017792717,0.579379294193552041397433744121,0.5863044679044376705219565084653,0.687710482195018127133287066830">
+              <input type="hidden" class="solid__vertices" value="C0 C2 1.0,C0 -C2 -1.0,-C0 -C2 1.0,-C0 C2 -1.0,1.0 C0 C2,1.0 -C0 -C2,-1.0 -C0 C2,-1.0 C0 -C2,C2 1.0 C0,C2 -1.0 -C0,-C2 -1.0 C0,-C2 1.0 -C0,C1 -C4 C5,C1 C4 -C5,-C1 C4 C5,-C1 -C4 -C5,C5 -C1 C4,C5 C1 -C4,-C5 C1 C4,-C5 -C1 -C4,C4 -C5 C1,C4 C5 -C1,-C4 C5 C1,-C4 -C5 -C1,C3 C3 C3,C3 -C3 -C3,-C3 -C3 C3,-C3 C3 -C3">
+              <input type="hidden" class="solid__faces" value="0 8 11 22 14 #,1 9 10 23 15 #,2 10 9 20 12 #,3 11 8 21 13 #,4 0 2 12 16 #,5 1 3 13 17 #,6 2 0 14 18 #,7 3 1 15 19 #,8 4 5 17 21 #,9 5 4 16 20 #,10 6 7 19 23 #,11 7 6 18 22 #,24 0 4 #,24 4 8 #,24 8 0 #,25 1 5 #,25 5 9 #,25 9 1 #,26 2 6 #,26 6 10 #,26 10 2 #,27 3 7 #,27 7 11 #,27 11 3 #,12 20 16 #,13 21 17 #,14 22 18 #,15 23 19 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Icosioctahedron #3 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Icosioctahedron #3 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="4 28 28">
-            <input type="hidden" class="solid__constants" value="0.242535625036332973518906462116,0.280776406404415137455352463994,0.589015089373951507117344265139,0.727606875108998920556719386348">
-            <input type="hidden" class="solid__vertices" value="C1 C1 1.0,C1 -C1 -1.0,-C1 -C1 1.0,-C1 C1 -1.0,1.0 C1 C1,1.0 -C1 -C1,-1.0 -C1 C1,-1.0 C1 -C1,C1 1.0 C1,C1 -1.0 -C1,-C1 -1.0 C1,-C1 1.0 -C1,C3 -C0 C3,C3 C0 -C3,-C3 C0 C3,-C3 -C0 -C3,C3 -C3 C0,C3 C3 -C0,-C3 C3 C0,-C3 -C3 -C0,C0 -C3 C3,C0 C3 -C3,-C0 C3 C3,-C0 -C3 -C3,C2 C2 C2,C2 -C2 -C2,-C2 -C2 C2,-C2 C2 -C2">
-            <input type="hidden" class="solid__faces" value="0 2 20 12 #,1 3 21 13 #,2 0 22 14 #,3 1 23 15 #,4 5 13 17 #,5 4 12 16 #,6 7 15 19 #,7 6 14 18 #,8 11 18 22 #,9 10 19 23 #,10 9 16 20 #,11 8 17 21 #,24 0 12 4 #,24 4 17 8 #,24 8 22 0 #,25 1 13 5 #,25 5 16 9 #,25 9 23 1 #,26 2 14 6 #,26 6 19 10 #,26 10 20 2 #,27 3 15 7 #,27 7 18 11 #,27 11 21 3 #,12 20 16 #,13 21 17 #,14 22 18 #,15 23 19 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="4 28 28">
+              <input type="hidden" class="solid__constants" value="0.242535625036332973518906462116,0.280776406404415137455352463994,0.589015089373951507117344265139,0.727606875108998920556719386348">
+              <input type="hidden" class="solid__vertices" value="C1 C1 1.0,C1 -C1 -1.0,-C1 -C1 1.0,-C1 C1 -1.0,1.0 C1 C1,1.0 -C1 -C1,-1.0 -C1 C1,-1.0 C1 -C1,C1 1.0 C1,C1 -1.0 -C1,-C1 -1.0 C1,-C1 1.0 -C1,C3 -C0 C3,C3 C0 -C3,-C3 C0 C3,-C3 -C0 -C3,C3 -C3 C0,C3 C3 -C0,-C3 C3 C0,-C3 -C3 -C0,C0 -C3 C3,C0 C3 -C3,-C0 C3 C3,-C0 -C3 -C3,C2 C2 C2,C2 -C2 -C2,-C2 -C2 C2,-C2 C2 -C2">
+              <input type="hidden" class="solid__faces" value="0 2 20 12 #,1 3 21 13 #,2 0 22 14 #,3 1 23 15 #,4 5 13 17 #,5 4 12 16 #,6 7 15 19 #,7 6 14 18 #,8 11 18 22 #,9 10 19 23 #,10 9 16 20 #,11 8 17 21 #,24 0 12 4 #,24 4 17 8 #,24 8 22 0 #,25 1 13 5 #,25 5 16 9 #,25 9 23 1 #,26 2 14 6 #,26 6 19 10 #,26 10 20 2 #,27 3 15 7 #,27 7 18 11 #,27 11 21 3 #,12 20 16 #,13 21 17 #,14 22 18 #,15 23 19 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Icosioctahedron #4 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Icosioctahedron #4 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="9 40 40">
-            <input type="hidden" class="solid__constants" value="0.0490015731500279325371430423938,0.0681036422973354152851157420679,0.159514480780072250932611803373,0.307702842159929163125909364106,0.560814325330605125485968584746,0.668692517015890858634962154790,0.681562290987817606138162927494,0.749523232774082622886415970296,0.8382993553120608732874368406653">
-            <input type="hidden" class="solid__vertices" value="C3 C2 1.0,C3 -C2 -1.0,-C3 -C2 1.0,-C3 C2 -1.0,1.0 C3 C2,1.0 -C3 -C2,-1.0 -C3 C2,-1.0 C3 -C2,C2 1.0 C3,C2 -1.0 -C3,-C2 -1.0 C3,-C2 1.0 -C3,C1 C4 C8,C1 -C4 -C8,-C1 -C4 C8,-C1 C4 -C8,C8 C1 C4,C8 -C1 -C4,-C8 -C1 C4,-C8 C1 -C4,C4 C8 C1,C4 -C8 -C1,-C4 -C8 C1,-C4 C8 -C1,C5 C0 C7,C5 -C0 -C7,-C5 -C0 C7,-C5 C0 -C7,C7 C5 C0,C7 -C5 -C0,-C7 -C5 C0,-C7 C5 -C0,C0 C7 C5,C0 -C7 -C5,-C0 -C7 C5,-C0 C7 -C5,C6 -C6 C6,C6 C6 -C6,-C6 C6 C6,-C6 -C6 -C6">
-            <input type="hidden" class="solid__faces" value="0 24 16 4 28 20 8 32 12 #,1 25 17 5 29 21 9 33 13 #,2 26 18 6 30 22 10 34 14 #,3 27 19 7 31 23 11 35 15 #,12 38 2 0 #,13 39 3 1 #,14 36 0 2 #,15 37 1 3 #,16 36 5 4 #,17 37 4 5 #,18 38 7 6 #,19 39 6 7 #,20 37 11 8 #,21 36 10 9 #,22 39 9 10 #,23 38 8 11 #,0 36 24 #,1 37 25 #,2 38 26 #,3 39 27 #,4 37 28 #,5 36 29 #,6 39 30 #,7 38 31 #,8 38 32 #,9 39 33 #,10 36 34 #,11 37 35 #,12 32 38 #,13 33 39 #,14 34 36 #,15 35 37 #,16 24 36 #,17 25 37 #,18 26 38 #,19 27 39 #,20 28 37 #,21 29 36 #,22 30 39 #,23 31 38 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="9 40 40">
+              <input type="hidden" class="solid__constants" value="0.0490015731500279325371430423938,0.0681036422973354152851157420679,0.159514480780072250932611803373,0.307702842159929163125909364106,0.560814325330605125485968584746,0.668692517015890858634962154790,0.681562290987817606138162927494,0.749523232774082622886415970296,0.8382993553120608732874368406653">
+              <input type="hidden" class="solid__vertices" value="C3 C2 1.0,C3 -C2 -1.0,-C3 -C2 1.0,-C3 C2 -1.0,1.0 C3 C2,1.0 -C3 -C2,-1.0 -C3 C2,-1.0 C3 -C2,C2 1.0 C3,C2 -1.0 -C3,-C2 -1.0 C3,-C2 1.0 -C3,C1 C4 C8,C1 -C4 -C8,-C1 -C4 C8,-C1 C4 -C8,C8 C1 C4,C8 -C1 -C4,-C8 -C1 C4,-C8 C1 -C4,C4 C8 C1,C4 -C8 -C1,-C4 -C8 C1,-C4 C8 -C1,C5 C0 C7,C5 -C0 -C7,-C5 -C0 C7,-C5 C0 -C7,C7 C5 C0,C7 -C5 -C0,-C7 -C5 C0,-C7 C5 -C0,C0 C7 C5,C0 -C7 -C5,-C0 -C7 C5,-C0 C7 -C5,C6 -C6 C6,C6 C6 -C6,-C6 C6 C6,-C6 -C6 -C6">
+              <input type="hidden" class="solid__faces" value="0 24 16 4 28 20 8 32 12 #,1 25 17 5 29 21 9 33 13 #,2 26 18 6 30 22 10 34 14 #,3 27 19 7 31 23 11 35 15 #,12 38 2 0 #,13 39 3 1 #,14 36 0 2 #,15 37 1 3 #,16 36 5 4 #,17 37 4 5 #,18 38 7 6 #,19 39 6 7 #,20 37 11 8 #,21 36 10 9 #,22 39 9 10 #,23 38 8 11 #,0 36 24 #,1 37 25 #,2 38 26 #,3 39 27 #,4 37 28 #,5 36 29 #,6 39 30 #,7 38 31 #,8 38 32 #,9 39 33 #,10 36 34 #,11 37 35 #,12 32 38 #,13 33 39 #,14 34 36 #,15 35 37 #,16 24 36 #,17 25 37 #,18 26 38 #,19 27 39 #,20 28 37 #,21 29 36 #,22 30 39 #,23 31 38 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #1 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #1 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="9 40 40">
-            <input type="hidden" class="solid__constants" value="0.0602019620302386943637537032552,0.144782136924873788019821467036,0.162550841947180110554896762646,0.384809976051136716922793073287,0.616141692910319940871147871680,0.646261678833002329454120729648,0.693872576565114743823029475481,0.723205030814550199212921235662,0.786436988163123098586720497218">
-            <input type="hidden" class="solid__vertices" value="C3 C2 1.0,C3 -C2 -1.0,-C3 -C2 1.0,-C3 C2 -1.0,1.0 C3 C2,1.0 -C3 -C2,-1.0 -C3 C2,-1.0 C3 -C2,C2 1.0 C3,C2 -1.0 -C3,-C2 -1.0 C3,-C2 1.0 -C3,C1 C4 C8,C1 -C4 -C8,-C1 -C4 C8,-C1 C4 -C8,C8 C1 C4,C8 -C1 -C4,-C8 -C1 C4,-C8 C1 -C4,C4 C8 C1,C4 -C8 -C1,-C4 -C8 C1,-C4 C8 -C1,C0 -C6 C7,C0 C6 -C7,-C0 C6 C7,-C0 -C6 -C7,C7 -C0 C6,C7 C0 -C6,-C7 C0 C6,-C7 -C0 -C6,C6 -C7 C0,C6 C7 -C0,-C6 C7 C0,-C6 -C7 -C0,C5 -C5 C5,C5 C5 -C5,-C5 C5 C5,-C5 -C5 -C5">
-            <input type="hidden" class="solid__faces" value="0 16 4 20 8 12 #,1 17 5 21 9 13 #,2 18 6 22 10 14 #,3 19 7 23 11 15 #,12 26 38 2 0 #,13 27 39 3 1 #,14 24 36 0 2 #,15 25 37 1 3 #,16 28 36 5 4 #,17 29 37 4 5 #,18 30 38 7 6 #,19 31 39 6 7 #,20 33 37 11 8 #,21 32 36 10 9 #,22 35 39 9 10 #,23 34 38 8 11 #,0 36 28 #,1 37 29 #,2 38 30 #,3 39 31 #,4 37 33 #,5 36 32 #,6 39 35 #,7 38 34 #,8 38 26 #,9 39 27 #,10 36 24 #,11 37 25 #,12 8 26 #,13 9 27 #,14 10 24 #,15 11 25 #,16 0 28 #,17 1 29 #,18 2 30 #,19 3 31 #,20 4 33 #,21 5 32 #,22 6 35 #,23 7 34 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="9 40 40">
+              <input type="hidden" class="solid__constants" value="0.0602019620302386943637537032552,0.144782136924873788019821467036,0.162550841947180110554896762646,0.384809976051136716922793073287,0.616141692910319940871147871680,0.646261678833002329454120729648,0.693872576565114743823029475481,0.723205030814550199212921235662,0.786436988163123098586720497218">
+              <input type="hidden" class="solid__vertices" value="C3 C2 1.0,C3 -C2 -1.0,-C3 -C2 1.0,-C3 C2 -1.0,1.0 C3 C2,1.0 -C3 -C2,-1.0 -C3 C2,-1.0 C3 -C2,C2 1.0 C3,C2 -1.0 -C3,-C2 -1.0 C3,-C2 1.0 -C3,C1 C4 C8,C1 -C4 -C8,-C1 -C4 C8,-C1 C4 -C8,C8 C1 C4,C8 -C1 -C4,-C8 -C1 C4,-C8 C1 -C4,C4 C8 C1,C4 -C8 -C1,-C4 -C8 C1,-C4 C8 -C1,C0 -C6 C7,C0 C6 -C7,-C0 C6 C7,-C0 -C6 -C7,C7 -C0 C6,C7 C0 -C6,-C7 C0 C6,-C7 -C0 -C6,C6 -C7 C0,C6 C7 -C0,-C6 C7 C0,-C6 -C7 -C0,C5 -C5 C5,C5 C5 -C5,-C5 C5 C5,-C5 -C5 -C5">
+              <input type="hidden" class="solid__faces" value="0 16 4 20 8 12 #,1 17 5 21 9 13 #,2 18 6 22 10 14 #,3 19 7 23 11 15 #,12 26 38 2 0 #,13 27 39 3 1 #,14 24 36 0 2 #,15 25 37 1 3 #,16 28 36 5 4 #,17 29 37 4 5 #,18 30 38 7 6 #,19 31 39 6 7 #,20 33 37 11 8 #,21 32 36 10 9 #,22 35 39 9 10 #,23 34 38 8 11 #,0 36 28 #,1 37 29 #,2 38 30 #,3 39 31 #,4 37 33 #,5 36 32 #,6 39 35 #,7 38 34 #,8 38 26 #,9 39 27 #,10 36 24 #,11 37 25 #,12 8 26 #,13 9 27 #,14 10 24 #,15 11 25 #,16 0 28 #,17 1 29 #,18 2 30 #,19 3 31 #,20 4 33 #,21 5 32 #,22 6 35 #,23 7 34 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #2 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #2 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="9 40 40">
-            <input type="hidden" class="solid__constants" value="0.0203038405278431820178134049034,0.195250010364200268729680974214,0.287548455466638564946045662161,0.378093027141668700191886330212,0.600369293417243913866791964369,0.662075500212514386072347147612,0.666092601326083716735708809493,0.734643433822886513229039960239,0.755512207912138163423171882888">
-            <input type="hidden" class="solid__vertices" value="C3 C2 1.0,C3 -C2 -1.0,-C3 -C2 1.0,-C3 C2 -1.0,1.0 C3 C2,1.0 -C3 -C2,-1.0 -C3 C2,-1.0 C3 -C2,C2 1.0 C3,C2 -1.0 -C3,-C2 -1.0 C3,-C2 1.0 -C3,C0 C5 C8,C0 -C5 -C8,-C0 -C5 C8,-C0 C5 -C8,C8 C0 C5,C8 -C0 -C5,-C8 -C0 C5,-C8 C0 -C5,C5 C8 C0,C5 -C8 -C0,-C5 -C8 C0,-C5 C8 -C0,C6 -C1 C7,C6 C1 -C7,-C6 C1 C7,-C6 -C1 -C7,C7 -C6 C1,C7 C6 -C1,-C7 C6 C1,-C7 -C6 -C1,C1 -C7 C6,C1 C7 -C6,-C1 C7 C6,-C1 -C7 -C6,C4 -C4 C4,C4 C4 -C4,-C4 C4 C4,-C4 -C4 -C4">
-            <input type="hidden" class="solid__faces" value="36 24 0 2 14 32 #,36 32 10 9 21 28 #,36 28 5 4 16 24 #,37 25 1 3 15 33 #,37 33 11 8 20 29 #,37 29 4 5 17 25 #,38 26 2 0 12 34 #,38 34 8 11 23 30 #,38 30 7 6 18 26 #,39 27 3 1 13 35 #,39 35 9 10 22 31 #,39 31 6 7 19 27 #,0 4 8 #,1 5 9 #,2 6 10 #,3 7 11 #,0 8 12 #,1 9 13 #,2 10 14 #,3 11 15 #,4 0 16 #,5 1 17 #,6 2 18 #,7 3 19 #,8 4 20 #,9 5 21 #,10 6 22 #,11 7 23 #,12 8 34 #,13 9 35 #,14 10 32 #,15 11 33 #,16 0 24 #,17 1 25 #,18 2 26 #,19 3 27 #,20 4 29 #,21 5 28 #,22 6 31 #,23 7 30 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="9 40 40">
+              <input type="hidden" class="solid__constants" value="0.0203038405278431820178134049034,0.195250010364200268729680974214,0.287548455466638564946045662161,0.378093027141668700191886330212,0.600369293417243913866791964369,0.662075500212514386072347147612,0.666092601326083716735708809493,0.734643433822886513229039960239,0.755512207912138163423171882888">
+              <input type="hidden" class="solid__vertices" value="C3 C2 1.0,C3 -C2 -1.0,-C3 -C2 1.0,-C3 C2 -1.0,1.0 C3 C2,1.0 -C3 -C2,-1.0 -C3 C2,-1.0 C3 -C2,C2 1.0 C3,C2 -1.0 -C3,-C2 -1.0 C3,-C2 1.0 -C3,C0 C5 C8,C0 -C5 -C8,-C0 -C5 C8,-C0 C5 -C8,C8 C0 C5,C8 -C0 -C5,-C8 -C0 C5,-C8 C0 -C5,C5 C8 C0,C5 -C8 -C0,-C5 -C8 C0,-C5 C8 -C0,C6 -C1 C7,C6 C1 -C7,-C6 C1 C7,-C6 -C1 -C7,C7 -C6 C1,C7 C6 -C1,-C7 C6 C1,-C7 -C6 -C1,C1 -C7 C6,C1 C7 -C6,-C1 C7 C6,-C1 -C7 -C6,C4 -C4 C4,C4 C4 -C4,-C4 C4 C4,-C4 -C4 -C4">
+              <input type="hidden" class="solid__faces" value="36 24 0 2 14 32 #,36 32 10 9 21 28 #,36 28 5 4 16 24 #,37 25 1 3 15 33 #,37 33 11 8 20 29 #,37 29 4 5 17 25 #,38 26 2 0 12 34 #,38 34 8 11 23 30 #,38 30 7 6 18 26 #,39 27 3 1 13 35 #,39 35 9 10 22 31 #,39 31 6 7 19 27 #,0 4 8 #,1 5 9 #,2 6 10 #,3 7 11 #,0 8 12 #,1 9 13 #,2 10 14 #,3 11 15 #,4 0 16 #,5 1 17 #,6 2 18 #,7 3 19 #,8 4 20 #,9 5 21 #,10 6 22 #,11 7 23 #,12 8 34 #,13 9 35 #,14 10 32 #,15 11 33 #,16 0 24 #,17 1 25 #,18 2 26 #,19 3 27 #,20 4 29 #,21 5 28 #,22 6 31 #,23 7 30 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #3 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #3 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="9 40 40">
-            <input type="hidden" class="solid__constants" value="0.0164838277214215985852026435012,0.231796127581566720021997803317,0.294819394277743254679403353198,0.3006600392070255910103765098054,0.458884455970519855988174344039,0.590743002584118924987038372224,0.648297001582493375694252520158,0.812690358114919349857939619482,0.859755934358295118727349711708">
-            <input type="hidden" class="solid__vertices" value="C2 -C0 1.0,C2 C0 -1.0,-C2 C0 1.0,-C2 -C0 -1.0,1.0 -C2 C0,1.0 C2 -C0,-1.0 C2 C0,-1.0 -C2 -C0,C0 -1.0 C2,C0 1.0 -C2,-C0 1.0 C2,-C0 -1.0 -C2,C3 C4 C8,C3 -C4 -C8,-C3 -C4 C8,-C3 C4 -C8,C8 C3 C4,C8 -C3 -C4,-C8 -C3 C4,-C8 C3 -C4,C4 C8 C3,C4 -C8 -C3,-C4 -C8 C3,-C4 C8 -C3,C1 -C6 C7,C1 C6 -C7,-C1 C6 C7,-C1 -C6 -C7,C7 -C1 C6,C7 C1 -C6,-C7 C1 C6,-C7 -C1 -C6,C6 -C7 C1,C6 C7 -C1,-C6 C7 C1,-C6 -C7 -C1,C5 C5 C5,C5 -C5 -C5,-C5 -C5 C5,-C5 C5 -C5">
-            <input type="hidden" class="solid__faces" value="36 12 0 28 16 #,36 16 5 33 20 #,36 20 10 26 12 #,37 13 1 29 17 #,37 17 4 32 21 #,37 21 11 27 13 #,38 14 2 30 18 #,38 18 7 35 22 #,38 22 8 24 14 #,39 15 3 31 19 #,39 19 6 34 23 #,39 23 9 25 15 #,12 26 2 0 #,13 27 3 1 #,14 24 0 2 #,15 25 1 3 #,16 28 4 5 #,17 29 5 4 #,18 30 6 7 #,19 31 7 6 #,20 33 9 10 #,21 32 8 11 #,22 35 11 8 #,23 34 10 9 #,0 24 28 #,1 25 29 #,2 26 30 #,3 27 31 #,4 28 32 #,5 29 33 #,6 30 34 #,7 31 35 #,8 32 24 #,9 33 25 #,10 34 26 #,11 35 27 #,24 32 28 #,25 33 29 #,26 34 30 #,27 35 31 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="9 40 40">
+              <input type="hidden" class="solid__constants" value="0.0164838277214215985852026435012,0.231796127581566720021997803317,0.294819394277743254679403353198,0.3006600392070255910103765098054,0.458884455970519855988174344039,0.590743002584118924987038372224,0.648297001582493375694252520158,0.812690358114919349857939619482,0.859755934358295118727349711708">
+              <input type="hidden" class="solid__vertices" value="C2 -C0 1.0,C2 C0 -1.0,-C2 C0 1.0,-C2 -C0 -1.0,1.0 -C2 C0,1.0 C2 -C0,-1.0 C2 C0,-1.0 -C2 -C0,C0 -1.0 C2,C0 1.0 -C2,-C0 1.0 C2,-C0 -1.0 -C2,C3 C4 C8,C3 -C4 -C8,-C3 -C4 C8,-C3 C4 -C8,C8 C3 C4,C8 -C3 -C4,-C8 -C3 C4,-C8 C3 -C4,C4 C8 C3,C4 -C8 -C3,-C4 -C8 C3,-C4 C8 -C3,C1 -C6 C7,C1 C6 -C7,-C1 C6 C7,-C1 -C6 -C7,C7 -C1 C6,C7 C1 -C6,-C7 C1 C6,-C7 -C1 -C6,C6 -C7 C1,C6 C7 -C1,-C6 C7 C1,-C6 -C7 -C1,C5 C5 C5,C5 -C5 -C5,-C5 -C5 C5,-C5 C5 -C5">
+              <input type="hidden" class="solid__faces" value="36 12 0 28 16 #,36 16 5 33 20 #,36 20 10 26 12 #,37 13 1 29 17 #,37 17 4 32 21 #,37 21 11 27 13 #,38 14 2 30 18 #,38 18 7 35 22 #,38 22 8 24 14 #,39 15 3 31 19 #,39 19 6 34 23 #,39 23 9 25 15 #,12 26 2 0 #,13 27 3 1 #,14 24 0 2 #,15 25 1 3 #,16 28 4 5 #,17 29 5 4 #,18 30 6 7 #,19 31 7 6 #,20 33 9 10 #,21 32 8 11 #,22 35 11 8 #,23 34 10 9 #,0 24 28 #,1 25 29 #,2 26 30 #,3 27 31 #,4 28 32 #,5 29 33 #,6 30 34 #,7 31 35 #,8 32 24 #,9 33 25 #,10 34 26 #,11 35 27 #,24 32 28 #,25 33 29 #,26 34 30 #,27 35 31 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #4 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #4 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="6 40 40">
-            <input type="hidden" class="solid__constants" value="0.242535625036332973518906462116,0.280776406404415137455352463994,0.532795032927245292095863676630,0.578179985565665670901159743996,0.663975164636226460479318383151,0.727606875108998920556719386348">
-            <input type="hidden" class="solid__vertices" value="C1 C1 1.0,C1 -C1 -1.0,-C1 -C1 1.0,-C1 C1 -1.0,1.0 C1 C1,1.0 -C1 -C1,-1.0 -C1 C1,-1.0 C1 -C1,C1 1.0 C1,C1 -1.0 -C1,-C1 -1.0 C1,-C1 1.0 -C1,C5 -C0 C5,C5 C0 -C5,-C5 C0 C5,-C5 -C0 -C5,C5 -C5 C0,C5 C5 -C0,-C5 C5 C0,-C5 -C5 -C0,C0 -C5 C5,C0 C5 -C5,-C0 C5 C5,-C0 -C5 -C5,C2 C2 C4,C2 -C2 -C4,-C2 -C2 C4,-C2 C2 -C4,C4 C2 C2,C4 -C2 -C2,-C4 -C2 C2,-C4 C2 -C2,C2 C4 C2,C2 -C4 -C2,-C2 -C4 C2,-C2 C4 -C2,C3 -C3 C3,C3 C3 -C3,-C3 C3 C3,-C3 -C3 -C3">
-            <input type="hidden" class="solid__faces" value="12 4 28 24 0 #,13 5 29 25 1 #,14 6 30 26 2 #,15 7 31 27 3 #,16 9 33 29 5 #,17 8 32 28 4 #,18 11 35 31 7 #,19 10 34 30 6 #,20 2 26 34 10 #,21 3 27 35 11 #,22 0 24 32 8 #,23 1 25 33 9 #,0 2 20 12 #,1 3 21 13 #,2 0 22 14 #,3 1 23 15 #,4 5 13 17 #,5 4 12 16 #,6 7 15 19 #,7 6 14 18 #,8 11 18 22 #,9 10 19 23 #,10 9 16 20 #,11 8 17 21 #,36 12 20 #,36 20 16 #,36 16 12 #,37 13 21 #,37 21 17 #,37 17 13 #,38 14 22 #,38 22 18 #,38 18 14 #,39 15 23 #,39 23 19 #,39 19 15 #,24 28 32 #,25 29 33 #,26 30 34 #,27 31 35 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="6 40 40">
+              <input type="hidden" class="solid__constants" value="0.242535625036332973518906462116,0.280776406404415137455352463994,0.532795032927245292095863676630,0.578179985565665670901159743996,0.663975164636226460479318383151,0.727606875108998920556719386348">
+              <input type="hidden" class="solid__vertices" value="C1 C1 1.0,C1 -C1 -1.0,-C1 -C1 1.0,-C1 C1 -1.0,1.0 C1 C1,1.0 -C1 -C1,-1.0 -C1 C1,-1.0 C1 -C1,C1 1.0 C1,C1 -1.0 -C1,-C1 -1.0 C1,-C1 1.0 -C1,C5 -C0 C5,C5 C0 -C5,-C5 C0 C5,-C5 -C0 -C5,C5 -C5 C0,C5 C5 -C0,-C5 C5 C0,-C5 -C5 -C0,C0 -C5 C5,C0 C5 -C5,-C0 C5 C5,-C0 -C5 -C5,C2 C2 C4,C2 -C2 -C4,-C2 -C2 C4,-C2 C2 -C4,C4 C2 C2,C4 -C2 -C2,-C4 -C2 C2,-C4 C2 -C2,C2 C4 C2,C2 -C4 -C2,-C2 -C4 C2,-C2 C4 -C2,C3 -C3 C3,C3 C3 -C3,-C3 C3 C3,-C3 -C3 -C3">
+              <input type="hidden" class="solid__faces" value="12 4 28 24 0 #,13 5 29 25 1 #,14 6 30 26 2 #,15 7 31 27 3 #,16 9 33 29 5 #,17 8 32 28 4 #,18 11 35 31 7 #,19 10 34 30 6 #,20 2 26 34 10 #,21 3 27 35 11 #,22 0 24 32 8 #,23 1 25 33 9 #,0 2 20 12 #,1 3 21 13 #,2 0 22 14 #,3 1 23 15 #,4 5 13 17 #,5 4 12 16 #,6 7 15 19 #,7 6 14 18 #,8 11 18 22 #,9 10 19 23 #,10 9 16 20 #,11 8 17 21 #,36 12 20 #,36 20 16 #,36 16 12 #,37 13 21 #,37 21 17 #,37 17 13 #,38 14 22 #,38 22 18 #,38 18 14 #,39 15 23 #,39 23 19 #,39 19 15 #,24 28 32 #,25 29 33 #,26 30 34 #,27 31 35 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #5 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #5 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="9 40 40">
-            <input type="hidden" class="solid__constants" value="0.0412322937548565406308399891273,0.234864964982384673087352408730,0.330164857062515124663254214569,0.365423798934803615898264184864,0.583896133989462280486474757576,0.6480330548547653836025950237453,0.657555307160286423703628909820,0.724913199467267428894184360682,0.772877320488523431886613135757">
-            <input type="hidden" class="solid__vertices" value="C1 C3 1.0,C1 -C3 -1.0,-C1 -C3 1.0,-C1 C3 -1.0,1.0 C1 C3,1.0 -C1 -C3,-1.0 -C1 C3,-1.0 C1 -C3,C3 1.0 C1,C3 -1.0 -C1,-C3 -1.0 C1,-C3 1.0 -C1,C5 C0 C8,C5 -C0 -C8,-C5 -C0 C8,-C5 C0 -C8,C8 C5 C0,C8 -C5 -C0,-C8 -C5 C0,-C8 C5 -C0,C0 C8 C5,C0 -C8 -C5,-C0 -C8 C5,-C0 C8 -C5,C2 -C6 C7,C2 C6 -C7,-C2 C6 C7,-C2 -C6 -C7,C7 -C2 C6,C7 C2 -C6,-C7 C2 C6,-C7 -C2 -C6,C6 -C7 C2,C6 C7 -C2,-C6 C7 C2,-C6 -C7 -C2,C4 C4 C4,C4 -C4 -C4,-C4 -C4 C4,-C4 C4 -C4">
-            <input type="hidden" class="solid__faces" value="12 0 2 24 28 #,13 1 3 25 29 #,14 2 0 26 30 #,15 3 1 27 31 #,16 4 5 29 33 #,17 5 4 28 32 #,18 6 7 31 35 #,19 7 6 30 34 #,20 8 11 34 26 #,21 9 10 35 27 #,22 10 9 32 24 #,23 11 8 33 25 #,36 0 12 4 #,36 4 16 8 #,36 8 20 0 #,37 1 13 5 #,37 5 17 9 #,37 9 21 1 #,38 2 14 6 #,38 6 18 10 #,38 10 22 2 #,39 3 15 7 #,39 7 19 11 #,39 11 23 3 #,0 20 26 #,1 21 27 #,2 22 24 #,3 23 25 #,4 12 28 #,5 13 29 #,6 14 30 #,7 15 31 #,8 16 33 #,9 17 32 #,10 18 35 #,11 19 34 #,24 32 28 #,25 33 29 #,26 34 30 #,27 35 31 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="9 40 40">
+              <input type="hidden" class="solid__constants" value="0.0412322937548565406308399891273,0.234864964982384673087352408730,0.330164857062515124663254214569,0.365423798934803615898264184864,0.583896133989462280486474757576,0.6480330548547653836025950237453,0.657555307160286423703628909820,0.724913199467267428894184360682,0.772877320488523431886613135757">
+              <input type="hidden" class="solid__vertices" value="C1 C3 1.0,C1 -C3 -1.0,-C1 -C3 1.0,-C1 C3 -1.0,1.0 C1 C3,1.0 -C1 -C3,-1.0 -C1 C3,-1.0 C1 -C3,C3 1.0 C1,C3 -1.0 -C1,-C3 -1.0 C1,-C3 1.0 -C1,C5 C0 C8,C5 -C0 -C8,-C5 -C0 C8,-C5 C0 -C8,C8 C5 C0,C8 -C5 -C0,-C8 -C5 C0,-C8 C5 -C0,C0 C8 C5,C0 -C8 -C5,-C0 -C8 C5,-C0 C8 -C5,C2 -C6 C7,C2 C6 -C7,-C2 C6 C7,-C2 -C6 -C7,C7 -C2 C6,C7 C2 -C6,-C7 C2 C6,-C7 -C2 -C6,C6 -C7 C2,C6 C7 -C2,-C6 C7 C2,-C6 -C7 -C2,C4 C4 C4,C4 -C4 -C4,-C4 -C4 C4,-C4 C4 -C4">
+              <input type="hidden" class="solid__faces" value="12 0 2 24 28 #,13 1 3 25 29 #,14 2 0 26 30 #,15 3 1 27 31 #,16 4 5 29 33 #,17 5 4 28 32 #,18 6 7 31 35 #,19 7 6 30 34 #,20 8 11 34 26 #,21 9 10 35 27 #,22 10 9 32 24 #,23 11 8 33 25 #,36 0 12 4 #,36 4 16 8 #,36 8 20 0 #,37 1 13 5 #,37 5 17 9 #,37 9 21 1 #,38 2 14 6 #,38 6 18 10 #,38 10 22 2 #,39 3 15 7 #,39 7 19 11 #,39 11 23 3 #,0 20 26 #,1 21 27 #,2 22 24 #,3 23 25 #,4 12 28 #,5 13 29 #,6 14 30 #,7 15 31 #,8 16 33 #,9 17 32 #,10 18 35 #,11 19 34 #,24 32 28 #,25 33 29 #,26 34 30 #,27 35 31 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #6 (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual Tetracontahedron #6 (canonical)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="11 76 76">
-            <input type="hidden" class="solid__constants" value="0.148888726462813449767986412267,0.156503278463479692987424450598,0.1650277484101490723477272620253,0.409772425702764428884248910301,0.440139041033508632815004268619,0.469509835390439078962273351794,0.580307037387978362832920048470,0.656726636530130381796051808013,0.714901340349743114830641099917,0.807934528572047736771368948519,0.896690465345461486165518848440">
-            <input type="hidden" class="solid__vertices" value="C2 C2 1.0,C2 -C2 -1.0,-C2 -C2 1.0,-C2 C2 -1.0,1.0 C2 C2,1.0 -C2 -C2,-1.0 -C2 C2,-1.0 C2 -C2,C2 1.0 C2,C2 -1.0 -C2,-C2 -1.0 C2,-C2 1.0 -C2,C5 -C1 C10,C5 C1 -C10,-C5 C1 C10,-C5 -C1 -C10,C10 -C5 C1,C10 C5 -C1,-C10 C5 C1,-C10 -C5 -C1,C1 -C10 C5,C1 C10 -C5,-C1 C10 C5,-C1 -C10 -C5,C1 -C5 C10,C1 C5 -C10,-C1 C5 C10,-C1 -C5 -C10,C10 -C1 C5,C10 C1 -C5,-C10 C1 C5,-C10 -C1 -C5,C5 -C10 C1,C5 C10 -C1,-C5 C10 C1,-C5 -C10 -C1,C4 C4 C9,C4 -C4 -C9,-C4 -C4 C9,-C4 C4 -C9,C9 C4 C4,C9 -C4 -C4,-C9 -C4 C4,-C9 C4 -C4,C4 C9 C4,C4 -C9 -C4,-C4 -C9 C4,-C4 C9 -C4,C8 C0 C8,C8 -C0 -C8,-C8 -C0 C8,-C8 C0 -C8,C8 C8 C0,C8 -C8 -C0,-C8 -C8 C0,-C8 C8 -C0,C0 C8 C8,C0 -C8 -C8,-C0 -C8 C8,-C0 C8 -C8,C7 -C3 C7,C7 C3 -C7,-C7 C3 C7,-C7 -C3 -C7,C7 -C7 C3,C7 C7 -C3,-C7 C7 C3,-C7 -C7 -C3,C3 -C7 C7,C3 C7 -C7,-C3 C7 C7,-C3 -C7 -C7,C6 C6 C6,C6 -C6 -C6,-C6 -C6 C6,-C6 C6 -C6">
-            <input type="hidden" class="solid__faces" value="72 36 48 40 #,72 40 52 44 #,72 44 56 36 #,73 37 49 41 #,73 41 53 45 #,73 45 57 37 #,74 38 50 42 #,74 42 54 46 #,74 46 58 38 #,75 39 51 43 #,75 43 55 47 #,75 47 59 39 #,12 60 28 48 #,13 61 29 49 #,14 62 30 50 #,15 63 31 51 #,16 64 32 53 #,17 65 33 52 #,18 66 34 55 #,19 67 35 54 #,20 68 24 58 #,21 69 25 59 #,22 70 26 56 #,23 71 27 57 #,12 0 2 24 #,13 1 3 25 #,14 2 0 26 #,15 3 1 27 #,16 5 4 28 #,17 4 5 29 #,18 7 6 30 #,19 6 7 31 #,20 10 9 32 #,21 11 8 33 #,22 8 11 34 #,23 9 10 35 #,12 24 68 60 #,13 25 69 61 #,14 26 70 62 #,15 27 71 63 #,16 28 60 64 #,17 29 61 65 #,18 30 62 66 #,19 31 63 67 #,20 32 64 68 #,21 33 65 69 #,22 34 66 70 #,23 35 67 71 #,12 48 36 0 #,13 49 37 1 #,14 50 38 2 #,15 51 39 3 #,16 53 41 5 #,17 52 40 4 #,18 55 43 7 #,19 54 42 6 #,20 58 46 10 #,21 59 47 11 #,22 56 44 8 #,23 57 45 9 #,24 2 38 58 #,25 3 39 59 #,26 0 36 56 #,27 1 37 57 #,28 4 40 48 #,29 5 41 49 #,30 6 42 50 #,31 7 43 51 #,32 9 45 53 #,33 8 44 52 #,34 11 47 55 #,35 10 46 54 #,60 68 64 #,61 69 65 #,62 70 66 #,63 71 67 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="11 76 76">
+              <input type="hidden" class="solid__constants" value="0.148888726462813449767986412267,0.156503278463479692987424450598,0.1650277484101490723477272620253,0.409772425702764428884248910301,0.440139041033508632815004268619,0.469509835390439078962273351794,0.580307037387978362832920048470,0.656726636530130381796051808013,0.714901340349743114830641099917,0.807934528572047736771368948519,0.896690465345461486165518848440">
+              <input type="hidden" class="solid__vertices" value="C2 C2 1.0,C2 -C2 -1.0,-C2 -C2 1.0,-C2 C2 -1.0,1.0 C2 C2,1.0 -C2 -C2,-1.0 -C2 C2,-1.0 C2 -C2,C2 1.0 C2,C2 -1.0 -C2,-C2 -1.0 C2,-C2 1.0 -C2,C5 -C1 C10,C5 C1 -C10,-C5 C1 C10,-C5 -C1 -C10,C10 -C5 C1,C10 C5 -C1,-C10 C5 C1,-C10 -C5 -C1,C1 -C10 C5,C1 C10 -C5,-C1 C10 C5,-C1 -C10 -C5,C1 -C5 C10,C1 C5 -C10,-C1 C5 C10,-C1 -C5 -C10,C10 -C1 C5,C10 C1 -C5,-C10 C1 C5,-C10 -C1 -C5,C5 -C10 C1,C5 C10 -C1,-C5 C10 C1,-C5 -C10 -C1,C4 C4 C9,C4 -C4 -C9,-C4 -C4 C9,-C4 C4 -C9,C9 C4 C4,C9 -C4 -C4,-C9 -C4 C4,-C9 C4 -C4,C4 C9 C4,C4 -C9 -C4,-C4 -C9 C4,-C4 C9 -C4,C8 C0 C8,C8 -C0 -C8,-C8 -C0 C8,-C8 C0 -C8,C8 C8 C0,C8 -C8 -C0,-C8 -C8 C0,-C8 C8 -C0,C0 C8 C8,C0 -C8 -C8,-C0 -C8 C8,-C0 C8 -C8,C7 -C3 C7,C7 C3 -C7,-C7 C3 C7,-C7 -C3 -C7,C7 -C7 C3,C7 C7 -C3,-C7 C7 C3,-C7 -C7 -C3,C3 -C7 C7,C3 C7 -C7,-C3 C7 C7,-C3 -C7 -C7,C6 C6 C6,C6 -C6 -C6,-C6 -C6 C6,-C6 C6 -C6">
+              <input type="hidden" class="solid__faces"
+                     value="72 36 48 40 #,72 40 52 44 #,72 44 56 36 #,73 37 49 41 #,73 41 53 45 #,73 45 57 37 #,74 38 50 42 #,74 42 54 46 #,74 46 58 38 #,75 39 51 43 #,75 43 55 47 #,75 47 59 39 #,12 60 28 48 #,13 61 29 49 #,14 62 30 50 #,15 63 31 51 #,16 64 32 53 #,17 65 33 52 #,18 66 34 55 #,19 67 35 54 #,20 68 24 58 #,21 69 25 59 #,22 70 26 56 #,23 71 27 57 #,12 0 2 24 #,13 1 3 25 #,14 2 0 26 #,15 3 1 27 #,16 5 4 28 #,17 4 5 29 #,18 7 6 30 #,19 6 7 31 #,20 10 9 32 #,21 11 8 33 #,22 8 11 34 #,23 9 10 35 #,12 24 68 60 #,13 25 69 61 #,14 26 70 62 #,15 27 71 63 #,16 28 60 64 #,17 29 61 65 #,18 30 62 66 #,19 31 63 67 #,20 32 64 68 #,21 33 65 69 #,22 34 66 70 #,23 35 67 71 #,12 48 36 0 #,13 49 37 1 #,14 50 38 2 #,15 51 39 3 #,16 53 41 5 #,17 52 40 4 #,18 55 43 7 #,19 54 42 6 #,20 58 46 10 #,21 59 47 11 #,22 56 44 8 #,23 57 45 9 #,24 2 38 58 #,25 3 39 59 #,26 0 36 56 #,27 1 37 57 #,28 4 40 48 #,29 5 41 49 #,30 6 42 50 #,31 7 43 51 #,32 9 45 53 #,33 8 44 52 #,34 11 47 55 #,35 10 46 54 #,60 68 64 #,61 69 65 #,62 70 66 #,63 71 67 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Self-Dual 76-hedron (canonical)</h2>
           </div>
-          <h2 class="solid__title title-h2">Self-Dual 76-hedron (canonical)</h2>
         </li>
       </ul>
     </div>
@@ -188,8 +212,8 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
-<script src="/js/rendering-polyhedra.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 
 </body>
 </html>

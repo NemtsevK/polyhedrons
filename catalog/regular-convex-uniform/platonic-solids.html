@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+
 <html class="page" lang="en">
 <head>
   <title>Platonic Solids</title>
   <meta charset="UTF-8">
 <meta content="width=device-width,user-scalable=yes,initial-scale=1,minimum-scale=1" name="viewport">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" href="/images/favicons/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/images/favicons/apple.png">
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="preload" href="/fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-<link rel="preload" href="/fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" href="../../images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../images/favicons/apple.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="preload" href="../../fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="../../fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="../../css/style.css">
 
 </head>
 <body class="page__body">
@@ -37,61 +38,169 @@
         <p class="solids__text">The five Platonic solids, also known as the five regular solids, were discovered in ancient times. Although each one was probably known prior to 500 BC, they are collectively named after the ancient Greek philosopher Plato (428-348 BC) who mentions them in his dialogue Timaeus, written circa 360 BC. Each Platonic solid uses the same regular polygon for each face, with the same number of faces meeting at each vertex. The five Platonic solids are the only convex polyhedra that meet these criteria.</p>
       </div>
       <ul class="solids__list">
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="tetrahedron">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="1 4 4">
-            <input type="hidden" class="solid__constants" value="0.353553390593273762200422181052">
-            <input type="hidden" class="solid__vertices" value="C0 -C0 C0,C0 C0 -C0,-C0 C0 C0, -C0 -C0 -C0">
-            <input type="hidden" class="solid__faces" value="0 1 2 #,1 0 3 #,2 3 0 #,3 2 1 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="1 4 4">
+              <input type="hidden" class="solid__constants" value="0.353553390593273762200422181052">
+              <input type="hidden" class="solid__vertices" value="C0 -C0 C0,C0 C0 -C0,-C0 C0 C0, -C0 -C0 -C0">
+              <input type="hidden" class="solid__faces" value="0 1 2 #,1 0 3 #,2 3 0 #,3 2 1 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Tetrahedron</h2>
             <p class="solid__subtitle">Triangular Pyramid</p>
+            <div class="solid__characteristics">
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Faces:</dt>
+                <dd class="solid__value">4</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Edges:</dt>
+                <dd class="solid__value">6</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Vertices:</dt>
+                <dd class="solid__value">4</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Dual:</dt>
+                <dd class="solid__value">Tetrahedron</dd>
+              </dl>
+            </div>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="octahedron">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="1 6 8">
-            <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
-            <input type="hidden" class="solid__vertices" value="0.0 0.0 C0,0.0 0.0 -C0,C0 0.0 0.0,-C0 0.0 0.0,0.0 C0 0.0,0.0 -C0 0.0">
-            <input type="hidden" class="solid__faces" value="0 2 4 #,0 4 3 #,0 3 5 #,0 5 2 #,1 2 5 #,1 5 3 #,1 3 4 #,1 4 2 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="1 6 8">
+              <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
+              <input type="hidden" class="solid__vertices" value="0.0 0.0 C0,0.0 0.0 -C0,C0 0.0 0.0,-C0 0.0 0.0,0.0 C0 0.0,0.0 -C0 0.0">
+              <input type="hidden" class="solid__faces" value="0 2 4 #,0 4 3 #,0 3 5 #,0 5 2 #,1 2 5 #,1 5 3 #,1 3 4 #,1 4 2 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Octahedron</h2>
             <p class="solid__subtitle">Square Dipyramid</p>
+            <div class="solid__characteristics">
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Faces:</dt>
+                <dd class="solid__value">8</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Edges:</dt>
+                <dd class="solid__value">12</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Vertices:</dt>
+                <dd class="solid__value">6</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Dual:</dt>
+                <dd class="solid__value">
+                  <a href="#cube">Cube</a>
+                </dd>
+              </dl>
+            </div>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="cube">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="0 8 6">
-            <input type="hidden" class="solid__vertices" value="0.5 0.5 0.5,0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5">
-            <input type="hidden" class="solid__faces" value="0 1 5 4 #,0 4 6 2 #,0 2 3 1 #,7 3 2 6 #,7 6 4 5 #,7 5 1 3 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="0 8 6">
+              <input type="hidden" class="solid__vertices" value="0.5 0.5 0.5,0.5 0.5 -0.5,0.5 -0.5 0.5,0.5 -0.5 -0.5,-0.5 0.5 0.5,-0.5 0.5 -0.5,-0.5 -0.5 0.5,-0.5 -0.5 -0.5">
+              <input type="hidden" class="solid__faces" value="0 1 5 4 #,0 4 6 2 #,0 2 3 1 #,7 3 2 6 #,7 6 4 5 #,7 5 1 3 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Cube</h2>
             <p class="solid__subtitle">Hexahedron, Square prism, Trigonal Trapezohedron</p>
+            <div class="solid__characteristics">
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Faces:</dt>
+                <dd class="solid__value">6</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Edges:</dt>
+                <dd class="solid__value">12</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Vertices:</dt>
+                <dd class="solid__value">8</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Dual:</dt>
+                <dd class="solid__value">
+                  <a href="#octahedron">Octahedron</a>
+                </dd>
+              </dl>
+            </div>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="icosahedron">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="1 12 20">
-            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183">
-            <input type="hidden" class="solid__vertices" value="0.5 0.0 C0,0.5 0.0 -C0,-0.5 0.0 C0,-0.5 0.0 -C0,C0 0.5 0.0,C0 -0.5 0.0,-C0 0.5 0.0,-C0 -0.5 0.0,0.0 C0 0.5,0.0 C0 -0.5,0.0 -C0 0.5,0.0 -C0 -0.5">
-            <input type="hidden" class="solid__faces" value="0 2 10 #,0 10 5 #,0 5 4 #,0 4 8 #,0 8 2 #,3 1 11 #,3 11 7 #,3 7 6 #,3 6 9 #,3 9 1 #,2 6 7 #,2 7 10 #,10 7 11 #,10 11 5 #,5 11 1 #,5 1 4 #,4 1 9 #,4 9 8 #,8 9 6 #,8 6 2 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="1 12 20">
+              <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183">
+              <input type="hidden" class="solid__vertices" value="0.5 0.0 C0,0.5 0.0 -C0,-0.5 0.0 C0,-0.5 0.0 -C0,C0 0.5 0.0,C0 -0.5 0.0,-C0 0.5 0.0,-C0 -0.5 0.0,0.0 C0 0.5,0.0 C0 -0.5,0.0 -C0 0.5,0.0 -C0 -0.5">
+              <input type="hidden" class="solid__faces" value="0 2 10 #,0 10 5 #,0 5 4 #,0 4 8 #,0 8 2 #,3 1 11 #,3 11 7 #,3 7 6 #,3 6 9 #,3 9 1 #,2 6 7 #,2 7 10 #,10 7 11 #,10 11 5 #,5 11 1 #,5 1 4 #,4 1 9 #,4 9 8 #,8 9 6 #,8 6 2 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Icosahedron</h2>
+            <div class="solid__characteristics">
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Faces:</dt>
+                <dd class="solid__value">20</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Edges:</dt>
+                <dd class="solid__value">30</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Vertices:</dt>
+                <dd class="solid__value">12</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Dual:</dt>
+                <dd class="solid__value">
+                  <a href="#dodecahedron">Dodecahedron</a>
+                </dd>
+              </dl>
+            </div>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="dodecahedron">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="2 20 12">
-            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183, 1.30901699437494742410229341718">
-            <input type="hidden" class="solid__vertices" value="0.0 0.5 C1,0.0 0.5 -C1,0.0 -0.5 C1, 0.0 -0.5 -C1,C1 0.0 0.5,C1 0.0 -0.5,-C1 0.0 0.5,-C1 0.0 -0.5,0.5 C1 0.0, 0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0, -C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
-            <input type="hidden" class="solid__faces" value="0 2 14 4 12 #,0 12 8 10 16 #, 0 16 6 18 2 #,7 6 16 10 17 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #, 9 15 5 4 14 #,9 14 2 18 11 #,13 1 17 10 8 #,13 8 12 4 5 #,13 5 15 3 1 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="2 20 12">
+              <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183, 1.30901699437494742410229341718">
+              <input type="hidden" class="solid__vertices" value="0.0 0.5 C1,0.0 0.5 -C1,0.0 -0.5 C1, 0.0 -0.5 -C1,C1 0.0 0.5,C1 0.0 -0.5,-C1 0.0 0.5,-C1 0.0 -0.5,0.5 C1 0.0, 0.5 -C1 0.0,-0.5 C1 0.0,-0.5 -C1 0.0,C0 C0 C0,C0 C0 -C0,C0 -C0 C0,C0 -C0 -C0, -C0 C0 C0,-C0 C0 -C0,-C0 -C0 C0,-C0 -C0 -C0">
+              <input type="hidden" class="solid__faces" value="0 2 14 4 12 #,0 12 8 10 16 #, 0 16 6 18 2 #,7 6 16 10 17 #,7 17 1 3 19 #,7 19 11 18 6 #,9 11 19 3 15 #, 9 15 5 4 14 #,9 14 2 18 11 #,13 1 17 10 8 #,13 8 12 4 5 #,13 5 15 3 1 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Dodecahedron</h2>
+            <div class="solid__characteristics">
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Faces:</dt>
+                <dd class="solid__value">12</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Edges:</dt>
+                <dd class="solid__value">30</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Vertices:</dt>
+                <dd class="solid__value">20</dd>
+              </dl>
+              <dl class="solid__characteristics-item">
+                <dt class="solid__key">Dual:</dt>
+                <dd class="solid__value">
+                  <a href="#icosahedron">Icosahedron</a>
+                </dd>
+              </dl>
+            </div>
           </div>
         </li>
       </ul>
@@ -124,8 +233,8 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
-<script src="/js/rendering-polyhedra.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/rendering-polyhedra.js"></script>
 
 </body>
 </html>

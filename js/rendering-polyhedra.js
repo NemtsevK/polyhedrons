@@ -1,15 +1,21 @@
-'use strict';
-var _b, _c, _m;
+let _b, _c, _m;
 
 function _n() {
-  var r, n, e, t, a, l, f, o = [131072, 512, 2, 131584, 131330, 514, 131328, 65794, 513, 66048, 256, 1, 257, 258, 65536, 65537, 65538, 65792, 131329, 66049, 66050, 131073, 131074, 131585];
+  let r;
+  let n;
+  let e;
+  let t;
+  let a;
+  let l;
+  let f;
+  const o = [131072, 512, 2, 131584, 131330, 514, 131328, 65794, 513, 66048, 256, 1, 257, 258, 65536, 65537, 65538, 65792, 131329, 66049, 66050, 131073, 131074, 131585];
   if (null == _b) {
     for (_c = Array(32), a = _b = Array(32), n = 32; 0 <= --n;) _c[n] = Array(192), a[n] = Array(192);
     for (r = 192; 0 <= --r;) {
-      for (t = r + 64, n = 24; 0 <= --n;) e = o[n], a[n][r] = 'rgb(' + ((e = e * (t >> 1) + (e >> 1 & 65793) * (1 & t)) >> 16) + ',' + (e >> 8 & 255) + ',' + (255 & e) + ')';
-      for (n = 9; 0 < --n;) a[n + 23][r] = 'rgb(' + (e = t * n >> 3) + ',' + e + ',' + e + ')';
+      for (t = r + 64, n = 24; 0 <= --n;) e = o[n], a[n][r] = `rgb(${(e = e * (t >> 1) + (e >> 1 & 65793) * (1 & t)) >> 16},${e >> 8 & 255},${255 & e})`;
+      for (n = 9; 0 < --n;) a[n + 23][r] = `rgb(${e = t * n >> 3},${e},${e})`;
       for (n = 32; 0 <= --n;
-      ) _c[n][r] = 'rgba' + a[n][r].slice(3, -1) + ',.125)'
+      ) _c[n][r] = `rgba${a[n][r].slice(3, -1)},.125)`
     }
   }
   for (l = document.querySelectorAll('.solid__content'), _m = [], r = -1; ++r < l.length;) {
@@ -19,7 +25,7 @@ function _n() {
 
 function _o(jt, zt) {
   function Ht(r, n, e, t, a, l, f, o, h, g, i) {
-    for (var y, A, u, w, s, I = r.length; 0 <= --I;) (y = n[(s = r[I]) >> 7])[384 + (s &= 127)] = l * (A = y[s] - e) + f * (u = y[128 + s] - t) + o * (w = y[256 + s] - a), y[512 + s] = h * A + g * u + i * w
+    for (let y, A, u, w, s, I = r.length; 0 <= --I;) (y = n[(s = r[I]) >> 7])[384 + (s &= 127)] = l * (A = y[s] - e) + f * (u = y[128 + s] - t) + o * (w = y[256 + s] - a), y[512 + s] = h * A + g * u + i * w
   }
 
   function f(r, n, e) {
@@ -27,8 +33,7 @@ function _o(jt, zt) {
   }
 
   function Jt(r, n, e) {
-    var t
-      , a, l = r.length;
+    let t, a, l = r.length;
     for (e[1] = e[3] = e[5] = -(e[0] = e[2] = e[4] = Number.MAX_VALUE); 0 <= --l;) f((t = n[(a = r[l]) >> 7])[a &= 127], e, 0), f(t[128 + a], e, 2), f(t[256 + a], e, 4)
   }
 
@@ -43,7 +48,7 @@ function _o(jt, zt) {
   }
 
   function Kt(r, n, e, t) {
-    var a, l, f, o, h, g, i;
+    let a, l, f, o, h, g, i;
     for (y(r, e), y(n, t), a = l = f = o = h = 0; ;) if ((g = r[f]) < (i = n[o])) {
       if (2 == (h ^= 1) && (l += g - a), a = g, ++f >= e) return l
     } else if (
@@ -75,18 +80,33 @@ function _o(jt, zt) {
   }
 
   function $t(r, n, e, t, a, l, f, o, h) {
-    var g, i, y, A, u, w, s, I, c = 5820766091346741e-26;
+    let g;
+    let i;
+    let y;
+    let A;
+    let u;
+    let w;
+    let s;
+    let I;
+    const c = 5820766091346741e-26;
     return Math.hypot(r - e, n - t) <= ml ? Math.abs((u = (g = h[(s = o[(l + 2) % o.length]) >> 7])[384 + (s &= 127)] - (y = (i = h[(I = f[(a + f.length - 1) % f.length]) >> 7])[384 + (I &= 127)])) * ((
       A = i[512 + I]) - .5 * (n + t)) - (w = g[512 + s] - A) * (y - .5 * (r + e))) < (u * u + w * w) * c ? 2 : 1 : 0
   }
 
   function ra(r, n, e, t, a, l) {
-    var f, o, h, g, i, y, A, u = 5820766091346741e-26;
+    let f;
+    let o;
+    let h;
+    let g;
+    let i;
+    let y;
+    let A;
+    const u = 5820766091346741e-26;
     return (A = Math.hypot(f = r - e, o = n - t)) <= ml ? 0 : Math.hypot(h = a - r, g = l - n) <= ml ? 1 : Math.abs(f * (y = l - t) - o * (i = a - e)) < (f * i + o * y) * u && Math.abs(h * y - g * i) < (h * i + g * y) * u ? A / Math.hypot(i, y) : -1
   }
 
   function na(r, n, e, t, a) {
-    var l, f;
+    let l, f;
     return (r[t] - (l = r[e])) * (n[a] - (f = n[e])) - (r[a] - l) * (n[t] - f)
   }
 
@@ -97,7 +117,7 @@ function _o(jt, zt) {
   }
 
   function ta(r, n, e, t, a, l, f) {
-    var o, h, g;
+    let o, h, g;
     if (l != t && l != a) {
       for (o = h = r[t] - 1; 0 <= o && e[o] > f; o--) ;
       if ((o < 0 || n[o] != l) && (o == h || n[o + 1] != l)) {
@@ -108,23 +128,23 @@ function _o(jt, zt) {
   }
 
   function aa(r, n, e, t, a) {
-    var l, f = t + a;
+    let l, f = t + a;
     if ((l = n - t) < 0) for (; --f >= t;) e[f] = r[f + l]; else for (; t < f; t++) e[t] = r[t + l]
   }
 
   function la(r, n, e, t, a) {
-    var l, f = t + a;
+    let l, f = t + a;
     if ((l = n - t) < 0) for (; --f >= t;) e[f] = r[f + l]; else for (; t < f; t++) e[t] = r[t + l]
   }
 
   function fa(r, n, e, t, a) {
-    var l, f = t + a;
+    let l, f = t + a;
     if ((l = n - t
     ) < 0) for (; --f >= t;) e[f] = r[f + l]; else for (; t < f; t++) e[t] = r[t + l]
   }
 
   function oa(r, n, e, t) {
-    var a;
+    let a;
     return n >= r.length && (la(r, 0, a = new Int32Array(r.length + t), 0, r.length), r = a), r[n] = e, r
   }
 
@@ -211,7 +231,7 @@ function _o(jt, zt) {
   }
 
   function wa(r, n, e) {
-    var t;
+    let t;
     return Vl[t = Ua++] = r, Pl[t] = n, ql[t] = e, t
   }
 
@@ -224,7 +244,7 @@ function _o(jt, zt) {
   }
 
   function ca(r, n) {
-    var e;
+    let e;
     return r = r.substring(1 - (e = '-' == r.charAt(0) ? -1 : 1) >> 1), e * ('C' == r.charAt(0) ? n[parseInt(r.substring(1), 10)] : parseFloat(r))
   }
 
@@ -233,21 +253,21 @@ function _o(jt, zt) {
   }
 
   function e(r, n, e) {
-    var t, a, l, f;
+    let t, a, l, f;
     r ? Al = !0 : yl = !0, a = ~~(n - (t = zt.getBoundingClientRect()).left + .5), l = ~~(e - t.top + .5), g = 0, Ga < a && a <= Wa && Oa < l && l <= Qa ? 0 <= (g = 0 < (h = a - (f = Ja)) && h <= $a && Ka < l && l <= Za ? -1 : 1) && (a <= f ? el < f && Ja-- : f + $a < a && f < tl && Ja++) : ll < a && a <= fl && ol < l && l <= hl ? (g = 1, ul ^= !0) : (xa = a, Ra = o = l), 0 < g && (Ya = xa, Da = Ra, Ea(), Na())
   }
 
-  function va(r) {
-    r.button && 2 != r.button || e(r.button, r.clientX, r.clientY)
+  function va({button, clientX, clientY}) {
+    button && 2 != button || e(button, clientX, clientY)
   }
 
   function Ma(r) {
-    var n;
+    let n;
     r.preventDefault(), e(0, (n = r.targetTouches[0]).clientX, n.clientY)
   }
 
-  function ma(r) {
-    r.button && 2 != r.button || (r.button ? Al = !1 : yl = !1)
+  function ma({button}) {
+    button && 2 != button || (button ? Al = !1 : yl = !1)
   }
 
   function Fa(r) {
@@ -255,16 +275,16 @@ function _o(jt, zt) {
   }
 
   function t(r, n) {
-    var e, t, a, l, f;
+    let e, t, a, l, f;
     yl | Al && g <= 0 && (t = ~~(r - (e = zt.getBoundingClientRect()).left + .5), Ya = xa, Da = Ra, g < 0 ? Ja = (t -= h) < el ? el : tl < t ? tl : t : (a = ~~(n - e.top + .5), yl && (xa = t, Ra = a), Al && .5 <= (f = (l = bl * Math.exp((a - o) * pl)) * cl) && (bl = l, vl = .75 / (Fl < f ? .5 * (f + Fl) : f)), o = a), Ea(), Na())
   }
 
-  function ka(r) {
-    t(r.clientX, r.clientY)
+  function ka({clientX, clientY}) {
+    t(clientX, clientY)
   }
 
   function pa(r) {
-    var n;
+    let n;
     r.preventDefault(), t((n = r.targetTouches[0]).clientX, n.clientY)
   }
 
@@ -273,7 +293,88 @@ function _o(jt, zt) {
   }
 
   function Ea() {
-    var r, n, e, t, a, l, f, o, h, g, i, y, A, u, w, s, I, c, b, v, M, m, F, k, p, d, E, N, T, C, L, B, S, U, X, V, P, _, q, x, R, Y, D, G, W, O, Q, j, z, H, J, K, Z, $, rr, nr, er, tr, ar, lr, fr, or, hr, gr, ir, yr, Ar, ur, wr, sr, Ir, cr, br, vr, Mr, mr, Fr, kr = 1.5707963267948966, pr = (Ya - La) * (V = vl), dr = (Ba - Da) * V, Er = (xa - La) * V, Nr = (Ba - Ra) * V;
+    let r;
+    let n;
+    let e;
+    let t;
+    let a;
+    let l;
+    let f;
+    let o;
+    let h;
+    let g;
+    let i;
+    let y;
+    let A;
+    let u;
+    let w;
+    let s;
+    let I;
+    let c;
+    let b;
+    let v;
+    let M;
+    let m;
+    let F;
+    let k;
+    let p;
+    let d;
+    let E;
+    let N;
+    let T;
+    let C;
+    let L;
+    let B;
+    let S;
+    let U;
+    let X;
+    let V;
+    let P;
+    let _;
+    let q;
+    let x;
+    let R;
+    let Y;
+    let D;
+    let G;
+    let W;
+    let O;
+    let Q;
+    let j;
+    let z;
+    let H;
+    let J;
+    let K;
+    let Z;
+    let $;
+    let rr;
+    let nr;
+    let er;
+    let tr;
+    let ar;
+    let lr;
+    let fr;
+    let or;
+    let hr;
+    let gr;
+    let ir;
+    let yr;
+    let Ar;
+    let ur;
+    let wr;
+    let sr;
+    let Ir;
+    let cr;
+    let br;
+    let vr;
+    let Mr;
+    let mr;
+    let Fr;
+    const kr = 1.5707963267948966;
+    let pr = (Ya - La) * (V = vl);
+    let dr = (Ba - Da) * V;
+    let Er = (xa - La) * V;
+    let Nr = (Ba - Ra) * V;
     for (1 <= (_ = Math.hypot(pr, dr)) ? (0 != (V = Math.hypot(Er, Nr)) && (Er *= V = 1 - (_ - 1) / V, Nr *= V),
       n = 0) : (_ = Ia(pr, dr, n = Math.cos(_ * kr)), n /= _), pr /= _, dr /= _, 1 < (_ = Math.hypot(Er, Nr)) && (Er *= V = (P = _ % 4) / _, Nr *= V, 1 < P && (Er *= V = (P <= 3 ? 2 - P : P - 4) / P, Nr *= V)), t = n * (Er /= _ = Ia(Er, Nr, r = Math.cos(_ * kr))) - (r /= _) * pr, a = pr * (Nr /= _) - Er * dr, f = (e = dr * r - Nr * n) * (_ = .5 / (l = Math.sqrt(.5 * (1 + pr * Er + dr * Nr + n * r)))), o = t * _, h = a * _, ($ = El)[0] = g = l * (u = $[0]) - f * (w = $[1]) - o * (s = $[2]) - h * (I = $[3]), $[1] = i = l * w + f * u + o * I - h * s, $[2] = y = l * s - f * I + o * u + h * w, $[3] = A = l * I + f * s - o * w + h * u, c = g * (V = 2 * i), M = V * i, m = V * y, F = V * A, b = g * (V = 2 * y), k = V * y, p = V * A, v = g * (V = 2 * A), E = 1 - (k + (d = V * A)), N = m - v, T = F + b,
            C = m + v, L = 1 - (M + d), B = p - c, S = F - b, U = p + c, X = 1 - (M + k), z = (Ja - al) * Ml, rr = Sl, nr = Ul, er = Xl, tr = bl, Z = Ua, Lr = ar = 0; 0 <= --Z;) Tr(Z, E * (e = Vl[Z]) + N * (t = Pl[Z]) + T * (a = ql[Z]), C * e + L * t + B * a, z * (er[Z] = (S * e + U * t + X * a) * tr), tr, rr, nr);
@@ -298,58 +399,408 @@ function _o(jt, zt) {
   }
 
   function Tr(r, n, e, t, a, l, f) {
-    var o = 42535295865117303e21, h = -42535295865117303e21;
+    const o = 42535295865117303e21, h = -42535295865117303e21;
     t = t < 1 ? a / (1 - t) : Number.POSITIVE_INFINITY, f[r] = 0 != e ? e * t : 0, isFinite(l[r] = 0 != n ? n * t : 0) && isFinite(f[r]) || (Math.abs(n) >= Math.abs(e) ? f[r] = (l[r] = 0 < n ? o : h) * (e / n) : l[r] = (f[r] = 0 < e ? o : h) * (n / e))
   }
 
   function w(r,
              n, e, t, a) {
-    for (var l = r.length; 0 <= --l;) n[l] = t[r[l]], e[l] = a[r[l]]
+    for (let l = r.length; 0 <= --l;) n[l] = t[r[l]], e[l] = a[r[l]]
   }
 
   function s(r, n, e) {
-    var t;
+    let t;
     for (Af.beginPath(), Af.moveTo(r[0], n[0]), t = 0; ++t < e;) Af.lineTo(r[t], n[t]);
     Af.closePath(), Af.stroke()
   }
 
   function I(r, n, e) {
-    var t;
+    let t;
     for (Af.beginPath(), Af.moveTo(r[0], n[0]), t = 0; ++t < e;) Af.lineTo(r[t], n[t]);
     Af.fill()
   }
 
   function c(r, n, e, t, a) {
-    var l, f, o, h, g, i;
+    let l, f, o, h, g, i;
     Af.beginPath(), Af.moveTo(l = r + a, n), Af.quadraticCurveTo(r, n, r, h = n + a), Af.lineTo(r, i = (g = n + t) - a), Af.quadraticCurveTo(r, g, l, g), Af.lineTo(o = (f = r + e) - a, g), Af.quadraticCurveTo(f, g, f
       , i), Af.lineTo(f, h), Af.quadraticCurveTo(f, n, o, n), Af.lineTo(l, n), Af.fill()
   }
 
   function Na() {
-    var r, n, e, t, a, l, f, o, h, g, i, y, A, u;
+    let r, n, e, t, a, l, f, o, h, g, i, y, A, u;
     if (Af.fillStyle = of, Af.fillRect(0, 0, Ta, Ca), t = jl[0], a = jl[1], l = zl[0], f = zl[1], ul) for (o = Lr, h = tf, g = yf; ;) {
       for (n = 0; n < o; n++) w(e = Yl[r = h[n]], t, a, l, f), Af.fillStyle = ff[r][255 & Zl[r]], I(t, a, e.length), Af.strokeStyle = g, s(t, a, e.length);
       if (h == ef) break;
       o = Cr, h = ef, g = gf
     } else for (n = 0; n < Cr; n++) for (w(e = Dl[r = ef[n]], t, a, l, f), Af.fillStyle = Af.strokeStyle = lf[r][255 & Zl[r]], I(t, a, e.length), i = Rl; ;) {
       if (null == i[r]
-      ) s(t, a, e.length); else for (A = (y = i[r]).length; 0 <= --A;) w(u = y[A], t, a, l, f), function (r, n, e) {
-        var t;
+      ) s(t, a, e.length); else for (A = (y = i[r]).length; 0 <= --A;) w(u = y[A], t, a, l, f), ((r, n, e) => {
+        let t;
         for (Af.beginPath(), Af.moveTo(r[0], n[0]), t = 0; ++t < e;) Af.lineTo(r[t], n[t]);
         Af.stroke()
-      }(t, a, u.length);
+      })(t, a, u.length);
       if (i == xl) break;
       Af.strokeStyle = hf, i = xl
     }
     Af.fillStyle = 'lightGray', c(Ga, r = Oa, ja, za, n = nl), Af.strokeStyle = of, Af.beginPath(), Af.moveTo(Ha, r), Af.lineTo(Ha, Qa), Af.closePath(), Af.stroke(), Af.fillStyle = '#505050', c(Ja, Ka, $a, rl, n), ul || (Af.fillStyle = _b[4][64], Af.fillRect(ll, ol, gl, gl)), Af.strokeStyle = Af.fillStyle = 'black',
-      Af.strokeRect(ll, ol, gl, gl), 0 < (r = Pa) && (Af.font = ~~(Ta / 20) + 'px Courier New', Af.fillText('WARNING: ' + r + (1 == r ? ' face is non-planar' : ' faces are non-planar'), 0, 63 * Ca >> 6)), Ja == el && (Af.font = '10px Courier New', Af.fillText('v3.0', Ta >> 6, 63 * Ca >> 6))
+      Af.strokeRect(ll, ol, gl, gl), 0 < (r = Pa) && (Af.font = `${~~(Ta / 20)}px Courier New`, Af.fillText(`WARNING: ${r}${1 == r ? ' face is non-planar' : ' faces are non-planar'}`, 0, 63 * Ca >> 6)), Ja == el && (Af.font = '10px Courier New', Af.fillText('v3.0', Ta >> 6, 63 * Ca >> 6))
   }
 
-  var Ta, Ca, La, Ba, Sa, Ua, Xa, Va, Pa, qa, o, xa, Ra, Ya, Da, Ga, Wa, Oa, Qa, ja, za, Ha, Ja, Ka, Za, $a, rl, nl, el, tl, al, h, ll, fl, ol, hl, gl, Cr, Lr, il, g, yl, Al, ul, wl, sl, Il, cl, bl, vl, Ml, ml, Fl, kl, pl, dl, El, Nl, Tl, Cl, Ll, Bl, Sl, Ul, Xl, Vl, Pl, ql, xl, Rl, Yl, Dl, Gl, Wl, Ol, Ql, jl, zl, Hl, Jl, Kl, Zl, $l, rf, nf, ef, tf,
-    af, lf, ff, of, hf, gf, yf, Af;
-  _m[_m.length] = (Af = zt.getContext('2d'), void function () {
-    var r, n, e, t, a, l, f, o, h, g, i, y, A, u, w, s, I, c, b, v, M, m, F, k, p, d, E, N, T, C, L, B, S, U, X, V, P, _, q, x, R, Y, D, G, W, O, Q, j, z, H, J, K, Z, $, rr, nr, er, tr, ar, lr, fr, or, hr, gr, ir, yr, Ar, ur, wr, sr, Ir, cr, br, vr, Mr, mr, Fr, kr, pr, dr, Er, Nr, Tr, Cr, Lr, Br, Sr, Ur, Xr, Vr, Pr, qr, xr, Rr, Yr, Dr, Gr, Wr, Or, Qr, jr, zr, Hr, Jr, Kr, Zr, $r, rn, nn, en, tn, an, ln, fn, on, hn, gn, yn, An, un, wn, sn, In, cn, bn, vn, Mn, mn, Fn, kn, pn, dn, En, Nn, Tn, Cn, Ln, Bn, Sn, Un, Xn, Vn, Pn, qn, xn, Rn, Yn, Dn, Gn, Wn, On, Qn, jn, zn, Hn, Jn, Kn,
-      Zn, $n, re, ne, ee, te, ae, le, fe, oe, he, ge, ie, ye, Ae, ue, we, se, Ie, ce, be, ve, Me, me, Fe, ke, pe, de, Ee, Ne, Te, Ce, Le, Be, Se, Ue, Xe, Ve, Pe, qe, xe, Re, Ye, De, Ge, We, Oe, Qe, je, ze, He, Je, Ke, Ze, $e, rt, nt, et, tt, at, lt, ft, ot, ht, gt, it, yt, At, ut, wt, st, It, ct, bt, vt, Mt, mt, Ft, kt, pt, dt, Et, Nt, Tt, Ct, Lt, Bt, St, Ut, Xt, Vt, Pt, _t, qt, xt = 5820766091346741e-26, Rt = 33881317890172014e-37, Yt = 2.3283064365386963e-10, Dt = 1.4629180792671596e-9, Gt = 6.283185307179586, Wt = -3.141592653589793, Ot = 5.960464477539063e-8, Qt = 3019169939857233e154;
+  var Ta;
+  var Ca;
+  var La;
+  var Ba;
+  var Sa;
+  var Ua;
+  var Xa;
+  var Va;
+  var Pa;
+  var qa;
+  var o;
+  var xa;
+  var Ra;
+  var Ya;
+  var Da;
+  var Ga;
+  var Wa;
+  var Oa;
+  var Qa;
+  var ja;
+  var za;
+  var Ha;
+  var Ja;
+  var Ka;
+  var Za;
+  var $a;
+  var rl;
+  var nl;
+  var el;
+  var tl;
+  var al;
+  var h;
+  var ll;
+  var fl;
+  var ol;
+  var hl;
+  var gl;
+  var Cr;
+  var Lr;
+  var il;
+  var g;
+  var yl;
+  var Al;
+  var ul;
+  let wl;
+  let sl;
+  let Il;
+  var cl;
+  var bl;
+  var vl;
+  var Ml;
+  var ml;
+  var Fl;
+  var kl;
+  var pl;
+  var dl;
+  var El;
+  var Nl;
+  var Tl;
+  var Cl;
+  var Ll;
+  var Bl;
+  var Sl;
+  var Ul;
+  var Xl;
+  var Vl;
+  var Pl;
+  var ql;
+  var xl;
+  var Rl;
+  var Yl;
+  var Dl;
+  var Gl;
+  var Wl;
+  var Ol;
+  var Ql;
+  var jl;
+  var zl;
+  var Hl;
+  var Jl;
+  var Kl;
+  var Zl;
+  var $l;
+  var rf;
+  var nf;
+  var ef;
+  var tf;
+  var af;
+  var lf;
+  var ff;
+  var of;
+  var hf;
+  var gf;
+  var yf;
+  var Af;
+  _m[_m.length] = (Af = zt.getContext('2d'), void (() => {
+    let r;
+    let n;
+    let e;
+    let t;
+    let a;
+    let l;
+    let f;
+    let o;
+    let h;
+    let g;
+    let i;
+    let y;
+    let A;
+    let u;
+    let w;
+    let s;
+    let I;
+    let c;
+    let b;
+    let v;
+    let M;
+    let m;
+    let F;
+    let k;
+    let p;
+    let d;
+    let E;
+    let N;
+    let T;
+    let C;
+    let L;
+    let B;
+    let S;
+    let U;
+    let X;
+    let V;
+    let P;
+    let _;
+    let q;
+    let x;
+    let R;
+    let Y;
+    let D;
+    let G;
+    let W;
+    let O;
+    let Q;
+    let j;
+    let z;
+    let H;
+    let J;
+    let K;
+    let Z;
+    let $;
+    let rr;
+    let nr;
+    let er;
+    let tr;
+    let ar;
+    let lr;
+    let fr;
+    let or;
+    let hr;
+    let gr;
+    let ir;
+    let yr;
+    let Ar;
+    let ur;
+    let wr;
+    let sr;
+    let Ir;
+    let cr;
+    let br;
+    let vr;
+    let Mr;
+    let mr;
+    let Fr;
+    let kr;
+    let pr;
+    let dr;
+    let Er;
+    let Nr;
+    let Tr;
+    let Cr;
+    let Lr;
+    let Br;
+    let Sr;
+    let Ur;
+    let Xr;
+    let Vr;
+    let Pr;
+    let qr;
+    let xr;
+    let Rr;
+    let Yr;
+    let Dr;
+    let Gr;
+    let Wr;
+    let Or;
+    let Qr;
+    let jr;
+    let zr;
+    let Hr;
+    let Jr;
+    let Kr;
+    let Zr;
+    let $r;
+    let rn;
+    let nn;
+    let en;
+    let tn;
+    let an;
+    let ln;
+    let fn;
+    let on;
+    let hn;
+    let gn;
+    let yn;
+    let An;
+    let un;
+    let wn;
+    let sn;
+    let In;
+    let cn;
+    let bn;
+    let vn;
+    let Mn;
+    let mn;
+    let Fn;
+    let kn;
+    let pn;
+    let dn;
+    let En;
+    let Nn;
+    let Tn;
+    let Cn;
+    let Ln;
+    let Bn;
+    let Sn;
+    let Un;
+    let Xn;
+    let Vn;
+    let Pn;
+    let qn;
+    let xn;
+    let Rn;
+    let Yn;
+    let Dn;
+    let Gn;
+    let Wn;
+    let On;
+    let Qn;
+    let jn;
+    let zn;
+    let Hn;
+    let Jn;
+    let Kn;
+    let Zn;
+    let $n;
+    let re;
+    let ne;
+    let ee;
+    let te;
+    let ae;
+    let le;
+    let fe;
+    let oe;
+    let he;
+    let ge;
+    let ie;
+    let ye;
+    let Ae;
+    let ue;
+    let we;
+    let se;
+    let Ie;
+    let ce;
+    let be;
+    let ve;
+    let Me;
+    let me;
+    let Fe;
+    let ke;
+    let pe;
+    let de;
+    let Ee;
+    let Ne;
+    let Te;
+    let Ce;
+    let Le;
+    let Be;
+    let Se;
+    let Ue;
+    let Xe;
+    let Ve;
+    let Pe;
+    let qe;
+    let xe;
+    let Re;
+    let Ye;
+    let De;
+    let Ge;
+    let We;
+    let Oe;
+    let Qe;
+    let je;
+    let ze;
+    let He;
+    let Je;
+    let Ke;
+    let Ze;
+    let $e;
+    let rt;
+    let nt;
+    let et;
+    let tt;
+    let at;
+    let lt;
+    let ft;
+    let ot;
+    let ht;
+    let gt;
+    let it;
+    let yt;
+    let At;
+    let ut;
+    let wt;
+    let st;
+    let It;
+    let ct;
+    let bt;
+    let vt;
+    let Mt;
+    let mt;
+    let Ft;
+    let kt;
+    let pt;
+    let dt;
+    let Et;
+    let Nt;
+    let Tt;
+    let Ct;
+    let Lt;
+    let Bt;
+    let St;
+    let Ut;
+    let Xt;
+    let Vt;
+    let Pt;
+    let _t;
+    let qt;
+    const xt = 5820766091346741e-26;
+    const Rt = 33881317890172014e-37;
+    const Yt = 2.3283064365386963e-10;
+    const Dt = 1.4629180792671596e-9;
+    const Gt = 6.283185307179586;
+    const Wt = -3.141592653589793;
+    const Ot = 5.960464477539063e-8;
+    const Qt = 3019169939857233e154;
     if (xa = Ya = La = (Br = Ta = zt.width
     ) >> 1, Ra = Da = Ba = (Sr = Ca = zt.height) >> 1, of = (Ur = jt.getElementsByClassName('solid__background')).length ? Ur[0].value : '#606060', hf = (Ur = jt.getElementsByClassName('EdgeColor')).length ? Ur[0].value : 'black', gf = (Ur = jt.getElementsByClassName('WireColor')).length ? Ur[0].value : 'black', Af.fillStyle = of, Af.fillRect(0, 0, Br, Sr), Za = (Qa = (Oa = er = Sr >> 6) + (za = tr = Sr < 256 ? 8 : Sr >> 5)) - 1, Ka = er + 1, nl = tr >> 1, Ja = (al = ar = (3 * (Y = (tl = (Wa = (Ga = Br >> 2) + (ja = Br >> 1)) - ($a = rl = tr - 2) - 1) - (el = Ga + 1)) >> 2) + el) + (Y >> 4), Ha = ar + ($a >> 1), Ml = (pl = .5 / (Fl = Br >> 1)) / (P = 3 * (tl - ar
     ) >> 3), (Ur = jt.getElementsByClassName('Perspective')).length && ((Ja = ar + ~~(parseFloat(Ur[0].value) * P)) > tl && (Ja = tl), Ja < el && (Ja = el)), fl = (ll = Br >> 6) + (gl = hr = tr << 1), hl = (ol = er) + hr, (Xr = El = new Float64Array(4))[0] = 1, (Ur = jt.getElementsByClassName('Quaternion')).length) {
@@ -407,7 +858,7 @@ function _o(jt, zt) {
       } else En[dn[tr++] = or] = !0, (Nn[or] = Ln) && nr++
     }
     if (An = nn = rn = null, yf = sl ? gf : '#888888', bl = Fl * ((Ur = jt.getElementsByClassName('Scale')).length ? .75 * parseFloat(Ur[0].value) : .75) / Hr, vl = 1 / Fl, Fl += .5, kl = .5 + (Sr >> 1), Bn = (
-      ml = (cl = Hr) * xt) * ml, Cr = Lr = null, 0 != W) for (Lr = Array((Cr = Array(er = W)).length); 0 <= --er;) for (Lr[er] = Array(192), Cr[er] = Array(192), tr = 192, un = Cr[er], Mn = Lr[er], Un = (Sn = Nr[er]) >> 8 & 255, Xn = 255 & Sn, Sn >>= 16; 0 <= --tr;) un[tr] = 'rgb(' + ~~((Sn * (ar = tr + 64) + 127) / 255) + ',' + ~~((Un * ar + 127) / 255) + ',' + ~~((Xn * ar + 127) / 255) + ')', Mn[tr] = 'rgba' + un[tr].slice(3, -1) + ',.125)';
+      ml = (cl = Hr) * xt) * ml, Cr = Lr = null, 0 != W) for (Lr = Array((Cr = Array(er = W)).length); 0 <= --er;) for (Lr[er] = Array(192), Cr[er] = Array(192), tr = 192, un = Cr[er], Mn = Lr[er], Un = (Sn = Nr[er]) >> 8 & 255, Xn = 255 & Sn, Sn >>= 16; 0 <= --tr;) un[tr] = `rgb(${~~((Sn * (ar = tr + 64) + 127) / 255)},${~~((Un * ar + 127) / 255)},${~~((Xn * ar + 127) / 255)})`, Mn[tr] = `rgba${un[tr].slice(3, -1)},.125)`;
     for (yr = -1, Sa = ar = 0, Vn = Array((Pn = Array(1024)).length); ++yr < Vr;) (en[yr] = Aa(Vn, e = Or[yr], t = Qr[yr], a = jr[yr], Bn, Jr, Zr, $r, Pn)) != yr && (Sa++, ar = 1, (
       sr = Vn[er = yr >> 7] = null == Vn[er] ? new Float64Array(640) : Vn[er])[tr = 127 & yr] = e, sr[tr + 128] = t, sr[tr + 256] = a);
     if (0 != ar) for (er = qr; 0 <= --er;) for (tr = (pr = tn[er >> 9][511 & er]).length; 0 <= --tr;) for (; (pr[tr] = en[fr = pr[tr]]) != fr;) ;
@@ -425,8 +876,8 @@ function _o(jt, zt) {
       }
       for (P = -(l * w + f * s + o * I); ar < er && (Math.abs(P - (Mn = gn[xr[ar]])[3]) > ml || sa(w - Mn[0],
         s - Mn[1], I - Mn[2]) > Rt); ar++) ;
-      if ((Mn = gn[xr[er] = ar == er ? rr++ : xr[ar]])[0] = w, Mn[1] = s, Mn[2] = I, Mn[3] = P, wa(e = l + h * (p = function (r, n, e, t, a, l) {
-        var f, o, h, g, i, y, A, u, w, s, I, c, b, v;
+      if ((Mn = gn[xr[er] = ar == er ? rr++ : xr[ar]])[0] = w, Mn[1] = s, Mn[2] = I, Mn[3] = P, wa(e = l + h * (p = ((r, n, e, t, a, l) => {
+        let f, o, h, g, i, y, A, u, w, s, I, c, b, v;
         r:for (f = e; ;) for (b = .5 * ((o = r[t]) + r[a]), v = .5 * ((h = n[t]) + n[a]), i = l, g = (o -= b) * o + (h -= v) * h; ;) {
           for (; i < e; i++) if ((o = r[i] - b) * o + (h = n[i] - v) * h > g) {
             if (0 != l) {
@@ -439,7 +890,7 @@ function _o(jt, zt) {
           i = e + 1, e = 0 == l ? a : f, t = a
             , a = l++
         }
-      }(ur, wr, pr.length, 0, 1, 2)) + y * (d = wr[0]), t = f + g * p + A * d, a = o + i * p + u * d), wa(e + (P = Hr * Ot) * h, t + P * g, a + P * i), wa(e + P * y, t + P * A, a + P * u), $ = 0, 2 < (tr = pr.length - 1)) {
+      })(ur, wr, pr.length, 0, 1, 2)) + y * (d = wr[0]), t = f + g * p + A * d, a = o + i * p + u * d), wa(e + (P = Hr * Ot) * h, t + P * g, a + P * i), wa(e + P * y, t + P * A, a + P * u), $ = 0, 2 < (tr = pr.length - 1)) {
         r:for (; 0 <= (ar = tr--);) for (l = (sr = Vn[(yr = pr[ar]) >> 7])[yr &= 127], f = sr[yr + 128], o = sr[yr + 256]; 0 <= --ar;) if (Math.abs((w * ((sr = Vn[(yr = pr[ar]) >> 7])[ir = 127 & yr] - l) + s * (sr[ir + 128] - f) + I * (sr[ir + 256] - o)) / zr[yr]) > Yt) {
           Pa++;
           break r
@@ -678,10 +1129,10 @@ function _o(jt, zt) {
       r:for (or = 1, l = Yr[ar *= 3], f = Dr[ar], o = Gr[ar]; ; or = 2) n:for (er = fr = lr = rt = 0, gr = -1; ;) if ((pr[fr++] = ir = pr[er++]) < 0) 0 <= gr && (ze[gr] = hr), He[++gr] = fr - 1, hr = ir, lr = or; else for (1 == or && Ht(tn[ir >> 9][511 & ir], Vn, l, f, o, h, g, i, y, A, u); 0 == ++hr;) {
         if (0 == --lr) {
           for (Zn = ar = wn = He[gr] - (yr = -1
-          ), $n = ne = 0, rt = 1; ar < fr; $n++) for ((ir = pr[ar++]) < 0 ? (nr = $n, yr = ir, ir = pr[ar++]) : 0 == ++yr && (nr = 2147483647), pr[Zn++] = ir, (re = ne + $n) > (Dn = Ze.length) && function (r, n, e, t, a) {
-            var l, f;
+          ), $n = ne = 0, rt = 1; ar < fr; $n++) for ((ir = pr[ar++]) < 0 ? (nr = $n, yr = ir, ir = pr[ar++]) : 0 == ++yr && (nr = 2147483647), pr[Zn++] = ir, (re = ne + $n) > (Dn = Ze.length) && ((r, n, e, t, a) => {
+            let l, f;
             if (l = t + a, (f = n - t) < 0) for (; --l >= t;) e[l] = r[l + f]; else for (; t < l; t++) e[t] = r[t + f]
-          }(Ze, 0, Ze = new Uint8Array(re), 0, Dn), re = -1; ++re < $n;) Ze[ne++] = nr <= re;
+          })(Ze, 0, Ze = new Uint8Array(re), 0, Dn), re = -1; ++re < $n;) Ze[ne++] = nr <= re;
           for (yr = wn, nr = 0, re = Zn; ++yr < Zn;) e:for (ir = wn - 1; ++ir < yr; nr++) if (!Ze[nr] && 0 <= (kn = pr[ir])) {
             for (ar = (un = tn[kn >> 9][511 & kn]).length, Mn = tn[(pn = pr[yr]) >> 9][511 & pn], M = (sr = Vn[(mn = un[0]) >> 7])[384 + (mn &= 127)],
                    m = sr[mn + 512], et = (sr = Vn[(mn = Mn[0]) >> 7])[384 + (mn &= 127)], tt = sr[mn + 512], nt = 0; 0 <= --ar; M = F, m = k) for (hr = Mn.length, X = (F = (sr = Vn[(mn = un[ar]) >> 7])[384 + (mn &= 127)]) - M, V = (k = sr[mn + 512]) - m, p = et, d = tt; 0 <= --hr; p = E, d = N) if (Math.hypot(S = F - (E = (sr = Vn[(mn = Mn[hr]) >> 7])[384 + (mn &= 127)]), U = k - (N = sr[mn + 512])) > ml && Math.hypot(L = p - M, B = d - m) > ml && Math.abs(L * V - B * X) < (L * X + B * V) * xt && Math.abs(S * V - U * X) < (S * X + U * V) * xt) {
@@ -735,8 +1186,8 @@ function _o(jt, zt) {
       for (tr = yr, er = -1; 0 <= tr; tr = it[ne][wn]) It[ar = Hn[ln[ne = tr >> 9][wn = 511 & tr]]] != ut && (It[ar] = ut, er < 0 ? er = ar : pr[gr] = ar, gr = ar);
       for (ar = 0, pr[gr] = -1, gr = 2147483647; 0 <= er; er = pr[er]) {
         for (tr = yr,
-               nr = hr = ir = 0; 0 <= tr; tr = it[ne][wn]) Hn[bt = ln[ne = tr >> 9][wn = 511 & tr]] == er ? nr++ : (3 == (or = ga(un = tn[ne][wn], ct = gn[Qn[er]], Vn)) && (hr += function (r, n, e, t, a) {
-          var l, f, o, h, g, i, y, A, u, w, s, I, c, b, v, M, m, F, k, p, d, E, N, T, C, L, B, S, U, X, V, P, _, q;
+               nr = hr = ir = 0; 0 <= tr; tr = it[ne][wn]) Hn[bt = ln[ne = tr >> 9][wn = 511 & tr]] == er ? nr++ : (3 == (or = ga(un = tn[ne][wn], ct = gn[Qn[er]], Vn)) && (hr += ((r, n, e, t, a) => {
+          let l, f, o, h, g, i, y, A, u, w, s, I, c, b, v, M, m, F, k, p, d, E, N, T, C, L, B, S, U, X, V, P, _, q;
           for (f = (q = dl[rf[t]])[0] * r, o = q[1] * r, h = q[2] * r, g = e[0], i = e[1], y = e[2], A = e[3], P = 0; ; P++) if (Math.abs(T = (I = (l = a[(V = n[P]) >> 7])[V &= 127]) * g + (c = l[V + 128]) * i + (b = l[V + 256]) * y + A) > ml) {
             B = T / Math.abs(T);
             break
@@ -753,7 +1204,7 @@ function _o(jt, zt) {
             if (_ <= P) return X >> 1;
             u = I, w = c, s = b, L = B, I = v, c = M, b = m, B = S
           }
-        }(hn[ne][wn], un, ct, bt, Vn)), ir |= or);
+        })(hn[ne][wn], un, ct, bt, Vn)), ir |= or);
         (0 != nr || 3 == ir) && hr <= gr && (hr < gr || ar < nr) && (fr = er, gr = hr, ar = nr)
       }
       for (null != wt && (wt[yt] = At), ct = gn[Qn[((st[ne = At >> 8] = null == st[ne] ? Array(256) : st[ne]
@@ -790,10 +1241,10 @@ function _o(jt, zt) {
     for (er = Pr; 0 <= --er;) Rr[er] = new Int32Array(pr[er]), pr[er] = 0;
     for (er = Z; 0 <= --er;) vt[er] = new Int32Array(Er[er]), Er[er] = 0;
     for (lf = Array(er = qr), D = 0; 0 <= --er;) Rr[tr = ln[gr = er >> 9][lr = 511 & er]][pr[tr]++] = er, vt[ar = fn[gr][lr]][Er[ar]++] = er, lf[er] = (ar = Tr[tr]) < 0 ? _b[31 & -ar] : Cr[ar], (ar = tn[gr][lr].length) > D && (D = ar);
-    for (tr = qr + 512 - ((er = qr + 511 >> 9) << 9), Kl = new Int8Array((Dl = Array(qr)).length); 0 <= --er; tr = 512) aa(tn[er], 0, Dl, ar = er << 9, tr), function (r, n, e, t, a) {
-      var l, f;
+    for (tr = qr + 512 - ((er = qr + 511 >> 9) << 9), Kl = new Int8Array((Dl = Array(qr)).length); 0 <= --er; tr = 512) aa(tn[er], 0, Dl, ar = er << 9, tr), ((r, n, e, t, a) => {
+      let l, f;
       if (l = t + a, (f = n - t) < 0) for (; --l >= t;) e[l] = r[l + f]; else for (; t < l; t++) e[t] = r[t + f]
-    }(hn[er], 0, Kl, ar, tr);
+    })(hn[er], 0, Kl, ar, tr);
     for (hn = tn = st = null, xl = Array((Rl = Array(qr)).length), kr = new Int32Array((Fr = new Int32Array((dr = new Int32Array(D)).length + 1)).length), Le && (Er = new Int32Array(D)), Mt = Gl = Array(qr), mt = Nl, Ft = Tl, kt = new Int32Array(0), pt = new Int32Array(0), hr = Z; 0 <= --hr;) if (0 != (dt = vt[hr]).length) {
       for (P = 1 + (I = (Mn = gn[xr[bt = ln[(er = dt[0]) >> 9][511 & er]]])[2]) * (xn = I < 0 ? -1 : 1), h = (1 - (i = -Mn[0]) * i / P) * xn, A = 1 - (u = -Mn[1] * xn) * u / P, y = (g = -i * u / P) * xn
              , l = Yr[ar = 3 * bt], f = Dr[ar], o = Gr[ar], tr = (Cn = Ae[hr]).length; 0 <= --tr;) mt[yr = Cn[tr]] = h * (e = Or[yr] - l) + g * (t = Qr[yr] - f) + i * (a = jr[yr] - o), Ft[yr] = y * e + A * t + u * a;
@@ -828,7 +1279,7 @@ function _o(jt, zt) {
     for (zl = Array(er = 2), tr = ($l = new Int32Array(Vr)).length; 0 <= --er;) zl[er] = new Int32Array(tr);
     ef = new Int32Array((Zl = new Int8Array(Z < qr ? qr : Z)).length), Hl = new Uint8Array(qr), af = new Int32Array(At), yl = Al = ul = !1, zt.addEventListener('contextmenu', ba, !1), zt.addEventListener('mousedown', va, !1), zt.addEventListener('touchstart', Ma, !1), document.addEventListener('mouseup', ma, !1), document.addEventListener('touchend', Fa, !1), document.addEventListener('mousemove', ka, !1),
       document.addEventListener('touchmove', pa, !1), document.addEventListener('mouseleave', da, !1), il = 0, Ea(), Na()
-  }())
+  })())
 }
 
 window.addEventListener('load', _n, !1);

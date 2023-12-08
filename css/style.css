@@ -333,7 +333,7 @@
 
 .solid {
   position: relative;
-  padding: 20px 40px;
+  padding: 20px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -343,20 +343,50 @@
   width: 100%;
 }
 
-.solid__title {
-  overflow-wrap: anywhere;
+.solid__canvas-wrapper {
+  padding: 0 20px;
 }
 
-canvas {
+.solid__canvas {
   display: block;
   width: 100%;
   height: 100%;
 }
-canvas:hover {
+.solid__canvas:hover {
   cursor: pointer;
 }
-canvas:active {
+.solid__canvas:active {
   cursor: move;
+}
+
+.solid__title {
+  margin: 10px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.solid__subtitle {
+  margin: 10px 0 0;
+}
+
+.solid__characteristics {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px 10px;
+  margin: 10px 0 0;
+}
+
+.solid__characteristics-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+}
+
+.solid__value {
+  margin: 0;
 }
 
 .footer {
