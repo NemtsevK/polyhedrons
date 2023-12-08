@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% set path = '../../' %}
 <html class="page" lang="en">
 <head>
   <title>Snub antiprisms</title>
@@ -14,28 +15,32 @@
         <p class="solids__text">The snub antiprisms can be constructed as an alternation of a truncated antiprism. The gyrobianticupolae are another construction for the snub antiprisms. Only snub antiprisms with at most 4 sides can be constructed from regular polygons. The snub triangular antiprism is the regular icosahedron, so it is not a Johnson solid.</p>
       </div>
       <ul class="solids__list">
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="snub-disphenoid">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 8 12">
-            <input type="hidden" class="solid__constants" value="0.205561565853259538077851199951,0.644584273224154984541338729084,0.783930924232563649920229273668">
-            <input type="hidden" class="solid__vertices" value="0.5 0.0 -C2,-0.5 0.0 -C2,0.0 0.5 C2,0.0 -0.5 C2,C1 0.0 C0,-C1 0.0 C0,0.0 C1 -C0,0.0 -C1 -C0">
-            <input type="hidden" class="solid__faces" value="0 1 6 #,1 0 7 #,2 3 4 #,3 2 5 #,0 6 4 #,1 7 5 #,2 4 6 #,3 5 7 #,0 4 7 #,1 5 6 #,2 6 5 #,3 7 4 #">
-            <input type="hidden" class="solid__background" value="#606060">
-            <input type="hidden" class="Quaternion" value="1 1 0 0">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 8 12">
+              <input type="hidden" class="solid__constants" value="0.205561565853259538077851199951,0.644584273224154984541338729084,0.783930924232563649920229273668">
+              <input type="hidden" class="solid__vertices" value="0.5 0.0 -C2,-0.5 0.0 -C2,0.0 0.5 C2,0.0 -0.5 C2,C1 0.0 C0,-C1 0.0 C0,0.0 C1 -C0,0.0 -C1 -C0">
+              <input type="hidden" class="solid__faces" value="0 1 6 #,1 0 7 #,2 3 4 #,3 2 5 #,0 6 4 #,1 7 5 #,2 4 6 #,3 5 7 #,0 4 7 #,1 5 6 #,2 6 5 #,3 7 4 #">
+              <input type="hidden" class="solid__background" value="#606060">
+              <input type="hidden" class="Quaternion" value="1 1 0 0">
+            </div>
+            <h2 class="solid__title title-h2">Snub Disphenoid (J84)</h2>
           </div>
-          <h2 class="solid__title title-h2">Snub Disphenoid (J84)</h2>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="snub-square-antiprism">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="5 16 26">
-            <input type="hidden" class="solid__constants" value="0.185607021282179847571203642807,0.676868509031356082287074277611,0.7071067811865475244008443621048,0.857865868455197166868512416108,1.21320554586631333082602219607">
-            <input type="hidden" class="solid__vertices" value="C4 0.0 C0,-C4 0.0 C0,0.0 C4 C0,0.0 -C4 C0,C3 C3 -C0,C3 -C3 -C0,-C3 C3 -C0,-C3 -C3 -C0,C2 0.0 -C1,-C2 0.0 -C1,0.0 C2 -C1,0.0 -C2 -C1,0.5 0.5 C1,0.5 -0.5 C1,-0.5 0.5 C1,-0.5 -0.5 C1">
-            <input type="hidden" class="solid__faces" value="8 11 9 10 #,12 14 15 13 #,0 12 13 #,1 15 14 #,2 14 12 #,3 13 15 #,4 8 10 #,5 11 8 #,6 10 9 #,7 9 11 #,0 5 8 #,0 8 4 #,1 6 9 #,1 9 7 #,2 4 10 #,2 10 6 #,3 7 11 #,3 11 5 #,4 2 12 #,4 12 0 #,5 0 13 #,5 13 3 #,6 1 14 #,6 14 2 #,7 3 15 #,7 15 1 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="5 16 26">
+              <input type="hidden" class="solid__constants" value="0.185607021282179847571203642807,0.676868509031356082287074277611,0.7071067811865475244008443621048,0.857865868455197166868512416108,1.21320554586631333082602219607">
+              <input type="hidden" class="solid__vertices" value="C4 0.0 C0,-C4 0.0 C0,0.0 C4 C0,0.0 -C4 C0,C3 C3 -C0,C3 -C3 -C0,-C3 C3 -C0,-C3 -C3 -C0,C2 0.0 -C1,-C2 0.0 -C1,0.0 C2 -C1,0.0 -C2 -C1,0.5 0.5 C1,0.5 -0.5 C1,-0.5 0.5 C1,-0.5 -0.5 C1">
+              <input type="hidden" class="solid__faces" value="8 11 9 10 #,12 14 15 13 #,0 12 13 #,1 15 14 #,2 14 12 #,3 13 15 #,4 8 10 #,5 11 8 #,6 10 9 #,7 9 11 #,0 5 8 #,0 8 4 #,1 6 9 #,1 9 7 #,2 4 10 #,2 10 6 #,3 7 11 #,3 11 5 #,4 2 12 #,4 12 0 #,5 0 13 #,5 13 3 #,6 1 14 #,6 14 2 #,7 3 15 #,7 15 1 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
+            <h2 class="solid__title title-h2">Snub Square Antiprism (J85)</h2>
           </div>
-          <h2 class="solid__title title-h2">Snub Square Antiprism (J85)</h2>
         </li>
       </ul>
     </div>

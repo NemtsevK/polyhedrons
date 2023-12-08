@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% set path = '../../' %}
 <html class="page" lang="en">
 <head>
   <title>Versi-Regular Polyhedra</title>
@@ -14,102 +15,120 @@
         <p class="solids__text">A versi-regular polyhedron is a quasi-regular polyhedron distinguished by having faces that pass through its center. There are nine versi-regular polyhedra, all of which are self-intersecting. Eight of the nine have non-orientable surfaces (like that of a Klein Bottle or the Real Projective Plane). The only one with an orientable surface is the Octahemioctahedron. The Tetrahemihexahedron has an Euler characteristic of 1, making it topologically equivalent to the Real Projective Plane. The remaining eight have even numbered Euler characteristics. All nine were described in 1881 by Albert Badoureau.</p>
       </div>
       <ul class="solids__list">
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="1 6 7">
-            <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
-            <input type="hidden" class="solid__vertices" value="0.0 0.0 C0,0.0 0.0 -C0,C0 0.0 0.0,-C0 0.0 0.0,0.0 C0 0.0,0.0 -C0 0.0">
-            <input type="hidden" class="solid__faces" value="0 2 1 3 #,0 5 1 4 #,2 4 3 5 #,0 2 4 #,0 3 5 #,1 2 5 #,1 3 4 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="1 6 7">
+              <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
+              <input type="hidden" class="solid__vertices" value="0.0 0.0 C0,0.0 0.0 -C0,C0 0.0 0.0,-C0 0.0 0.0,0.0 C0 0.0,0.0 -C0 0.0">
+              <input type="hidden" class="solid__faces" value="0 2 1 3 #,0 5 1 4 #,2 4 3 5 #,0 2 4 #,0 3 5 #,1 2 5 #,1 3 4 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Tetrahemihexahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="1 12 10">
-            <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
-            <input type="hidden" class="solid__vertices" value="C0 0.0 C0,C0 0.0 -C0,-C0 0.0 C0,-C0 0.0 -C0,C0 C0 0.0,C0 -C0 0.0,-C0 C0 0.0,-C0 -C0 0.0,0.0 C0 C0,0.0 C0 -C0,0.0 -C0 C0,0.0 -C0 -C0">
-            <input type="hidden" class="solid__faces" value="0 4 9 3 7 10 #,0 5 11 3 6 8 #,1 4 8 2 7 11 #,1 5 10 2 6 9 #,0 5 1 4 #,0 8 2 10 #,7 2 6 3 #,7 11 5 10 #,9 1 11 3 #,9 6 8 4 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="1 12 10">
+              <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
+              <input type="hidden" class="solid__vertices" value="C0 0.0 C0,C0 0.0 -C0,-C0 0.0 C0,-C0 0.0 -C0,C0 C0 0.0,C0 -C0 0.0,-C0 C0 0.0,-C0 -C0 0.0,0.0 C0 C0,0.0 C0 -C0,0.0 -C0 C0,0.0 -C0 -C0">
+              <input type="hidden" class="solid__faces" value="0 4 9 3 7 10 #,0 5 11 3 6 8 #,1 4 8 2 7 11 #,1 5 10 2 6 9 #,0 5 1 4 #,0 8 2 10 #,7 2 6 3 #,7 11 5 10 #,9 1 11 3 #,9 6 8 4 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Cubohemioctahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="1 12 12">
-            <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
-            <input type="hidden" class="solid__vertices" value="C0 0.0 C0,C0 0.0 -C0,-C0 0.0 C0,-C0 0.0 -C0,C0 C0 0.0,C0 -C0 0.0,-C0 C0 0.0,-C0 -C0 0.0,0.0 C0 C0,0.0 C0 -C0,0.0 -C0 C0,0.0 -C0 -C0">
-            <input type="hidden" class="solid__faces" value="0 4 9 3 7 10 #,0 5 11 3 6 8 #,1 4 8 2 7 11 #,1 5 10 2 6 9 #,0 8 4 #,0 10 5 #,1 11 5 #,1 9 4 #,2 10 7 #,2 8 6 #,3 9 6 #,3 11 7 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="1 12 12">
+              <input type="hidden" class="solid__constants" value="0.7071067811865475244008443621048">
+              <input type="hidden" class="solid__vertices" value="C0 0.0 C0,C0 0.0 -C0,-C0 0.0 C0,-C0 0.0 -C0,C0 C0 0.0,C0 -C0 0.0,-C0 C0 0.0,-C0 -C0 0.0,0.0 C0 C0,0.0 C0 -C0,0.0 -C0 C0,0.0 -C0 -C0">
+              <input type="hidden" class="solid__faces" value="0 4 9 3 7 10 #,0 5 11 3 6 8 #,1 4 8 2 7 11 #,1 5 10 2 6 9 #,0 8 4 #,0 10 5 #,1 11 5 #,1 9 4 #,2 10 7 #,2 8 6 #,3 9 6 #,3 11 7 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Octahemioctahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 30 18">
-            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,C2 0.0 0.0,-C2 0.0 0.0,0.0 C2 0.0,0.0 -C2 0.0,0.5 C0 C1,0.5 C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,-0.5 -C0 C1,-0.5 -C0 -C1,C1 0.5 C0,C1 0.5 -C0,C1 -0.5 C0,C1 -0.5 -C0,-C1 0.5 C0,-C1 0.5 -C0,-C1 -0.5 C0,-C1 -0.5 -C0,C0 C1 0.5,C0 C1 -0.5,C0 -C1 0.5,C0 -C1 -0.5,-C0 C1 0.5,-C0 C1 -0.5,-C0 -C1 0.5,-C0 -C1 -0.5">
-            <input type="hidden" class="solid__faces" value="0 6 22 23 7 1 13 29 28 12 #,0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,4 23 15 17 25 5 28 20 18 26 #,0 8 16 14 6 #,0 10 18 20 12 #,1 7 15 17 9 #,1 13 21 19 11 #,2 15 23 22 14 #,2 16 24 25 17 #,3 18 26 27 19 #,3 21 29 28 20 #,4 23 7 11 27 #,4 26 10 6 22 #,5 24 8 12 28 #,5 29 13 9 25 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 30 18">
+              <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
+              <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,C2 0.0 0.0,-C2 0.0 0.0,0.0 C2 0.0,0.0 -C2 0.0,0.5 C0 C1,0.5 C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,-0.5 -C0 C1,-0.5 -C0 -C1,C1 0.5 C0,C1 0.5 -C0,C1 -0.5 C0,C1 -0.5 -C0,-C1 0.5 C0,-C1 0.5 -C0,-C1 -0.5 C0,-C1 -0.5 -C0,C0 C1 0.5,C0 C1 -0.5,C0 -C1 0.5,C0 -C1 -0.5,-C0 C1 0.5,-C0 C1 -0.5,-C0 -C1 0.5,-C0 -C1 -0.5">
+              <input type="hidden" class="solid__faces" value="0 6 22 23 7 1 13 29 28 12 #,0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,4 23 15 17 25 5 28 20 18 26 #,0 8 16 14 6 #,0 10 18 20 12 #,1 7 15 17 9 #,1 13 21 19 11 #,2 15 23 22 14 #,2 16 24 25 17 #,3 18 26 27 19 #,3 21 29 28 20 #,4 23 7 11 27 #,4 26 10 6 22 #,5 24 8 12 28 #,5 29 13 9 25 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Small Dodecahemidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 30 18">
-            <input type="hidden" class="solid__constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366">
-            <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,0.0 C2 0.0,0.0 -C2 0.0,C2 0.0 0.0,-C2 0.0 0.0,C1 -0.5 -C0,C1 -0.5 C0,-C1 -0.5 -C0,-C1 -0.5 C0,C1 0.5 -C0,C1 0.5 C0,-C1 0.5 -C0,-C1 0.5 C0,-0.5 -C0 C1,-0.5 -C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,0.5 C0 C1,0.5 C0 -C1,-C0 C1 -0.5,-C0 C1 0.5,C0 C1 -0.5,C0 C1 0.5,-C0 -C1 -0.5,-C0 -C1 0.5,C0 -C1 -0.5,C0 -C1 0.5">
-            <input type="hidden" class="solid__faces" value="0 6 22 23 7 1 13 29 28 12 #,0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,4 23 15 17 25 5 28 20 18 26 #,0 8 16 14 6 #,0 10 18 20 12 #,1 7 15 17 9 #,1 13 21 19 11 #,2 15 23 22 14 #,2 16 24 25 17 #,3 18 26 27 19 #,3 21 29 28 20 #,4 23 7 11 27 #,4 26 10 6 22 #,5 24 8 12 28 #,5 29 13 9 25 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 30 18">
+              <input type="hidden" class="solid__constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366">
+              <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,0.0 C2 0.0,0.0 -C2 0.0,C2 0.0 0.0,-C2 0.0 0.0,C1 -0.5 -C0,C1 -0.5 C0,-C1 -0.5 -C0,-C1 -0.5 C0,C1 0.5 -C0,C1 0.5 C0,-C1 0.5 -C0,-C1 0.5 C0,-0.5 -C0 C1,-0.5 -C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,0.5 C0 C1,0.5 C0 -C1,-C0 C1 -0.5,-C0 C1 0.5,C0 C1 -0.5,C0 C1 0.5,-C0 -C1 -0.5,-C0 -C1 0.5,C0 -C1 -0.5,C0 -C1 0.5">
+              <input type="hidden" class="solid__faces" value="0 6 22 23 7 1 13 29 28 12 #,0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,4 23 15 17 25 5 28 20 18 26 #,0 8 16 14 6 #,0 10 18 20 12 #,1 7 15 17 9 #,1 13 21 19 11 #,2 15 23 22 14 #,2 16 24 25 17 #,3 18 26 27 19 #,3 21 29 28 20 #,4 23 7 11 27 #,4 26 10 6 22 #,5 24 8 12 28 #,5 29 13 9 25 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Great Dodecahemidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="2 30 22">
-            <input type="hidden" class="solid__constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183">
-            <input type="hidden" class="solid__vertices" value="0.0 0.0 -1.0,0.0 0.0 1.0,0.0 -1.0 0.0,0.0 1.0 0.0,-1.0 0.0 0.0,1.0 0.0 0.0,-0.5 C1 C0,-0.5 C1 -C0,0.5 C1 C0,0.5 C1 -C0,-0.5 -C1 C0,-0.5 -C1 -C0,0.5 -C1 C0,0.5 -C1 -C0,C1 C0 -0.5,C1 C0 0.5,-C1 C0 -0.5,-C1 C0 0.5,C1 -C0 -0.5,C1 -C0 0.5,-C1 -C0 -0.5,-C1 -C0 0.5,C0 -0.5 C1,C0 -0.5 -C1,-C0 -0.5 C1,-C0 -0.5 -C1,C0 0.5 C1,C0 0.5 -C1,-C0 0.5 C1,-C0 0.5 -C1">
-            <input type="hidden" class="solid__faces" value="0 14 15 1 21 20 #,0 16 17 1 19 18 #,2 22 26 3 29 25 #,2 23 27 3 28 24 #,4 6 8 5 13 11 #,4 7 9 5 12 10 #,6 16 25 13 19 26 #,7 17 24 12 18 27 #,8 14 23 11 21 28 #,9 15 22 10 20 29 #,0 14 23 27 18 #,0 20 29 25 16 #,1 17 24 28 21 #,1 19 26 22 15 #,2 22 10 12 24 #,2 25 13 11 23 #,3 27 7 9 29 #,3 28 8 6 26 #,4 6 16 17 7 #,4 11 21 20 10 #,5 12 18 19 13 #,5 9 15 14 8 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="2 30 22">
+              <input type="hidden" class="solid__constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183">
+              <input type="hidden" class="solid__vertices" value="0.0 0.0 -1.0,0.0 0.0 1.0,0.0 -1.0 0.0,0.0 1.0 0.0,-1.0 0.0 0.0,1.0 0.0 0.0,-0.5 C1 C0,-0.5 C1 -C0,0.5 C1 C0,0.5 C1 -C0,-0.5 -C1 C0,-0.5 -C1 -C0,0.5 -C1 C0,0.5 -C1 -C0,C1 C0 -0.5,C1 C0 0.5,-C1 C0 -0.5,-C1 C0 0.5,C1 -C0 -0.5,C1 -C0 0.5,-C1 -C0 -0.5,-C1 -C0 0.5,C0 -0.5 C1,C0 -0.5 -C1,-C0 -0.5 C1,-C0 -0.5 -C1,C0 0.5 C1,C0 0.5 -C1,-C0 0.5 C1,-C0 0.5 -C1">
+              <input type="hidden" class="solid__faces" value="0 14 15 1 21 20 #,0 16 17 1 19 18 #,2 22 26 3 29 25 #,2 23 27 3 28 24 #,4 6 8 5 13 11 #,4 7 9 5 12 10 #,6 16 25 13 19 26 #,7 17 24 12 18 27 #,8 14 23 11 21 28 #,9 15 22 10 20 29 #,0 14 23 27 18 #,0 20 29 25 16 #,1 17 24 28 21 #,1 19 26 22 15 #,2 22 10 12 24 #,2 25 13 11 23 #,3 27 7 9 29 #,3 28 8 6 26 #,4 6 16 17 7 #,4 11 21 20 10 #,5 12 18 19 13 #,5 9 15 14 8 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Small Dodecahemicosahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="2 30 22">
-            <input type="hidden" class="solid__constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183">
-            <input type="hidden" class="solid__vertices" value="0.0 0.0 1.0,0.0 0.0 -1.0,1.0 0.0 0.0,-1.0 0.0 0.0,0.0 1.0 0.0,0.0 -1.0 0.0,C0 0.5 C1,C0 0.5 -C1,C0 -0.5 C1,C0 -0.5 -C1,-C0 0.5 C1,-C0 0.5 -C1,-C0 -0.5 C1,-C0 -0.5 -C1,C1 C0 0.5,C1 C0 -0.5,C1 -C0 0.5,C1 -C0 -0.5,-C1 C0 0.5,-C1 C0 -0.5,-C1 -C0 0.5,-C1 -C0 -0.5,0.5 C1 C0,0.5 C1 -C0,0.5 -C1 C0,0.5 -C1 -C0,-0.5 C1 C0,-0.5 C1 -C0,-0.5 -C1 C0,-0.5 -C1 -C0">
-            <input type="hidden" class="solid__faces" value="0 14 15 1 21 20 #,0 16 17 1 19 18 #,2 22 26 3 29 25 #,2 23 27 3 28 24 #,4 6 8 5 13 11 #,4 7 9 5 12 10 #,6 16 25 13 19 26 #,7 17 24 12 18 27 #,8 14 23 11 21 28 #,9 15 22 10 20 29 #,0 14 23 27 18 #,0 20 29 25 16 #,1 17 24 28 21 #,1 19 26 22 15 #,2 22 10 12 24 #,2 25 13 11 23 #,3 27 7 9 29 #,3 28 8 6 26 #,4 6 16 17 7 #,4 11 21 20 10 #,5 12 18 19 13 #,5 9 15 14 8 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="2 30 22">
+              <input type="hidden" class="solid__constants" value="0.309016994374947424102293417183,0.809016994374947424102293417183">
+              <input type="hidden" class="solid__vertices" value="0.0 0.0 1.0,0.0 0.0 -1.0,1.0 0.0 0.0,-1.0 0.0 0.0,0.0 1.0 0.0,0.0 -1.0 0.0,C0 0.5 C1,C0 0.5 -C1,C0 -0.5 C1,C0 -0.5 -C1,-C0 0.5 C1,-C0 0.5 -C1,-C0 -0.5 C1,-C0 -0.5 -C1,C1 C0 0.5,C1 C0 -0.5,C1 -C0 0.5,C1 -C0 -0.5,-C1 C0 0.5,-C1 C0 -0.5,-C1 -C0 0.5,-C1 -C0 -0.5,0.5 C1 C0,0.5 C1 -C0,0.5 -C1 C0,0.5 -C1 -C0,-0.5 C1 C0,-0.5 C1 -C0,-0.5 -C1 C0,-0.5 -C1 -C0">
+              <input type="hidden" class="solid__faces" value="0 14 15 1 21 20 #,0 16 17 1 19 18 #,2 22 26 3 29 25 #,2 23 27 3 28 24 #,4 6 8 5 13 11 #,4 7 9 5 12 10 #,6 16 25 13 19 26 #,7 17 24 12 18 27 #,8 14 23 11 21 28 #,9 15 22 10 20 29 #,0 14 23 27 18 #,0 20 29 25 16 #,1 17 24 28 21 #,1 19 26 22 15 #,2 22 10 12 24 #,2 25 13 11 23 #,3 27 7 9 29 #,3 28 8 6 26 #,4 6 16 17 7 #,4 11 21 20 10 #,5 12 18 19 13 #,5 9 15 14 8 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Great Dodecahemicosahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 30 26">
-            <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
-            <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,C2 0.0 0.0,-C2 0.0 0.0,0.0 C2 0.0,0.0 -C2 0.0,0.5 C0 C1,0.5 C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,-0.5 -C0 C1,-0.5 -C0 -C1,C1 0.5 C0,C1 0.5 -C0,C1 -0.5 C0,C1 -0.5 -C0,-C1 0.5 C0,-C1 0.5 -C0,-C1 -0.5 C0,-C1 -0.5 -C0,C0 C1 0.5,C0 C1 -0.5,C0 -C1 0.5,C0 -C1 -0.5,-C0 C1 0.5,-C0 C1 -0.5,-C0 -C1 0.5,-C0 -C1 -0.5">
-            <input type="hidden" class="solid__faces" value="0 6 22 23 7 1 13 29 28 12 #,0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,4 23 15 17 25 5 28 20 18 26 #,0 6 10 #,0 12 8 #,1 9 13 #,1 11 7 #,14 16 2 #,14 22 6 #,17 15 2 #,17 25 9 #,19 21 3 #,19 27 11 #,20 18 3 #,20 28 12 #,23 4 22 #,23 15 7 #,24 5 25 #,24 16 8 #,26 4 27 #,26 18 10 #,29 5 28 #,29 21 13 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 30 26">
+              <input type="hidden" class="solid__constants" value="0.809016994374947424102293417183,1.30901699437494742410229341718,1.61803398874989484820458683437">
+              <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,C2 0.0 0.0,-C2 0.0 0.0,0.0 C2 0.0,0.0 -C2 0.0,0.5 C0 C1,0.5 C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,-0.5 -C0 C1,-0.5 -C0 -C1,C1 0.5 C0,C1 0.5 -C0,C1 -0.5 C0,C1 -0.5 -C0,-C1 0.5 C0,-C1 0.5 -C0,-C1 -0.5 C0,-C1 -0.5 -C0,C0 C1 0.5,C0 C1 -0.5,C0 -C1 0.5,C0 -C1 -0.5,-C0 C1 0.5,-C0 C1 -0.5,-C0 -C1 0.5,-C0 -C1 -0.5">
+              <input type="hidden" class="solid__faces" value="0 6 22 23 7 1 13 29 28 12 #,0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,4 23 15 17 25 5 28 20 18 26 #,0 6 10 #,0 12 8 #,1 9 13 #,1 11 7 #,14 16 2 #,14 22 6 #,17 15 2 #,17 25 9 #,19 21 3 #,19 27 11 #,20 18 3 #,20 28 12 #,23 4 22 #,23 15 7 #,24 5 25 #,24 16 8 #,26 4 27 #,26 18 10 #,29 5 28 #,29 21 13 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Small Icosihemidodecahedron</h2>
           </div>
         </li>
-        <li class="solids__item solid">
+        <li class="solids__item solid" id="">
           <div class="solid__content">
-            <canvas class="solid__canvas" width="200" height="200"></canvas>
-            <input type="hidden" class="solid__counts" value="3 30 26">
-            <input type="hidden" class="solid__constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366">
-            <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,0.0 C2 0.0,0.0 -C2 0.0,C2 0.0 0.0,-C2 0.0 0.0,C1 -0.5 -C0,C1 -0.5 C0,-C1 -0.5 -C0,-C1 -0.5 C0,C1 0.5 -C0,C1 0.5 C0,-C1 0.5 -C0,-C1 0.5 C0,-0.5 -C0 C1,-0.5 -C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,0.5 C0 C1,0.5 C0 -C1,-C0 C1 -0.5,-C0 C1 0.5,C0 C1 -0.5,C0 C1 0.5,-C0 -C1 -0.5,-C0 -C1 0.5,C0 -C1 -0.5,C0 -C1 0.5">
-            <input type="hidden" class="solid__faces" value="0 6 22 23 7 1 13 29 28 12 #,0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,4 23 15 17 25 5 28 20 18 26 #,0 6 10 #,0 12 8 #,1 9 13 #,1 11 7 #,14 16 2 #,14 22 6 #,17 15 2 #,17 25 9 #,19 21 3 #,19 27 11 #,20 18 3 #,20 28 12 #,23 4 22 #,23 15 7 #,24 5 25 #,24 16 8 #,26 4 27 #,26 18 10 #,29 5 28 #,29 21 13 #">
-            <input type="hidden" class="solid__background" value="#606060">
+            <div class="solid__canvas-wrapper">
+              <canvas class="solid__canvas" width="200" height="200"></canvas>
+              <input type="hidden" class="solid__counts" value="3 30 26">
+              <input type="hidden" class="solid__constants" value="0.190983005625052575897706582817,0.309016994374947424102293417183,0.618033988749894848204586834366">
+              <input type="hidden" class="solid__vertices" value="0.0 0.0 C2,0.0 0.0 -C2,0.0 C2 0.0,0.0 -C2 0.0,C2 0.0 0.0,-C2 0.0 0.0,C1 -0.5 -C0,C1 -0.5 C0,-C1 -0.5 -C0,-C1 -0.5 C0,C1 0.5 -C0,C1 0.5 C0,-C1 0.5 -C0,-C1 0.5 C0,-0.5 -C0 C1,-0.5 -C0 -C1,0.5 -C0 C1,0.5 -C0 -C1,-0.5 C0 C1,-0.5 C0 -C1,0.5 C0 C1,0.5 C0 -C1,-C0 C1 -0.5,-C0 C1 0.5,C0 C1 -0.5,C0 C1 0.5,-C0 -C1 -0.5,-C0 -C1 0.5,C0 -C1 -0.5,C0 -C1 0.5">
+              <input type="hidden" class="solid__faces" value="0 6 22 23 7 1 13 29 28 12 #,0 8 24 25 9 1 11 27 26 10 #,2 14 6 10 18 3 21 13 9 17 #,2 15 7 11 19 3 20 12 8 16 #,4 22 14 16 24 5 29 21 19 27 #,4 23 15 17 25 5 28 20 18 26 #,0 6 10 #,0 12 8 #,1 9 13 #,1 11 7 #,14 16 2 #,14 22 6 #,17 15 2 #,17 25 9 #,19 21 3 #,19 27 11 #,20 18 3 #,20 28 12 #,23 4 22 #,23 15 7 #,24 5 25 #,24 16 8 #,26 4 27 #,26 18 10 #,29 5 28 #,29 21 13 #">
+              <input type="hidden" class="solid__background" value="#606060">
+            </div>
             <h2 class="solid__title title-h2">Great Icosihemidodecahedron</h2>
           </div>
         </li>
