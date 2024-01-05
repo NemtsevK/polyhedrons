@@ -14,4 +14,3 @@ canvasList.forEach((canvas) => {
   canvas.width = solidsItem.clientWidth;
   canvas.height = solidsItem.clientWidth;
 })
-

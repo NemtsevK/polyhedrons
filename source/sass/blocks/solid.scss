@@ -40,12 +40,13 @@
 }
 
 .solid__characteristics {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   align-items: center;
-  gap: 5px 10px;
+  gap: 5px 0;
   margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px solid #cecece;
 }
 
 .solid__characteristics-item {
@@ -54,6 +55,10 @@
   align-items: center;
   gap: 5px;
   margin: 0;
+
+  &:last-child {
+    grid-column: span 3;
+  }
 }
 
 .solid__value {
