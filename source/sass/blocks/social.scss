@@ -48,11 +48,15 @@
     background-image: url("../images/icons/github.svg");
   }
 
-  &--youtube::before {
-    background-image: url("../images/icons/youtube.svg");
+  &--mail::before {
+    background-image: url("../images/icons/mail.svg");
   }
 
   &--telegram::before {
     background-image: url("../images/icons/telegram.svg");
+  }
+
+  &--site::before {
+    background-image: url("../images/icons/site.svg");
   }
 }
