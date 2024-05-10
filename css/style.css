@@ -495,10 +495,13 @@
 .social__link--github::before {
   background-image: url("../images/icons/github.svg");
 }
-.social__link--youtube::before {
-  background-image: url("../images/icons/youtube.svg");
+.social__link--mail::before {
+  background-image: url("../images/icons/mail.svg");
 }
 .social__link--telegram::before {
   background-image: url("../images/icons/telegram.svg");
+}
+.social__link--site::before {
+  background-image: url("../images/icons/site.svg");
 }
 /*# sourceMappingURL=style.css.map */
