@@ -1,10 +1,9 @@
-@use "../global/variables" as *;
+@use "../base/variables" as *;
 
 .header {
   padding: 20px 0;
   background-color: #2d2d44;
   color: #ffffff;
-
 }
 
 .header__inner {
