@@ -1,3 +1,5 @@
+import './rendering-polyhedra.js'
+
 const DEFAULT_BACKGROUND = '#f6f6f6';
 
 const solidsList = document.querySelector('.solids__list');
