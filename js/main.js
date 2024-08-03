@@ -1,16 +1,1 @@
-const DEFAULT_BACKGROUND = '#f6f6f6';
-
-const solidsList = document.querySelector('.solids__list');
-const backgroundCanvas = solidsList.querySelectorAll('.solid__background');
-const canvasList = solidsList.querySelectorAll('.solid__canvas');
-const solidsItem = solidsList.querySelector('.solid__content');
-
-backgroundCanvas.forEach((element) => {
-  element.value = DEFAULT_BACKGROUND;
-})
-
-canvasList.forEach((canvas) => {
-//* window.devicePixelRatio // для ретина, но плохо крутится
-  canvas.width = solidsItem.clientWidth;
-  canvas.height = solidsItem.clientWidth;
-})
+import"./rendering-polyhedra.js";const DEFAULT_BACKGROUND="#f6f6f6",solidsList=document.querySelector(".solids__list"),backgroundCanvas=solidsList.querySelectorAll(".solid__background"),canvasList=solidsList.querySelectorAll(".solid__canvas"),solidsItem=solidsList.querySelector(".solid__content");backgroundCanvas.forEach((s=>{s.value="#f6f6f6"})),canvasList.forEach((s=>{s.width=solidsItem.clientWidth,s.height=solidsItem.clientWidth}));
