@@ -31,6 +31,7 @@
     display: block;
     width: 30px;
     height: 30px;
+    background-color: #ffffff;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,18 +46,18 @@
   }
 
   &--github::before {
-    background-image: url("../images/icons/github.svg");
+    mask-image: url("../images/sprite.svg#github");
   }
 
   &--mail::before {
-    background-image: url("../images/icons/mail.svg");
+    mask-image: url("../images/sprite.svg#mail");
   }
 
   &--telegram::before {
-    background-image: url("../images/icons/telegram.svg");
+    mask-image: url("../images/sprite.svg#telegram");
   }
 
   &--site::before {
-    background-image: url("../images/icons/site.svg");
+    mask-image: url("../images/sprite.svg#site");
   }
 }
