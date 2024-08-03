@@ -10,7 +10,6 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  //justify-items: center;
   align-items: center;
 
   @media (min-width: $tablet) {
@@ -27,8 +26,6 @@
 }
 
 .footer__logo {
-
-
   &:hover {
     opacity: 0.6;
   }
